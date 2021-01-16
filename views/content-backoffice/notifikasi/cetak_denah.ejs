@@ -1,0 +1,234 @@
+<!--  BACKUP ASLI SERVER BENAR -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="#"" type="image/png">
+
+    <title></title>
+    <script src="/plugins/jquery/jquery-1.11.1.min.js"></script>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+      body {
+        background: rgb(204,204,204); 
+        font-family: 'Arial';
+        font-size:12pt;
+        line-height:1.5em;
+      }
+
+      page {
+        background: white;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5mm;
+        box-shadow: 0 0 5mm rgba(0,0,0,0.5);
+        /*border:2px solid black;*/
+      }
+
+      page[size="A3"] {
+        width: 390mm;
+        height: 267mm;  
+        /*border:1px solid black;*/
+        /*background-color: red;*/
+        float: left;
+      }
+
+      @page {
+        size: A3 landscape;
+        margin:15mm 15mm;
+      }
+      
+      @media print {
+        body, page {
+          margin: 0;
+          box-shadow: none;
+        }
+
+        #btn-print{
+          display: none !important;
+        }
+      }
+
+      .m-t-0{
+        margin-top: 0;
+      }
+
+      .m-b-0{
+        margin-bottom: 0;
+      }
+
+      table { page-break-inside:auto }
+      tr    { page-break-inside:avoid; page-break-after:auto}
+      .border {border: 0.5mm solid black !important}
+
+
+      h4{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: normal;
+      }
+
+      span{
+        color: red;
+      }
+
+      .konten td{
+        border:0.5mm solid black !important;
+      }
+
+      .konten th{
+        border:0.5mm solid black !important;
+      }
+
+     /* div{
+        page-break-inside: avoid;
+      }*/
+      /*table { page-break-inside:auto }*/
+      /*tr    { page-break-inside:avoid; page-break-after:auto }
+      thead { display:table-header-group }
+      tfoot { page-break-inside:avoid; page-break-after:auto  }*/
+    </style>
+</head>
+
+<body>
+    <!-- <div onclick="window.print()" style="float:right;display: inline-block;background-color: red;padding: 10px 15px;border-bottom: 4px solid rgba(0,0,0,0.4);border-right: 4px solid rgba(0,0,0,0.4);border-radius: 4px;cursor: pointer;">
+      <h5 style="text-align: center;margin-top: 0px;margin-bottom: 0px;color: #ffffff;"><strong>CETAK</strong></h5>
+    </div> -->
+    <page size="A3">
+        <div style="width: 100%;float: left;">
+          <table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;width: 100%;font-size: 12pt;">
+            <tbody>
+                  <tr>
+                    <td rowspan="16" style="width: 80%;vertical-align: top;">
+                      <div style="width: 100%;background-color: ;position: relative;">
+                        <center>
+                        <img src="http://mapgeo.id:8846/images/backoffice/denah 1 edit.png" style="width: 98%">
+                        </center>
+                        <div style="width: 10mm;height: ;background-color: #fff;position: absolute;left: 20mm;right: 0;bottom: 8mm;margin:auto;z-index: 1">
+                          <h4  style="text-align: center;font-size: 14pt"><strong><%= data[0].panjang%></strong></h4>
+                        </div>
+
+                        <div style="width: 10mm;height: ;background-color: #fff;position: absolute;left:1mm;top: 14mm;margin:auto;z-index: 1">
+                          <h4  style="text-align: center;font-size: 14pt"><strong><%= data[0].lebar%></strong></h4>
+                        </div>
+                      </div>
+
+                      <center>
+                      <div style="width: 40%;background-color: ">
+                        <h4  style="text-align: left;"><strong>DENAH SITUASI</strong></h4>
+                        <h4  style="text-align: left;">JALAN DESA <%= data[0].nama_ruas%></h4>
+                        <h4  style="text-align: left;">KABUPATEN PEKALONGAN</h4>
+                      </div>
+                      </center>
+                      
+
+                      <div style="width: 100%;background-color: ;position: relative;margin-top: 10mm">
+                        <img src="http://mapgeo.id:8846/images/backoffice/denah 2 edit.png" style="width: 100%">
+
+                        <div style="width: 10mm;height: ;background-color: ;position: absolute;left: 0;right: 0;bottom: 12mm;margin:auto;z-index: 1">
+                          <h4  style="text-align: center;font-size: 14pt"><strong><%= data[0].lebar%></strong></h4>
+                        </div>
+                      </div>
+
+                      <center>
+                      <div style="width: 40%;background-color: ">
+                        <h4  style="text-align: left;"><strong>POTONGAN MELINTANG</strong></h4>
+                        <h4  style="text-align: left;">JALAN DESA <%= data[0].nama_ruas%></h4>
+                        <h4  style="text-align: left;">KABUPATEN PEKALONGAN</h4>
+                      </div>
+                      </center>
+
+                      <div style="width: 100%;background-color: ;margin-top: 10mm">
+                        <img src="http://mapgeo.id:8846/images/backoffice/denah 3.jpg" style="width: 100%">
+                      </div>
+                    </td>
+                    <td style="height: 35mm;vertical-align: middle;">
+                      <center><img src="http://mapgeo.id:8846/images/backoffice/logo.png" style="height: 30mm"></center>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><h4 style="font-weight: bold;text-align: center;">GAMBAR KERJA</h4></td>
+                  </tr>
+                  <tr>
+                        <td><h4 style="text-align: center;">NAMA KEGIATAN</h4></td>
+                      </tr>
+
+                      <tr>
+                        <td style="height:13.5mm;text-align: center;"><%= data[0].nama_pekerjaan%></td>
+                      </tr>
+
+                      <tr>
+                        <td><h4 style="text-align: center;">NAMA PAKET</h4></td>
+                      </tr>
+
+                      <tr>
+                        <td style="height: 13.5mm;text-align: center;"><%= data[0].nama_paket%></td>
+                      </tr>
+
+                      <tr>
+                        <td><h4 style="text-align: center;">LOKASI PEKERJAAN</h4></td>
+                      </tr>
+
+                      <tr>
+                        <td style="height: 13.5mm;text-align: center;"><%= data[0].lokasi_pekerjaan%></td>
+                      </tr>
+
+                      <tr>
+                        <td><h4 style="text-align: center;">DIBUAT OLEH</h4></td>
+                      </tr>
+
+                      <tr>
+                        <td style="height: 30mm;text-align: center;vertical-align: bottom"><strong><%= data[0].nama%></strong><br/>Ketua Tim Pelaksana Kegiatan</td>
+                      </tr>
+
+                      <tr>
+                        <td><h4 style="text-align: center;">DIPERIKSA OLEH</h4></td>
+                      </tr>
+
+                      <tr>
+                        <td style="height: 30mm;text-align: center;vertical-align: bottom"><strong><%= data[0].nama_verifikator%></strong><br/>Verifikator</td>
+                      </tr>
+
+                      <tr>
+                        <td><h4 style="text-align: center;">DISETUJUI OLEH</h4></td>
+                      </tr>
+
+                      <tr>
+                        <td style="height: 30mm;text-align: center;vertical-align: bottom"><strong><%= data[0].nama_kepdes%></strong><br/>Kepala Desa</td>
+                      </tr>
+
+                      <tr>
+                        <td><h4 style="text-align: center;">MENGETAHUI</h4></td>
+                      </tr>
+
+                      <tr>
+                        <td style="height: 30mm;text-align: center;vertical-align: bottom"><strong><%= data[0].nama_camat%></strong><br/>Camat</td>
+                      </tr>
+            </tbody>
+           
+          </table>
+        </div>
+    </page>
+
+    <script type="text/javascript">
+    $('#btn-print').click(function(){
+         window.print();
+    });
+
+    </script>
+</body>
+</html>

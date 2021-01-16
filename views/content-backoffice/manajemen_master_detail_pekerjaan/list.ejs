@@ -1,0 +1,125 @@
+<% include ../../template-backoffice/header.ejs %>
+
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content">
+  <div class="header">
+    <h2><strong>Data Master Detail Pekerjaan</strong></h2>
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb">
+        <li><a href="/backoffice">Dashboard</a>
+        </li>
+        <li class="active">Data</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="panel">
+        <div class="panel-header header-line">
+           <a class="btn btn-primary btn-embossed" href="/manajemen_master/detail_pekerjaann/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a>
+           <div class="form-group">
+            <label>Pekerjaan</label>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <select class="form-control" name="" id="id_pekerjaan" data-search="true">
+                  <% for(var i=0; i<pekerjaan.length; i++){ %> 
+                    
+                    <option value="<%= pekerjaan[i]['id']%>" <%if(pekerjaan[i].id==id_pekerjaan){%>selected<%}%>><%= pekerjaan[i]['nama_pekerjaan']%></option>
+                    <% }%>
+                </select>
+              </div>
+            </div>
+          </div>
+          </div>
+        <div class="panel-content pagination2">
+          <table class="table table-bordered table-striped table-hover" id="data">
+            <thead>
+              <tr>
+                <th class="header">No.</th>
+                <th class="header">Divisi</th>
+                <th class="header">Pekerjaan</th>
+                <th class="header">Jenis Uraian</th>
+                <th class="header">Nama Uraian</th>
+                <th class="header">Koefisien</th>
+                <th class="header">Satuan</th>
+                <th class="header">Daerah Bawah</th>
+                <th class="header">Daerah Atas</th>
+                <th class="header">Daerah Ekstrem</th>
+                <th class="header">Daerah Super Ekstrem</th>
+                <th class="header">Option</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <% for(var i=0; i<data.length; i++){ %>
+                <tr>
+                  <td><%= i+1%></td>
+                  <td><%= data[i].nama_divisi%></td>
+                  <td><%= data[i].nama_pekerjaan%></td>
+                  <td><%= data[i].jenis_uraian%></td>
+                  <td><%= data[i].nama_uraian%></td>
+                  <td><%= data[i].koefisien%></td>
+                  <td><%= data[i].satuan%></td>
+                  <td><%= data[i].daerah_bawah%></td>
+                  <td><%= data[i].daerah_atas%></td>
+                  <td><%= data[i].daerah_ekstrem%></td>
+                  <td><%= data[i].daerah_super_ekstrem%></td>
+              <td>
+                <center>
+                <ul class="list-inline" style="text-align: center;">
+                  <li><a class="btn btn-warning btn-embossed btn-sm" href="/manajemen_master/detail_pekerjaan/edit/<%= data[i].id%>" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+                  <li class="separator">|</li>
+                  <li><a class="btn btn-danger btn-embossed btn-sm" href="/manajemen_master/detail_pekerjaan/delete/<%= data[i].id%>" role="button" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+                </ul>
+                </center>
+              </td>
+            </tr>
+            <%}%>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="footer">
+    <div class="copyright">
+      <p class="pull-left sm-pull-reset">
+        <span>Copyright <span class="copyright">©</span> 2019</span>
+        <span>Pemerintah</span>.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include ../../template-backoffice/footer.ejs %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#data').DataTable({
+      "language": {
+          "sProcessing":   "Sedang memproses...",
+          "sLengthMenu":   "_MENU_",
+          "sZeroRecords":  "Tidak ditemukan data yang sesuai",
+          "sInfo":         "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
+          "sInfoEmpty":    "Menampilkan 0 sampai 0 dari 0 entri",
+          "sInfoFiltered": "(disaring dari _MAX_ entri keseluruhan)",
+          "sInfoPostFix":  "",
+          "sUrl":          "",
+          "oPaginate": {
+            "sFirst":    "Pertama",
+            "sPrevious": "Sebelumnya",
+            "sNext":     "Selanjutnya",
+            "sLast":     "Terakhir"
+          }
+      },
+      "columnDefs": [
+          { "width": "100px", "targets": 4}
+      ],
+    });
+  });
+
+  $('#id_pekerjaan').change(function(){
+    window.location.href = '/manajemen_master/detail_pekerjaan/'+$(this).val();
+  })
+</script>

@@ -1,0 +1,455 @@
+<!--  BACKUP ASLI SERVER BENAR -->
+<%
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
+%>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="#"" type="image/png">
+
+    <title></title>
+    <script src="/plugins/jquery/jquery-1.11.1.min.js"></script>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+      body {
+        background: rgb(204,204,204); 
+        font-family: 'Arial';
+        font-size:12pt;
+        line-height:1.5em;
+      }
+
+      page {
+        background: white;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5mm;
+        box-shadow: 0 0 5mm rgba(0,0,0,0.5);
+        /*border:2px solid black;*/
+      }
+
+      page[size="A4"] {
+        width: 210mm;
+        /*height: 324mm;  */
+        /*border:1px solid black;*/
+        background-color: white;
+        float: left;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin:15mm 15mm;
+      }
+      
+      @media print {
+        body, page {
+          margin: 0;
+          box-shadow: none;
+        }
+
+        #btn-print{
+          display: none !important;
+        }
+      }
+
+      .m-t-0{
+        margin-top: 0;
+      }
+
+      .m-b-0{
+        margin-bottom: 0;
+      }
+
+      table { page-break-inside:auto }
+      tr    { page-break-inside:avoid; page-break-after:auto}
+      .border {border: 0.5mm solid black !important}
+
+
+      h4{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: normal;
+      }
+
+      span{
+        color: red;
+      }
+
+      .konten td{
+        border:0.5mm solid black !important;
+      }
+
+      .konten th{
+        border:0.5mm solid black !important;
+      }
+
+     /* div{
+        page-break-inside: avoid;
+      }*/
+      /*table { page-break-inside:auto }*/
+      /*tr    { page-break-inside:avoid; page-break-after:auto }
+      thead { display:table-header-group }
+      tfoot { page-break-inside:avoid; page-break-after:auto  }*/
+    </style>
+</head>
+
+<body>
+    <!-- <div id="btn-print" style="float:right;display: inline-block;background-color: red;padding: 10px 15px;border-bottom: 4px solid rgba(0,0,0,0.4);border-right: 4px solid rgba(0,0,0,0.4);border-radius: 4px;cursor: pointer;">
+      <h5 style="text-align: center;margin-top: 0px;margin-bottom: 0px;color: #ffffff;"><strong>CETAK RAB</strong></h5>
+    </div>
+
+    <a href="http://mapgeo.id:8846/cetak_denah/<%= data[0].id %>" style="float:right;display: inline-block;background-color: red;padding: 10px 15px;border-bottom: 4px solid rgba(0,0,0,0.4);border-right: 4px solid rgba(0,0,0,0.4);border-radius: 4px;cursor: pointer;">
+      <h5 style="text-align: center;margin-top: 0px;margin-bottom: 0px;color: #ffffff;"><strong>CETAK GAMBAR</strong></h5>
+    </a> -->
+    <page size="A4">
+        <div style="width: 100%;float: left;">
+          <table cellpadding="5" cellspacing="0" border="0" style="border-collapse: collapse;width: 100%;font-size: 12pt">
+            <tbody>
+              <tr>
+                <td style="text-align: center;font-weight: bold;font-size: 16pt">RENCANA ANGGARAN BIAYA (RAB)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="width: 100%;float: left;margin-top: 10mm">
+          <table cellpadding="5" cellspacing="0" border="0" style="border-collapse: collapse;width: 100%;font-size: 12pt">
+            <tbody>
+              <tr>
+                <td style="width: 35mm">Nama Kegiatan</td>
+                <td style="width: 1mm;">:</td>
+                <td><%= data[0].nama_pekerjaan %></td>
+              </tr>
+
+              <tr>
+                <td>Nama Paket</td>
+                <td>:</td>
+                <td><%= data[0].nama_paket %></td>
+              </tr>
+
+              <tr>
+                <td>Lokasi Pekerjaan</td>
+                <td>:</td>
+                <td><%= data[0].lokasi_pekerjaan %></td>
+              </tr>
+
+              <tr>
+                <td>Kabupaten/Kota</td>
+                <td>:</td>
+                <td>Pekalongan</td>
+              </tr>
+
+              <tr>
+                <td>Tahun Anggaran</td>
+                <td>:</td>
+                <td><%= data[0].tahun_anggaran %></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="width: 100%;float: left;margin-top: 10mm">
+          <table cellpadding="5" cellspacing="0" border="1" style="border-collapse: collapse;width: 100%;font-size: 12pt">
+            <thead>
+              <tr>
+                <th style="width: 35mm">No. Mata Pembayaran</th>
+                <th style="width: 100mm" colspan="2">Uraian</th>
+                <th>Satuan</th>
+                <th>Perkiraan Kuantitas</th>
+                <th>Harga Satuan (Rupiah)</th>
+                <th>Jumlah Harga-Harga (Rupiah)</th>
+              </tr>
+
+              <tr>
+                <th>(a)</th>
+                <th colspan="2">(b)</th>
+                <th>(c)</th>
+                <th>(d)</th>
+                <th>(e)</th>
+                <th>f = (d x e)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% 
+              var total_harga = 0 ;
+              var total_tenaga = 0 ;
+              for(var i = 0; i< data[0].divisi.length; i++){%>
+              <tr>
+                <td>&nbsp;</td>
+                <td style="font-weight: bold" colspan="2"><%= data[0].divisi[i].nama_divisi %></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+                    <% 
+                     
+                    for(var a = 0; a< data[0].divisi[i].pekerjaan.length; a++){%>
+                          <tr>
+                            <td style="font-weight: bold;text-align: center;"><%= data[0].divisi[i].pekerjaan[a].mata_pembayaran %></td>
+                            <td style="font-weight: bold" colspan="2"><%= data[0].divisi[i].pekerjaan[a].nama_pekerjaan %></td>
+                            <td style="font-weight: bold;text-align: center;"><%= data[0].divisi[i].pekerjaan[a].satuan %></td>
+                            <td style="font-weight: bold;text-align: right;"><%= numberWithCommas(data[0].divisi[i].pekerjaan[a].volume)%></td>
+                            <td style="font-weight: bold;text-align: right;"><%= numberWithCommas(data[0].divisi[i].pekerjaan[a].harga_satuan.toFixed(0)) %></td>
+                            <td style="font-weight: bold;text-align: right;"><%= numberWithCommas((data[0].divisi[i].pekerjaan[a].harga_satuan * data[0].divisi[i].pekerjaan[a].volume).toFixed(0)) %></td>
+                          </tr>
+                          <% total_harga = total_harga +data[0].divisi[i].pekerjaan[a].total_pekerjaan %>
+                        
+              <tr>
+                <td>&nbsp;</td>
+                <td style="width: 5mm">A</td>
+                <td>Tenaga</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+                      <% for(var b = 0; b< data[0].divisi[i].pekerjaan[a].detail.length; b++){%>
+                          <% if(data[0].divisi[i].pekerjaan[a].detail[b].jenis_uraian == 'tenaga'){%>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td style="width: 5mm">-</td>
+                        <td><%= data[0].divisi[i].pekerjaan[a].detail[b].nama_uraian %></td>
+                        <td style="text-align: center;"><%= data[0].divisi[i].pekerjaan[a].detail[b].konversi %></td>
+                        <td style="text-align: right;"><%= data[0].divisi[i].pekerjaan[a].detail[b].kebutuhan_konversi %></td>
+                        <td style="text-align: right;"><%= numberWithCommas(data[0].divisi[i].pekerjaan[a].detail[b].harga_satuan_konversi.toFixed(0)) %></td>
+                        <td style="text-align: right;"><%= numberWithCommas(data[0].divisi[i].pekerjaan[a].detail[b].harga_total.toFixed(0)) %></td>
+                      </tr>
+                          <% total_tenaga = total_tenaga + data[0].divisi[i].pekerjaan[a].detail[b].harga_total %>
+                          <%}%>
+                      <%}%>
+              <tr>
+                <td>&nbsp;</td>
+                <td style="width: 5mm">B</td>
+                <td>Bahan</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <% for(var b = 0; b< data[0].divisi[i].pekerjaan[a].detail.length; b++){%>
+                <% if(data[0].divisi[i].pekerjaan[a].detail[b].jenis_uraian == 'bahan'){%>
+            <tr>
+              <td>&nbsp;</td>
+              <td style="width: 5mm">-</td>
+              <td><%= data[0].divisi[i].pekerjaan[a].detail[b].nama_uraian %></td>
+              <td style="text-align: center;"><%= data[0].divisi[i].pekerjaan[a].detail[b].konversi %></td>
+              <td style="text-align: right;"><%= data[0].divisi[i].pekerjaan[a].detail[b].kebutuhan_konversi %></td>
+              <td style="text-align: right;"><%= numberWithCommas(parseFloat(data[0].divisi[i].pekerjaan[a].detail[b].harga_satuan_konversi).toFixed(0)) %></td>
+              <td style="text-align: right;"><%= numberWithCommas(parseFloat(data[0].divisi[i].pekerjaan[a].detail[b].harga_total).toFixed(0)) %></td>
+            </tr>
+                <%}%>
+            <%}%>
+                 
+            <tr>
+                <td>&nbsp;</td>
+                <td style="width: 5mm">B</td>
+                <td>Peralatan</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <% for(var b = 0; b< data[0].divisi[i].pekerjaan[a].detail.length; b++){%>
+                <% if(data[0].divisi[i].pekerjaan[a].detail[b].jenis_uraian == 'peralatan'){%>
+            <tr>
+              <td>&nbsp;</td>
+              <td style="width: 5mm">-</td>
+              <td><%= data[0].divisi[i].pekerjaan[a].detail[b].nama_uraian %></td>
+              <td style="text-align: center;"><%= data[0].divisi[i].pekerjaan[a].detail[b].konversi %></td>
+              <td style="text-align: right;"><%= data[0].divisi[i].pekerjaan[a].detail[b].kebutuhan_konversi %></td>
+              <td style="text-align: right;"><%= numberWithCommas(parseFloat(data[0].divisi[i].pekerjaan[a].detail[b].harga_satuan_konversi).toFixed(0)) %></td>
+              <td style="text-align: right;"><%= numberWithCommas(parseFloat(data[0].divisi[i].pekerjaan[a].detail[b].harga_total).toFixed(0)) %></td>
+            </tr>
+                <%}%>
+            <%}%>
+
+
+
+                  <%}%>
+              <%}%>
+              <!-- <tr>
+                <td style="font-weight: bold;text-align: center;">AN. HIT 6.3 (1)</td>
+                <td style="font-weight: bold" colspan="2">Latasir Kelas A (SS-A) Manual</td>
+                <td style="font-weight: bold;text-align: center;">M<sup>2</sup></td>
+                <td style="font-weight: bold;text-align: right;">2,800.00</td>
+                <td style="font-weight: bold;text-align: right;">60,375.44</td>
+                <td style="font-weight: bold;text-align: right;">169,051,241.04</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td style="width: 5mm">A</td>
+                <td>Tenaga</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td style="width: 5mm">-</td>
+                <td>Pekerja Aspal</td>
+                <td style="text-align: center;">HOK</td>
+                <td style="text-align: right;">1.00</td>
+                <td style="text-align: right;">121,583.33</td>
+                <td style="text-align: right;">121,583.333</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td style="width: 5mm">-</td>
+                <td>Mandor</td>
+                <td style="text-align: center;">HOK</td>
+                <td style="text-align: right;">1.00</td>
+                <td style="text-align: right;">121,583.33</td>
+                <td style="text-align: right;">121,583.333</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td style="width: 5mm">B</td>
+                <td>Bahan</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td style="width: 5mm">-</td>
+                <td>Aspal</td>
+                <td style="text-align: center;">HOK</td>
+                <td style="text-align: right;">1.00</td>
+                <td style="text-align: right;">121,583.33</td>
+                <td style="text-align: right;">121,583.333</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td style="width: 5mm">-</td>
+                <td>Kerosene</td>
+                <td style="text-align: center;">HOK</td>
+                <td style="text-align: right;">1.00</td>
+                <td style="text-align: right;">121,583.33</td>
+                <td style="text-align: right;">121,583.333</td>
+              </tr> -->
+
+
+              <!-- <tr>
+                <td>&nbsp;</td>
+                <td style="font-weight: bold" colspan="3">Jumlah Harga Pekerjaan DIVISI 6</td>
+                <td colspan="3" style="font-weight: bold;text-align: right;"><%= total_harga%></td>
+              </tr> -->
+
+              <tr>
+                <td>&nbsp;</td>
+                <td style="font-weight: bold" colspan="3">Jumlah Harga Pekerjaan Total</td>
+                <td colspan="3" style="font-weight: bold;text-align: right;"><%= numberWithCommas(total_harga.toFixed(0))%></td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td style="font-weight: bold" colspan="3">PPn x 10% (tidak termasuk tenaga kerja)</td>
+                <td colspan="3" style="font-weight: bold;text-align: right;"><%= numberWithCommas(((total_harga - total_tenaga) * 0.1).toFixed(0)) %></td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td style="font-weight: bold" colspan="3">Jumlah Total</td>
+                <td colspan="3" style="font-weight: bold;text-align: right;"><%= numberWithCommas((total_harga + ((total_harga - total_tenaga) * 0.1)).toFixed(0))%></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="width: 100%;float: left;margin-top: 10mm">
+          <table cellpadding="5" cellspacing="0" border="0" style="border-collapse: collapse;width: 100%;font-size: 12pt">
+            <tbody>
+              <tr>
+                <td colspan="3">
+                  <h4 style="text-align: right;">..............., ....................</h4>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 40%">
+                  <h4 style="text-align: center;">Diperiksa,</h4>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <h4 style="text-align: center;"><%= data[0].nama_verifikator%></h4>
+                  <h4 style="text-align: center;">Verifikator</h4>
+                </td>
+
+
+                <td style="width: 20%">&nbsp;</td>
+                <td style="width: 40%">
+                  <h4 style="text-align: center;">Dibuat oleh,</h4>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <h4 style="text-align: center;"><%= data[0].nama%></h4>
+                  <h4 style="text-align: center;">Ketua Tim Pelaksana Kegiatan</h4>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="width: 100%;float: left;">
+          <center>
+          <table cellpadding="5" cellspacing="0" border="0" style="border-collapse: collapse;width: 100%;font-size: 12pt">
+            <tbody>
+              <tr>
+                <td style="width: 40%">
+                  <h4 style="text-align: center;">Disetujui,</h4>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <h4 style="text-align: center;"><%= data[0].nama_kepdes%></h4>
+                  <h4 style="text-align: center;">Kepala Desa</h4>
+                </td>
+
+
+                <td style="width: 20%">&nbsp;</td>
+                <td style="width: 40%">
+                  <h4 style="text-align: center;">Mengetahui,</h4>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <h4 style="text-align: center;"><%= data[0].nama_camat%></h4>
+                  <h4 style="text-align: center;">Camat</h4>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          </center>
+        </div>
+    </page>
+
+    <script type="text/javascript">
+    $('#btn-print').click(function(){
+         window.print();
+    });
+
+    </script>
+</body>
+</html>
