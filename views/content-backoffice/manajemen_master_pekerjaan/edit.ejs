@@ -21,19 +21,7 @@
             <input type="hidden" class="form-control" name="id" id="" value="<%= data[0].id%>">
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="form-group">
-                  <label>Divisi</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <select class="form-control" name="id_divisi" id="id_divisi" data-search="true">
-                        <% for(var i=0; i<data_divisi.length; i++){ %> 
-                          
-                          <option value="<%= data_divisi[i]['id']%>" <%if(data_divisi[i].id==data[0].id_divisi){%>selected<%}%>><%= data_divisi[i]['nama_divisi']%></option>
-                          <% }%>
-                      </select>
-                    </div>
-                  </div>
-                </div>
+               
 
                 <div class="form-group">
                   <label>Pekerjaan</label>

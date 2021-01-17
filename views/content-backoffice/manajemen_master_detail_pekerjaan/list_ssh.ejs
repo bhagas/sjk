@@ -1,0 +1,183 @@
+<% include ../../template-backoffice/header.ejs %>
+
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content">
+  <div class="header">
+    <h2><strong>Data SSH</strong></h2>
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb">
+        <li><a href="/backoffice">Dashboard</a>
+        </li>
+        <li class="active">Data</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="panel">
+        <div class="panel-header header-line">
+           <a class="btn btn-primary btn-embossed" href="/manajemen_master/detail_pekerjaan/import" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Import Data</a>
+           <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+            <option value="-"   >-- PILIH --</option>
+            <option value="0"   >PROVINSI</option>
+            <% for(var i=0; i<kabupaten.length; i++){ %> 
+            
+            <option value="<%= kabupaten[i]['id_kab']%>"   ><%= kabupaten[i]['kab']%> </option>
+            <% }%>
+        </select>
+          </div>
+        <div class="panel-content pagination2">
+          <table class="table table-bordered table-striped table-hover" id="data">
+            <thead>
+              <tr>
+                <th class="header">No.</th>
+                <th class="header">Nama</th>
+                <th class="header">Satuan</th>
+                <th class="header">Harga</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+             
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="footer">
+    <div class="copyright">
+      <p class="pull-left sm-pull-reset">
+        <span>Copyright <span class="copyright">©</span> 2019</span>
+        <span>Pemerintah</span>.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include ../../template-backoffice/footer.ejs %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    var t  =  $('#data').DataTable({
+      "language": {
+        "sProcessing":   '<span>Sedang memproses...</span><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>',
+          "sLengthMenu":   "_MENU_",
+          "sZeroRecords":  "Tidak ditemukan data yang sesuai",
+          "sInfo":         "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
+          "sInfoEmpty":    "Menampilkan 0 sampai 0 dari 0 entri",
+          "sInfoFiltered": "(disaring dari _MAX_ entri keseluruhan)",
+          "sInfoPostFix":  "",
+          "sUrl":          "",
+          "oPaginate": {
+            "sFirst":    "Pertama",
+            "sPrevious": "Sebelumnya",
+            "sNext":     "Selanjutnya",
+            "sLast":     "Terakhir"
+          }
+      },
+  
+      "processing": true,
+           "ajax": "/manajemen_master/pekerjaan/list_json/"+$('#id_kab').val(),
+           "columns": [
+               { "data": null},
+               { "data": "nama"},
+               { "data": "satuan"},
+               { "data": "harga"},
+              
+              //  { "data": "kegiatanPrioritas" },
+              //  { "data": "jeni", render: function(datane){
+              //    if(datane){
+              //      return datane.jenis
+              //    }else{
+              //     return ''
+              //    }
+               
+              //  } },
+              //  { "data": "lokasi" },
+              //  { "data": "kec" },
+              //  { "data": "kel" },
+              //  { "data": "SHAPE", render: function(datane){
+              //   if(datane){
+              //      return '<a href="https://www.google.com/maps/dir/Current+Location/'+datane.coordinates[1]+','+datane.coordinates[0]+'">'+datane.coordinates[0].toFixed(4)+'<br/>'+datane.coordinates[1].toFixed(4)+'</a>'
+              //    }else{
+              //     return ''
+              //    }
+              //  }},
+              //  { "data": "volume" },
+              //  { "data": "jenisAnggaran" },
+              //  { "data": "jumlahAnggaran", render: function(datane){
+              //      return '<span class="pull-right">'+numberWithCommas(datane)+'</span>';
+              //  }},
+              //  { "data": "pelaksana" },
+              //  { "data": "kesesuaian", render: function(datane){
+              //    if(datane){
+              //      return 'Ya'
+              //    }else{
+              //     return 'Tidak'
+              //    }
+             
+              //  } },
+              //  { "data": "keterangan" },
+            
+
+              //  { "data": "SHAPE", render: function(datane){
+              //    if(datane){
+              //      return 'Terverifikasi'
+              //    }else{
+              //     return 'Belum Terverifikasi'
+              //    }
+             
+              //  } },
+              // //  { "data": "lunas" , render: function(datane){
+              // //     if(datane= "1"){
+              // //       return "LUNAS"
+              // //     }else{
+              // //       return "BELUM LUNAS"
+              // //     }
+              // //  }},
+           
+              //  { "data": "id", render: function(id){
+              //     return ` <center>
+              //    <ul class="list-inline">
+              //      <li><a class="btn btn-warning btn-embossed btn-sm" href="/kegiatan/edit/${id}" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+              //      <li class="separator">|</li>
+              //     <li><a class="btn btn-danger btn-embossed btn-sm" href="/kegiatan/delete/${id}" role="button" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+              //     <li class="separator">|</li>
+              //      <li><a class="btn btn-info btn-embossed btn-sm" href="/kegiatan/cetak/${id}" role="button" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a></li>
+              //   </ul>
+              //   </center>`
+              //  }}
+         ],
+         "deferRender": true,
+         // "ordering": false,
+        //  "columnDefs": [
+        //      { "width": "3%" },
+        //      { "width": "20%" },
+        //      { "width": "24%" },
+        //      { "width": "10%" },
+        //      { "width": "20%" },
+        //      { "width": "20%" },
+    
+        //      { "width": "20%" }
+        //   ],
+         "fnRowCallback": function( row, data, iDisplayIndex ) {
+                   var index = iDisplayIndex +1;
+                   $('td:eq(0)',row).html(index);
+                   return row;
+         },
+    //   "columnDefs": [
+    //       { "width": "100px", "targets": 14}
+    //   ],
+    });
+
+    $('#id_kab').change(function(){
+   
+    t.ajax.url( `/manajemen_master/pekerjaan/list_json/${$('#id_kab').val()}` ).load();
+  })
+  });
+
+  
+</script>

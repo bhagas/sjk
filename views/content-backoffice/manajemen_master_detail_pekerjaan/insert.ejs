@@ -16,112 +16,34 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-content">
-          <form role="form" action="/manajemen_master/detail_pekerjaan/submit_insert" method="POST">
+          <form role="form" action="/manajemen_master/detail_pekerjaan/submit_insert" method="POST" enctype="multipart/form-data">
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="form-group">
-                  <label>Divisi</label>
+                  <label>Kabupaten</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <select class="form-control" name="id_divisi" id="id_divisi" data-search="true">
-                        <option>-- Pilih --</option>
-                        <% for(var i=0; i<data_divisi.length; i++){ %> 
+                      <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+                        <option value="0">PROVINSI</option>
+                        <% for(var i=0; i<kabupaten.length; i++){ %> 
                           
-                          <option value="<%= data_divisi[i]['id']%>"><%= data_divisi[i]['nama_divisi']%></option>
+                          <option value="<%= kabupaten[i]['id_kab']%>"><%= kabupaten[i]['kab']%></option>
                           <% }%>
                       </select>
                     </div>
                   </div>
                 </div>
 
-                <div class="form-group">
-                  <label>Pekerjaan</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <select class="form-control" name="id_pekerjaan" id="id_pekerjaan" data-search="true">
-                        <option>-- Pilih --</option>
-                        <% for(var i=0; i<data.length; i++){ %> 
-                          
-                          <option value="<%= data[i]['id']%>"><%= data[i]['nama_pekerjaan']%></option>
-                          <% }%>
-                      </select>
-                    </div>
-                  </div>
-                </div>  
+              
+
+               
+              
 
                 <div class="form-group">
-                  <label>Jenis Uraian</label>
+                  <label>FILE EXCEL</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <select class="form-control" name="jenis_uraian" id="">
-                        <option value="">-- Pilih --</option>
-                        <option value="tenaga">Tenaga</option>
-                        <option value="bahan">Bahan</option>
-                        <option value="ceralatan">Peralatan</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Nama Uraian</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="nama_uraian" id="">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Koefisien</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="koefisien" id="">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Satuan</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="satuan" id="">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Daerah Bawah</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="daerah_bawah" id="">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Daerah Atas</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="daerah_atas" id="">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Daerah Ekstrem</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="daerah_ekstrem" id="">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Daerah Super Ekstrem</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="daerah_super_ekstrem" id="">
+                      <input type="file" class="form-control" name="file_ssh" id="">
                     </div>
                   </div>
                 </div>
@@ -137,7 +59,7 @@
   <div class="footer">
     <div class="copyright">
       <p class="pull-left sm-pull-reset">
-        <span>Copyright <span class="copyright">©</span> 2018 </span>
+        <span>Copyright <span class="copyright">©</span> 2021 </span>
         <span>Pemerintah</span>.
       </p>
     </div>

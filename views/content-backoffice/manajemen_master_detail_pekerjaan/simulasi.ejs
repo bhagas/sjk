@@ -1,0 +1,246 @@
+<% include ../../template-backoffice/header.ejs %>
+
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content">
+  <div class="header">
+    <h2><strong>SIMULASI</strong></h2>
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb">
+        <li><a href="/backoffice">Dashboard</a>
+        </li>
+        <li class="active">Data</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="panel">
+        <div class="panel-header header-line">
+           <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+            <option value="-"   >-- PILIH --</option>
+            <option value="0"   >PROVINSI</option>
+            <% for(var i=0; i<kabupaten.length; i++){ %> 
+            
+            <option value="<%= kabupaten[i]['id_kab']%>"   ><%= kabupaten[i]['kab']%> </option>
+            <% }%>
+        </select>
+
+
+        <select class="form-control" name="id_pekerjaan" id="id_pekerjaan" data-search="true">
+          <option value="-"   >-- PILIH --</option>
+          <% for(var i=0; i<pekerjaan.length; i++){ %> 
+          
+          <option value="<%= pekerjaan[i]['id']%>"  satuan="<%= pekerjaan[i]['satuan']%>"  ><%= pekerjaan[i]['nama_pekerjaan']%> </option>
+          <% }%>
+      </select>
+      <input type="number" id="jumlah"/><span id="satuan"></span>
+      <a href="#" id="simulasi">SIMULASI!</a>
+          </div>
+        <div class="panel-content pagination2">
+          <table border="1" cellpadding="5" cellspacing="5" style="border-collapse: collapse;width: 100%;">
+            <thead>
+                <tr>
+                    <th style="text-align: center;">No.</th>
+                    <th style="text-align: center;">Uraian</th>
+                    <th style="text-align: center;">Kode</th>
+                    <th style="text-align: center;">Satuan</th>
+                    <th style="text-align: center;">Koefisien</th>
+                    <th style="text-align: center;">Harga Satuan (Rp)</th>
+                    <th style="text-align: center;">Jumlah Harga (Rp)</th>
+                </tr>
+
+                <tr>
+                    <th style="text-align: center;">1</th>
+                    <th style="text-align: center;">2</th>
+                    <th style="text-align: center;">3</th>
+                    <th style="text-align: center;">4</th>
+                    <th style="text-align: center;">5</th>
+                    <th style="text-align: center;">6</th>
+                    <th style="text-align: center;">7</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr id="tenaga">
+                    <td style="text-align: center;">A</td>
+                    <td style="text-align: left;">Tenaga Kerja</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                </tr>
+
+               
+
+                <tr>
+                    <td colspan="6" style="text-align: right;">Jumlah Harga Tenaga Kerja</td>
+                    <td id="total_tenaga">-</td>
+                </tr>
+
+
+                <tr id="bahan">
+                    <td style="text-align: center;">B</td>
+                    <td style="text-align: left;">Bahan</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                </tr>
+
+             
+
+                <tr>
+                    <td colspan="6" style="text-align: right;">Jumlah Harga Bahan</td>
+                    <td id="total_bahan">-</td>
+                </tr>
+
+                <tr id="peralatan">
+                    <td style="text-align: center;">C</td>
+                    <td style="text-align: left;">Peralatan</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                </tr>
+
+              
+
+                <tr>
+                    <td colspan="6" style="text-align: right;">Jumlah Harga Peralatan</td>
+                    <td id="total_peralatan">-</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;">D</td>
+                    <td style="text-align: left;" colspan="3">Jumlah Harga Tenaga, Bahan dan Peralatan (A+B+C)</td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                    <td id="total_keseluruhan">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;">E</td>
+                    <td style="text-align: left;" colspan="3">Overhead + profit (Contoh 15%)</td>
+                    <td colspan="2" style="text-align: center;">15 % x D</td>
+                    <td id="total_profit">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;">F</td>
+                    <td style="text-align: left;" colspan="3"><strong>Harga Satuan Pekerjaan per - m<sup>3</sup> (D+E)</strong></td>
+                    <td >&nbsp;</td>
+                    <td >&nbsp;</td>
+                    <td id="total">&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="footer">
+    <div class="copyright">
+      <p class="pull-left sm-pull-reset">
+        <span>Copyright <span class="copyright">©</span> 2019</span>
+        <span>Pemerintah</span>.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include ../../template-backoffice/footer.ejs %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+
+    $('#id_pekerjaan').change(function(){
+      // console.log($('#id_pekerjaan option:selected').attr('satuan'))
+      $('#satuan').html($('option:selected', this).attr('satuan'))
+    })
+
+    $('#simulasi').click(function(){
+      if(!$('#id_pekerjaan').val() && !$('#id_kab').val() && !$('#jumlah').val()){
+        alert('Kabupaten, jenis pekerjaan dan jumlah tidak boleh kosong!')
+      }else{
+        $.getJSON(`/manajemen_master/pekerjaan/detail_json/${$('#id_pekerjaan').val()}/${$('#id_kab').val()}`, function(data){
+        console.log(data)
+        let bahan = []
+        let tenaga = []
+        let peralatan = []
+        let jumlah = $('#jumlah').val()
+        data.forEach(e => {
+            if(e.jenis_uraian == 'bahan'){
+              bahan.push(e);
+            }else if(e.jenis_uraian == 'tenaga'){
+              tenaga.push(e);
+            }else if(e.jenis_uraian == 'peralatan'){
+              peralatan.push(e);
+            }
+        });
+let total_bahan =0;
+        bahan.forEach(e => {
+          $( "#bahan" ).after(` <tr id='${e.id}'>
+              <td style="text-align: center;"></td>
+              <td style="text-align: left;">${e.nama} </td>
+              <td style="text-align: center;">${e.kode}</td>
+              <td style="text-align: center;">${e.satuan}</td>
+              <td style="text-align: center;">${e.koefisien}</td>
+              <td style="text-align: center;">${e.harga}</td>
+              <td style="text-align: center;">${e.koefisien * e.harga * jumlah}</td>
+           
+          </tr>`);
+          total_bahan += (e.koefisien * e.harga * jumlah)
+        });
+
+        let total_tenaga = 0
+        tenaga.forEach(e => {
+          $( "#tenaga" ).after(` <tr id='${e.id}'>
+              <td style="text-align: center;"></td>
+              <td style="text-align: left;">${e.nama} </td>
+              <td style="text-align: center;">${e.kode}</td>
+              <td style="text-align: center;">${e.satuan}</td>
+              <td style="text-align: center;">${e.koefisien}</td>
+              <td style="text-align: center;">${e.harga}</td>
+              <td style="text-align: center;">${e.koefisien * e.harga * jumlah}</td>
+           
+          </tr>`);
+          total_tenaga += (e.koefisien * e.harga * jumlah)
+        });
+
+        let total_peralatan = 0;
+        peralatan.forEach(e => {
+          $( "#peralatan" ).after(` <tr id='${e.id}'>
+              <td style="text-align: center;"></td>
+              <td style="text-align: left;">${e.nama} </td>
+              <td style="text-align: center;">${e.kode}</td>
+              <td style="text-align: center;">${e.satuan}</td>
+              <td style="text-align: center;">${e.koefisien}</td>
+              <td style="text-align: center;">${e.harga}</td>
+              <td style="text-align: center;">${e.koefisien * e.harga * jumlah}</td>
+           
+          </tr>`);
+          total_peralatan += (e.koefisien * e.harga * jumlah)
+        });
+
+        $('#total_bahan').html(total_bahan)
+        $('#total_tenaga').html(total_tenaga)
+        $('#total_peralatan').html(total_peralatan)
+        let total_keseluruhan = total_bahan+ total_peralatan + total_tenaga;
+        $('#total_keseluruhan').html(total_keseluruhan)
+        let total_profit = (total_keseluruhan * 15)/100;
+        $('#total_profit').html(total_profit)
+        let total = total_keseluruhan + total_profit;
+        $('#total').html(total)
+        })
+      }
+    
+    })
+  });
+
+  
+</script>

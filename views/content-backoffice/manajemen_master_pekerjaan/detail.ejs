@@ -1,0 +1,250 @@
+<% include ../../template-backoffice/header.ejs %>
+
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content">
+  <div class="header">
+    <h2><strong>Edit Data Master Pekerjaan</strong></h2>
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb">
+        <li><a href="/backoffice">Dashboard</a></li>
+        <li><a href="/manajemen_master/pekerjaan">Data Master Pekerjaan</a></li>
+        <li class="active">Edit Data</li>
+      </ol>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="panel">
+        <div class="panel-content">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+               
+
+                <div class="form-group">
+                  <label>Bahan</label>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <select class="form-control" name="id_standar_harga" id="id_standar_harga" data-search="true">
+                          <% for(var i=0; i<data_bahan.length; i++){ %> 
+                          
+                          <option value="<%= data_bahan[i]['id']%>" nama="<%= data_bahan[i]['nama']%>" kode="<%= data_bahan[i]['kode']%>" satuan="<%= data_bahan[i]['satuan']%>" ><%= data_bahan[i]['nama']%> (<%= data_bahan[i]['satuan']%>)</option>
+                          <% }%>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-group">
+                  <label>Jenis Uraian</label>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <select class="form-control" name="jenis_uraian" id="jenis_uraian">
+                        <option value="">-- Pilih --</option>
+                        <option value="tenaga">Tenaga</option>
+                        <option value="bahan">Bahan</option>
+                        <option value="peralatan">Peralatan</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+               
+
+                <div class="form-group">
+                  <label>Koefisien</label>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <input type="text" class="form-control" name="koefisien" id="koefisien">
+                    </div>
+                  </div>
+                </div>
+
+               
+
+                <button type="submit" class="btn btn-primary btn-embossed" id="tombok">Simpan</button>
+              </div>
+            </div>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-content pagination2">
+    <table border="1" cellpadding="5" cellspacing="5" style="border-collapse: collapse;width: 100%;" id="tabelnya">
+      <thead>
+          <tr>
+              <th style="text-align: center;">No.</th>
+              <th style="text-align: center;">Uraian</th>
+              <th style="text-align: center;">Kode</th>
+              <th style="text-align: center;">Satuan</th>
+              <th style="text-align: center;">Koefisien</th>
+          </tr>
+
+          <tr>
+              <th style="text-align: center;">1</th>
+              <th style="text-align: center;">2</th>
+              <th style="text-align: center;">3</th>
+              <th style="text-align: center;">4</th>
+              <th style="text-align: center;">5</th>
+            
+          </tr>
+      </thead>
+
+      <tbody>
+          <tr id="tenaga">
+              <td style="text-align: center;">A</td>
+              <td style="text-align: left;">Tenaga Kerja</td>
+              <td >&nbsp;</td>
+              <td >&nbsp;</td>
+              <td >&nbsp;</td>
+            
+          </tr>
+        
+         <%for(let i =0; i < data_detail_pekerjaan.length; i++){
+          if(data_detail_pekerjaan[i].jenis_uraian == 'tenaga') {
+          %>
+          <tr id="<%= data_detail_pekerjaan[i].id%>">
+            <td style="text-align: center;"></td>
+            <td style="text-align: left;"><%= data_detail_pekerjaan[i].nama%> <a href="#" class='hapus'>[HAPUS]</a></td>
+            <td style="text-align: center;"><%= data_detail_pekerjaan[i].kode%></td>
+            <td style="text-align: center;"><%= data_detail_pekerjaan[i].satuan%></td>
+            <td style="text-align: center;"><%= data_detail_pekerjaan[i].koefisien%></td>
+         
+        </tr>
+         
+
+          <%}}%>
+          <tr id="bahan">
+              <td style="text-align: center;">B</td>
+              <td style="text-align: left;">Bahan</td>
+              <td >&nbsp;</td>
+              <td >&nbsp;</td>
+              <td >&nbsp;</td>
+           
+          </tr>
+
+       
+          <%for(let i =0; i < data_detail_pekerjaan.length; i++){
+            if(data_detail_pekerjaan[i].jenis_uraian == 'bahan') {
+            %>
+            <tr id="<%= data_detail_pekerjaan[i].id%>">
+              <td style="text-align: center;"></td>
+              <td style="text-align: left;"><%= data_detail_pekerjaan[i].nama%> <a href="#" class='hapus'>[HAPUS]</a></td>
+              <td style="text-align: center;"><%= data_detail_pekerjaan[i].kode%></td>
+              <td style="text-align: center;"><%= data_detail_pekerjaan[i].satuan%></td>
+              <td style="text-align: center;"><%= data_detail_pekerjaan[i].koefisien%></td>
+           
+          </tr>
+           
+  
+            <%}}%>
+
+          <tr id="peralatan">
+              <td style="text-align: center;">C</td>
+              <td style="text-align: left;">Peralatan</td>
+              <td >&nbsp;</td>
+              <td >&nbsp;</td>
+              <td >&nbsp;</td>
+          
+          </tr>
+
+        
+          <%for(let i =0; i < data_detail_pekerjaan.length; i++){
+            if(data_detail_pekerjaan[i].jenis_uraian == 'peralatan') {
+            %>
+            <tr id="<%= data_detail_pekerjaan[i].id%>">
+              <td style="text-align: center;"></td>
+              <td style="text-align: left;"><%= data_detail_pekerjaan[i].nama%> <a href="#" class='hapus'>[HAPUS]</a></td>
+              <td style="text-align: center;"><%= data_detail_pekerjaan[i].kode%></td>
+              <td style="text-align: center;"><%= data_detail_pekerjaan[i].satuan%></td>
+              <td style="text-align: center;"><%= data_detail_pekerjaan[i].koefisien%></td>
+           
+          </tr>
+           
+  
+            <%}}%>
+        
+
+        
+
+        
+      </tbody>
+  </table>
+
+
+
+    
+  </div>
+  <div class="footer">
+    <div class="copyright">
+      <p class="pull-left sm-pull-reset">
+        <span>Copyright <span class="copyright">©</span> 2021</span>
+        <span>Pemerintah</span>.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include ../../template-backoffice/footer.ejs %>
+<script type="text/javascript">
+let bahan =``;
+let tenaga_kerja=``;
+let peralattan =``;
+$('#tombok').click(function(){
+let x = {}
+x.nama = $("#id_standar_harga option:selected").attr("nama");
+x.kode = $("#id_standar_harga option:selected").attr("kode");
+x.satuan = $("#id_standar_harga option:selected").attr("satuan");
+x.koefisien = $('#koefisien').val();
+x.id_standar_harga = $('#id_standar_harga').val();
+x.id_pekerjaan = '<%= data[0].id%>'
+x.jenis_uraian = $('#jenis_uraian').val()
+
+  $.post("/manajemen_master/pekerjaan/detail/tambah", x,function(data, status){
+    console.log(data)
+    if($('#jenis_uraian').val()=='bahan'){
+    $( "#bahan" ).after(` <tr id='${data.id[0]}'>
+              <td style="text-align: center;"></td>
+              <td style="text-align: left;">${x.nama} <a href="#" class='hapus'>[HAPUS]</a></td>
+              <td style="text-align: center;">${x.kode}</td>
+              <td style="text-align: center;">${x.satuan}</td>
+              <td style="text-align: center;">${x.koefisien}</td>
+           
+          </tr>`);
+  } else if($('#jenis_uraian').val()=='tenaga'){
+    $( "#tenaga" ).after(` <tr id='${data.id[0]}'>
+              <td style="text-align: center;"></td>
+              <td style="text-align: left;">${x.nama} <a href="#" class='hapus'>[HAPUS]</a></td>
+              <td style="text-align: center;">${x.kode}</td>
+              <td style="text-align: center;">${x.satuan}</td>
+              <td style="text-align: center;">${x.koefisien}</td>
+           
+          </tr>`);
+  }else if($('#jenis_uraian').val()=='peralatan'){
+    $( "#peralatan" ).after(` <tr id='${data.id[0]}'>
+              <td style="text-align: center;"></td>
+              <td style="text-align: left;">${x.nama} <a href="#" class='hapus'>[HAPUS]</a></td>
+              <td style="text-align: center;">${x.kode}</td>
+              <td style="text-align: center;">${x.satuan}</td>
+              <td style="text-align: center;">${x.koefisien}</td>
+           
+          </tr>`);
+  }
+  });
+
+  
+})
+
+$('#tabelnya').on('click', '.hapus', function () {
+  let id =$(this).closest("tr").attr("id")
+  console.log($(this).closest("tr").attr("id"));
+$.getJSON('/manajemen_master/pekerjaan/detail/hapus/'+id, function(data){
+  $('table#tabelnya tr#'+id).remove();
+})
+
+})
+
+</script>

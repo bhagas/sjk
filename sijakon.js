@@ -21,8 +21,9 @@ var fn = require('./isine/ckeditor-upload-image');
 var cek_login = require('./isine/login').cek_login;
 var basic = require('./isine/basic');
 var manajemen_master = require('./isine/manajemen_master');
+var manajemen_master_ssh = require('./isine/manajemen_master_ssh');
 var sql_enak = require('./database/mysql_enak.js').connection;
-
+const uploadd = require('express-fileupload')
 var app = express();
 var connection = require('./database').connection;
 //var mysql2geojson = require("mysql2geojson");
@@ -57,6 +58,7 @@ app.use(function (req, res, next) {
     // Pass to next layer of middleware
     next();
 });
+app.use(uploadd())
 app.use(logger('dev'));
 app.use(methodOverride());
 app.use(static(path.join(__dirname, 'public')));
@@ -86,6 +88,9 @@ if ('development' == app.get('env')) {
 var io = require('socket.io').listen(server, { log: false });
 
 //mulai apps ----------------------------------------------------------
+
+
+
 app.use('/autentifikasi', login);
 app.use('/peta', peta);
 app.use('/upload', upload);
@@ -95,6 +100,7 @@ app.use('/uploadckeditor', fn);
 
 app.use('/basic', basic);
 app.use('/manajemen_master', manajemen_master);
+app.use('/manajemen_master_ssh', manajemen_master_ssh);
 
 
 app.get('/',cek_login, function (req, res) {
@@ -109,9 +115,20 @@ app.get('/backoffice', cek_login, function (req, res) {
   console.log(req.user)
   res.render('content-backoffice/index');
 });
-app.get('/list_rab', cek_login, function (req, res) {
-  connection.query("select * from input_rab where deleted=0", function(err, rows, fields) {
-    res.render('content-backoffice/manajemen_master_detail_pekerjaan/list_rab', {data: rows});
+app.get('/list_ssh', cek_login, function (req, res) {
+  connection.query("select * from kabupaten", function(err, kabupaten, fields) {
+    res.render('content-backoffice/manajemen_master_detail_pekerjaan/list_ssh', {kabupaten});
+    
+  })
+
+});
+
+app.get('/simulasi', cek_login, function (req, res) {
+  connection.query("select * from kabupaten", function(err, kabupaten, fields) {
+    connection.query("select * from master_pekerjaan", function(err, pekerjaan, fields) {
+      res.render('content-backoffice/manajemen_master_detail_pekerjaan/simulasi', {kabupaten, pekerjaan});
+      
+    })
     
   })
 
