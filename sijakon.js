@@ -85,8 +85,51 @@ if ('development' == app.get('env')) {
  var server = http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));  
 });
-var io = require('socket.io').listen(server, { log: false });
+// var io = require('socket.io').listen(server, { log: false });
+// testing wa
+// const { Client } = require('whatsapp-web.js');
+// const qrcode = require('qrcode-terminal');
+// const fs = require('fs');
+// const SESSION_FILE_PATH = './session.json';
 
+// // Load the session data if it has been previously saved
+// let sessionData;
+// if(fs.existsSync(SESSION_FILE_PATH)) {
+//     sessionData = require(SESSION_FILE_PATH);
+// }
+// const client = new Client({
+//   session: sessionData
+// });
+
+// client.on('qr', (qr) => {
+//     // Generate and scan this code with your phone
+//     qrcode.generate(qr, {small: true});
+//     console.log('QR RECEIVED', qr);
+// });
+// // Save session values to the file upon successful auth
+// client.on('authenticated', (session) => {
+//   sessionData = session;
+//   fs.writeFile(SESSION_FILE_PATH, JSON.stringify(session), function (err) {
+//       if (err) {
+//           console.error(err);
+//       }
+//   });
+// });
+
+// client.on('ready', () => {
+//     console.log('Client is ready!');
+//     client.sendMessage("6281215540280@c.us",'test dari server')
+// });
+
+// client.on('message', msg => {
+//     if (msg.body == '!ping') {
+//         msg.reply('pong');
+//     }
+// });
+
+
+
+// client.initialize();
 //mulai apps ----------------------------------------------------------
 
 
@@ -604,3 +647,4 @@ app.use(function (req, res, next) {
 
 
 // });
+
