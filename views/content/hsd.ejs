@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
+    <title></title>
+
+    <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/template/css/style.css" rel="stylesheet">
+    <link href="/stylesheets/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Plugin This Page --> 
+    <link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+    <!-- End Plugins This Page -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    
+    </style>
+</head>
+
+<body>
+    
+    <% include ../template/header.ejs %>
+
+
+    <section style="padding: 90px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h2 class="m-t-0 m-b-0 text-center"><strong>HARGA SATUAN DASAR (HSD)</strong></h2>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-12 col-lg-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+                                    <option value="-"   >-- PILIH --</option>
+                                    <% for(var i=0; i<kabupaten.length; i++){ %> 
+                                    
+                                    <option value="<%= kabupaten[i]['id_kab']%>"   ><%= kabupaten[i]['kab']%> </option>
+                                    <% }%>
+                                </select>
+                                <!-- <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size: 24px;">
+                                KABUPATEN CILACAP
+                                </button> -->
+                            </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12">
+                                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link active" id="bahan-tab" data-toggle="tab" href="#bahan" role="tab" aria-controls="bahan" aria-selected="true" style="font-weight: bold;">BAHAN</a>
+                                            </li>
+                    
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link" id="upah-tab" data-toggle="tab" href="#upah" role="tab" aria-controls="upah" aria-selected="false" style="font-weight: bold;">UPAH</a>
+                                            </li>
+                    
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link" id="alat-tab" data-toggle="tab" href="#alat" role="tab" aria-controls="alat" aria-selected="false" style="font-weight: bold;">ALAT</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="bahan" role="tabpanel" aria-labelledby="bahan-tab">
+                                                <div class="row" style="margin-top: 15px;">
+                                                    <div class="col-md-12 col-lg-12">
+                                                        <table class="table table-bordered data_bahan">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="width: 30px;">No.</th>
+                                                                    <th>Jenis</th>
+                                                                    <th>Bahan</th>
+                                                                    <th>Satuan</th>
+                                                                    <th>Harga (Rp)</th>
+                                                                </tr>
+                                                            </thead>
+        
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td colspan="4" style="background-color: #e0e0e0;"><strong>BATU KALI</strong></td>
+                                                                    <td style="display: none;">&nbsp;</td>
+                                                                    <td style="display: none;">&nbsp;</td>
+                                                                    <td style="display: none;">&nbsp;</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>1.</td>
+                                                                    <td>Bulat Utuh</td>
+                                                                    <td>m3</td>
+                                                                    <td>180.000</td>
+                                                                </tr>
+                                    
+                                                                <tr>
+                                                                    <td>2.</td>
+                                                                    <td>Bulat Belah</td>
+                                                                    <td>m3</td>
+                                                                    <td>190.000</td>
+                                                                </tr>
+                                    
+                                                                <tr>
+                                                                    <td>3.</td>
+                                                                    <td>Pecah (10/15)</td>
+                                                                    <td>m3</td>
+                                                                    <td>210.000</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td colspan="4" style="background-color: #e0e0e0;"><strong>KERIKIL</strong></td>
+                                                                    <td style="display: none;">&nbsp;</td>
+                                                                    <td style="display: none;">&nbsp;</td>
+                                                                    <td style="display: none;">&nbsp;</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>1.</td>
+                                                                    <td>Timbun</td>
+                                                                    <td>Hari</td>
+                                                                    <td>180.000</td>
+                                                                </tr>
+                                    
+                                                                <tr>
+                                                                    <td>2.</td>
+                                                                    <td>Sawur / Koral</td>
+                                                                    <td>Hari</td>
+                                                                    <td>190.000</td>
+                                                                </tr>
+                                    
+                                                                <tr>
+                                                                    <td>3.</td>
+                                                                    <td>Beton</td>
+                                                                    <td>Hari</td>
+                                                                    <td>210.000</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="tab-pane fade" id="upah" role="tabpanel" aria-labelledby="upah-tab">
+                                                <div class="row" style="margin-top: 15px;">
+                                                    <div class="col-md-12 col-lg-12">
+                                                        <table class="table table-bordered data_upah" style="width: 100%;">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="width: 30px;">No.</th>
+                                                                    <th>Nama</th>
+                                                                    <th>Satuan</th>
+                                                                    <th>Harga (Rp)</th>
+                                                                </tr>
+                                                            </thead>
+        
+                                                            <tbody>
+                                                                
+                                                             
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="alat" role="tabpanel" aria-labelledby="alat-tab">
+                                                <div class="row" style="margin-top: 15px;">
+                                                    <div class="col-md-12 col-lg-12">
+                                                        <table class="table table-bordered data_alat">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="width: 30px;">No.</th>
+                                                                    <th>Alat</th>
+                                                                    <th>Satuan</th>
+                                                                    <th>Harga (Rp)</th>
+                                                                </tr>
+                                                            </thead>
+        
+                                                            <tbody>
+                                                              
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <% include ../template/footer.ejs %>
+
+
+    <script src="/javascripts/template/jquery.min.js"></script>
+    <script src="/javascripts/template/bootstrap.bundle.min.js"></script>
+    <!-- Plugins This Page -->
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+       <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+       <script src="/javascripts/template/rowsgroup.js"></script>
+   
+    <!-- End Plugins This Page -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+          let bahan='';
+    var t  =  $('.data_bahan').DataTable({
+      "language": {
+        "sProcessing":   '<span>Sedang memproses...</span><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>',
+          "sLengthMenu":   "_MENU_",
+          "sZeroRecords":  "Tidak ditemukan data yang sesuai",
+          "sInfo":         "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
+          "sInfoEmpty":    "Menampilkan 0 sampai 0 dari 0 entri",
+          "sInfoFiltered": "(disaring dari _MAX_ entri keseluruhan)",
+          "sInfoPostFix":  "",
+          "sUrl":          "",
+          "oPaginate": {
+            "sFirst":    "Pertama",
+            "sPrevious": "Sebelumnya",
+            "sNext":     "Selanjutnya",
+            "sLast":     "Terakhir"
+          }
+      },
+  
+      "processing": true,
+           "ajax": "/manajemen_master/pekerjaan/list_json/"+$('#id_kab').val(),
+           "columns": [
+               { "data": null},
+               { "data": "jenis"},
+               { "data": "nama"},
+               { "data": "satuan"},
+               { "data": "harga"},
+              
+         ],
+         'rowsGroup': [1],
+         'createdRow': function(row, data, dataIndex){
+         // Use empty value in the "Office" column
+         // as an indication that grouping with COLSPAN is needed
+        //  this.rowsgroup.update()
+         console.log(data)
+        //  if(data[1] === ''){
+        //     // Add COLSPAN attribute
+        //     $('td:eq(0)', row).attr('colspan', 5);
+
+        //     // Hide required number of columns
+        //     // next to the cell with COLSPAN attribute
+        //     $('td:eq(1)', row).css('display', 'none');
+        //     $('td:eq(2)', row).css('display', 'none');
+        //     $('td:eq(3)', row).css('display', 'none');
+      
+        //  }
+      },
+         "deferRender": true,
+         // "ordering": false,
+        //  "columnDefs": [
+        //      { "width": "3%" },
+        //      { "width": "20%" },
+        //      { "width": "24%" },
+        //      { "width": "10%" },
+        //      { "width": "20%" },
+        //      { "width": "20%" },
+    
+        //      { "width": "20%" }
+        //   ],
+         "fnRowCallback": function( row, data, iDisplayIndex ) {
+                   var index = iDisplayIndex +1;
+                   $('td:eq(0)',row).html(index);
+                   return row;
+         },
+    //   "columnDefs": [
+    //       { "width": "100px", "targets": 14}
+    //   ],
+    });
+
+
+    var x  =  $('.data_upah').DataTable({
+      "language": {
+        "sProcessing":   '<span>Sedang memproses...</span><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>',
+          "sLengthMenu":   "_MENU_",
+          "sZeroRecords":  "Tidak ditemukan data yang sesuai",
+          "sInfo":         "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
+          "sInfoEmpty":    "Menampilkan 0 sampai 0 dari 0 entri",
+          "sInfoFiltered": "(disaring dari _MAX_ entri keseluruhan)",
+          "sInfoPostFix":  "",
+          "sUrl":          "",
+          "oPaginate": {
+            "sFirst":    "Pertama",
+            "sPrevious": "Sebelumnya",
+            "sNext":     "Selanjutnya",
+            "sLast":     "Terakhir"
+          }
+      },
+  
+      "processing": true,
+           "ajax": "/manajemen_master/pekerjaan/list_json_upah/"+$('#id_kab').val(),
+           "columns": [
+               { "data": null},
+             
+               { "data": "nama"},
+               { "data": "satuan"},
+               { "data": "harga"},
+              
+         ],
+        //  'rowsGroup': [1],
+         'createdRow': function(row, data, dataIndex){
+         // Use empty value in the "Office" column
+         // as an indication that grouping with COLSPAN is needed
+        //  this.rowsgroup.update()
+         console.log(data)
+        //  if(data[1] === ''){
+        //     // Add COLSPAN attribute
+        //     $('td:eq(0)', row).attr('colspan', 5);
+
+        //     // Hide required number of columns
+        //     // next to the cell with COLSPAN attribute
+        //     $('td:eq(1)', row).css('display', 'none');
+        //     $('td:eq(2)', row).css('display', 'none');
+        //     $('td:eq(3)', row).css('display', 'none');
+      
+        //  }
+      },
+         "deferRender": true,
+         // "ordering": false,
+        //  "columnDefs": [
+        //      { "width": "3%" },
+        //      { "width": "20%" },
+        //      { "width": "24%" },
+        //      { "width": "10%" },
+        //      { "width": "20%" },
+        //      { "width": "20%" },
+    
+        //      { "width": "20%" }
+        //   ],
+         "fnRowCallback": function( row, data, iDisplayIndex ) {
+                   var index = iDisplayIndex +1;
+                   $('td:eq(0)',row).html(index);
+                   return row;
+         },
+    //   "columnDefs": [
+    //       { "width": "100px", "targets": 14}
+    //   ],
+    });
+
+  
+
+
+
+
+    $('#id_kab').change(function(){
+   
+   t.ajax.url( `/manajemen_master/pekerjaan/list_json/${$('#id_kab').val()}` ).load();
+   x.ajax.url( `/manajemen_master/pekerjaan/list_json_upah/${$('#id_kab').val()}` ).load();
+ })
+  });
+
+
+
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Roboto:400,500,700";
+@import "https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap";
 
 /* Margin top */
 .m-t-0{
@@ -203,9 +203,55 @@
 }
 /* End Table No Border */
 
-html,
 body{
-	width: 100%;
-	height: 100%;
-	
+    font-family: 'Mukta', sans-serif;
+}
+
+.dropdown-menu a{
+	color: #e98112;
+	font-weight: bold;
+}
+
+.dropdown-menu a:hover{
+	color: #039556;
+	font-weight: bold;
+}
+
+.dropdown-menu a:focus{
+	color: #039556;
+	font-weight: bold;
+}
+
+.menu a h6{
+	color: #e98112;
+	font-weight: bold;
+}
+
+.menu a:hover h6{
+	color: #039556;
+	font-weight: bold;
+}
+
+.menu a:focus h6{
+	color: #039556;
+	font-weight: bold;
+}
+
+
+.btn-link{
+	color: #e98112;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.btn-link:hover{
+	color: #039556;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.btn-link:focus{
+	color: #039556;
+	font-weight: bold;
+	text-decoration: none;
 }

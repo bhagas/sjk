@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
+    <title></title>
+
+    <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/template/css/style.css" rel="stylesheet">
+    <link href="/stylesheets/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Plugin This Page --> 
+    <link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+    <!-- End Plugins This Page -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    
+    </style>
+</head>
+
+<body>
+    
+    <% include ../template/header.ejs %>
+
+
+    <section style="padding: 90px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h2 class="m-t-0 m-b-0 text-center"><strong>DATA TENAGA KERJA PROVINSI JAWA TENGAH</strong></h2>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-9 col-lg-9">
+                    <div id="chartContainer" style="height: 500px; width: 100%;"></div>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Kabupaten/Kota</th>
+                                <th>Jumlah</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><a href="#" class="btn-detail"> Kabupaten Cilacap</a></td>
+                                <td>100</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#"> Kabupaten Banyumas</a></td>
+                                <td>200</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#"> Kabupaten Jepara</a></td>
+                                <td>300</td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="#"> dst.....</a></td>
+                                <td>dst .....</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="detail" style="padding: 0px 0px 90px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h2 class="m-t-0 m-b-0 text-center"><strong>DATA TENAGA KERJA KABUPATEN/KOTA ........</strong></h2>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-12 col-lg-12">
+                    <div id="chartContainer2" style="height: 500px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <% include ../template/footer.ejs %>
+
+
+    <script src="/javascripts/template/jquery.min.js"></script>
+    <script src="/javascripts/template/bootstrap.bundle.min.js"></script>
+    <!-- Plugins This Page -->
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+       <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+       <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!-- End Plugins This Page -->
+    <script type="text/javascript">
+      $('.datane').DataTable({
+          order:false,
+      });
+
+      var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        axisX: {
+            interval:1,
+	    },
+        data: [{
+            type: "column",
+            name: "Proven Oil Reserves (bn)",
+            dataPoints:[
+                { label: "Kab. Banyumas", y: 266.21 },
+                { label: "Kab. Cilacap", y: 302.25 },
+                { label: "Kab. Jepara", y: 157.20 },
+                { label: "kab. Wonogiri", y: 148.77 },
+                { label: "Kab. Pemalang", y: 101.50 },
+                { label: "Kab. Pekalongan", y: 97.8 },
+                { label: "Kab. Batang", y: 266.21 },
+                { label: "Kab. Blora", y: 302.25 },
+                { label: "Kab. Boyolali", y: 157.20 },
+                { label: "Kota Salatiga", y: 148.77 },
+                { label: "Kota Semarang", y: 101.50 },
+                { label: "Kota Tegal", y: 97.8 }
+            ]
+        }]
+    });
+    chart.render();
+
+
+    var chart2 = new CanvasJS.Chart("chartContainer2", {
+        animationEnabled: true,
+        axisX: {
+            interval:1,
+	    },
+        data: [{
+            type: "column",
+            name: "Proven Oil Reserves (bn)",
+            dataPoints:[
+                { label: "Arsitektur", y: 266.21 },
+                { label: "Sipil", y: 302.25 },
+                { label: "Mekanikal", y: 157.20 },
+                { label: "Elektrikal", y: 148.77 },
+                { label: "Tata Lingkungan", y: 101.50 },
+            ]
+        }]
+    });
+    chart2.render();
+    
+
+    $('.btn-detail').click(function() {
+            $('html, body').animate({
+            scrollTop: $("#detail").offset().top
+            }, 1000);
+    });
+    </script>
+</body>
+</html>

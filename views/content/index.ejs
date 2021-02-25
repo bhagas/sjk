@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
     <title></title>
 
-    <link href="/stylesheets/template/css/theme.css" rel="stylesheet">
+    <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/template/css/style.css" rel="stylesheet">
     <link href="/stylesheets/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -25,20 +25,560 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
-    
+    html,body{
+            width: 100%;
+            overflow-x:  hidden;
+        }
+    #video-background{
+        position: static;
+            right: 0; 
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto; 
+            height: auto;
+    }
     </style>
 </head>
 
 <body>
     
-    
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 p-l-0 p-r-0">
+                    <div style="width: 100%;height: 100vh;background-color: #e0e0e0;">
+                        <video autoplay loop id="video-background" muted>
+                            <source src="/video/simbgprov1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <script src="/plugins/jquery/jquery-1.11.1.min.js"></script>
-    <script src="/javascripts/template/bootstrap.min.js"></script>
+        <header style="position: absolute;left: 0;right: 0;top:0;background-color: rgba(0, 0, 0, 0.5);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-lg-5">
+                        <div style="width:100%;height: 100px;display: flex;justify-content: flex-start;align-items: center;">
+                            <img src="https://via.placeholder.com/70" alt="" style="height: 70px;">
+                            <div style="display: flex;flex-direction: column;height: 70px;justify-content: center;align-items: flex-start;">
+                                <h4 class="m-l-15 mt-0 mb-0" style="color: #fff;"><strong>SIJAKONS</strong></h4>
+                                <h6 class="m-l-15 mt-0 mb-0" style="color: #fff;">Sistem Informasi Jasa Konstruksi</h6>
+                                <h6 class="m-l-15 mt-0 m-b-0" style="color: #fff;">Provinsi Jawa Tengah</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 col-lg-7">
+                        <div style="display: flex;height: 100px;justify-content: space-between;align-items: center;width: 100%;">
+                            <a href="/" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;">BERANDA</a>
+                            <a href="/berita" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;">BERITA</a>
+                            <div class="dropdown">
+                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;">
+                                    HARGA SATUAN
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="z-index: 10000;">
+                                  <a class="dropdown-item" href="/harga_satuan/hsd">HARGA SATUAN DASAR (HSD)</a>
+                                  <a class="dropdown-item" href="/harga_satuan/hspk">HARGA SATUAN PEKERJAAN KONSTRUKSI (HSPK)</a>
+                                  <a class="dropdown-item" href="/harga_satuan/hsgbn">HARGA STANDAR BANGUNAN GEDUNG NEGARA (HSGBN)</a>
+                                </div>
+                            </div>
+                            <a href="/#simulasi" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;">SIMULASI</a>
+                            <a href="/peraturan" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;">PERATURAN</a>
+                            <div class="dropdown">
+                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;">
+                                    INFORMASI JAKONS
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="z-index: 10000;">
+                                  <a class="dropdown-item" href="/info_jakon/tenaga_kerja">DATA TENAGA KERJA</a>
+                                  <a class="dropdown-item" href="/info_jakon/badan_usaha">DATA BADAN USAHA JASA KONSTRUKSI</a>
+                                  <a class="dropdown-item" href="/info_jakon/profil_pembinaan">PROFIL PEMBINAAN JASA KONSTRUKSI KABUPATEN/KOTA</a>
+                                  <a class="dropdown-item" href="/info_jakon/profil_balai">PROFIL BALAI JASA KONSTRUKSI PROVINSI JAWA TENGAH</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+
+    <section style="padding: 240px 0 90px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h2 class="m-t-0 m-b-0 text-center"><strong>BERITA JASA KONSTRUKSI</strong></h2>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-4 col-lg-4">
+                    <a href="/berita/detail/1">
+                        <div style="width: 100%;position: relative;">
+                            <img src="https://via.placeholder.com/360" alt="" style="width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+
+                            <div style="width: 100%;position: absolute;left: 0;right: 0;bottom: 0;padding: 10px;background-color: rgba(0, 0, 0, 0.5);">
+                                <h5 class="mt-0 mb-0" style="color: #fff;"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, distinctio.</strong></h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <a href="/berita/detail/1">
+                        <div style="width: 100%;position: relative;">
+                            <img src="https://via.placeholder.com/360" alt="" style="width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+
+                            <div style="width: 100%;position: absolute;left: 0;right: 0;bottom: 0;padding: 10px;background-color: rgba(0, 0, 0, 0.5);">
+                                <h5 class="mt-0 mb-0" style="color: #fff;"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, distinctio.</strong></h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <a href="/berita/detail/1">
+                        <div style="width: 100%;position: relative;">
+                            <img src="https://via.placeholder.com/360" alt="" style="width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+
+                            <div style="width: 100%;position: absolute;left: 0;right: 0;bottom: 0;padding: 10px;background-color: rgba(0, 0, 0, 0.5);">
+                                <h5 class="mt-0 mb-0" style="color: #fff;"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, distinctio.</strong></h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 90px 0;background-color: #e0e0e0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-lg-7">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <h2 class="m-t-0 m-b-0 text-left"><strong>HARGA SATUAN DASAR (HSD)</strong></h2>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-md-12 col-lg-12">
+                            <h5>Yaitu harga komponen dari mata pembayaran dalam satuan tertentu, misalnya bahan (m, m2, m3, kg, ton, zak, dan sebagainya), peralatan (unit, jam, hari, dan sebagainya), dan upah tenaga kerja (jam, hari, bulan, dan sebagainya)</h5>
+                        </div>
+                    </div>
+                    
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-md-12 col-lg-12">
+                            <button class="btn btn-primary">Informasi Selengkapnya </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-5">
+                    <img src="/images/template/search.png" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 90px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-lg-5">
+                    <img src="/images/template/search.png" alt="" style="width: 100%;">
+                </div>
+                <div class="col-md-7 col-lg-7">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <h2 class="m-t-0 m-b-0 text-right"><strong>HARGA SATUAN PEKERJAAN KONSTRUKSI (HSPK)</strong></h2>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-md-12 col-lg-12">
+                            <h5 class="text-right">
+                                Yaitu biaya yang dihitung dalam suatu analisis harga satuan suatu pekerjaan konstruksi, yang terdiri atas biaya langsung (tenaga kerja, bahan, dan alat), dan biaya tidak langsung (biaya umum atau overhead, dan keuntungan) sebagai mata pembayaran suatu jenis pekerjaan tertentu, belum termasuk Pajak Pertambahan Nilai (PPN)
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-md-12 col-lg-12">
+                            <button class="btn btn-primary float-right">Informasi Selengkapnya </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section style="padding: 90px 0;background-color: #e0e0e0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-lg-7">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <h2 class="m-t-0 m-b-0 text-left"><strong>HARGA STANDAR BANGUNAN GEDUNG NEGARA (HSGBN)</strong></h2>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-md-12 col-lg-12">
+                            <h5>Yaitu standar harga satuan tertinggi untuk biaya pelaksanaan konstruksi fisik per M² pembangunan bangunan gedung Negara dan diberlakukan sesuai dengan klasifikasi, lokasi, dan tahun pembangunanya.</h5>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-md-12 col-lg-12">
+                            <button class="btn btn-primary">Informasi Selengkapnya </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-5">
+                    <img src="/images/template/search.png" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 90px 0;" id="simulasi">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h2 class="m-t-0 m-b-0 text-center"><strong>SIMULASI</strong></h2>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-12 col-lg-12">
+                        <div class="form-row">
+                          <div class="col-md-4 col-lg-4">
+                            <select class="form-control" name="" id="id_kab">
+                                <option value="-">-- Pilih Kabupaten / Kota --</option>
+                                <% for(var i=0; i<kabupaten.length; i++){ %> 
+                                
+                                <option value="<%= kabupaten[i]['id_kab']%>"   ><%= kabupaten[i]['kab']%> </option>
+                                <% }%>
+                            </select>
+                          </div>
+                          <div class="col-md-5 col-lg-5">
+                            <select class="form-control" name="" id="id_pekerjaan">
+                                <option value="-">-- Pilih Jenis Pekerjaan --</option>
+                                <% for(var i=0; i<pekerjaan.length; i++){ %> 
+                
+                                    <option value="<%= pekerjaan[i]['id']%>"  satuan="<%= pekerjaan[i]['satuan']%>"  ><%= pekerjaan[i]['nama_pekerjaan']%> </option>
+                                    <% }%>
+                            </select>
+                          </div>
+
+                          <div class="col-md-2 col-lg-2">
+                              <div style="width: 100%;height: 38px;display: flex;justify-content: flex-start;align-items: center;">
+                                <input type="number" class="form-control" name="" id="jumlah" placeholder="Satuan" style="margin-right: 15px;">
+                                <span>m</span>
+                            </div>
+                          </div>
+                          <div class="col-md-1 col-lg-1">
+                            <button class="btn btn-primary btn-block" id="simulasikan">Simulasi</button>
+                          </div>
+                        </div>
+                  
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-12 col-lg-12">
+                    <table class="table table-bordered table-sm">
+                        <thead>
+                            <tr>
+                                <th style="text-align: center;">No.</th>
+                                <th style="text-align: center;">Uraian</th>
+                                <th style="text-align: center;">Kode</th>
+                                <th style="text-align: center;">Satuan</th>
+                                <th style="text-align: center;">Koefisien</th>
+                                <th style="text-align: center;">Harga Satuan (Rp)</th>
+                                <th style="text-align: center;">Jumlah Harga (Rp)</th>
+                            </tr>
+            
+                            <tr>
+                                <th style="text-align: center;">1</th>
+                                <th style="text-align: center;">2</th>
+                                <th style="text-align: center;">3</th>
+                                <th style="text-align: center;">4</th>
+                                <th style="text-align: center;">5</th>
+                                <th style="text-align: center;">6</th>
+                                <th style="text-align: center;">7</th>
+                            </tr>
+                        </thead>
+            
+                        <tbody>
+                            <tr id="tenaga">
+                                <td style="text-align: center;">A</td>
+                                <td style="text-align: left;" colspan="6">Tenaga Kerja</td>
+                            </tr>
+            
+                           
+            
+                            <tr>
+                                <td colspan="6" style="text-align: right;">Jumlah Harga Tenaga Kerja</td>
+                                <td id="total_tenaga">-</td>
+                            </tr>
+            
+            
+                            <tr id="bahan">
+                                <td style="text-align: center;">B</td>
+                                <td style="text-align: left;" colspan="6">Bahan</td>
+                            </tr>
+            
+                         
+            
+                            <tr>
+                                <td colspan="6" style="text-align: right;">Jumlah Harga Bahan</td>
+                                <td id="total_bahan">-</td>
+                            </tr>
+            
+                            <tr id="peralatan">
+                                <td style="text-align: center;">C</td>
+                                <td style="text-align: left;" colspan="6">Peralatan</td>
+                            </tr>
+            
+                          
+            
+                            <tr>
+                                <td colspan="6" style="text-align: right;">Jumlah Harga Peralatan</td>
+                                <td id="total_peralatan">-</td>
+                            </tr>
+            
+                            <tr>
+                                <td style="text-align: center;">D</td>
+                                <td style="text-align: left;" colspan="5">Jumlah Harga Tenaga, Bahan dan Peralatan (A+B+C)</td>
+                                <td id="total_keseluruhan">&nbsp;</td>
+                            </tr>
+            
+                            <tr>
+                                <td style="text-align: center;">E</td>
+                                <td style="text-align: left;" colspan="3">Overhead + profit (Contoh 15%)</td>
+                                <td colspan="2" style="text-align: center;">15 % x D</td>
+                                <td id="total_profit">&nbsp;</td>
+                            </tr>
+            
+                            <tr>
+                                <td style="text-align: center;">F</td>
+                                <td style="text-align: left;" colspan="5"><strong>Harga Satuan Pekerjaan per - <span id="jumlahTampil"></span> <span class="satuan"></span> (D+E)</strong></td>
+                                <td id="total">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <% include ../template/footer.ejs %>
+
+    <script src="/javascripts/template/jquery.min.js"></script>
+    <script src="/javascripts/template/bootstrap.bundle.min.js"></script>
     <!-- Plugins This Page -->
     <!-- End Plugins This Page -->
     <script type="text/javascript">
-      
+      $('.menu-simulasi').click(function() {
+            $('html, body').animate({
+            scrollTop: $("#simulasi").offset().top
+            }, 1000);
+        });
+
+        $(document).ready(function() {
+
+
+$('#id_pekerjaan').change(function(){
+  // console.log($('#id_pekerjaan option:selected').attr('satuan'))
+  $('.satuan').html($('option:selected', this).attr('satuan'))
+})
+
+$('#simulasikan').click(function(){
+  if(!$('#id_pekerjaan').val() && !$('#id_kab').val() && !$('#jumlah').val()){
+    alert('Kabupaten, jenis pekerjaan dan jumlah tidak boleh kosong!')
+  }else{
+    $.getJSON(`/manajemen_master/pekerjaan/detail_json/${$('#id_pekerjaan').val()}/${$('#id_kab').val()}`, function(data){
+    console.log(data)
+    doReset()
+    
+    let bahan = []
+    let tenaga = []
+    let peralatan = []
+    let jumlah = $('#jumlah').val()
+    $('#jumlahTampil').html(jumlah)
+    data.forEach(e => {
+        if(e.jenis_uraian == 'bahan'){
+          bahan.push(e);
+        }else if(e.jenis_uraian == 'tenaga'){
+          tenaga.push(e);
+        }else if(e.jenis_uraian == 'peralatan'){
+          peralatan.push(e);
+        }
+    });
+let total_bahan =0;
+    bahan.forEach(e => {
+      $( "#bahan" ).after(` <tr id='${e.id}'>
+          <td style="text-align: center;"></td>
+          <td style="text-align: left;">${e.nama} </td>
+          <td style="text-align: center;">${e.kode}</td>
+          <td style="text-align: center;">${e.satuan}</td>
+          <td style="text-align: center;">${e.koefisien}</td>
+          <td style="text-align: center;">${e.harga}</td>
+          <td style="text-align: center;">${e.koefisien * e.harga * jumlah}</td>
+      </tr>`);
+      total_bahan += (e.koefisien * e.harga * jumlah)
+    });
+
+    let total_tenaga = 0
+    tenaga.forEach(e => {
+      $( "#tenaga" ).after(` <tr id='${e.id}'>
+          <td style="text-align: center;"></td>
+          <td style="text-align: left;">${e.nama} </td>
+          <td style="text-align: center;">${e.kode}</td>
+          <td style="text-align: center;">${e.satuan}</td>
+          <td style="text-align: center;">${e.koefisien}</td>
+          <td style="text-align: center;">${e.harga}</td>
+          <td style="text-align: center;">${e.koefisien * e.harga * jumlah}</td> 
+      </tr>`);
+      total_tenaga += (e.koefisien * e.harga * jumlah)
+    });
+
+    let total_peralatan = 0;
+    peralatan.forEach(e => {
+      $( "#peralatan" ).after(` <tr id='${e.id}'>
+          <td style="text-align: center;"></td>
+          <td style="text-align: left;">${e.nama} </td>
+          <td style="text-align: center;">${e.kode}</td>
+          <td style="text-align: center;">${e.satuan}</td>
+          <td style="text-align: center;">${e.koefisien}</td>
+          <td style="text-align: center;">${e.harga}</td>
+          <td style="text-align: center;">${e.koefisien * e.harga * jumlah}</td>
+      </tr>`);
+      total_peralatan += (e.koefisien * e.harga * jumlah)
+    });
+
+    $('#total_bahan').html(total_bahan)
+    $('#total_tenaga').html(total_tenaga)
+    $('#total_peralatan').html(total_peralatan)
+    let total_keseluruhan = total_bahan+ total_peralatan + total_tenaga;
+    $('#total_keseluruhan').html(total_keseluruhan)
+    let total_profit = (total_keseluruhan * 15)/100;
+    $('#total_profit').html(total_profit)
+    let total = total_keseluruhan + total_profit;
+    $('#total').html(total)
+    })
+  }
+
+})
+
+function doReset(){
+  $('.tabelDefault').html(` <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th style="text-align: center;">No.</th>
+                <th style="text-align: center;">Uraian</th>
+                <th style="text-align: center;">Kode</th>
+                <th style="text-align: center;">Satuan</th>
+                <th style="text-align: center;">Koefisien</th>
+                <th style="text-align: center;">Harga Satuan (Rp)</th>
+                <th style="text-align: center;">Jumlah Harga (Rp)</th>
+            </tr>
+
+            <tr>
+                <th style="text-align: center;">1</th>
+                <th style="text-align: center;">2</th>
+                <th style="text-align: center;">3</th>
+                <th style="text-align: center;">4</th>
+                <th style="text-align: center;">5</th>
+                <th style="text-align: center;">6</th>
+                <th style="text-align: center;">7</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr id="tenaga">
+                <td style="text-align: center;">A</td>
+                <td style="text-align: left;">Tenaga Kerja</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+            </tr>
+
+           
+
+            <tr>
+                <td colspan="6" style="text-align: right;">Jumlah Harga Tenaga Kerja</td>
+                <td id="total_tenaga">-</td>
+            </tr>
+
+
+            <tr id="bahan">
+                <td style="text-align: center;">B</td>
+                <td style="text-align: left;">Bahan</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+            </tr>
+
+         
+
+            <tr>
+                <td colspan="6" style="text-align: right;">Jumlah Harga Bahan</td>
+                <td id="total_bahan">-</td>
+            </tr>
+
+            <tr id="peralatan">
+                <td style="text-align: center;">C</td>
+                <td style="text-align: left;">Peralatan</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+            </tr>
+
+          
+
+            <tr>
+                <td colspan="6" style="text-align: right;">Jumlah Harga Peralatan</td>
+                <td id="total_peralatan">-</td>
+            </tr>
+
+            <tr>
+                <td style="text-align: center;">D</td>
+                <td style="text-align: left;" colspan="3">Jumlah Harga Tenaga, Bahan dan Peralatan (A+B+C)</td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+                <td id="total_keseluruhan">&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td style="text-align: center;">E</td>
+                <td style="text-align: left;" colspan="3">Overhead + profit (Contoh 15%)</td>
+                <td colspan="2" style="text-align: center;">15 % x D</td>
+                <td id="total_profit">&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td style="text-align: center;">F</td>
+                <td style="text-align: left;" colspan="3"><strong>Harga Satuan Pekerjaan per - <span id="jumlahTampil"></span> <span class="satuan"></span> (D+E)</strong></td>
+                <td >&nbsp;</td>
+                <td >&nbsp;</td>
+                <td id="total">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>`)
+}
+});
     </script>
 </body>
 </html>

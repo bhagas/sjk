@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
+    <title></title>
+
+    <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/template/css/style.css" rel="stylesheet">
+    <link href="/stylesheets/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Plugin This Page --> 
+    <link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+    <!-- End Plugins This Page -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    
+    </style>
+</head>
+
+<body>
+    
+    <% include ../template/header.ejs %>
+
+
+    <section style="padding: 90px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h2 class="m-t-0 m-b-0 text-center"><strong>PERATURAN</strong></h2>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-12 col-lg-12">
+                    <table class="table table-bordered datane">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Judul</th>
+                                <th>Option</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td colspan="3" style="background-color: #e0e0e0;"><strong>UNDANG-UNDANG</strong></td>
+                                <td style="display: none;">&nbsp;</td>
+                                <td style="display: none;">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td>1.</td>
+                                <td>Undang-Undang Nomor 2 Tahun 2017 Tentang Jasa Konstruksi</td>
+                                <td><a href="#" class="btn btn-primary">Download</a></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3" style="background-color: #e0e0e0;"><strong>PP</strong></td>
+                                <td style="display: none;">&nbsp;</td>
+                                <td style="display: none;">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td>1.</td>
+                                <td>PP No 22 Tahun 2020 Tentang Peraturan Pelaksanaan Undang-Undang Nomor 2 Tahun 2017 Tentang Jasa Konstruksi</td>
+                                <td><a href="#" class="btn btn-primary">Download</a></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3" style="background-color: #e0e0e0;"><strong>Permen</strong></td>
+                                <td style="display: none;">&nbsp;</td>
+                                <td style="display: none;">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td>1.</td>
+                                <td>Permen PUPR No 28 Tahun 2016 Tentang Pedoman Analisis Harga Satuan Pekerjaan Bidang Pekerjaan Umum</td>
+                                <td><a href="#" class="btn btn-primary">Download</a></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3" style="background-color: #e0e0e0;"><strong>Peraturan Lainnya</strong></td>
+                                <td style="display: none;">&nbsp;</td>
+                                <td style="display: none;">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td>1.</td>
+                                <td>Perda No 16 Tahun 2014 Tentang Penyelenggaraan Dan Pembinaan Jasa Konstruksi Prov Jateng</td>
+                                <td><a href="#" class="btn btn-primary">Download</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <% include ../template/footer.ejs %>
+
+
+    <script src="/javascripts/template/jquery.min.js"></script>
+    <script src="/javascripts/template/bootstrap.bundle.min.js"></script>
+    <!-- Plugins This Page -->
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+       <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+    <!-- End Plugins This Page -->
+    <script type="text/javascript">
+      $('.datane').DataTable({
+          order:false,
+      });
+    </script>
+</body>
+</html>

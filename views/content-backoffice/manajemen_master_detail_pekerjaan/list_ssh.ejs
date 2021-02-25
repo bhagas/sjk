@@ -19,7 +19,6 @@
            <a class="btn btn-primary btn-embossed" href="/manajemen_master/detail_pekerjaan/import" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Import Data</a>
            <select class="form-control" name="id_kab" id="id_kab" data-search="true">
             <option value="-"   >-- PILIH --</option>
-            <option value="0"   >PROVINSI</option>
             <% for(var i=0; i<kabupaten.length; i++){ %> 
             
             <option value="<%= kabupaten[i]['id_kab']%>"   ><%= kabupaten[i]['kab']%> </option>
@@ -33,7 +32,10 @@
                 <th class="header">No.</th>
                 <th class="header">Nama</th>
                 <th class="header">Satuan</th>
-                <th class="header">Harga</th>
+                <th class="header">Harga Kabupaten</th>
+                <th class="header">Harga Survey 1</th>
+                <th class="header">Harga Survey 2</th>
+                <th class="header">Harga Terendah</th>
               </tr>
             </thead>
             
@@ -83,74 +85,31 @@
            "ajax": "/manajemen_master/pekerjaan/list_json/"+$('#id_kab').val(),
            "columns": [
                { "data": null},
+              //  { "data": "jenis"},
                { "data": "nama"},
                { "data": "satuan"},
+               { "data": "harga_kab"},
+               { "data": "harga_survey_1"},
+               { "data": "harga_survey_2"},
                { "data": "harga"},
               
-              //  { "data": "kegiatanPrioritas" },
-              //  { "data": "jeni", render: function(datane){
-              //    if(datane){
-              //      return datane.jenis
-              //    }else{
-              //     return ''
-              //    }
-               
-              //  } },
-              //  { "data": "lokasi" },
-              //  { "data": "kec" },
-              //  { "data": "kel" },
-              //  { "data": "SHAPE", render: function(datane){
-              //   if(datane){
-              //      return '<a href="https://www.google.com/maps/dir/Current+Location/'+datane.coordinates[1]+','+datane.coordinates[0]+'">'+datane.coordinates[0].toFixed(4)+'<br/>'+datane.coordinates[1].toFixed(4)+'</a>'
-              //    }else{
-              //     return ''
-              //    }
-              //  }},
-              //  { "data": "volume" },
-              //  { "data": "jenisAnggaran" },
-              //  { "data": "jumlahAnggaran", render: function(datane){
-              //      return '<span class="pull-right">'+numberWithCommas(datane)+'</span>';
-              //  }},
-              //  { "data": "pelaksana" },
-              //  { "data": "kesesuaian", render: function(datane){
-              //    if(datane){
-              //      return 'Ya'
-              //    }else{
-              //     return 'Tidak'
-              //    }
-             
-              //  } },
-              //  { "data": "keterangan" },
-            
-
-              //  { "data": "SHAPE", render: function(datane){
-              //    if(datane){
-              //      return 'Terverifikasi'
-              //    }else{
-              //     return 'Belum Terverifikasi'
-              //    }
-             
-              //  } },
-              // //  { "data": "lunas" , render: function(datane){
-              // //     if(datane= "1"){
-              // //       return "LUNAS"
-              // //     }else{
-              // //       return "BELUM LUNAS"
-              // //     }
-              // //  }},
-           
-              //  { "data": "id", render: function(id){
-              //     return ` <center>
-              //    <ul class="list-inline">
-              //      <li><a class="btn btn-warning btn-embossed btn-sm" href="/kegiatan/edit/${id}" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
-              //      <li class="separator">|</li>
-              //     <li><a class="btn btn-danger btn-embossed btn-sm" href="/kegiatan/delete/${id}" role="button" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
-              //     <li class="separator">|</li>
-              //      <li><a class="btn btn-info btn-embossed btn-sm" href="/kegiatan/cetak/${id}" role="button" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a></li>
-              //   </ul>
-              //   </center>`
-              //  }}
          ],
+        //  'rowsGroup': [1],
+      //    'createdRow': function(row, data, dataIndex){
+      //    // Use empty value in the "Office" column
+      //    // as an indication that grouping with COLSPAN is needed
+      //    if(data[1] === ''){
+      //       // Add COLSPAN attribute
+      //       $('td:eq(0)', row).attr('colspan', 5);
+
+      //       // Hide required number of columns
+      //       // next to the cell with COLSPAN attribute
+      //       $('td:eq(1)', row).css('display', 'none');
+      //       $('td:eq(2)', row).css('display', 'none');
+      //       $('td:eq(3)', row).css('display', 'none');
+      
+      //    }
+      // },
          "deferRender": true,
          // "ordering": false,
         //  "columnDefs": [
