@@ -17,7 +17,7 @@ var passport = require('passport')
   var st = require('knex-postgis')(sql_enak);
   var deasync = require('deasync');
   const importExcel= require('convert-excel-to-json')
-
+  const XLSX = require('xlsx');
   path.join(__dirname, '/public/foto')
   router.use(bodyParser.json());
   router.use(bodyParser.urlencoded({ extended: true }));
@@ -62,20 +62,27 @@ var upload = multer({ storage: storage })
 
 //start-------------------------------------
 router.get('/toko', cek_login, function(req, res) {
-  connection.query("SELECT * from master_toko where deleted=0", function(err, rows, fields) {
+  connection.query("SELECT a.*, b.kab from master_toko a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, rows, fields) {
 
   res.render('content-backoffice/manajemen_master_toko/list',{data:rows});
 });
 });
 
 router.get('/toko/insert', cek_login, function(req, res) {
-  res.render('content-backoffice/manajemen_master_toko/insert'); 
+  connection.query("SELECT * from kabupaten ", function(err, kabupaten, fields) {
+    res.render('content-backoffice/manajemen_master_toko/insert', {kabupaten});
+      
+    }) 
+ 
 });
 
 router.get('/toko/edit/:id', cek_login, function(req, res) {
   connection.query("SELECT * from master_toko where id='"+req.params.id+"'", function(err, rows, fields) {
-
-  res.render('content-backoffice/manajemen_master_toko/edit',{data:rows}); 
+    connection.query("SELECT * from kabupaten ", function(err, kabupaten, fields) {
+      res.render('content-backoffice/manajemen_master_toko/edit', {data:rows,kabupaten});
+        
+      }) 
+   
 });
 });
 
@@ -276,7 +283,8 @@ router.get('/pekerjaan/detail/:id', cek_login, function(req, res) {
 });
 
 router.get('/pekerjaan/detail_json/:id/:id_kab', function(req, res) {
-    connection.query("SELECT a.*, b.nama, b.satuan, b.kode, c.harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"'", function(err, data_detail_pekerjaan, fields) {
+  // "SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" group by a.nama"
+    connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id", function(err, data_detail_pekerjaan, fields) {
       // console.log("SELECT a.*, b.nama, b.satuan, b.kode from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id and c.id_kab = '"+req.params.id_kab+"'") 
       res.json(data_detail_pekerjaan)
         }) 
@@ -296,7 +304,7 @@ router.get('/pekerjaan/detail_json_all/:id_kab', function(req, res) {
     data.forEach(function(item, index){
       done = false;
       data[index].total = 0
-     connection.query("SELECT a.*, b.nama, b.satuan, b.kode, c.harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+item.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"'", function(err, data_harga, fields) {
+     connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+item.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id", function(err, data_harga, fields) {
        console.log(data_harga);
       //  data[index].harga = data_harga;
        data_harga.forEach(function(harga_item){
@@ -313,19 +321,85 @@ router.get('/pekerjaan/detail_json_all/:id_kab', function(req, res) {
 });
 
 router.get('/pekerjaan/list_json/:id_kab', function(req, res) {
-   connection.query("SELECT a.*, b.harga, b.harga_kab, b.harga_survey_1, b.harga_survey_2  from standar_harga a join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab =  '"+req.params.id_kab+"'", function(err, data, fields) {
-        // console.log(data_detail_pekerjaan)
-        res.json( {data});
+  let done= false;
+  let result =[]
+  if(req.params.id_kab!='-'){
+    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" group by a.nama", function(err, data, fields) {
+      // console.log(data_detail_pekerjaan)
+      
+      result = data;
+      done = true;
+      
+      })   
+      require('deasync').loopWhile(function(){return !done;});
+  }
+  
+
+          // result.forEach(function(item, index){
+          //   done = false
+          //   connection.query("SELECT a.harga, b.nama_toko  from standar_harga_kab a join master_toko b on a.id_toko = b.id where a.id_standar_harga="+item.id, function(err, data, fields) {
+          //     // console.log(data_detail_pekerjaan)
+          //     result[index].hargaSurvey= data
+          //     result[index].hargaMin= Math.min.apply(Math, data.map(function(o) { return o.harga; }))
+          //     // data.forEach(function(itemm,idx){
+          //     //     result[index]
+          //     // })
+          //     // console.log(data)
+          //     done = true;
+              
+          //     })   
+          //     require('deasync').loopWhile(function(){return !done;});
+          // })
+        // console.log(result)
+        res.json({data: result})
+});
+
+router.get('/pekerjaan/detail_toko/:id_standar_harga/:id_kab', function(req, res) {
+  let done= false;
+  let result =[]
+
+
+     
+            connection.query("SELECT a.harga, b.nama_toko  from standar_harga_kab a join master_toko b on a.id_toko = b.id where a.id_kab="+req.params.id_kab+" and a.id_standar_harga="+req.params.id_standar_harga, function(err, data, fields) {
+              // console.log(data_detail_pekerjaan)
+              result= data
+              // result.hargaMin= Math.min.apply(Math, data.map(function(o) { return o.harga; }))
+              // data.forEach(function(itemm,idx){
+              //     result[index]
+              // })
+              // console.log(data)
+              done = true;
+              
+              })   
+              require('deasync').loopWhile(function(){return !done;});
         
-        })   
+        // console.log(result)
+        res.json({data: result})
 });
 
 router.get('/pekerjaan/list_json_upah/:id_kab', function(req, res) {
-  connection.query("SELECT a.*, b.harga, b.harga_kab, b.harga_survey_1, b.harga_survey_2  from standar_harga a join standar_harga_kab b on a.id = b.id_standar_harga and a.jenis='PEKERJA' and b.id_kab =  '"+req.params.id_kab+"'", function(err, data, fields) {
-       // console.log(data_detail_pekerjaan)
-       res.json( {data});
-       
-       })   
+  if(req.params.id_kab!="-"){
+    connection.query("SELECT a.*, MIN(b.harga) as harga from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='TENAGA KERJA' group by a.nama", function(err, data, fields) {
+      // console.log(data_detail_pekerjaan)
+      res.json( {data});
+      
+      })  
+  }else{
+      res.json({data:[]})
+  }
+   
+});
+
+router.get('/pekerjaan/list_json_peralatan/:id_kab', function(req, res) {
+  if(req.params.id_kab!="-"){
+    connection.query("SELECT a.*, MIN(b.harga) as harga from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='PERALATAN' group by a.nama", function(err, data, fields) {
+      // console.log(data_detail_pekerjaan)
+      res.json( {data});
+      
+      })  
+  }else{
+      res.json({data:[]})
+  }  
 });
 
 // router.get('/pekerjaan/list_json_front/:id_kab', cek_login, function(req, res) {
@@ -442,34 +516,35 @@ router.post('/detail_pekerjaan/submit_insert', cek_login,  function(req, res){
                 let result =  await importExcel({
                     sourceFile :'./public/excel/'+namafile,
                     header     :   {rows:1},
-                    columnToKey:{A:'id_standar_harga',F:'harga_kab',G:'harga_survey_1',H:'harga_survey_2'},
-                    sheets :['standar_harga']
+                    columnToKey:{A:'id_standar_harga',F:'harga'},
+                    sheets :['Harga Dasar']
                     
                 });
                 // console.log(result)
 
-                var hasil = result.standar_harga.map(function(el) {
+                var hasil = result['Harga Dasar'].map(function(el) {
                     var o = Object.assign({}, el);
                     o.id_kab = req.body.id_kab;
+                    o.id_toko = req.body.id_toko;
 
-                    let array1 = [];
+                    // let array1 = [];
 
-                    if(o.harga_kab>0){
-                      array1.push(o.harga_kab)
-                    }
-                    if(o.harga_survey_1>0){
-                      array1.push(o.harga_survey_1)
-                    }
-                    if(o.harga_survey_2>0){
-                      array1.push(o.harga_survey_2)
-                    }
-                    o.harga = Math.min(...array1)
+                    // if(o.harga_kab>0){
+                    //   array1.push(o.harga_kab)
+                    // }
+                    // if(o.harga_survey_1>0){
+                    //   array1.push(o.harga_survey_1)
+                    // }
+                    // if(o.harga_survey_2>0){
+                    //   array1.push(o.harga_survey_2)
+                    // }
+                    // o.harga = Math.min(...array1)
                     // console.log(Math.min(2, 3, 1));
                     return o;
                   })
                   // console.log(hasil)
                   if(hasil.length){
-                    connection.query("DELETE FROM standar_harga_kab where id_kab='"+req.body.id_kab+"'", function(err, rows, fields) {
+                    connection.query("DELETE FROM standar_harga_kab where id_kab='"+req.body.id_kab+"' and id_kab='"+req.body.id_toko+"'", function(err, rows, fields) {
                       sql_enak('standar_harga_kab').insert(hasil)
                       .then(async data=>{
                         let t = await del(['./public/excel/'+namafile])
@@ -491,6 +566,37 @@ router.post('/detail_pekerjaan/submit_insert', cek_login,  function(req, res){
             }
         }))
 });
+
+router.get('/detail_pekerjaan/export_excel/:id_kab/:id_toko', cek_login, async function(req,res){
+  /* original data */
+
+      var data = [['ID','KATEGORI','JENIS','NAMA', 'SATUAN', 'HARGA']]
+      var ws_name = "Harga Dasar";
+      var done = false;
+      connection.query(`SELECT  b.id, b.kategori, b.jenis, b.nama, b.satuan, a.harga FROM standar_harga_kab a right join standar_harga b on a.id_standar_harga = b.id and a.id_kab = ${req.params.id_kab} and a.id_toko  = ${req.params.id_toko} `, function(err, rows, fields) {
+          // console.log(rows)
+          rows.forEach(function(item){
+            (!item.harga)?item.harga=0:item.harga;
+            data.push([item.id, item.kategori, item.jenis, item.nama, item.satuan, item.harga])
+          })
+          done = true;
+      })
+      require('deasync').loopWhile(function(){return !done;});
+
+      var wb = XLSX.utils.book_new(), ws = XLSX.utils.aoa_to_sheet(data);
+      
+      /* add worksheet to workbook */
+      XLSX.utils.book_append_sheet(wb, ws, ws_name);
+
+      var wbbuf = XLSX.write(wb, {
+        type: 'base64'
+      });
+      res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename=" + "HSDMaster.xlsx"]]);
+      // res.writeHead(200, [['Content-Disposition',  "attachment; filename=" + "HSDMaster.xlsx"]]);
+      res.end( new Buffer(wbbuf, 'base64') );
+      // res.send(200)
+
+})
 
 router.post('/detail_pekerjaan/submit_edit', cek_login, function(req, res){
   var post = {}

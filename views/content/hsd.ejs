@@ -251,7 +251,7 @@
                { "data": "jenis"},
                { "data": "nama"},
                { "data": "satuan"},
-               { "data": "harga"},
+               { "data": "hargaMin"},
               
          ],
          'rowsGroup': [1],
@@ -363,6 +363,74 @@
     //   ],
     });
 
+    var z  =  $('.data_alat').DataTable({
+      "language": {
+        "sProcessing":   '<span>Sedang memproses...</span><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>',
+          "sLengthMenu":   "_MENU_",
+          "sZeroRecords":  "Tidak ditemukan data yang sesuai",
+          "sInfo":         "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
+          "sInfoEmpty":    "Menampilkan 0 sampai 0 dari 0 entri",
+          "sInfoFiltered": "(disaring dari _MAX_ entri keseluruhan)",
+          "sInfoPostFix":  "",
+          "sUrl":          "",
+          "oPaginate": {
+            "sFirst":    "Pertama",
+            "sPrevious": "Sebelumnya",
+            "sNext":     "Selanjutnya",
+            "sLast":     "Terakhir"
+          }
+      },
+  
+      "processing": true,
+           "ajax": "/manajemen_master/pekerjaan/list_json_peralatan/"+$('#id_kab').val(),
+           "columns": [
+               { "data": null},
+             
+               { "data": "nama"},
+               { "data": "satuan"},
+               { "data": "harga"},
+              
+         ],
+        //  'rowsGroup': [1],
+         'createdRow': function(row, data, dataIndex){
+         // Use empty value in the "Office" column
+         // as an indication that grouping with COLSPAN is needed
+        //  this.rowsgroup.update()
+         console.log(data)
+        //  if(data[1] === ''){
+        //     // Add COLSPAN attribute
+        //     $('td:eq(0)', row).attr('colspan', 5);
+
+        //     // Hide required number of columns
+        //     // next to the cell with COLSPAN attribute
+        //     $('td:eq(1)', row).css('display', 'none');
+        //     $('td:eq(2)', row).css('display', 'none');
+        //     $('td:eq(3)', row).css('display', 'none');
+      
+        //  }
+      },
+         "deferRender": true,
+         // "ordering": false,
+        //  "columnDefs": [
+        //      { "width": "3%" },
+        //      { "width": "20%" },
+        //      { "width": "24%" },
+        //      { "width": "10%" },
+        //      { "width": "20%" },
+        //      { "width": "20%" },
+    
+        //      { "width": "20%" }
+        //   ],
+         "fnRowCallback": function( row, data, iDisplayIndex ) {
+                   var index = iDisplayIndex +1;
+                   $('td:eq(0)',row).html(index);
+                   return row;
+         },
+    //   "columnDefs": [
+    //       { "width": "100px", "targets": 14}
+    //   ],
+    });
+
   
 
 
@@ -372,6 +440,7 @@
    
    t.ajax.url( `/manajemen_master/pekerjaan/list_json/${$('#id_kab').val()}` ).load();
    x.ajax.url( `/manajemen_master/pekerjaan/list_json_upah/${$('#id_kab').val()}` ).load();
+   z.ajax.url( `/manajemen_master/pekerjaan/list_json_peralatan/${$('#id_kab').val()}` ).load();
  })
   });
 

@@ -24,6 +24,12 @@
             <option value="<%= kabupaten[i]['id_kab']%>"   ><%= kabupaten[i]['kab']%> </option>
             <% }%>
         </select>
+
+        <!-- <select class="form-control" name="id_toko" id="id_toko" data-search="true">
+          <option value="-"   >-- PILIH --</option>
+         
+      </select> -->
+      <!-- <button id='cari'>CARI</button> -->
           </div>
         <div class="panel-content pagination2">
           <table class="table table-bordered table-striped table-hover" id="data">
@@ -32,10 +38,8 @@
                 <th class="header">No.</th>
                 <th class="header">Nama</th>
                 <th class="header">Satuan</th>
-                <th class="header">Harga Kabupaten</th>
-                <th class="header">Harga Survey 1</th>
-                <th class="header">Harga Survey 2</th>
-                <th class="header">Harga Terendah</th>
+                <!-- <th class="header">Toko</th> -->
+                <th class="header">Harga Min</th>
               </tr>
             </thead>
             
@@ -67,7 +71,7 @@
       "language": {
         "sProcessing":   '<span>Sedang memproses...</span><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>',
           "sLengthMenu":   "_MENU_",
-          "sZeroRecords":  "Tidak ditemukan data yang sesuai",
+          "sZeroRecords":  "Tidak ditemukan data, silahkan pilih Kab/kota",
           "sInfo":         "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
           "sInfoEmpty":    "Menampilkan 0 sampai 0 dari 0 entri",
           "sInfoFiltered": "(disaring dari _MAX_ entri keseluruhan)",
@@ -88,10 +92,19 @@
               //  { "data": "jenis"},
                { "data": "nama"},
                { "data": "satuan"},
-               { "data": "harga_kab"},
-               { "data": "harga_survey_1"},
-               { "data": "harga_survey_2"},
-               { "data": "harga"},
+              //  { "data": "hargaSurvey", render: function(data){
+              //   //  console.log(data)
+              //   let text ="<ul>";
+              //     data.forEach(function(item){
+              //       text+=`<li>${item.nama_toko} : ${item.harga}</li>`
+              //     })
+              //     text+="</ul>"
+              //    return text;
+              //  }},
+               { "data": null, render: function(data){
+                 (!data.hargaMin)?data.hargaMin=0:data.hargaMin;
+                  return `<a href="#" class="hargamin" id_standar_harga="${data.id}">${data.hargaMin}</a>`;
+               }},
               
          ],
         //  'rowsGroup': [1],
@@ -134,8 +147,63 @@
 
     $('#id_kab').change(function(){
    
+   
+    // $.getJSON( "/list_toko/"+$('#id_kab').val(), function( data ) {
+    //       var items = [];
+    //       $('#id_toko').empty()
+    //       $.each( data, function( key, val ) {
+    //         $('#id_toko').append(`<option value="${val.id}">${val.nama_toko}</option>`)
+    //       });
+        
+        
+    //     });
     t.ajax.url( `/manajemen_master/pekerjaan/list_json/${$('#id_kab').val()}` ).load();
+
   })
+
+ 
+
+
+
+      $('#data').on('click', '.hargamin', function(e) {
+          // console.log($(this).attr('id_standar_harga'));
+          if($(this).length>1){
+            $(this).popover('hide');
+          }
+          $.getJSON( "/manajemen_master/pekerjaan/detail_toko/"+$(this).attr('id_standar_harga')+"/"+$('#id_kab').val(), function( data ) {
+            // console.log(data)
+            $('.hargamin').popover({
+                        "html": true,
+                        trigger: 'manual',
+                        placement: 'left',
+                        "content": function () {
+                          let text ="<ul>";
+                  data.data.forEach(function(item){
+                    text+=`<li>${item.nama_toko} : ${item.harga}</li>`
+                  })
+                  text+="</ul>"
+                 return text;
+                        }
+                    })
+
+            $(e.target).popover('toggle');
+          })
+
+         
+      })
+
+
+      // $('#data').on('click', function(e) {
+      //     // console.log($(this).attr('id_standar_harga'));
+      //     if($(this).length>1)
+      //       $(this).popover('hide');
+      //      $(e.target).popover('toggle');
+       
+
+         
+      // })
+
+      
   });
 
   

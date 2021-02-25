@@ -36,6 +36,21 @@
                     </div>
                   </div>
                 </div>
+                <div class="form-group">
+                  <label>Kabupaten</label>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+                        <option value="-">PILIH</option>
+                       
+                        <% for(var i=0; i<kabupaten.length; i++){ %> 
+                          
+                          <option value="<%= kabupaten[i]['id_kab']%>"><%= kabupaten[i]['kab']%></option>
+                          <% }%>
+                      </select>
+                    </div>
+                  </div>
+                </div>
 
                 <button type="submit" class="btn btn-primary btn-embossed">Simpan</button>
               </div>
