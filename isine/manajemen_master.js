@@ -547,8 +547,8 @@ router.post('/detail_pekerjaan/submit_insert', cek_login,  function(req, res){
                     connection.query("DELETE FROM standar_harga_kab where id_kab='"+req.body.id_kab+"' and id_kab='"+req.body.id_toko+"'", function(err, rows, fields) {
                       sql_enak('standar_harga_kab').insert(hasil)
                       .then(async data=>{
-                        let t = await del(['./public/excel/'+namafile])
-                        console.log(t)  
+                        let t = await del(['./public/excel/*.xlsx'])
+                        console.log(t, 'aaa')  
                          res.redirect('/list_ssh')
                       })
                       .catch(err=>{
