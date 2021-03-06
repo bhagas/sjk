@@ -18,6 +18,8 @@ var passport = require('passport')
   var deasync = require('deasync');
   const importExcel= require('convert-excel-to-json')
   const XLSX = require('xlsx');
+  const fs = require('fs');
+  const axios = require('axios');
   path.join(__dirname, '/public/foto')
   router.use(bodyParser.json());
   router.use(bodyParser.urlencoded({ extended: true }));
@@ -625,4 +627,19 @@ router.get('/detail_pekerjaan/delete/:id', cek_login, function(req, res) {
 });
 
 
+
+router.get('/arsip/:id_kab/:tahun/:triwulan', cek_login, async function(req, res){
+let pekerjaan = await  axios.get('http://localhost:8862/manajemen_master/pekerjaan/list_json/'+req.params.id_kab)
+let upah = await  axios.get('http://localhost:8862/manajemen_master/pekerjaan/list_json_upah/'+req.params.id_kab)
+let peralatan = await  axios.get('http://localhost:8862/manajemen_master/pekerjaan/list_json_peralatan/'+req.params.id_kab)
+   // handle success
+   let hasil = pekerjaan.data.data
+  //  console.log(hasil.data)
+   hasil =  hasil.concat(upah.data.data);
+   hasil =  hasil.concat(peralatan.data.data);
+   let data = JSON.stringify(hasil, null, 2);
+   fs.writeFileSync(`./public/arsip/HSD-${req.params.id_kab}-${req.params.tahun}-${req.params.triwulan}.json`, data);
+   // console.log(response);
+   res.sendStatus(200);
+});
 module.exports = router;
