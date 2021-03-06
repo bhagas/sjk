@@ -622,11 +622,8 @@ router.get('/detail_pekerjaan/delete/:id', cek_login, function(req, res) {
   //  if (err) throw err;
     numRows = rows.affectedRows;
   })
-
   res.redirect('/manajemen_master/detail_pekerjaan');
 });
-
-
 
 router.get('/arsip/:id_kab/:tahun/:triwulan', cek_login, async function(req, res){
 let pekerjaan = await  axios.get('http://localhost:8862/manajemen_master/pekerjaan/list_json/'+req.params.id_kab)
