@@ -73,7 +73,7 @@
                                                     <th>Kode</th>
                                                     <th>Satuan</th>
                                                     <th>Uraian Pekerjaan</th>
-                                                    <th>Harga Satuan (Rp)</th>
+                                                    <!-- <th>Harga Satuan (Rp)</th> -->
                                                 </tr>
                                             </thead>
                     
@@ -181,33 +181,20 @@
       },
   
       "processing": true,
-           "ajax": "/manajemen_master/pekerjaan/detail_json_all/"+$('#id_kab').val(),
+           "ajax": "/manajemen_master/pekerjaan/list/"+$('#id_kab').val(),
            "columns": [
                { "data": null},
                { "data": "mata_pembayaran"},
                { "data": "satuan"},
-               { "data": "nama_pekerjaan"},
-               { "data": "total_keseluruhan"},
+          
+               { "data": null, render: function(data){
+
+                  return `<a href="#" class="hspk" idnya="${data.id}">${data.nama_pekerjaan}</a>`;
+               }},
+            //    { "data": "total_keseluruhan"},
               
          ],
-         'rowsGroup': [1],
-         'createdRow': function(row, data, dataIndex){
-         // Use empty value in the "Office" column
-         // as an indication that grouping with COLSPAN is needed
-        //  this.rowsgroup.update()
-         console.log(data)
-        //  if(data[1] === ''){
-        //     // Add COLSPAN attribute
-        //     $('td:eq(0)', row).attr('colspan', 5);
-
-        //     // Hide required number of columns
-        //     // next to the cell with COLSPAN attribute
-        //     $('td:eq(1)', row).css('display', 'none');
-        //     $('td:eq(2)', row).css('display', 'none');
-        //     $('td:eq(3)', row).css('display', 'none');
-      
-        //  }
-      },
+        
          "deferRender": true,
          // "ordering": false,
         //  "columnDefs": [
@@ -233,6 +220,35 @@
 
    
 
+    $('.datane').on('click', '.hspk', function(e) {
+          // console.log($(this).attr('id_standar_harga'));
+          if($(this).length>1){
+            $(this).popover('hide');
+          }
+          $.getJSON( "/manajemen_master/pekerjaan/detail_satuan/"+$(this).attr('idnya')+"/"+$('#id_kab').val(), function( data ) {
+            console.log(data)
+            $('.hspk').popover({
+                        "html": true,
+                        trigger: 'manual',
+                        placement: 'left',
+                        "content": function () {
+                          let text ="<ul>";
+                  data.data.list.forEach(function(item){
+                    text+=`<li>${item.nama} : Harga = ${item.harga} , Koefisien = ${item.koefisien}</li>`
+                  })
+                  text+="</ul>"
+                  text+="sub total :"+data.data.total;
+                  text+="</br>profit :"+data.data.profit;
+                  text+="</br>total :"+data.data.total_keseluruhan;
+                 return text;
+                        }
+                    })
+
+            $(e.target).popover('toggle');
+          })
+
+         
+      })
   
 
 
@@ -240,7 +256,7 @@
 
     $('#id_kab').change(function(){
    
-   t.ajax.url( `/manajemen_master/pekerjaan/detail_json_all/${$('#id_kab').val()}` ).load();
+   t.ajax.url( `/manajemen_master/pekerjaan/list/${$('#id_kab').val()}` ).load();
  })
   });
 
