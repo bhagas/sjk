@@ -293,7 +293,10 @@ router.get('/pekerjaan/detail_json/:id/:id_kab', function(req, res) {
 });
 
 
-router.get('/pekerjaan/detail_json_all/:id_kab', function(req, res) {
+
+
+
+router.get('/pekerjaan/list/:id_kab', function(req, res) {
   let done = false;
   let data=[]
   connection.query("SELECT a.* from master_pekerjaan a ", function(err, data_detail_pekerjaan, fields) {
@@ -303,21 +306,27 @@ router.get('/pekerjaan/detail_json_all/:id_kab', function(req, res) {
     }) 
     deasync.loopWhile(function(){return !done;});
 
-    data.forEach(function(item, index){
-      done = false;
-      data[index].total = 0
-     connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+item.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id", function(err, data_harga, fields) {
-       console.log(data_harga);
-      //  data[index].harga = data_harga;
+   
+    res.json({data})
+
+});
+router.get('/pekerjaan/detail_satuan/:id/:id_kab', function(req, res) {
+  let done = false;
+  let data={}
+
+      data.total = 0
+     connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id", function(err, data_harga, fields) {
+      //  console.log(data_harga);
+        data.list = data_harga;
        data_harga.forEach(function(harga_item){
-         data[index].total += harga_item.harga * harga_item.koefisien;
+         data.total += harga_item.harga * harga_item.koefisien;
        })
        done = true;
      }) 
       deasync.loopWhile(function(){return !done;});
-      data[index].profit = (data[index].total * 15)/100;
-      data[index].total_keseluruhan = data[index].total + data[index].profit;
-     })
+      data.profit = (data.total * 15)/100;
+      data.total_keseluruhan = data.total + data.profit;
+   
     res.json({data})
 
 });
@@ -639,5 +648,37 @@ let peralatan = await  axios.get('http://localhost:8862/manajemen_master/pekerja
    fs.writeFileSync(`./public/arsip/HSD-${req.params.id_kab}-${req.params.tahun}-${req.params.triwulan}.json`, data);
    // console.log(response);
    res.sendStatus(200);
+});
+
+router.get('/arsip/hspk/:id_kab/:tahun/:triwulan', function(req, res) {
+  let done = false;
+  let data=[]
+  connection.query("SELECT a.* from master_pekerjaan a ", function(err, data_detail_pekerjaan, fields) {
+    // console.log("SELECT a.*, b.nama, b.satuan, b.kode from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id and c.id_kab = '"+req.params.id_kab+"'") 
+   data = data_detail_pekerjaan
+      done = true;
+    }) 
+    deasync.loopWhile(function(){return !done;});
+
+    data.forEach(function(item, index){
+      done = false;
+      data[index].total = 0
+     connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+item.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id", function(err, data_harga, fields) {
+      //  console.log(data_harga);
+       data[index].list = data_harga;
+       data_harga.forEach(function(harga_item){
+         data[index].total += harga_item.harga * harga_item.koefisien;
+       })
+       done = true;
+     }) 
+      deasync.loopWhile(function(){return !done;});
+      data[index].profit = (data[index].total * 15)/100;
+      data[index].total_keseluruhan = data[index].total + data[index].profit;
+     })
+     let dataa = JSON.stringify(data, null, 2);
+     fs.writeFileSync(`./public/arsip/HSPK-${req.params.id_kab}-${req.params.tahun}-${req.params.triwulan}.json`, dataa);
+   
+     res.sendStatus(200);
+
 });
 module.exports = router;
