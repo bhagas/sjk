@@ -591,7 +591,16 @@ router.get('/detail_pekerjaan/export_excel/:id_kab/:id_toko', cek_login, async f
       var wbbuf = XLSX.write(wb, {
         type: 'base64'
       });
-      res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename=" + "HSDMaster.xlsx"]]);
+      var done = false;
+      let toko ="";
+      connection.query(`SELECT  a.nama_toko, b.kab FROM master_toko a  join kabupaten b on a.id_kab = b.id_kab where  a.id  = ${req.params.id_toko} `, function(err, rows, fields) {
+          // console.log(rows)
+        toko = rows
+          done = true;
+      })
+      require('deasync').loopWhile(function(){return !done;});
+
+      res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename=" + ""+toko[0].kab+"-"+toko[0].nama_toko+".xlsx"]]);
       // res.writeHead(200, [['Content-Disposition',  "attachment; filename=" + "HSDMaster.xlsx"]]);
       res.end( new Buffer(wbbuf, 'base64') );
       // res.send(200)

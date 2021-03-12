@@ -25,6 +25,7 @@ var peraturan = require('./isine/peraturan');
 var info_jakon = require('./isine/info_jakon');
 var manajemen_master = require('./isine/manajemen_master');
 var manajemen_master_ssh = require('./isine/manajemen_master_ssh');
+var manajemen_backup = require('./isine/manajemen_backup');
 var sql_enak = require('./database/mysql_enak.js').connection;
 const uploadd = require('express-fileupload')
 var app = express();
@@ -150,6 +151,7 @@ app.use('/peraturan', peraturan);
 app.use('/info_jakon', info_jakon);
 app.use('/manajemen_master', manajemen_master);
 app.use('/manajemen_master_ssh', manajemen_master_ssh);
+app.use('/manajemen_backup', manajemen_backup);
 
 
 app.get('/' , function (req, res) {
