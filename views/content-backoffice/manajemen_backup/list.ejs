@@ -3,7 +3,7 @@
 <!-- BEGIN PAGE CONTENT -->
 <div class="page-content">
   <div class="header">
-    <h2><strong>Data Master Harga Standar</strong></h2>
+    <h2><strong>Data Backup</strong></h2>
     <div class="breadcrumb-wrapper">
       <ol class="breadcrumb">
         <li><a href="/backoffice">Dashboard</a>
@@ -16,42 +16,26 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-header header-line">
-           <a class="btn btn-primary btn-embossed" href="/manajemen_master_ssh/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a>
+           <a class="btn btn-primary btn-embossed" href="/manajemen_backup/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a>
         </div>
         <div class="panel-content pagination2">
           <table class="table table-bordered table-striped table-hover" id="data">
             <thead>
               <tr>
                 <th class="header">No.</th>
-                <th class="header">Kode</th>
-                <th class="header">Kategori</th>
-                <th class="header">Jenis</th>
-                <th class="header">Nama</th>
-                <th class="header">Satuan</th>
-                <th class="header">Option</th>
+                <th class="header">Tahun</th>
+                <th class="header">Triwulan</th>
+                
               </tr>
             </thead>
             
             <tbody>
-              <% for(var i=0; i<data.length; i++){ %>
-                <tr>
-                  <td><%= i+1%></td>
-                  <td><%= data[i].kode%></td>
-                  <td><%= data[i].kategori%></td>
-                  <td><%= data[i].jenis%></td>
-                  <td><%= data[i].nama%></td>
-                  <td><%= data[i].satuan%></td>
-              <td>
-                <center>
-                <ul class="list-inline" style="text-align: center;">
-                  <li><a class="btn btn-warning btn-embossed btn-sm" href="/manajemen_master_ssh/edit/<%= data[i].id%>" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
-                  <li class="separator">|</li>
-                  <li><a class="btn btn-danger btn-embossed btn-sm" href="/manajemen_master_ssh/delete/<%= data[i].id%>" role="button" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
-                </ul>
-                </center>
-              </td>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              
             </tr>
-            <%}%>
             </tbody>
           </table>
         </div>
@@ -61,7 +45,7 @@
   <div class="footer">
     <div class="copyright">
       <p class="pull-left sm-pull-reset">
-        <span>Copyright <span class="copyright">©</span> 2019 </span>
+        <span>Copyright <span class="copyright">©</span> 2018 </span>
         <span>Pemerintah</span>.
       </p>
     </div>
@@ -90,9 +74,9 @@
             "sLast":     "Terakhir"
           }
       },
-      "columnDefs": [
-          { "width": "100px", "targets": 2}
-      ],
+      // "columnDefs": [
+      //     { "width": "100px", "targets": 1}
+      // ],
     });
   });
 </script>
