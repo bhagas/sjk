@@ -1,5 +1,9 @@
 <% include ../../template-backoffice/header.ejs %>
-
+<%
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+%>
 <!-- BEGIN PAGE CONTENT -->
 <div class="page-content">
   <div class="header">
@@ -16,14 +20,32 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-header header-line">
-           <a class="btn btn-primary btn-embossed" href="/manajemen_master/detail_pekerjaan/import" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Import/Export Data</a>
-           <select class="form-control" name="id_kab" id="id_kab" data-search="true">
-            <option value="-"   >-- PILIH --</option>
-            <% for(var i=0; i<kabupaten.length; i++){ %> 
-            
-            <option value="<%= kabupaten[i]['id_kab']%>"   ><%= kabupaten[i]['kab']%> </option>
-            <% }%>
-        </select>
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <a class="btn btn-primary btn-embossed" href="/manajemen_master/detail_pekerjaan/import" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Import/Export Data</a>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 15px;">
+            <div class="col-md-12 col-lg-12">
+              <div class="panel bg-aero" style="margin-bottom: 0;">
+                <div class="panel-header">
+                  <h3 style="margin-bottom: 0;">Pencarian Harga Satuan Dasar Berdasarkan Kabupaten/Kota</h3>
+                </div>
+                <div class="panel-content">
+                  <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+                    <option value="-"   >-- Pilih --</option>
+                    <% for(var i=0; i<kabupaten.length; i++){ %> 
+                    
+                    <option value="<%= kabupaten[i]['id_kab']%>"   ><%= kabupaten[i]['kab']%> </option>
+                    <% }%>
+                </select>
+                </div>
+              </div>
+            </div>
+          </div>
+           
+           
 
         <!-- <select class="form-control" name="id_toko" id="id_toko" data-search="true">
           <option value="-"   >-- PILIH --</option>
@@ -55,8 +77,8 @@
   <div class="footer">
     <div class="copyright">
       <p class="pull-left sm-pull-reset">
-        <span>Copyright <span class="copyright">©</span> 2019</span>
-        <span>Pemerintah</span>.
+        <span>Copyright <span class="copyright">©</span> 2021 </span>
+        <span>Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah</span>.
       </p>
     </div>
   </div>
@@ -66,6 +88,9 @@
 <% include ../../template-backoffice/footer.ejs %>
 
 <script type="text/javascript">
+function numberWithCommas(x) {
+		  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+		}
   $(document).ready(function() {
     var t  =  $('#data').DataTable({
       "language": {
@@ -103,7 +128,7 @@
               //  }},
                { "data": null, render: function(data){
                  (!data.hargaMin)?data.hargaMin=0:data.hargaMin;
-                  return `<a href="#" class="hargamin" id_standar_harga="${data.id}">${data.hargaMin}</a>`;
+                  return `<a href="#" class="hargamin" id_standar_harga="${data.id}" style="float:right">${numberWithCommas(data.hargaMin)}</a>`;
                }},
               
          ],

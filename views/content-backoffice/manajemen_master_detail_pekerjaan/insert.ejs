@@ -6,7 +6,7 @@
     <div class="breadcrumb-wrapper">
       <ol class="breadcrumb">
         <li><a href="/backoffice">Dashboard</a></li>
-        <li><a href="/manajemen_master/detail_pekerjaan">Data Master Detail Pekerjaan</a></li>
+        <li><a href="/list_ssh">Data Master Detail Pekerjaan</a></li>
         <li class="active">Tambah Data</li>
       </ol>
     </div>
@@ -24,7 +24,7 @@
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                       <select class="form-control" name="id_kab" id="id_kab" data-search="true">
-                        <option value="-">PILIH</option>
+                        <option value="-">-- Pilih --</option>
                        
                         <% for(var i=0; i<kabupaten.length; i++){ %> 
                           
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="col-xs-4 col-sm-4 col-md-6 col-lg-6">
-                      <a href="#" id="refreshToko">Refresh Toko</a>
+                      <a href="#" id="refreshToko" class="btn btn-warning btn-sm btn-embossed">Refresh Toko</a>
                     </div>
                    
                   </div>
@@ -59,7 +59,7 @@
               
 
                 <div class="form-group">
-                  <label>FILE EXCEL</label>
+                  <label>Upload File Excel</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                       <input type="file" class="form-control" name="file_ssh" id="">
@@ -67,12 +67,17 @@
                   </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-embossed">Simpan</button>
+                <ul class="list-inline">
+                  <li><button type="submit" class="btn btn-primary btn-embossed">Simpan</button></li>
+                  <li>|</li>
+                  <li><button id="export" class="btn btn-success btn-embossed">Export Master Excel</button></li>
+                </ul>
+                
                 
               </div>
             </div>
           </form>
-          <a href="#" class="btn btn-primary btn-embossed" id="export">EXPORT MASTER EXCEL</a>
+          
         </div>
       </div>
     </div>
@@ -81,7 +86,7 @@
     <div class="copyright">
       <p class="pull-left sm-pull-reset">
         <span>Copyright <span class="copyright">©</span> 2021 </span>
-        <span>Pemerintah</span>.
+        <span>Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah</span>.
       </p>
     </div>
   </div>
