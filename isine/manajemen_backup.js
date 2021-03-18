@@ -15,6 +15,8 @@ var passport = require('passport')
   var multer = require("multer");
   var st = require('knex-postgis')(sql_enak);
   var deasync = require('deasync');
+  const axios = require('axios');
+  const fs = require('fs');
   path.join(__dirname, '/public/foto')
   router.use(bodyParser.json());
   router.use(bodyParser.urlencoded({ extended: true }));
@@ -59,8 +61,113 @@ var upload = multer({ storage: storage })
 
 //start-------------------------------------
 router.get('/', cek_login, function(req, res) {
-  res.render('content-backoffice/manajemen_backup/list'); 
+  connection.query("select * from kabupaten", function(err, kabupaten, fields) {
+    res.render('content-backoffice/manajemen_backup/list', {kabupaten});
+    
+  })
 });
+
+router.get('/list_json/:id_kab', cek_login, function(req, res) {
+  connection.query("select a.*, b.kab from arsip a join kabupaten b on a.id_kab = b.id_kab WHERE a.id_kab="+req.params.id_kab, function(err, data, fields) {
+    res.json({data})
+  })
+});
+
+router.get('/arsip/:id_kab/:tahun/:triwulan', cek_login, async function(req, res){
+  //hsd
+  let pekerjaan = await  axios.get('http://localhost:8862/manajemen_master/pekerjaan/list_json/'+req.params.id_kab)
+  let upah = await  axios.get('http://localhost:8862/manajemen_master/pekerjaan/list_json_upah/'+req.params.id_kab)
+  let peralatan = await  axios.get('http://localhost:8862/manajemen_master/pekerjaan/list_json_peralatan/'+req.params.id_kab)
+     // handle success
+     let hasil = pekerjaan.data.data
+    //  console.log(hasil.data)
+     hasil =  hasil.concat(upah.data.data);
+     hasil =  hasil.concat(peralatan.data.data);
+     let data = JSON.stringify(hasil, null, 2);
+     fs.writeFileSync(`./public/arsip/HSD-${req.params.id_kab}-${req.params.tahun}-${req.params.triwulan}.json`, data);
+     // console.log(response);
+    //  res.sendStatus(200);
+
+
+
+
+    //hspk
+    let done = false;
+     data=[]
+    connection.query("SELECT a.* from master_pekerjaan a ", function(err, data_detail_pekerjaan, fields) {
+      // console.log("SELECT a.*, b.nama, b.satuan, b.kode from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id and c.id_kab = '"+req.params.id_kab+"'") 
+     data = data_detail_pekerjaan
+        done = true;
+      }) 
+      deasync.loopWhile(function(){return !done;});
+  
+      data.forEach(function(item, index){
+        done = false;
+        data[index].total = 0
+       connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+item.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id", function(err, data_harga, fields) {
+        //  console.log(data_harga);
+         data[index].list = data_harga;
+         data_harga.forEach(function(harga_item){
+           data[index].total += harga_item.harga * harga_item.koefisien;
+         })
+         done = true;
+       }) 
+        deasync.loopWhile(function(){return !done;});
+        data[index].profit = (data[index].total * 15)/100;
+        data[index].total_keseluruhan = data[index].total + data[index].profit;
+       })
+       let dataa = JSON.stringify(data, null, 2);
+       fs.writeFileSync(`./public/arsip/HSPK-${req.params.id_kab}-${req.params.tahun}-${req.params.triwulan}.json`, dataa);
+     
+       done = false;
+       connection.query(`DELETE from arsip where id_kab = ${req.params.id_kab} and tahun = ${req.params.tahun} and triwulan = ${req.params.triwulan} `, function(err, hasil, fields) {
+        done = true;
+      })
+      deasync.loopWhile(function(){return !done;});
+      
+     await sql_enak.insert({
+        id_kab : req.params.id_kab,
+        tahun : req.params.tahun,
+        triwulan : req.params.triwulan,
+        hsd : 1,
+        hspk : 1,
+      }).into("arsip")
+
+      res.json({status:200});
+      
+  });
+  
+  // router.get('/hspk/:id_kab/:tahun/:triwulan', function(req, res) {
+  //   let done = false;
+  //   let data=[]
+  //   connection.query("SELECT a.* from master_pekerjaan a ", function(err, data_detail_pekerjaan, fields) {
+  //     // console.log("SELECT a.*, b.nama, b.satuan, b.kode from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id and c.id_kab = '"+req.params.id_kab+"'") 
+  //    data = data_detail_pekerjaan
+  //       done = true;
+  //     }) 
+  //     deasync.loopWhile(function(){return !done;});
+  
+  //     data.forEach(function(item, index){
+  //       done = false;
+  //       data[index].total = 0
+  //      connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+item.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id", function(err, data_harga, fields) {
+  //       //  console.log(data_harga);
+  //        data[index].list = data_harga;
+  //        data_harga.forEach(function(harga_item){
+  //          data[index].total += harga_item.harga * harga_item.koefisien;
+  //        })
+  //        done = true;
+  //      }) 
+  //       deasync.loopWhile(function(){return !done;});
+  //       data[index].profit = (data[index].total * 15)/100;
+  //       data[index].total_keseluruhan = data[index].total + data[index].profit;
+  //      })
+  //      let dataa = JSON.stringify(data, null, 2);
+  //      fs.writeFileSync(`./public/arsip/HSPK-${req.params.id_kab}-${req.params.tahun}-${req.params.triwulan}.json`, dataa);
+     
+  //      res.sendStatus(200);
+  
+  // });
 
 router.get('/insert', cek_login, function(req, res) {
   res.render('content-backoffice/manajemen_backup/insert'); 

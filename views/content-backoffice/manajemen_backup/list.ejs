@@ -1,5 +1,140 @@
 <% include ../../template-backoffice/header.ejs %>
+<style>
+* {
+  box-sizing: border-box;
+}
+.proses {
+  color: #174955;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+}
 
+.proses:after {
+  position: absolute;
+  content: "";
+  -webkit-animation: Dots 2s cubic-bezier(0, .39, 1, .68) infinite;
+  animation: Dots 2s cubic-bezier(0, .39, 1, .68) infinite;
+}
+  .loader {
+  margin: 5% auto 30px;
+}
+
+.book {
+  border: 4px solid #174955;
+  width: 60px;
+  height: 45px;
+  position: relative;
+  perspective: 150px;
+}
+
+.page {
+  display: block;
+  width: 30px;
+  height: 45px;
+  border: 4px solid #174955;
+  border-left: 1px solid #8455b2;
+  margin: 0;
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  overflow: hidden;
+  background: #8455b2;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.book .page:nth-child(1) {
+  -webkit-animation: pageTurn 1.2s cubic-bezier(0, .39, 1, .68) 1.6s infinite;
+  animation: pageTurn 1.2s cubic-bezier(0, .39, 1, .68) 1.6s infinite;
+}
+
+.book .page:nth-child(2) {
+  -webkit-animation: pageTurn 1.2s cubic-bezier(0, .39, 1, .68) 1.45s infinite;
+  animation: pageTurn 1.2s cubic-bezier(0, .39, 1, .68) 1.45s infinite;
+}
+
+.book .page:nth-child(3) {
+  -webkit-animation: pageTurn 1.2s cubic-bezier(0, .39, 1, .68) 1.2s infinite;
+  animation: pageTurn 1.2s cubic-bezier(0, .39, 1, .68) 1.2s infinite;
+}
+
+
+/* Page turn */
+
+@-webkit-keyframes pageTurn {
+  0% {
+    -webkit-transform: rotateY( 0deg);
+    transform: rotateY( 0deg);
+  }
+  20% {
+    background: #4b1e77;
+  }
+  40% {
+    background: rebeccapurple;
+    -webkit-transform: rotateY( -180deg);
+    transform: rotateY( -180deg);
+  }
+  100% {
+    background: rebeccapurple;
+    -webkit-transform: rotateY( -180deg);
+    transform: rotateY( -180deg);
+  }
+}
+
+@keyframes pageTurn {
+  0% {
+    transform: rotateY( 0deg);
+  }
+  20% {
+    background: #4b1e77;
+  }
+  40% {
+    background: rebeccapurple;
+    transform: rotateY( -180deg);
+  }
+  100% {
+    background: rebeccapurple;
+    transform: rotateY( -180deg);
+  }
+}
+
+
+/* Dots */
+
+@-webkit-keyframes Dots {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}
+
+@keyframes Dots {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}
+</style>
 <!-- BEGIN PAGE CONTENT -->
 <div class="page-content">
   <div class="header">
@@ -16,8 +151,59 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-header header-line">
-           <a class="btn btn-primary btn-embossed" href="/manajemen_backup/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a>
-        </div>
+           <!-- <a class="btn btn-primary btn-embossed" href="/manajemen_backup/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a> -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+                  <% for(var i=0; i<kabupaten.length; i++){ %> 
+                  <option value="<%= kabupaten[i]['id_kab']%>"   ><%= kabupaten[i]['kab']%> </option>
+                  <% }%>
+              </select>
+                <div class="form-group">
+                  <label>Tahun</label>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <select class="form-control" name="tahun" id="tahun">
+                        <% for(let i =2021; i<2091; i++){%>
+                          <option value="<%=i%>"><%=i%></option>
+                     
+                          <%}%>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Triwulan</label>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <select class="form-control" name="triwulan" id="triwulan">
+                        <option value="1">I</option>
+                        <option value="2">II</option>
+                        <option value="3">III</option>
+                        <option value="4">IV</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-embossed" id="arsip">ARSIP</button>
+               <div id="loading">
+                <div class="loader book">
+                  <figure class="page"></figure>
+                  <figure class="page"></figure>
+                  <figure class="page"></figure>
+                </div>
+                
+                <h1 class="proses">Mohon Tunggu</h1>
+               </div>
+              
+              </div>
+            </div>
+         
+        
+        
+          </div>
         <div class="panel-content pagination2">
           <table class="table table-bordered table-striped table-hover" id="data">
             <thead>
@@ -25,17 +211,16 @@
                 <th class="header">No.</th>
                 <th class="header">Tahun</th>
                 <th class="header">Triwulan</th>
+                <th class="header">HSD</th>
+                <th class="header">HSPK</th>
+                <th class="header">Waktu</th>
+                <th class="header">DOWNLOAD</th>
                 
               </tr>
             </thead>
             
             <tbody>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              
-            </tr>
+          
             </tbody>
           </table>
         </div>
@@ -56,12 +241,12 @@
 <% include ../../template-backoffice/footer.ejs %>
 
 <script type="text/javascript">
-  $(document).ready(function() {
-    $('#data').DataTable({
+   $(document).ready(function() {
+    var t  =  $('#data').DataTable({
       "language": {
-          "sProcessing":   "Sedang memproses...",
+        "sProcessing":   '<span>Sedang memproses...</span><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>',
           "sLengthMenu":   "_MENU_",
-          "sZeroRecords":  "Tidak ditemukan data yang sesuai",
+          "sZeroRecords":  "Tidak ditemukan data, silahkan pilih Kab/kota",
           "sInfo":         "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
           "sInfoEmpty":    "Menampilkan 0 sampai 0 dari 0 entri",
           "sInfoFiltered": "(disaring dari _MAX_ entri keseluruhan)",
@@ -74,9 +259,126 @@
             "sLast":     "Terakhir"
           }
       },
-      // "columnDefs": [
-      //     { "width": "100px", "targets": 1}
-      // ],
+  
+      "processing": true,
+           "ajax": "/manajemen_backup/list_json/"+$('#id_kab').val(),
+           "columns": [
+               { "data": null},
+              //  { "data": "jenis"},
+               { "data": "tahun"},
+               { "data": "triwulan"},
+              //  { "data": "hargaSurvey", render: function(data){
+              //   //  console.log(data)
+              //   let text ="<ul>";
+              //     data.forEach(function(item){
+              //       text+=`<li>${item.nama_toko} : ${item.harga}</li>`
+              //     })
+              //     text+="</ul>"
+              //    return text;
+              //  }},
+               { "data": "hsd", render: function(data){
+                 if(data==1){
+
+                  return `<span style="color:green">Generated &#10004;</span>`;
+                
+                 }else{
+                   return ''
+                 }
+                }},
+               { "data": "hspk", render: function(data){
+                if(data==1){
+
+                  return `<span style="color:green">Generated &#10004;</span>`;
+                  
+                  }else{
+                    return ''
+                  }
+               }},
+               { "data": "tgl"},
+               {"data": null, render: function(data){
+
+                 return '<a href="#" class="font-size: 100px">[&#128218]</a>';
+               }
+              }
+              
+         ],
+        //  'rowsGroup': [1],
+      //    'createdRow': function(row, data, dataIndex){
+      //    // Use empty value in the "Office" column
+      //    // as an indication that grouping with COLSPAN is needed
+      //    if(data[1] === ''){
+      //       // Add COLSPAN attribute
+      //       $('td:eq(0)', row).attr('colspan', 5);
+
+      //       // Hide required number of columns
+      //       // next to the cell with COLSPAN attribute
+      //       $('td:eq(1)', row).css('display', 'none');
+      //       $('td:eq(2)', row).css('display', 'none');
+      //       $('td:eq(3)', row).css('display', 'none');
+      
+      //    }
+      // },
+         "deferRender": true,
+         // "ordering": false,
+        //  "columnDefs": [
+        //      { "width": "3%" },
+        //      { "width": "20%" },
+        //      { "width": "24%" },
+        //      { "width": "10%" },
+        //      { "width": "20%" },
+        //      { "width": "20%" },
+    
+        //      { "width": "20%" }
+        //   ],
+         "fnRowCallback": function( row, data, iDisplayIndex ) {
+                   var index = iDisplayIndex +1;
+                   $('td:eq(0)',row).html(index);
+                   return row;
+         },
+    //   "columnDefs": [
+    //       { "width": "100px", "targets": 14}
+    //   ],
     });
+
+    $('#id_kab').change(function(){
+   
+   
+    t.ajax.url( `/manajemen_backup/list_json/${$('#id_kab').val()}` ).load();
+
+  })
+
+ 
+
+  $("#loading").hide()
+
+      $('#arsip').on('click', function(e) {
+          // console.log($(this).attr('id_standar_harga'));
+          $("#loading").show()
+          $.getJSON( "/manajemen_backup/arsip/"+$('#id_kab').val()+"/"+$('#tahun').val()+"/"+$('#triwulan').val(), function( data ) {
+            // console.log(data,'abc')
+            $("#loading").hide()
+            t.ajax.url( `/manajemen_backup/list_json/${$('#id_kab').val()}` ).load();
+            alert("Berhasil");
+
+          }).fail(function() {
+            $("#loading").hide()
+              alert("Gagal Silahkan Ulangi Kembali");
+          })
+
+         
+      })
+
+
+      // $('#data').on('click', function(e) {
+      //     // console.log($(this).attr('id_standar_harga'));
+      //     if($(this).length>1)
+      //       $(this).popover('hide');
+      //      $(e.target).popover('toggle');
+       
+
+         
+      // })
+
+      
   });
 </script>

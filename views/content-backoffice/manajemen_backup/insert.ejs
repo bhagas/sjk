@@ -23,8 +23,11 @@
                   <label>Tahun</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <select class="form-control" name="" id="">
-                        <option value="">-- Pilih --</option>
+                      <select class="form-control" name="tahun" id="tahun">
+                        <% for(let i =2021; i<2091; i++){%>
+                          <option value="<%=i%>"><%=i%></option>
+                     
+                          <%}%>
                       </select>
                     </div>
                   </div>
@@ -34,8 +37,11 @@
                   <label>Triwulan</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <select class="form-control" name="" id="">
-                        <option value="">-- Pilih --</option>
+                      <select class="form-control" name="triwulan" id="triwulan">
+                        <option value="1">I</option>
+                        <option value="2">II</option>
+                        <option value="3">III</option>
+                        <option value="4">IV</option>
                       </select>
                     </div>
                   </div>
