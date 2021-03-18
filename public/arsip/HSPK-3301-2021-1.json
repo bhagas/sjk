@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan pagar sementara dari kayu tinggi 2 meter",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -179,6 +180,7 @@
   },
   {
     "id": 2,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan pagar sementara dari seng gelombang tinggi 2 meter",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -372,6 +374,7 @@
   },
   {
     "id": 3,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan pagar sementara dari kawat duri tinggi 1,8 meter",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -565,6 +568,7 @@
   },
   {
     "id": 4,
+    "kode": "",
     "nama_pekerjaan": "Pengukuran dan pemasangan bowplank",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -683,6 +687,7 @@
   },
   {
     "id": 5,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan kantor semenetara lantai plesteran",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -966,6 +971,7 @@
   },
   {
     "id": 6,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan rumah jaga (konstruksi kayu)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1099,6 +1105,7 @@
   },
   {
     "id": 7,
+    "kode": "",
     "nama_pekerjaan": "Pembutan gudang semen dan peralatan",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1292,6 +1299,7 @@
   },
   {
     "id": 8,
+    "kode": "",
     "nama_pekerjaan": "Pembutan bendeng pekerja",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1485,6 +1493,7 @@
   },
   {
     "id": 9,
+    "kode": "",
     "nama_pekerjaan": "Pembersihan lapangan dan peralatan",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1528,6 +1537,7 @@
   },
   {
     "id": 10,
+    "kode": "",
     "nama_pekerjaan": "Pembutan steger / perancah dari bambu",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1631,6 +1641,7 @@
   },
   {
     "id": 11,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan kotak adukan ukuran 40 cm x 50 cm x 25 cm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -1719,6 +1730,7 @@
   },
   {
     "id": 12,
+    "kode": "",
     "nama_pekerjaan": "Pembutan jalan sementara",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1807,6 +1819,7 @@
   },
   {
     "id": 13,
+    "kode": "",
     "nama_pekerjaan": "Pembongkaran beton bertulang",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -1850,6 +1863,7 @@
   },
   {
     "id": 14,
+    "kode": "",
     "nama_pekerjaan": "Pembongkaran dinding tembok bata",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -1893,6 +1907,7 @@
   },
   {
     "id": 15,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pagar kawat jaringan galvanis panjang 240 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1996,6 +2011,7 @@
   },
   {
     "id": 16,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan panel beton pracetak 5x50x240 cm untuk pagar",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -2129,6 +2145,7 @@
   },
   {
     "id": 17,
+    "kode": "",
     "nama_pekerjaan": "Membongkar lantai dengan membersihkan tegel batu merah (bahan dipergunakan kembali) - (HSPK)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -2141,6 +2158,7 @@
   },
   {
     "id": 18,
+    "kode": "",
     "nama_pekerjaan": "Membongkar plesteran dengan membersihkan - (HSPK)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -2153,6 +2171,7 @@
   },
   {
     "id": 19,
+    "kode": "",
     "nama_pekerjaan": "Membongkar penutup atap bila penutup atap dipakai kembali (HSPK)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -2165,6 +2184,7 @@
   },
   {
     "id": 20,
+    "kode": "",
     "nama_pekerjaan": "Membongkar penutup atap",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -2177,6 +2197,7 @@
   },
   {
     "id": 21,
+    "kode": "",
     "nama_pekerjaan": "Penggalian tanah biasa sedalam 1 m",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2220,6 +2241,7 @@
   },
   {
     "id": 22,
+    "kode": "",
     "nama_pekerjaan": "Penggalian tanah biasa sedalam 2 m",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2263,6 +2285,7 @@
   },
   {
     "id": 23,
+    "kode": "",
     "nama_pekerjaan": "Penggalian tanah biasa sedalam 3 m",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2306,6 +2329,7 @@
   },
   {
     "id": 24,
+    "kode": "",
     "nama_pekerjaan": "Penggalian tanah keras sedalam 1 m",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2349,6 +2373,7 @@
   },
   {
     "id": 25,
+    "kode": "",
     "nama_pekerjaan": "Penggalian tanah cadas sedalam 1 m",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2392,6 +2417,7 @@
   },
   {
     "id": 26,
+    "kode": "",
     "nama_pekerjaan": "Penggalian tanah lumpur sedalam 1 m",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2435,6 +2461,7 @@
   },
   {
     "id": 27,
+    "kode": "",
     "nama_pekerjaan": "Pengerjaan sripping tanah tebing setinggi 1 m",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -2478,6 +2505,7 @@
   },
   {
     "id": 28,
+    "kode": "",
     "nama_pekerjaan": "Pembuangan tanah sejauh 30 meter",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2521,6 +2549,7 @@
   },
   {
     "id": 29,
+    "kode": "",
     "nama_pekerjaan": "Pengurugan kembali galian tanah",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2564,6 +2593,7 @@
   },
   {
     "id": 30,
+    "kode": "",
     "nama_pekerjaan": "Pemadatan tanah ( per 20 cm )",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2607,6 +2637,7 @@
   },
   {
     "id": 31,
+    "kode": "",
     "nama_pekerjaan": "Pengurugan dengan pasir urug",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2665,6 +2696,7 @@
   },
   {
     "id": 32,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lapisan pudel campuran 1KP : 3PP : 7TL",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2783,6 +2815,7 @@
   },
   {
     "id": 33,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lapisan ijuk tebal 10 cm untuk bidang resapan",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2841,6 +2874,7 @@
   },
   {
     "id": 34,
+    "kode": "",
     "nama_pekerjaan": "Pengurugan sirtu padat",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2899,6 +2933,7 @@
   },
   {
     "id": 35,
+    "kode": "",
     "nama_pekerjaan": "Urugan Tanah (SNI)",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2911,6 +2946,7 @@
   },
   {
     "id": 36,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 3PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3029,6 +3065,7 @@
   },
   {
     "id": 37,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 4PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3147,6 +3184,7 @@
   },
   {
     "id": 38,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 5PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3265,6 +3303,7 @@
   },
   {
     "id": 39,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 6PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3383,6 +3422,7 @@
   },
   {
     "id": 40,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 8PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3501,6 +3541,7 @@
   },
   {
     "id": 41,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 1KP : 2PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3634,6 +3675,7 @@
   },
   {
     "id": 42,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 3KP : 10PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3767,6 +3809,7 @@
   },
   {
     "id": 43,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1/4SP : 1KP : 4PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3900,6 +3943,7 @@
   },
   {
     "id": 44,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan batu kosong (anstamping)",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4003,6 +4047,7 @@
   },
   {
     "id": 45,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pondasi siklop, 60% beton campuran 1SP : 2PB : 3KR dan 40% batu belah",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4166,6 +4211,7 @@
   },
   {
     "id": 46,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pondasi sumuran, siameter 100 cm",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4314,6 +4360,7 @@
   },
   {
     "id": 47,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton mutu f'c = 7,4 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4447,6 +4494,7 @@
   },
   {
     "id": 48,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton mutu f'c = 9,8 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4580,6 +4628,7 @@
   },
   {
     "id": 49,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton mutu f'c = 12,2 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4713,6 +4762,7 @@
   },
   {
     "id": 50,
+    "kode": "",
     "nama_pekerjaan": "Membuat lantai kerja beton mutu f'c = 7,4 Mpa slump (3-6) cm, w/c = 0,87",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4846,6 +4896,7 @@
   },
   {
     "id": 51,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton mutu f'c = 14,5 Mpa slump (120 +/- 20) mm",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4979,6 +5030,7 @@
   },
   {
     "id": 52,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton mutu f'c = 16,9 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5112,6 +5164,7 @@
   },
   {
     "id": 53,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton mutu f'c = 19,3 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5245,6 +5298,7 @@
   },
   {
     "id": 54,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton mutu f'c = 21,7 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5378,6 +5432,7 @@
   },
   {
     "id": 55,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton mutu f'c = 24,0 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5511,6 +5566,7 @@
   },
   {
     "id": 56,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton mutu f'c = 26,4 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5644,6 +5700,7 @@
   },
   {
     "id": 57,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton mutu f'c = 28,8 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5777,6 +5834,7 @@
   },
   {
     "id": 58,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton mutu f'c = 31,2 Mpa, slump (120 +/- 20 ) mm",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5910,6 +5968,7 @@
   },
   {
     "id": 59,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton kedap air dengan strorox - 100",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -6043,6 +6102,7 @@
   },
   {
     "id": 60,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan PVC Waterstop lebar 150 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -6131,6 +6191,7 @@
   },
   {
     "id": 61,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan PVC Waterstop lebar 200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -6219,6 +6280,7 @@
   },
   {
     "id": 62,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan PVC Waterstop lebar 230 mm - 320 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -6307,6 +6369,7 @@
   },
   {
     "id": 63,
+    "kode": "",
     "nama_pekerjaan": "Pembesian 10 kg dengan besi polos atau besi ulir",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -6410,6 +6473,7 @@
   },
   {
     "id": 64,
+    "kode": "",
     "nama_pekerjaan": "Pemsangan 10 kg kabel prategang (prestresses) polos/stands",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -6513,6 +6577,7 @@
   },
   {
     "id": 65,
+    "kode": "",
     "nama_pekerjaan": "Pemsangan 10 kg jaring kawat baja (wiremesh)",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -6616,6 +6681,7 @@
   },
   {
     "id": 66,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bekisting untuk pondasi",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -6734,6 +6800,7 @@
   },
   {
     "id": 67,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bekisting untuk sloof",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -6852,6 +6919,7 @@
   },
   {
     "id": 68,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bekisting untuk kolom",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -7015,6 +7083,7 @@
   },
   {
     "id": 69,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bekisting untuk balok",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -7178,6 +7247,7 @@
   },
   {
     "id": 70,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bekisting untuk lantai",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -7341,6 +7411,7 @@
   },
   {
     "id": 71,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bekisting untuk dinding",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -7504,6 +7575,7 @@
   },
   {
     "id": 72,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bekisting untuk tangga",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -7667,6 +7739,7 @@
   },
   {
     "id": 73,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan jembatan untuk pengecoran beton",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -7785,6 +7858,7 @@
   },
   {
     "id": 74,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan kolom praktis beton bertulang (11x11)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -8008,6 +8082,7 @@
   },
   {
     "id": 75,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan ring balok beton bertulang (10x15)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -8231,6 +8306,7 @@
   },
   {
     "id": 76,
+    "kode": "",
     "nama_pekerjaan": "Membuat kolom praktis beton bertulang (11 x 11) cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -8243,6 +8319,7 @@
   },
   {
     "id": 77,
+    "kode": "",
     "nama_pekerjaan": "Membuat ring balok beton bertulang (10 x 15) cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -8255,6 +8332,7 @@
   },
   {
     "id": 78,
+    "kode": "",
     "nama_pekerjaan": "Pasang pondasi beton foot plat",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8267,6 +8345,7 @@
   },
   {
     "id": 79,
+    "kode": "",
     "nama_pekerjaan": "Pasang beton bertulang kolom 30x30",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8279,6 +8358,7 @@
   },
   {
     "id": 80,
+    "kode": "",
     "nama_pekerjaan": "Pasang sloof beton bertulang, besi",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8291,6 +8371,7 @@
   },
   {
     "id": 81,
+    "kode": "",
     "nama_pekerjaan": "Pasang balok latai  beton bertulang,besi",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8303,6 +8384,7 @@
   },
   {
     "id": 82,
+    "kode": "",
     "nama_pekerjaan": "Pasang plat beton bertulang (150 kg besi + bekisting)",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8315,6 +8397,7 @@
   },
   {
     "id": 83,
+    "kode": "",
     "nama_pekerjaan": "Pasang  beton bertulang kolom Ø 36",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8327,6 +8410,7 @@
   },
   {
     "id": 84,
+    "kode": "",
     "nama_pekerjaan": "Pasang  beton kolom 15X15",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8339,6 +8423,7 @@
   },
   {
     "id": 85,
+    "kode": "",
     "nama_pekerjaan": "Pasang beton bertulang balok induk 25X40",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8351,6 +8436,7 @@
   },
   {
     "id": 86,
+    "kode": "",
     "nama_pekerjaan": "Pasang  beton kolom 15X20",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8363,6 +8449,7 @@
   },
   {
     "id": 87,
+    "kode": "",
     "nama_pekerjaan": "Pasang kolom praktis beton bertulang (11 x 11) cm, Besi",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -8375,6 +8462,7 @@
   },
   {
     "id": 88,
+    "kode": "",
     "nama_pekerjaan": "Pasang ring balok beton bertulang (12 x 15) cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -8387,6 +8475,7 @@
   },
   {
     "id": 89,
+    "kode": "",
     "nama_pekerjaan": "Pasang balok latai beton bertulang (11 x 20) cm",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8399,6 +8488,7 @@
   },
   {
     "id": 90,
+    "kode": "",
     "nama_pekerjaan": "Membuat beton tumbuk, 1PC : 3 Ps : 5 KR (rabat)",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8411,6 +8501,7 @@
   },
   {
     "id": 91,
+    "kode": "",
     "nama_pekerjaan": "Beton plat saluran",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8423,6 +8514,7 @@
   },
   {
     "id": 92,
+    "kode": "",
     "nama_pekerjaan": "Pasang balok gantung beton bertulang (15 x 30) cm",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -8435,6 +8527,7 @@
   },
   {
     "id": 93,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan besi profil",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -8523,6 +8616,7 @@
   },
   {
     "id": 94,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan rangka kuda-kuda baja IWF",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -8611,6 +8705,7 @@
   },
   {
     "id": 95,
+    "kode": "",
     "nama_pekerjaan": "Pengerjaan pekerjaan perakitan",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -8714,6 +8809,7 @@
   },
   {
     "id": 96,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan pintu besi pelat baja tebal 2 mm rangkap, rangka baja siku",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -8817,6 +8913,7 @@
   },
   {
     "id": 97,
+    "kode": "",
     "nama_pekerjaan": "Pengerjaan pengelasan dengan las listrik",
     "mata_pembayaran": "",
     "satuan": "cm",
@@ -8920,6 +9017,7 @@
   },
   {
     "id": 98,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan rangka jendela besi scuare tube",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -8993,6 +9091,7 @@
   },
   {
     "id": 99,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pintu rolling door besi",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -9081,6 +9180,7 @@
   },
   {
     "id": 100,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pintu lipat (folding door)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -9169,6 +9269,7 @@
   },
   {
     "id": 101,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan sunscreen aluminium",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -9257,6 +9358,7 @@
   },
   {
     "id": 102,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pintu rolling door alluminium",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -9345,6 +9447,7 @@
   },
   {
     "id": 103,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kusen pintu alluminium",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -9463,6 +9566,7 @@
   },
   {
     "id": 104,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pintu allumunium strip lebar 8 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -9566,6 +9670,7 @@
   },
   {
     "id": 105,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pintu kaca rangka allumunium",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -9684,6 +9789,7 @@
   },
   {
     "id": 106,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan venetions blinds dan vertical blinds",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -9757,6 +9863,7 @@
   },
   {
     "id": 107,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan terali besi strip (2 x 3) mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -9845,6 +9952,7 @@
   },
   {
     "id": 108,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kawat nyamuk",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -9948,6 +10056,7 @@
   },
   {
     "id": 109,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan jendela nako dan tralis",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -10066,6 +10175,7 @@
   },
   {
     "id": 110,
+    "kode": "",
     "nama_pekerjaan": "pemasangan talang datar/jurai seng bjls 28 lebar 90 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -10184,6 +10294,7 @@
   },
   {
     "id": 111,
+    "kode": "",
     "nama_pekerjaan": "pemasangan talang datar/jurai seng bjls 28 lebar 90 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -10196,6 +10307,7 @@
   },
   {
     "id": 112,
+    "kode": "",
     "nama_pekerjaan": "pemasangan rangka besi hollow 1x40.40.2mm, modul 60 x 120 cm, untuk partisi",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -10269,6 +10381,7 @@
   },
   {
     "id": 113,
+    "kode": "",
     "nama_pekerjaan": "pemasangan rangka besi hollow 1x40.40.2mm, modul 60 x 60 cm, untuk plafon",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -10342,6 +10455,7 @@
   },
   {
     "id": 114,
+    "kode": "",
     "nama_pekerjaan": "pemasangan atap pelana rangka atap baja canai dingin profil C75",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -10430,6 +10544,7 @@
   },
   {
     "id": 115,
+    "kode": "",
     "nama_pekerjaan": "pemasangan atap jurai rangka atap baja canai dingin profil C75",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -10518,6 +10633,7 @@
   },
   {
     "id": 116,
+    "kode": "",
     "nama_pekerjaan": "pemasangan talang seng kayu akasia",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -10530,6 +10646,7 @@
   },
   {
     "id": 117,
+    "kode": "",
     "nama_pekerjaan": "dinding beta merah (5x11x22) cm tebal 1 batu campuran 1SP : 2PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -10542,6 +10659,7 @@
   },
   {
     "id": 118,
+    "kode": "",
     "nama_pekerjaan": "dinding bata merah (5x11x22) cm tebal 1 batu campuran 1SP : 3PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -10660,6 +10778,7 @@
   },
   {
     "id": 119,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1 batu campuran 1SP : 4PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -10778,6 +10897,7 @@
   },
   {
     "id": 120,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1 batu campuran 1SP : 5PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -10896,6 +11016,7 @@
   },
   {
     "id": 121,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1 batu campuran 1SP : 6PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -11014,6 +11135,7 @@
   },
   {
     "id": 122,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1 batu campuran 1SP : 10PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -11147,6 +11269,7 @@
   },
   {
     "id": 123,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1/2 batu campuran 1SP : 2PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -11265,6 +11388,7 @@
   },
   {
     "id": 124,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1/2 batu campuran 1SP : 3PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -11383,6 +11507,7 @@
   },
   {
     "id": 125,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1/2 batu campuran 1SP : 4PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -11501,6 +11626,7 @@
   },
   {
     "id": 126,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1/2 batu campuran 1SP : 5PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -11619,6 +11745,7 @@
   },
   {
     "id": 127,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1/2 batu campuran 1SP : 6PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -11737,6 +11864,7 @@
   },
   {
     "id": 128,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1/2 batu campuran 1SP : 8PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -11855,6 +11983,7 @@
   },
   {
     "id": 129,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1/2 batu campuran 1SP : 3KP: 10PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -11988,6 +12117,7 @@
   },
   {
     "id": 130,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1/2 batu campuran 1SM : 1KP: 1PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -12106,6 +12236,7 @@
   },
   {
     "id": 131,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata merah (5x11x22) cm tebal 1/2 batu campuran 1SM : 1KP: 2PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -12239,6 +12370,7 @@
   },
   {
     "id": 132,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding conblock HB20 campuran 1SP: 3PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -12372,6 +12504,7 @@
   },
   {
     "id": 133,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding conblock HB20 campuran 1SP: 4PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -12505,6 +12638,7 @@
   },
   {
     "id": 134,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding conblock HB15 campuran 1SP: 3PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -12638,6 +12772,7 @@
   },
   {
     "id": 135,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding conblock HB15 campuran 1SP: 4PP",
     "mata_pembayaran": "",
     "satuan": "cm2",
@@ -12756,6 +12891,7 @@
   },
   {
     "id": 136,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding conblock HB10 campuran 1SP: 3PP",
     "mata_pembayaran": "",
     "satuan": "cm2",
@@ -12889,6 +13025,7 @@
   },
   {
     "id": 137,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding conblock HB10 campuran 1SP: 4PP",
     "mata_pembayaran": "",
     "satuan": "cm2",
@@ -13022,6 +13159,7 @@
   },
   {
     "id": 138,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding terawang ( rooster ) 12x11x24 campuran 1SP:3PP",
     "mata_pembayaran": "",
     "satuan": "cm2",
@@ -13140,6 +13278,7 @@
   },
   {
     "id": 139,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding terawang ( rooster ) 12x11x24 campuran 1SP:4PP",
     "mata_pembayaran": "",
     "satuan": "cm2",
@@ -13258,6 +13397,7 @@
   },
   {
     "id": 140,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata berongga ekspose 12x11x24 campuran 1SP:3PP",
     "mata_pembayaran": "",
     "satuan": "cm2",
@@ -13376,6 +13516,7 @@
   },
   {
     "id": 141,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata ringan tebal 7,5 cm dengan mortar siap pakai",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -13449,6 +13590,7 @@
   },
   {
     "id": 142,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding bata ringan tebal 10 cm dengan mortar siap pakai",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -13522,6 +13664,7 @@
   },
   {
     "id": 143,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding roster batako ukuran 12x11x24 campuran 1SP:3PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -13534,6 +13677,7 @@
   },
   {
     "id": 144,
+    "kode": "",
     "nama_pekerjaan": "pemasangan dinding roster klingker ukuran 10x20 campuran 1SP:3PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -13546,6 +13690,7 @@
   },
   {
     "id": 145,
+    "kode": "",
     "nama_pekerjaan": "pemasangan batako ukuran 10 x 20 x 40",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -13558,6 +13703,7 @@
   },
   {
     "id": 146,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 1PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -13661,6 +13807,7 @@
   },
   {
     "id": 147,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 2PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -13764,6 +13911,7 @@
   },
   {
     "id": 148,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 3PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -13867,6 +14015,7 @@
   },
   {
     "id": 149,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 4PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -13970,6 +14119,7 @@
   },
   {
     "id": 150,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 5PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -14073,6 +14223,7 @@
   },
   {
     "id": 151,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 6PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -14176,6 +14327,7 @@
   },
   {
     "id": 152,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 7PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -14279,6 +14431,7 @@
   },
   {
     "id": 153,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 8PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -14382,6 +14535,7 @@
   },
   {
     "id": 154,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 1/2 KP: 3PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -14500,6 +14654,7 @@
   },
   {
     "id": 155,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 2 KP: 8PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -14618,6 +14773,7 @@
   },
   {
     "id": 156,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SM: 1 KP: 1PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -14736,6 +14892,7 @@
   },
   {
     "id": 157,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SM: 1 KP: 2PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -14854,6 +15011,7 @@
   },
   {
     "id": 158,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 1PP tebal 20 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -14957,6 +15115,7 @@
   },
   {
     "id": 159,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 3PP tebal 20 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -15060,6 +15219,7 @@
   },
   {
     "id": 160,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 4PP tebal 20 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -15163,6 +15323,7 @@
   },
   {
     "id": 161,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 5PP tebal 20 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -15266,6 +15427,7 @@
   },
   {
     "id": 162,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SP: 6PP tebal 20 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -15369,6 +15531,7 @@
   },
   {
     "id": 163,
+    "kode": "",
     "nama_pekerjaan": "plesteran 1 SM: 1KP: 2PP tebal 20 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -15487,6 +15650,7 @@
   },
   {
     "id": 164,
+    "kode": "",
     "nama_pekerjaan": "berapen 1 SP : 5PP tebal 15 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -15590,6 +15754,7 @@
   },
   {
     "id": 165,
+    "kode": "",
     "nama_pekerjaan": "pemasangan  skoning 1SP : 3PP lebar 10 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -15693,6 +15858,7 @@
   },
   {
     "id": 166,
+    "kode": "",
     "nama_pekerjaan": "pemasangan plesteran granit 1SP : 2 granit tebal 1 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -15781,6 +15947,7 @@
   },
   {
     "id": 167,
+    "kode": "",
     "nama_pekerjaan": "pemasangan traso 1SP : 2 traso tebal 1 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -15869,6 +16036,7 @@
   },
   {
     "id": 168,
+    "kode": "",
     "nama_pekerjaan": "pemasangan plesteran ciprat 1SP : 2 PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -15972,6 +16140,7 @@
   },
   {
     "id": 169,
+    "kode": "",
     "nama_pekerjaan": "finishing  siar pasang bata merah",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -16060,6 +16229,7 @@
   },
   {
     "id": 170,
+    "kode": "",
     "nama_pekerjaan": "finishing  siar pasang coneblock ekspose",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -16148,6 +16318,7 @@
   },
   {
     "id": 171,
+    "kode": "",
     "nama_pekerjaan": "pemasanganfinishing siar pasangan batu kali, campuran 1SP : 2PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -16251,6 +16422,7 @@
   },
   {
     "id": 172,
+    "kode": "",
     "nama_pekerjaan": "pemasangan acian",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -16339,6 +16511,7 @@
   },
   {
     "id": 173,
+    "kode": "",
     "nama_pekerjaan": "plesteran dengan mortar siap pakai (MSP)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -16412,6 +16585,7 @@
   },
   {
     "id": 174,
+    "kode": "",
     "nama_pekerjaan": "plesteran acian  mortar siap pakai (MSP)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -16485,6 +16659,7 @@
   },
   {
     "id": 175,
+    "kode": "",
     "nama_pekerjaan": "Benangan",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -16497,6 +16672,7 @@
   },
   {
     "id": 176,
+    "kode": "",
     "nama_pekerjaan": "Acian beton (asumsi ketebalan rata-rata 5mm)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -16509,6 +16685,7 @@
   },
   {
     "id": 177,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin PC abu-abu 40cm x 40cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -16612,6 +16789,7 @@
   },
   {
     "id": 178,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin PC abu-abu 30cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -16730,6 +16908,7 @@
   },
   {
     "id": 179,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin PC abu-abu 20cm x 20cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -16848,6 +17027,7 @@
   },
   {
     "id": 180,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin warna 40cm x 40cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -16966,6 +17146,7 @@
   },
   {
     "id": 181,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin warna 30cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -17099,6 +17280,7 @@
   },
   {
     "id": 182,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin warna 20cm x 20cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -17232,6 +17414,7 @@
   },
   {
     "id": 183,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin teraso  ukuran 40cm x 40cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -17350,6 +17533,7 @@
   },
   {
     "id": 184,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin teraso  ukuran 30cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -17468,6 +17652,7 @@
   },
   {
     "id": 185,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin granit  ukuran 40cm x 40cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -17601,6 +17786,7 @@
   },
   {
     "id": 186,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin granit  ukuran 30cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -17734,6 +17920,7 @@
   },
   {
     "id": 187,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin teralux marmer  ukuran 40cm x 40cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -17852,6 +18039,7 @@
   },
   {
     "id": 188,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin teralux  ukuran 30cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -17970,6 +18158,7 @@
   },
   {
     "id": 189,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin teralux marmer  ukuran 60cm x 60cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -18088,6 +18277,7 @@
   },
   {
     "id": 190,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin teralux marmer  ukuran 40cm x 40cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -18206,6 +18396,7 @@
   },
   {
     "id": 191,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai ubin teralux marmer  ukuran 30cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -18324,6 +18515,7 @@
   },
   {
     "id": 192,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin PC abu-abu  ukuran 15cm x 20cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -18442,6 +18634,7 @@
   },
   {
     "id": 193,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin PC abu-abu  ukuran 10cm x 20cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -18454,6 +18647,7 @@
   },
   {
     "id": 194,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin PC abu-abu  ukuran 10cm x 40cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -18557,6 +18751,7 @@
   },
   {
     "id": 195,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin  warna  ukuran 10cm x 20cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -18690,6 +18885,7 @@
   },
   {
     "id": 196,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin  warna  ukuran 10cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -18808,6 +19004,7 @@
   },
   {
     "id": 197,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin  warna  ukuran 10cm x 40cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -18926,6 +19123,7 @@
   },
   {
     "id": 198,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin teraso  ukuran 10cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -19044,6 +19242,7 @@
   },
   {
     "id": 199,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin teraso  ukuran 10cm x 40cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -19162,6 +19361,7 @@
   },
   {
     "id": 200,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin granit  ukuran 10cm x 40cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -19280,6 +19480,7 @@
   },
   {
     "id": 201,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin granit  ukuran 10cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -19398,6 +19599,7 @@
   },
   {
     "id": 202,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin teralux kerang  ukuran 10cm x 40cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -19516,6 +19718,7 @@
   },
   {
     "id": 203,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin teralux kerang  ukuran 10cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -19634,6 +19837,7 @@
   },
   {
     "id": 204,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin teralux marmer  ukuran 10cm x 60cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -19752,6 +19956,7 @@
   },
   {
     "id": 205,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin teralux marmer  ukuran 10cm x 40cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -19870,6 +20075,7 @@
   },
   {
     "id": 206,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin teralux marmer  ukuran 10cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -19988,6 +20194,7 @@
   },
   {
     "id": 207,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin teralux marmer  ukuran 10cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -20000,6 +20207,7 @@
   },
   {
     "id": 208,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai keramik artistik  ukuran 10cm x 20cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -20133,6 +20341,7 @@
   },
   {
     "id": 209,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai keramik artistik  ukuran 10cm x 10cm atau 5cm x 20cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -20266,6 +20475,7 @@
   },
   {
     "id": 210,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai keramik 33 cm x 33 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -20399,6 +20609,7 @@
   },
   {
     "id": 211,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai keramik 30 cm x 30 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -20532,6 +20743,7 @@
   },
   {
     "id": 212,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai keramik 20 cm x 20 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -20665,6 +20877,7 @@
   },
   {
     "id": 213,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai keramik 10 cm x 33 cm untuk variasi / border",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -20783,6 +20996,7 @@
   },
   {
     "id": 214,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai keramik mozaik 30 cm x 30 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -20901,6 +21115,7 @@
   },
   {
     "id": 215,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint keramik  10 cm x 20 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -21019,6 +21234,7 @@
   },
   {
     "id": 216,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint keramik ukuran 10 cm x 10 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -21137,6 +21353,7 @@
   },
   {
     "id": 217,
+    "kode": "",
     "nama_pekerjaan": "Pasang plint keramik ukuran (5 x 20) cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -21255,6 +21472,7 @@
   },
   {
     "id": 218,
+    "kode": "",
     "nama_pekerjaan": "Pasang plint internal cove artistik 5 cm x 5 cm x 20 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -21373,6 +21591,7 @@
   },
   {
     "id": 219,
+    "kode": "",
     "nama_pekerjaan": "Pasang lantai marmer ukuran (100 x 100) cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -21506,6 +21725,7 @@
   },
   {
     "id": 220,
+    "kode": "",
     "nama_pekerjaan": "Pasang lantai karpet",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -21609,6 +21829,7 @@
   },
   {
     "id": 221,
+    "kode": "",
     "nama_pekerjaan": "Pasang underlayer (pelapis bawah karpet)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -21712,6 +21933,7 @@
   },
   {
     "id": 222,
+    "kode": "",
     "nama_pekerjaan": "Pasang parquet kayu",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -21815,6 +22037,7 @@
   },
   {
     "id": 223,
+    "kode": "",
     "nama_pekerjaan": "Pasang lantai kayu gymfloor",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -21918,6 +22141,7 @@
   },
   {
     "id": 224,
+    "kode": "",
     "nama_pekerjaan": "Pasang dinding porselen 11 cm x 11 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -22051,6 +22275,7 @@
   },
   {
     "id": 225,
+    "kode": "",
     "nama_pekerjaan": "Pasang dinding porselen 10 cm x 20 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -22184,6 +22409,7 @@
   },
   {
     "id": 226,
+    "kode": "",
     "nama_pekerjaan": "Pasang dinding porselen 20 cm x 20 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -22317,6 +22543,7 @@
   },
   {
     "id": 227,
+    "kode": "",
     "nama_pekerjaan": "Pasang dinding keramik artistik 10 cm x 20 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -22435,6 +22662,7 @@
   },
   {
     "id": 228,
+    "kode": "",
     "nama_pekerjaan": "Pasang dinding keramik artistik 5 cm x 20 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -22553,6 +22781,7 @@
   },
   {
     "id": 229,
+    "kode": "",
     "nama_pekerjaan": "Pasang dinding keramik 20 cm x 20 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -22686,6 +22915,7 @@
   },
   {
     "id": 230,
+    "kode": "",
     "nama_pekerjaan": "Pasang dinding marmer 100 cm x 100 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -22804,6 +23034,7 @@
   },
   {
     "id": 231,
+    "kode": "",
     "nama_pekerjaan": "Pasang dinding bata pelapis 3 cm x 7 cm x 24 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -22922,6 +23153,7 @@
   },
   {
     "id": 232,
+    "kode": "",
     "nama_pekerjaan": "Pasang dinding batu paras",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -23040,6 +23272,7 @@
   },
   {
     "id": 233,
+    "kode": "",
     "nama_pekerjaan": "Pasang dinding batu tempel hitam",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -23158,6 +23391,7 @@
   },
   {
     "id": 234,
+    "kode": "",
     "nama_pekerjaan": "Pasang lantai vynil ukuran ( 30 x 30 ) cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -23261,6 +23495,7 @@
   },
   {
     "id": 235,
+    "kode": "",
     "nama_pekerjaan": "Pasang wallpaper lebar 50 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -23349,6 +23584,7 @@
   },
   {
     "id": 236,
+    "kode": "",
     "nama_pekerjaan": "Pasang floor harderner",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -23437,6 +23673,7 @@
   },
   {
     "id": 237,
+    "kode": "",
     "nama_pekerjaan": "Pasang plint vynil ukuran ( 15 x 30 ) cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -23540,6 +23777,7 @@
   },
   {
     "id": 238,
+    "kode": "",
     "nama_pekerjaan": "Pasang plint kayu tebal 2 cm lebar 10 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -23643,6 +23881,7 @@
   },
   {
     "id": 239,
+    "kode": "",
     "nama_pekerjaan": "Pasang paving block natural tebal 6 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -23731,6 +23970,7 @@
   },
   {
     "id": 240,
+    "kode": "",
     "nama_pekerjaan": "Pasang paving block natural tebal 8 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -23834,6 +24074,7 @@
   },
   {
     "id": 241,
+    "kode": "",
     "nama_pekerjaan": "Pasang paving block berwarna tebal 6 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -23922,6 +24163,7 @@
   },
   {
     "id": 242,
+    "kode": "",
     "nama_pekerjaan": "Pasang paving block berwarna tebal 8 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24010,6 +24252,7 @@
   },
   {
     "id": 243,
+    "kode": "",
     "nama_pekerjaan": "Pasang paving stone halaman (paving lokal) - (HSPK)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24022,6 +24265,7 @@
   },
   {
     "id": 244,
+    "kode": "",
     "nama_pekerjaan": "Pasang paving stone (K 200 ; tebal = 6 cm) - (HSPK)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24034,6 +24278,7 @@
   },
   {
     "id": 245,
+    "kode": "",
     "nama_pekerjaan": "Pasang lantai keramik ukuran (40 x 40) cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24046,6 +24291,7 @@
   },
   {
     "id": 246,
+    "kode": "",
     "nama_pekerjaan": "Pasang lantai keramik kasar 40 x 40",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24058,6 +24304,7 @@
   },
   {
     "id": 247,
+    "kode": "",
     "nama_pekerjaan": "Pasang dinding keramik kasar 25 x 40",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24070,6 +24317,7 @@
   },
   {
     "id": 248,
+    "kode": "",
     "nama_pekerjaan": "Pasang lantai granito 60 x 60",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24082,6 +24330,7 @@
   },
   {
     "id": 249,
+    "kode": "",
     "nama_pekerjaan": "Pasang langit-langit asbes semen, tebal 4 mm, 5 mm, dan 6 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24185,6 +24434,7 @@
   },
   {
     "id": 250,
+    "kode": "",
     "nama_pekerjaan": "Pasang langit-langit akustik ukuran ( 30 x 30 ) cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24288,6 +24538,7 @@
   },
   {
     "id": 251,
+    "kode": "",
     "nama_pekerjaan": "Pasang langit-langit akustik ukuran ( 30 x 60 ) cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24391,6 +24642,7 @@
   },
   {
     "id": 252,
+    "kode": "",
     "nama_pekerjaan": "Pasang langit-langit akustik ukuran ( 30 x 120 ) cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24494,6 +24746,7 @@
   },
   {
     "id": 253,
+    "kode": "",
     "nama_pekerjaan": "Pasang langit-langit tripleks ukuran ( 120 x 240 ) cm, tebal 3 mm, 4 mm & 6 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24597,6 +24850,7 @@
   },
   {
     "id": 254,
+    "kode": "",
     "nama_pekerjaan": "Pasang langit-langit lambrisering kayu, tebal 9 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24700,6 +24954,7 @@
   },
   {
     "id": 255,
+    "kode": "",
     "nama_pekerjaan": "Pasang langit-langit gypsum board ukuran ( 120 x 240 x 9 ) mm, tebal 9 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24803,6 +25058,7 @@
   },
   {
     "id": 256,
+    "kode": "",
     "nama_pekerjaan": "Pasang langit-langit akustik ukuran ( 60 x 120 ) cm berikut rangka alluminium",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -24906,6 +25162,7 @@
   },
   {
     "id": 257,
+    "kode": "",
     "nama_pekerjaan": "Pasang list langit-langit kayu profil",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -25009,6 +25266,7 @@
   },
   {
     "id": 258,
+    "kode": "",
     "nama_pekerjaan": "Pasang list langit-langit gypsum profil",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -25021,6 +25279,7 @@
   },
   {
     "id": 259,
+    "kode": "",
     "nama_pekerjaan": "Pek. Rangka langit-langit  ( 60 x 120 ) cm, sengon / tahun ( SNI )",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -25033,6 +25292,7 @@
   },
   {
     "id": 260,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan 1 m2 atap genteng palentong kecil ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -25121,6 +25381,7 @@
   },
   {
     "id": 261,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan 1 m2 atap genteng kodok glazuur ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -25209,6 +25470,7 @@
   },
   {
     "id": 262,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan 1 m2 atap genteng palentong besar/super",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -25297,6 +25559,7 @@
   },
   {
     "id": 263,
+    "kode": "",
     "nama_pekerjaan": "Pasang bubungan genteng palentong kecil",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -25415,6 +25678,7 @@
   },
   {
     "id": 264,
+    "kode": "",
     "nama_pekerjaan": "Pasang bubung genteng kodok glazuur",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -25533,6 +25797,7 @@
   },
   {
     "id": 265,
+    "kode": "",
     "nama_pekerjaan": "Pasang bubung genteng palentong besar",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -25651,6 +25916,7 @@
   },
   {
     "id": 266,
+    "kode": "",
     "nama_pekerjaan": "Pasang roof light fibreglass 90 x 180",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -25739,6 +26005,7 @@
   },
   {
     "id": 267,
+    "kode": "",
     "nama_pekerjaan": "Pasang atap asbes gelombang 0.92 m x 2.5 m x 5 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -25812,6 +26079,7 @@
   },
   {
     "id": 268,
+    "kode": "",
     "nama_pekerjaan": "Pasang atap asbes gelombang 0.92 m x 2.25 m x 5 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -25885,6 +26153,7 @@
   },
   {
     "id": 269,
+    "kode": "",
     "nama_pekerjaan": "Pasang atap asbes gelombang 0.92 m x 2.00 m x 5 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -25958,6 +26227,7 @@
   },
   {
     "id": 270,
+    "kode": "",
     "nama_pekerjaan": "Pasang atap asbes gelombang 0.92 m x 1.80 m x 5 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -26016,6 +26286,7 @@
   },
   {
     "id": 271,
+    "kode": "",
     "nama_pekerjaan": "Pasang atap asbes gelombang besar 1.05 m x 3.00 m x 4 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -26119,6 +26390,7 @@
   },
   {
     "id": 272,
+    "kode": "",
     "nama_pekerjaan": "Pemasngan gentang metal ukuran 80x100 atap pelana",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -26207,6 +26479,7 @@
   },
   {
     "id": 273,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan gentang metal ukuran 80x100 atap jurai",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -26295,6 +26568,7 @@
   },
   {
     "id": 274,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan atap asbes gelombang  105x270 tebal 4 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -26383,6 +26657,7 @@
   },
   {
     "id": 275,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan atap asbes gelombang 105x240 tebal 4 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -26471,6 +26746,7 @@
   },
   {
     "id": 276,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan atap asbes gelombang 105x210 tebal 4 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -26559,6 +26835,7 @@
   },
   {
     "id": 277,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan atap asbes gelombang 105x150 tebal 4 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -26647,6 +26924,7 @@
   },
   {
     "id": 278,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan atap asbes gelombang 108x300 tebal 6 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -26720,6 +26998,7 @@
   },
   {
     "id": 279,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan atap asbes gelombang 108x270 tebal 6 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -26793,6 +27072,7 @@
   },
   {
     "id": 280,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan atap asbes gelombang 108x240 tebal 6 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -26866,6 +27146,7 @@
   },
   {
     "id": 281,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan atap asbes gelombang 108x210 tebal 6 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -26939,6 +27220,7 @@
   },
   {
     "id": 282,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan atap asbes gelombang 108x180 tebal 6 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -27012,6 +27294,7 @@
   },
   {
     "id": 283,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bubung stel gelombang 92 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -27100,6 +27383,7 @@
   },
   {
     "id": 284,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan nokstel gelombang 105 cm ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -27188,6 +27472,7 @@
   },
   {
     "id": 285,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan 1 m nokstel gelombang 108 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -27276,6 +27561,7 @@
   },
   {
     "id": 286,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  nokpaten 92 cm ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -27364,6 +27650,7 @@
   },
   {
     "id": 287,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  nokpaten 105 cm ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -27452,6 +27739,7 @@
   },
   {
     "id": 288,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  nokpaten 108 cm ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -27540,6 +27828,7 @@
   },
   {
     "id": 289,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  nokstel rata 92 cm ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -27628,6 +27917,7 @@
   },
   {
     "id": 290,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan nokstel rata 105 cm ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -27716,6 +28006,7 @@
   },
   {
     "id": 291,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  atap genteng beton ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -27804,6 +28095,7 @@
   },
   {
     "id": 292,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  atap genteng aspal",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -27907,6 +28199,7 @@
   },
   {
     "id": 293,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  atap genteng metal ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -27919,6 +28212,7 @@
   },
   {
     "id": 294,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  atap sirap kayu ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -28022,6 +28316,7 @@
   },
   {
     "id": 295,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  nok genteng beton ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -28155,6 +28450,7 @@
   },
   {
     "id": 296,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan nok genteng aspal ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -28258,6 +28554,7 @@
   },
   {
     "id": 297,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan nok genteng metal ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -28346,6 +28643,7 @@
   },
   {
     "id": 298,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  nok atap sirap ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -28464,6 +28762,7 @@
   },
   {
     "id": 299,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  atap seng gelombang ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -28552,6 +28851,7 @@
   },
   {
     "id": 300,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  nok atap seng",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -28655,6 +28955,7 @@
   },
   {
     "id": 301,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan atap alumunium gelombang",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -28728,6 +29029,7 @@
   },
   {
     "id": 302,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan nok atap alumunium gelombang",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -28801,6 +29103,7 @@
   },
   {
     "id": 303,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lapisan aluminium foil",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -28889,6 +29192,7 @@
   },
   {
     "id": 304,
+    "kode": "",
     "nama_pekerjaan": "Pek. Pasang Atap Genteng solulosa bitumen ex onduvila",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -28901,6 +29205,7 @@
   },
   {
     "id": 305,
+    "kode": "",
     "nama_pekerjaan": "Pek. Pasang atap selulosa bitumen ex ondulin",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -28913,6 +29218,7 @@
   },
   {
     "id": 306,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan dan pemasangan kusen pintu dan jendela, kayu kelas I ( Jati )",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -29031,6 +29337,7 @@
   },
   {
     "id": 307,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan dan pemasangan kusen pintu dan jendela, kayu kelas II atau III",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -29149,6 +29456,7 @@
   },
   {
     "id": 308,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan dan pemasangan kusen pintu klamp standar, kayu kelas II",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -29252,6 +29560,7 @@
   },
   {
     "id": 309,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan dan pemasangan kusen pintu klamp sederhana, kayu kelas III",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -29355,6 +29664,7 @@
   },
   {
     "id": 310,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan dan pemasangan daun pintu panel, kayu kelas I atau II ( Jati )",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -29458,6 +29768,7 @@
   },
   {
     "id": 311,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan dan pemasangan pintu dan jendela kaca, kayu kelas I atau II",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -29561,6 +29872,7 @@
   },
   {
     "id": 312,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan dan pemasangan pintu dan jendela jalusi, kayu kelas I atau II",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -29664,6 +29976,7 @@
   },
   {
     "id": 313,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan daun pintu plywood rangkap, rangka kayu kelas II tertutup ( lebar sampai 90 cm )",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -29797,6 +30110,7 @@
   },
   {
     "id": 314,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan daun pintu plywood rangkap, rangka expose kayu kelas I atau II ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -29930,6 +30244,7 @@
   },
   {
     "id": 315,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan jalusi kusen, kayu kelas I atau II",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -30033,6 +30348,7 @@
   },
   {
     "id": 316,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan teakwood rangkap, rangka exspose kayu kelas I",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -30166,6 +30482,7 @@
   },
   {
     "id": 317,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan teakwood rangkap lapis formika, rangka exspose kayu kelas II",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -30314,6 +30631,7 @@
   },
   {
     "id": 318,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan konstruksi kuda - kuda konvensional, kayu kelas I,II dan III bentang 6 meter",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -30432,6 +30750,7 @@
   },
   {
     "id": 319,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan konstruksi kuda - kuda expose, kayu kelas I",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -30550,6 +30869,7 @@
   },
   {
     "id": 320,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan konstruksi Gording, kayu kelas II",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -30668,6 +30988,7 @@
   },
   {
     "id": 321,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan rangka atap genteng keramik, kayu kelas II",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -30786,6 +31107,7 @@
   },
   {
     "id": 322,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan rangka atap genteng Beton, kayu kelas II",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -30904,6 +31226,7 @@
   },
   {
     "id": 323,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan rangka atap sirap, kayu kelas II",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -31007,6 +31330,7 @@
   },
   {
     "id": 324,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan rangka langit - langit ( 50 x 100 ) cm, kayu kelas II atau III",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -31110,6 +31434,7 @@
   },
   {
     "id": 325,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan rangka langit - langit ( 60 X 60 ) cm, kayu kelas II atau III",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -31213,6 +31538,7 @@
   },
   {
     "id": 326,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lisplank ukuran (3 x 20 ) cm, kayu kelas I atau II",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -31316,6 +31642,7 @@
   },
   {
     "id": 327,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lisplank ukuran (3 x 30 ) cm, kayu kelas I atau II",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -31419,6 +31746,7 @@
   },
   {
     "id": 328,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan rangka dinding pemisah ( 60 x 120 ) cm, kayu kelas II atau III",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -31522,6 +31850,7 @@
   },
   {
     "id": 329,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Dinding Pemisah Teakwood Rangkap Rangka Kayu Klas II",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -31534,6 +31863,7 @@
   },
   {
     "id": 330,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding pemisah plywood rangkap, rangka kayu kelas II",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -31667,6 +31997,7 @@
   },
   {
     "id": 331,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding pemisah plywood rangkap, rangka kayu kelas I",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -31679,6 +32010,7 @@
   },
   {
     "id": 332,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding lambrisering dari plywood ukuran (120 x 240) cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -31782,6 +32114,7 @@
   },
   {
     "id": 333,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Dinding Bilik, Rangka Kayu Klas III atau IV ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -31900,6 +32233,7 @@
   },
   {
     "id": 334,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kunci tanam antik",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -31973,6 +32307,7 @@
   },
   {
     "id": 335,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kunci tanam biasa",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -32061,6 +32396,7 @@
   },
   {
     "id": 336,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kunci tanam kamar mandi",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -32149,6 +32485,7 @@
   },
   {
     "id": 337,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kunci silinder",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -32237,6 +32574,7 @@
   },
   {
     "id": 338,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan engsel pintu",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -32325,6 +32663,7 @@
   },
   {
     "id": 339,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan engsel jendela kupu-kupu",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -32413,6 +32752,7 @@
   },
   {
     "id": 340,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan engsel angin",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -32501,6 +32841,7 @@
   },
   {
     "id": 341,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan spring knip",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -32574,6 +32915,7 @@
   },
   {
     "id": 342,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kait angin",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -32662,6 +33004,7 @@
   },
   {
     "id": 343,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan door closer",
     "mata_pembayaran": "",
     "satuan": "set",
@@ -32735,6 +33078,7 @@
   },
   {
     "id": 344,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kunci slot",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -32823,6 +33167,7 @@
   },
   {
     "id": 345,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan door holder",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -32896,6 +33241,7 @@
   },
   {
     "id": 346,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan door stop",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -32984,6 +33330,7 @@
   },
   {
     "id": 347,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan rel pintu sorong",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -33072,6 +33419,7 @@
   },
   {
     "id": 348,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kunci lemari",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -33145,6 +33493,7 @@
   },
   {
     "id": 349,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kaca tebal 3 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -33248,6 +33597,7 @@
   },
   {
     "id": 350,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kaca tebal 5 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -33351,6 +33701,7 @@
   },
   {
     "id": 351,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kaca tebal 8 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -33454,6 +33805,7 @@
   },
   {
     "id": 352,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kaca tebal 12 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -33542,6 +33894,7 @@
   },
   {
     "id": 353,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kaca cermin tebal 5 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -33630,6 +33983,7 @@
   },
   {
     "id": 354,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kaca cermin tebal 8 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -33703,6 +34057,7 @@
   },
   {
     "id": 355,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kaca wireglasd tebal 5 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -33776,6 +34131,7 @@
   },
   {
     "id": 356,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kaca patri tebal 5 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -33864,6 +34220,7 @@
   },
   {
     "id": 357,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan kaca pintu jendela aluminium tebal 5 mm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -33876,6 +34233,7 @@
   },
   {
     "id": 358,
+    "kode": "",
     "nama_pekerjaan": "Pengikisan / pengerokan permukaan cat lama",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -33934,6 +34292,7 @@
   },
   {
     "id": 359,
+    "kode": "",
     "nama_pekerjaan": "Pencucian bidang permukaan tembok yang pernah dicat",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -33992,6 +34351,7 @@
   },
   {
     "id": 360,
+    "kode": "",
     "nama_pekerjaan": "Pencucian karat pada permukaan baja cara manual",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -34050,6 +34410,7 @@
   },
   {
     "id": 361,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan bidang kayu baru (1 lapis plamur, 1 lapis cat dasar, 2  lapis cat penutup",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -34228,6 +34589,7 @@
   },
   {
     "id": 362,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan bidang kayu baru (1 lapis plamur, 1 lapis cat dasar, 3  lapis cat penutup",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -34406,6 +34768,7 @@
   },
   {
     "id": 363,
+    "kode": "",
     "nama_pekerjaan": "Peleburan bidang kayu dengan teak oil",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -34479,6 +34842,7 @@
   },
   {
     "id": 364,
+    "kode": "",
     "nama_pekerjaan": "Pelaburan bidang kayu dengan politur",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -34597,6 +34961,7 @@
   },
   {
     "id": 365,
+    "kode": "",
     "nama_pekerjaan": "Pelaburan bidang kayu dengan cat rasidu dan ter",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -34655,6 +35020,7 @@
   },
   {
     "id": 366,
+    "kode": "",
     "nama_pekerjaan": "Pelaburan bidang kayu dengan vernis",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -34758,6 +35124,7 @@
   },
   {
     "id": 367,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan tembok baru (1 lapis plamuur, 1 lapis cat dasar, 2 lapis cat penutup)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -34876,6 +35243,7 @@
   },
   {
     "id": 368,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan tembok lama (1 lapis cat dasar, 2 lapis cat penutup)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -34979,6 +35347,7 @@
   },
   {
     "id": 369,
+    "kode": "",
     "nama_pekerjaan": "Pelaburan tembok dengan kalkarium",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -35067,6 +35436,7 @@
   },
   {
     "id": 370,
+    "kode": "",
     "nama_pekerjaan": "Pelaburan tembok dengan kapur sirih",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -35185,6 +35555,7 @@
   },
   {
     "id": 371,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan wallpaper",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -35273,6 +35644,7 @@
   },
   {
     "id": 372,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan permukaan baja dengan menie besi",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -35361,6 +35733,7 @@
   },
   {
     "id": 373,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan permukaan baja dengan menie besi dengan perancah",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -35479,6 +35852,7 @@
   },
   {
     "id": 374,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan permukaan baja galvanis secara manual 4 lapis",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -35567,6 +35941,7 @@
   },
   {
     "id": 375,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan permukaan baja galvanis secara manual sistem 1 lapis cat mutakhir",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -35670,6 +36045,7 @@
   },
   {
     "id": 376,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan permukaan baja galvanis secara manual sistem 3 lapis",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -35788,6 +36164,7 @@
   },
   {
     "id": 377,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan permukaan baja galvanis secara semprot sistem 3 lapis cat mutakhir",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -35891,6 +36268,7 @@
   },
   {
     "id": 378,
+    "kode": "",
     "nama_pekerjaan": "Plituran 10 m2 dengan plitur melamic",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -36009,6 +36387,7 @@
   },
   {
     "id": 379,
+    "kode": "",
     "nama_pekerjaan": "Cat eternit baru ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -36021,6 +36400,7 @@
   },
   {
     "id": 380,
+    "kode": "",
     "nama_pekerjaan": "Cat eternit ulang",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -36033,6 +36413,7 @@
   },
   {
     "id": 381,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan kayu lama",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -36045,6 +36426,7 @@
   },
   {
     "id": 382,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan tembok anti jamur",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -36057,6 +36439,7 @@
   },
   {
     "id": 383,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan tembok ulang anti jamur",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -36069,6 +36452,7 @@
   },
   {
     "id": 384,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan tembok luar anti jamur ",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -36081,6 +36465,7 @@
   },
   {
     "id": 385,
+    "kode": "",
     "nama_pekerjaan": "Pengecatan batu tempel anti jamur (Coating)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -36093,6 +36478,7 @@
   },
   {
     "id": 386,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan 1 buah closet duduk / monoblock",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -36181,6 +36567,7 @@
   },
   {
     "id": 387,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan 1 buah closet jongkok porselen",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -36299,6 +36686,7 @@
   },
   {
     "id": 388,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan 1 buah closet jongkok teraso",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -36432,6 +36820,7 @@
   },
   {
     "id": 389,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan urinoir",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -36535,6 +36924,7 @@
   },
   {
     "id": 390,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  wastafel",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -36653,6 +37043,7 @@
   },
   {
     "id": 391,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bathcuip",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -36726,6 +37117,7 @@
   },
   {
     "id": 392,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Bak Fibreglass vol.1 m3",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -36799,6 +37191,7 @@
   },
   {
     "id": 393,
+    "kode": "",
     "nama_pekerjaan": "Memasang Bak Mandi Batu Bata Vol. 0,30 m3",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -36932,6 +37325,7 @@
   },
   {
     "id": 394,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bak air fiberglass Vol 1 m3",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -37005,6 +37399,7 @@
   },
   {
     "id": 395,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Bak Beton Bertulang Vol. 1 m3",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -37108,6 +37503,7 @@
   },
   {
     "id": 396,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bak cuci piring stainlessteel",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -37181,6 +37577,7 @@
   },
   {
     "id": 397,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan floor drain",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -37269,6 +37666,7 @@
   },
   {
     "id": 398,
+    "kode": "",
     "nama_pekerjaan": "Memasang bak kontrol pasangan batu bata (30x30) cm tinggi 35 cm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -37417,6 +37815,7 @@
   },
   {
     "id": 399,
+    "kode": "",
     "nama_pekerjaan": "Memasang bak kontrol pasangan batu bata (45x45) cm tinggi 50 cm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -37565,6 +37964,7 @@
   },
   {
     "id": 400,
+    "kode": "",
     "nama_pekerjaan": "Memasang bak kontrol pasangan batu bata (60x60) cm tinggi 65 cm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -37713,6 +38113,7 @@
   },
   {
     "id": 401,
+    "kode": "",
     "nama_pekerjaan": "Memasang Kran Ø ¾\" atau ½\"",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -37816,6 +38217,7 @@
   },
   {
     "id": 402,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa Galvanis Ø  ¾\"",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -37889,6 +38291,7 @@
   },
   {
     "id": 403,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa Galvanis Ø 1\"",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -37962,6 +38365,7 @@
   },
   {
     "id": 404,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa Galvanis Ø 1½ \"",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -38035,6 +38439,7 @@
   },
   {
     "id": 405,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa Galvanis Ø 3\"",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -38108,6 +38513,7 @@
   },
   {
     "id": 406,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa Galvanis Ø 4\"",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -38181,6 +38587,7 @@
   },
   {
     "id": 407,
+    "kode": "",
     "nama_pekerjaan": "Memasang Pipa PVC tipe AW  Ø ½\"",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -38269,6 +38676,7 @@
   },
   {
     "id": 408,
+    "kode": "",
     "nama_pekerjaan": "Memasang Pipa PVC tipe AW  Ø ¾\"",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -38357,6 +38765,7 @@
   },
   {
     "id": 409,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa PVC tipe AW  Ø 1\"",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -38445,6 +38854,7 @@
   },
   {
     "id": 410,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa PVC tipe AW  Ø 1½\"",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -38533,6 +38943,7 @@
   },
   {
     "id": 411,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa PVC tipe AW  Ø 2\"",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -38621,6 +39032,7 @@
   },
   {
     "id": 412,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan pipa PVC tipe AW Ø 2½?",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -38694,6 +39106,7 @@
   },
   {
     "id": 413,
+    "kode": "",
     "nama_pekerjaan": "Memasang Pipa PVC tipe AW  Ø 3\"",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -38782,6 +39195,7 @@
   },
   {
     "id": 414,
+    "kode": "",
     "nama_pekerjaan": "Memasang Pipa PVC tipe AW  Ø 4\"",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -38870,6 +39284,7 @@
   },
   {
     "id": 415,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa Air Limbah Jenis Pipa Tanah  Ø 20 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -38988,6 +39403,7 @@
   },
   {
     "id": 416,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa Air Limbah Jenis Pipa Tanah  Ø 15 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -39106,6 +39522,7 @@
   },
   {
     "id": 417,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa Beton  Ø 15 - 20 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -39239,6 +39656,7 @@
   },
   {
     "id": 418,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa Beton  Ø 30 - 100 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -39372,6 +39790,7 @@
   },
   {
     "id": 419,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan Lahan Produksi Tebal 8 cm Beton f'c 14,5 Mpa, Slump (120 ± 20) mm K3",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -39490,6 +39909,7 @@
   },
   {
     "id": 420,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan Lahan Produksi Tebal 10 cm Beton f'c = 14,5 Mpa slum (120 ± 20 ) mm K3",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -39623,6 +40043,7 @@
   },
   {
     "id": 421,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan Lahan Produksi Tebal 12 cm Beton f'c=14,5 Mpa, slum (120±20)mm, K3",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -39756,6 +40177,7 @@
   },
   {
     "id": 422,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan Lahan Produksi Tebal 15 cm Beton f'c=14,5 Mpa, slum (120±20)mm, K3",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -39889,6 +40311,7 @@
   },
   {
     "id": 423,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan Bekisting untuk Plat Beton Pra cetak (5 kali Pakai)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -39992,6 +40415,7 @@
   },
   {
     "id": 424,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan Bekisting untuk Balok Beton Pra cetak (10 - 12 kali Pakai)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -40110,6 +40534,7 @@
   },
   {
     "id": 425,
+    "kode": "",
     "nama_pekerjaan": "Pembuatan Bekisting untuk Kolom Beton Pra cetak (10 - 12 kali Pakai)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -40228,6 +40653,7 @@
   },
   {
     "id": 426,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dan Membuka Bekisting untuk Komponen Plat Beton Pracetak ",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -40286,6 +40712,7 @@
   },
   {
     "id": 427,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dan Membuka Bekisting untuk Komponen Balok Beton Pracetak ",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -40344,6 +40771,7 @@
   },
   {
     "id": 428,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dan Membuka Bekisting untuk Komponen Kolom Beton Pracetak ",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -40402,6 +40830,7 @@
   },
   {
     "id": 429,
+    "kode": "",
     "nama_pekerjaan": "Penuangan / Menebar Beton untuk Komponen Plat Pracetak",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -40490,6 +40919,7 @@
   },
   {
     "id": 430,
+    "kode": "",
     "nama_pekerjaan": "Penuangan / Menebar Beton untuk Komponen Plat Pracetak",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -40578,6 +41008,7 @@
   },
   {
     "id": 431,
+    "kode": "",
     "nama_pekerjaan": "Penuangan / Menebar Beton untuk Komponen Kolom Pracetak",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -40666,6 +41097,7 @@
   },
   {
     "id": 432,
+    "kode": "",
     "nama_pekerjaan": "Ereksi Komponen Untuk Plat Pracetak",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -40829,6 +41261,7 @@
   },
   {
     "id": 433,
+    "kode": "",
     "nama_pekerjaan": "Ereksi Komponen Untuk Balok Pracetak",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -40992,6 +41425,7 @@
   },
   {
     "id": 434,
+    "kode": "",
     "nama_pekerjaan": "Ereksi Komponen Untuk Kolom Pracetak",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -41155,6 +41589,7 @@
   },
   {
     "id": 435,
+    "kode": "",
     "nama_pekerjaan": "Langsiran Komponen untuk Plat Pracetak (± 20 m)",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -41273,6 +41708,7 @@
   },
   {
     "id": 436,
+    "kode": "",
     "nama_pekerjaan": "Langsiran Komponen untuk Balok Pracetak (± 20 m)",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -41376,6 +41812,7 @@
   },
   {
     "id": 437,
+    "kode": "",
     "nama_pekerjaan": "Langsiran Komponen untuk Kolom Pracetak (± 20 m)",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -41479,6 +41916,7 @@
   },
   {
     "id": 438,
+    "kode": "",
     "nama_pekerjaan": "Bahan Grout Campuran",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -41537,6 +41975,7 @@
   },
   {
     "id": 439,
+    "kode": "",
     "nama_pekerjaan": "Bahan Grout Campuran (tidak Campuran)",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -41580,6 +42019,7 @@
   },
   {
     "id": 440,
+    "kode": "",
     "nama_pekerjaan": "Upah Pekerjaan Gruot pada Joint Beton Pra Cetak",
     "mata_pembayaran": "",
     "satuan": "ttk",
@@ -41638,6 +42078,7 @@
   },
   {
     "id": 441,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Bekisting Joint Pra Cetak",
     "mata_pembayaran": "",
     "satuan": "ttk",
@@ -41756,6 +42197,7 @@
   },
   {
     "id": 442,
+    "kode": "",
     "nama_pekerjaan": "Upah Pemasangan Joint dengan Sling",
     "mata_pembayaran": "",
     "satuan": "ttk",
@@ -41829,6 +42271,7 @@
   },
   {
     "id": 443,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Lampu",
     "mata_pembayaran": "",
     "satuan": "ttk",
@@ -41857,6 +42300,7 @@
   },
   {
     "id": 444,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan  MCB",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -41885,6 +42329,7 @@
   },
   {
     "id": 445,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -41958,6 +42403,7 @@
   },
   {
     "id": 446,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "",
@@ -41970,6 +42416,7 @@
   },
   {
     "id": 447,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "",
@@ -41982,6 +42429,7 @@
   },
   {
     "id": 448,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "",
@@ -41994,6 +42442,7 @@
   },
   {
     "id": 449,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42006,6 +42455,7 @@
   },
   {
     "id": 450,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42018,6 +42468,7 @@
   },
   {
     "id": 451,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42030,6 +42481,7 @@
   },
   {
     "id": 452,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata merah 1/2 batu campuran 1PC:2PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42042,6 +42494,7 @@
   },
   {
     "id": 453,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata merah 1/2 batu campuran 1PC:3PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42054,6 +42507,7 @@
   },
   {
     "id": 454,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata merah 1/2 batu campuran 1PC:4PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42066,6 +42520,7 @@
   },
   {
     "id": 455,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata merah 1/2 batu campuran 1PC:5PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42078,6 +42533,7 @@
   },
   {
     "id": 456,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata merah 1/2 batu campuran 1PC:6PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42090,6 +42546,7 @@
   },
   {
     "id": 457,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata merah 1/2 batu 1PC:8PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42102,6 +42559,7 @@
   },
   {
     "id": 458,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata merah 1/2 batu 1PC:3KP: 10PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42114,6 +42572,7 @@
   },
   {
     "id": 459,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata merah 1/2 batu 1KP:1SM:1PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42126,6 +42585,7 @@
   },
   {
     "id": 460,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata merah 1/2 batu 1KP:1SM:2PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42138,6 +42598,7 @@
   },
   {
     "id": 461,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding HB20 campuran 1PC:3PP ",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42150,6 +42611,7 @@
   },
   {
     "id": 462,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding HB20 campuran 1PC:4PP ",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42162,6 +42624,7 @@
   },
   {
     "id": 463,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding HB15 campuran 1PC:3PP ",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42174,6 +42637,7 @@
   },
   {
     "id": 464,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding HB15 campuran 1PC:4PP ",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42307,6 +42771,7 @@
   },
   {
     "id": 465,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding HB10 campuran 1PC:3PP ",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42319,6 +42784,7 @@
   },
   {
     "id": 466,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding HB10 campuran 1PC:4PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42331,6 +42797,7 @@
   },
   {
     "id": 467,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding terawang (roster) campuran 1PC:3PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42343,6 +42810,7 @@
   },
   {
     "id": 468,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding terawang (roster) campuran 1PC:4PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42355,6 +42823,7 @@
   },
   {
     "id": 469,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata berongga campuran 1PC:3PP",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42367,6 +42836,7 @@
   },
   {
     "id": 470,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata ringan tebal 7,5 cm ",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42379,6 +42849,7 @@
   },
   {
     "id": 471,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata ringan tebal 10 cm",
     "mata_pembayaran": "",
     "satuan": "",
@@ -42391,6 +42862,7 @@
   },
   {
     "id": 472,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 90 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -42464,6 +42936,7 @@
   },
   {
     "id": 473,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 110 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -42537,6 +43010,7 @@
   },
   {
     "id": 474,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -42595,6 +43069,7 @@
   },
   {
     "id": 475,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -42668,6 +43143,7 @@
   },
   {
     "id": 476,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -42741,6 +43217,7 @@
   },
   {
     "id": 477,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -42799,6 +43276,7 @@
   },
   {
     "id": 478,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -42857,6 +43335,7 @@
   },
   {
     "id": 479,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -42915,6 +43394,7 @@
   },
   {
     "id": 480,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -42973,6 +43453,7 @@
   },
   {
     "id": 481,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43031,6 +43512,7 @@
   },
   {
     "id": 482,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43089,6 +43571,7 @@
   },
   {
     "id": 483,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 900 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43147,6 +43630,7 @@
   },
   {
     "id": 484,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 1.000 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43205,6 +43689,7 @@
   },
   {
     "id": 485,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 1.100 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43263,6 +43748,7 @@
   },
   {
     "id": 486,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 1.200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43321,6 +43807,7 @@
   },
   {
     "id": 487,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43379,6 +43866,7 @@
   },
   {
     "id": 488,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 100 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43437,6 +43925,7 @@
   },
   {
     "id": 489,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 125 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43495,6 +43984,7 @@
   },
   {
     "id": 490,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43553,6 +44043,7 @@
   },
   {
     "id": 491,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43611,6 +44102,7 @@
   },
   {
     "id": 492,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43669,6 +44161,7 @@
   },
   {
     "id": 493,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43727,6 +44220,7 @@
   },
   {
     "id": 494,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43785,6 +44279,7 @@
   },
   {
     "id": 495,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43843,6 +44338,7 @@
   },
   {
     "id": 496,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43901,6 +44397,7 @@
   },
   {
     "id": 497,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -43959,6 +44456,7 @@
   },
   {
     "id": 498,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44017,6 +44515,7 @@
   },
   {
     "id": 499,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 900 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44075,6 +44574,7 @@
   },
   {
     "id": 500,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 1.000 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44133,6 +44633,7 @@
   },
   {
     "id": 501,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  HDPE Ø 1.100 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44191,6 +44692,7 @@
   },
   {
     "id": 502,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa HDPE Ø 1.200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44249,6 +44751,7 @@
   },
   {
     "id": 503,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44307,6 +44810,7 @@
   },
   {
     "id": 504,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 100 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44365,6 +44869,7 @@
   },
   {
     "id": 505,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 125 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44423,6 +44928,7 @@
   },
   {
     "id": 506,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44481,6 +44987,7 @@
   },
   {
     "id": 507,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44539,6 +45046,7 @@
   },
   {
     "id": 508,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44597,6 +45105,7 @@
   },
   {
     "id": 509,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44655,6 +45164,7 @@
   },
   {
     "id": 510,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44713,6 +45223,7 @@
   },
   {
     "id": 511,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44771,6 +45282,7 @@
   },
   {
     "id": 512,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44829,6 +45341,7 @@
   },
   {
     "id": 513,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44887,6 +45400,7 @@
   },
   {
     "id": 514,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -44945,6 +45459,7 @@
   },
   {
     "id": 515,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 900 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45003,6 +45518,7 @@
   },
   {
     "id": 516,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 1.000 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45061,6 +45577,7 @@
   },
   {
     "id": 517,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 1.100 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45119,6 +45636,7 @@
   },
   {
     "id": 518,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  GIP Ø 1.200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45177,6 +45695,7 @@
   },
   {
     "id": 519,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 100 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45235,6 +45754,7 @@
   },
   {
     "id": 520,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 125 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45293,6 +45813,7 @@
   },
   {
     "id": 521,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45351,6 +45872,7 @@
   },
   {
     "id": 522,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45409,6 +45931,7 @@
   },
   {
     "id": 523,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45467,6 +45990,7 @@
   },
   {
     "id": 524,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45525,6 +46049,7 @@
   },
   {
     "id": 525,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45613,6 +46138,7 @@
   },
   {
     "id": 526,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45701,6 +46227,7 @@
   },
   {
     "id": 527,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45789,6 +46316,7 @@
   },
   {
     "id": 528,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45877,6 +46405,7 @@
   },
   {
     "id": 529,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -45965,6 +46494,7 @@
   },
   {
     "id": 530,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 900 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46053,6 +46583,7 @@
   },
   {
     "id": 531,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 1.000 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46141,6 +46672,7 @@
   },
   {
     "id": 532,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 1.100 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46229,6 +46761,7 @@
   },
   {
     "id": 533,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  DCI Ø 1.200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46317,6 +46850,7 @@
   },
   {
     "id": 534,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Baja  PVC Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46329,6 +46863,7 @@
   },
   {
     "id": 535,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 100 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46387,6 +46922,7 @@
   },
   {
     "id": 536,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 125 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46445,6 +46981,7 @@
   },
   {
     "id": 537,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46503,6 +47040,7 @@
   },
   {
     "id": 538,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46561,6 +47099,7 @@
   },
   {
     "id": 539,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46619,6 +47158,7 @@
   },
   {
     "id": 540,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46677,6 +47217,7 @@
   },
   {
     "id": 541,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46750,6 +47291,7 @@
   },
   {
     "id": 542,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46823,6 +47365,7 @@
   },
   {
     "id": 543,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46896,6 +47439,7 @@
   },
   {
     "id": 544,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -46969,6 +47513,7 @@
   },
   {
     "id": 545,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -47042,6 +47587,7 @@
   },
   {
     "id": 546,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 900 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -47115,6 +47661,7 @@
   },
   {
     "id": 547,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 1.000 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -47188,6 +47735,7 @@
   },
   {
     "id": 548,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 1.100 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -47261,6 +47809,7 @@
   },
   {
     "id": 549,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  Baja Ø 1.200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -47334,6 +47883,7 @@
   },
   {
     "id": 550,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -47407,6 +47957,7 @@
   },
   {
     "id": 551,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 90 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -47480,6 +48031,7 @@
   },
   {
     "id": 552,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 110 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -47553,6 +48105,7 @@
   },
   {
     "id": 553,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -47611,6 +48164,7 @@
   },
   {
     "id": 554,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -47684,6 +48238,7 @@
   },
   {
     "id": 555,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -47757,6 +48312,7 @@
   },
   {
     "id": 556,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -47815,6 +48371,7 @@
   },
   {
     "id": 557,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -47873,6 +48430,7 @@
   },
   {
     "id": 558,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -47931,6 +48489,7 @@
   },
   {
     "id": 559,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -47989,6 +48548,7 @@
   },
   {
     "id": 560,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48047,6 +48607,7 @@
   },
   {
     "id": 561,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa  PVC Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48059,6 +48620,7 @@
   },
   {
     "id": 562,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 900 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48117,6 +48679,7 @@
   },
   {
     "id": 563,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 1.000 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48175,6 +48738,7 @@
   },
   {
     "id": 564,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 1.100 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48233,6 +48797,7 @@
   },
   {
     "id": 565,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  PVC Ø 1.200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48291,6 +48856,7 @@
   },
   {
     "id": 566,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48364,6 +48930,7 @@
   },
   {
     "id": 567,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 100 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48437,6 +49004,7 @@
   },
   {
     "id": 568,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 125 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48510,6 +49078,7 @@
   },
   {
     "id": 569,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48583,6 +49152,7 @@
   },
   {
     "id": 570,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48656,6 +49226,7 @@
   },
   {
     "id": 571,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48729,6 +49300,7 @@
   },
   {
     "id": 572,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48802,6 +49374,7 @@
   },
   {
     "id": 573,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48875,6 +49448,7 @@
   },
   {
     "id": 574,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -48948,6 +49522,7 @@
   },
   {
     "id": 575,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49021,6 +49596,7 @@
   },
   {
     "id": 576,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49094,6 +49670,7 @@
   },
   {
     "id": 577,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49167,6 +49744,7 @@
   },
   {
     "id": 578,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 900 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49240,6 +49818,7 @@
   },
   {
     "id": 579,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 1.000 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49313,6 +49892,7 @@
   },
   {
     "id": 580,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  HDPE Ø 1.100 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49386,6 +49966,7 @@
   },
   {
     "id": 581,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa HDPE Ø 1.200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49459,6 +50040,7 @@
   },
   {
     "id": 582,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49517,6 +50099,7 @@
   },
   {
     "id": 583,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 100 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49575,6 +50158,7 @@
   },
   {
     "id": 584,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 125 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49633,6 +50217,7 @@
   },
   {
     "id": 585,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49691,6 +50276,7 @@
   },
   {
     "id": 586,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49749,6 +50335,7 @@
   },
   {
     "id": 587,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49807,6 +50394,7 @@
   },
   {
     "id": 588,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49865,6 +50453,7 @@
   },
   {
     "id": 589,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49923,6 +50512,7 @@
   },
   {
     "id": 590,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -49981,6 +50571,7 @@
   },
   {
     "id": 591,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50039,6 +50630,7 @@
   },
   {
     "id": 592,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50097,6 +50689,7 @@
   },
   {
     "id": 593,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50155,6 +50748,7 @@
   },
   {
     "id": 594,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 900 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50213,6 +50807,7 @@
   },
   {
     "id": 595,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 1.000 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50271,6 +50866,7 @@
   },
   {
     "id": 596,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 1.100 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50329,6 +50925,7 @@
   },
   {
     "id": 597,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  GIP Ø 1.200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50387,6 +50984,7 @@
   },
   {
     "id": 598,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 100 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50460,6 +51058,7 @@
   },
   {
     "id": 599,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 125 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50518,6 +51117,7 @@
   },
   {
     "id": 600,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50576,6 +51176,7 @@
   },
   {
     "id": 601,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50634,6 +51235,7 @@
   },
   {
     "id": 602,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50692,6 +51294,7 @@
   },
   {
     "id": 603,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50750,6 +51353,7 @@
   },
   {
     "id": 604,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50808,6 +51412,7 @@
   },
   {
     "id": 605,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50866,6 +51471,7 @@
   },
   {
     "id": 606,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50924,6 +51530,7 @@
   },
   {
     "id": 607,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -50982,6 +51589,7 @@
   },
   {
     "id": 608,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51040,6 +51648,7 @@
   },
   {
     "id": 609,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 900 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51098,6 +51707,7 @@
   },
   {
     "id": 610,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 1.000 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51156,6 +51766,7 @@
   },
   {
     "id": 611,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 1.100 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51214,6 +51825,7 @@
   },
   {
     "id": 612,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  DCI Ø 1.200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51272,6 +51884,7 @@
   },
   {
     "id": 613,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan pipa Baja  Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51330,6 +51943,7 @@
   },
   {
     "id": 614,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 100 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51388,6 +52002,7 @@
   },
   {
     "id": 615,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 125 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51446,6 +52061,7 @@
   },
   {
     "id": 616,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51504,6 +52120,7 @@
   },
   {
     "id": 617,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51562,6 +52179,7 @@
   },
   {
     "id": 618,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51620,6 +52238,7 @@
   },
   {
     "id": 619,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51678,6 +52297,7 @@
   },
   {
     "id": 620,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51736,6 +52356,7 @@
   },
   {
     "id": 621,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51794,6 +52415,7 @@
   },
   {
     "id": 622,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51852,6 +52474,7 @@
   },
   {
     "id": 623,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51910,6 +52533,7 @@
   },
   {
     "id": 624,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -51968,6 +52592,7 @@
   },
   {
     "id": 625,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 900 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52026,6 +52651,7 @@
   },
   {
     "id": 626,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 1.000 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52084,6 +52710,7 @@
   },
   {
     "id": 627,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 1.100 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52142,6 +52769,7 @@
   },
   {
     "id": 628,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan Pipa  Baja Ø 1.200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52200,6 +52828,7 @@
   },
   {
     "id": 629,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52258,6 +52887,7 @@
   },
   {
     "id": 630,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52316,6 +52946,7 @@
   },
   {
     "id": 631,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve  Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52374,6 +53005,7 @@
   },
   {
     "id": 632,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52432,6 +53064,7 @@
   },
   {
     "id": 633,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52490,6 +53123,7 @@
   },
   {
     "id": 634,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52548,6 +53182,7 @@
   },
   {
     "id": 635,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52606,6 +53241,7 @@
   },
   {
     "id": 636,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52664,6 +53300,7 @@
   },
   {
     "id": 637,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 700 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52722,6 +53359,7 @@
   },
   {
     "id": 638,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52780,6 +53418,7 @@
   },
   {
     "id": 639,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 900 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52838,6 +53477,7 @@
   },
   {
     "id": 640,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 1.000 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52896,6 +53536,7 @@
   },
   {
     "id": 641,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 1.100 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -52954,6 +53595,7 @@
   },
   {
     "id": 642,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Valve Ø 1.200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53012,6 +53654,7 @@
   },
   {
     "id": 643,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53070,6 +53713,7 @@
   },
   {
     "id": 644,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53128,6 +53772,7 @@
   },
   {
     "id": 645,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53186,6 +53831,7 @@
   },
   {
     "id": 646,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53244,6 +53890,7 @@
   },
   {
     "id": 647,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53302,6 +53949,7 @@
   },
   {
     "id": 648,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53360,6 +54008,7 @@
   },
   {
     "id": 649,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53418,6 +54067,7 @@
   },
   {
     "id": 650,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53476,6 +54126,7 @@
   },
   {
     "id": 651,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 700 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53534,6 +54185,7 @@
   },
   {
     "id": 652,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53592,6 +54244,7 @@
   },
   {
     "id": 653,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 900 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53650,6 +54303,7 @@
   },
   {
     "id": 654,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 1.000 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53708,6 +54362,7 @@
   },
   {
     "id": 655,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 1.100 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53766,6 +54421,7 @@
   },
   {
     "id": 656,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Tee Ø 1.200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53824,6 +54480,7 @@
   },
   {
     "id": 657,
+    "kode": "",
     "nama_pekerjaan": "Penyambungan Pipa   Baru ke Pipa yang   ada Ø 80 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53882,6 +54539,7 @@
   },
   {
     "id": 658,
+    "kode": "",
     "nama_pekerjaan": "Penyambungan Pipa   Baru ke Pipa yang   ada Ø 100 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53940,6 +54598,7 @@
   },
   {
     "id": 659,
+    "kode": "",
     "nama_pekerjaan": "Penyambungan Pipa   Baru ke Pipa yang   ada Ø 150 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -53998,6 +54657,7 @@
   },
   {
     "id": 660,
+    "kode": "",
     "nama_pekerjaan": "Penyambungan Pipa   Baru ke Pipa yang   ada Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -54056,6 +54716,7 @@
   },
   {
     "id": 661,
+    "kode": "",
     "nama_pekerjaan": "Penyambungan Pipa   Baru ke Pipa yang   ada Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -54114,6 +54775,7 @@
   },
   {
     "id": 662,
+    "kode": "",
     "nama_pekerjaan": "Penyambungan Pipa   Baru ke Pipa yang   ada Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -54172,6 +54834,7 @@
   },
   {
     "id": 663,
+    "kode": "",
     "nama_pekerjaan": "Penyambungan Pipa   Baru ke Pipa yang   ada Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -54230,6 +54893,7 @@
   },
   {
     "id": 664,
+    "kode": "",
     "nama_pekerjaan": "Penyambungan Pipa   Baru ke Pipa yang   ada Ø 450 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -54288,6 +54952,7 @@
   },
   {
     "id": 665,
+    "kode": "",
     "nama_pekerjaan": "Penyambungan Pipa   Baru ke Pipa yang   ada Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -54346,6 +55011,7 @@
   },
   {
     "id": 666,
+    "kode": "",
     "nama_pekerjaan": "Penyambungan Pipa   Baru ke Pipa yang   ada Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -54404,6 +55070,7 @@
   },
   {
     "id": 667,
+    "kode": "",
     "nama_pekerjaan": "Penyambungan Pipa   Baru ke Pipa yang   ada Ø 700 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -54462,6 +55129,7 @@
   },
   {
     "id": 668,
+    "kode": "",
     "nama_pekerjaan": "Penyambungan Pipa   Baru ke Pipa yang   ada Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -54520,6 +55188,7 @@
   },
   {
     "id": 669,
+    "kode": "",
     "nama_pekerjaan": "Pengetesan Pipa Ø 50 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -54578,6 +55247,7 @@
   },
   {
     "id": 670,
+    "kode": "",
     "nama_pekerjaan": "Pengetesan Pipa Ø 75 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -54636,6 +55306,7 @@
   },
   {
     "id": 671,
+    "kode": "",
     "nama_pekerjaan": "Pengetesan Pipa Ø 100 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -54694,6 +55365,7 @@
   },
   {
     "id": 672,
+    "kode": "",
     "nama_pekerjaan": "Pengetesan Pipa Ø 150 mm ",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -54752,6 +55424,7 @@
   },
   {
     "id": 673,
+    "kode": "",
     "nama_pekerjaan": "Pengetesan Pipa Ø 200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -54810,6 +55483,7 @@
   },
   {
     "id": 674,
+    "kode": "",
     "nama_pekerjaan": "Pengetesan Pipa Ø 250 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -54868,6 +55542,7 @@
   },
   {
     "id": 675,
+    "kode": "",
     "nama_pekerjaan": "Pengetesan Pipa Ø 300 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -54926,6 +55601,7 @@
   },
   {
     "id": 676,
+    "kode": "",
     "nama_pekerjaan": "Pengetesan Pipa Ø 400 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -54984,6 +55660,7 @@
   },
   {
     "id": 677,
+    "kode": "",
     "nama_pekerjaan": "Pengetesan Pipa Ø 500 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -55042,6 +55719,7 @@
   },
   {
     "id": 678,
+    "kode": "",
     "nama_pekerjaan": "Pengetesan Pipa Ø 600 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -55100,6 +55778,7 @@
   },
   {
     "id": 679,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan 10 kg jaring kawat baja (wiremesh)",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -55112,6 +55791,7 @@
   },
   {
     "id": 680,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan talang ½ lingkaran D-15 cm, seng pelat bjls 30  lebar 45 cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -55230,6 +55910,7 @@
   },
   {
     "id": 681,
+    "kode": "",
     "nama_pekerjaan": "\tpemasangan dinding bata merah (5x11x22) cm tebal 1 batu campuran 1SP : 3KP : 10PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -55303,6 +55984,7 @@
   },
   {
     "id": 682,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan lantai teraso cor di tempat, tebal 3 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -55391,6 +56073,7 @@
   },
   {
     "id": 683,
+    "kode": "",
     "nama_pekerjaan": "Pasang dinding keramik 10 cm x 20 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -55524,6 +56207,7 @@
   },
   {
     "id": 684,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding lambrisering dari papan kayu kelas I",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -55642,6 +56326,7 @@
   },
   {
     "id": 685,
+    "kode": "",
     "nama_pekerjaan": "Pelaburan tembok lama dengan kapur sirih (pemeliharaan)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -55760,6 +56445,7 @@
   },
   {
     "id": 686,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bak mandi teraso vol 0,30 m3",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -55833,6 +56519,7 @@
   },
   {
     "id": 687,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan bak cuci piring teraso",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -55936,6 +56623,7 @@
   },
   {
     "id": 688,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan’ pipa galvanis diameter ½",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -56009,6 +56697,7 @@
   },
   {
     "id": 689,
+    "kode": "",
     "nama_pekerjaan": "Pemotongan pipa PVC Ø 800 mm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -56067,6 +56756,7 @@
   },
   {
     "id": 690,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan dinding bata merah (5x11x22) cm tebal 1 batu  campuran 1SP : 2PP",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -56185,6 +56875,7 @@
   },
   {
     "id": 691,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin warna ukuran 10cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -56197,6 +56888,7 @@
   },
   {
     "id": 692,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan plint ubin PC abu-abu ukuran 10cm x 30cm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -56315,6 +57007,7 @@
   },
   {
     "id": 693,
+    "kode": "",
     "nama_pekerjaan": "Pemasangan Pipa Baja Ø 63 mm",
     "mata_pembayaran": "",
     "satuan": "m",

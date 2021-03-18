@@ -177,4 +177,15 @@ router.get('/edit/:id', cek_login, function(req, res) {
   res.render('content-backoffice/manajemen_backup/edit'); 
 });
 
+router.get('/download/:id_kab/:tahun/:triwulan', cek_login, function(req, res) {
+  let hspk = fs.readFileSync(`./public/arsip/HSPK-${req.params.id_kab}-${req.params.tahun}-${req.params.triwulan}.json`);
+  hspk = JSON.parse(hspk);
+  let hsd = fs.readFileSync(`./public/arsip/HSD-${req.params.id_kab}-${req.params.tahun}-${req.params.triwulan}.json`);
+  hsd = JSON.parse(hsd);
+  connection.query("select * from kabupaten where id_kab="+req.params.id_kab, function(err, kabupaten, fields) {
+    res.render('content-backoffice/notifikasi/buku_jakon',{hspk, hsd, kabupaten});   
+  })
+ 
+});
+
 module.exports = router;

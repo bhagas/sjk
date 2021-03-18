@@ -324,7 +324,7 @@ router.get('/pekerjaan/detail_satuan/:id/:id_kab', function(req, res) {
        done = true;
      }) 
       deasync.loopWhile(function(){return !done;});
-      data.profit = (data.total * 15)/100;
+      data.profit = (data.total * 10)/100;
       data.total_keseluruhan = data.total + data.profit;
    
     res.json({data})
@@ -390,7 +390,7 @@ router.get('/pekerjaan/detail_toko/:id_standar_harga/:id_kab', function(req, res
 
 router.get('/pekerjaan/list_json_upah/:id_kab', function(req, res) {
   if(req.params.id_kab!="-"){
-    connection.query("SELECT a.*, MIN(b.harga) as harga from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='TENAGA KERJA' group by a.nama", function(err, data, fields) {
+    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='TENAGA KERJA' group by a.nama", function(err, data, fields) {
       // console.log(data_detail_pekerjaan)
       res.json( {data});
       
@@ -403,7 +403,7 @@ router.get('/pekerjaan/list_json_upah/:id_kab', function(req, res) {
 
 router.get('/pekerjaan/list_json_peralatan/:id_kab', function(req, res) {
   if(req.params.id_kab!="-"){
-    connection.query("SELECT a.*, MIN(b.harga) as harga from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='PERALATAN' group by a.nama", function(err, data, fields) {
+    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='PERALATAN' group by a.nama", function(err, data, fields) {
       // console.log(data_detail_pekerjaan)
       res.json( {data});
       

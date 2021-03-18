@@ -23,7 +23,7 @@
             <thead>
               <tr>
                 <th class="header">No.</th>
-               
+                <th class="header">Kode</th>
                 <th class="header">Pekerjaan</th>
                 <th class="header">Mata Pembayaran</th>
                 <th class="header">Satuan</th>
@@ -35,7 +35,7 @@
               <% for(var i=0; i<data.length; i++){ %>
                 <tr>
                   <td><%= i+1%></td>
-              
+                  <td><%= data[i].kode%></td>
                   <td><%= data[i].nama_pekerjaan%></td>
                   <td><%= data[i].mata_pembayaran%></td>
                   <td><%= data[i].satuan%></td>
