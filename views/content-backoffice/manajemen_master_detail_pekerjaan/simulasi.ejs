@@ -1,9 +1,13 @@
 <% include ../../template-backoffice/header.ejs %>
-
+<%
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+%>
 <!-- BEGIN PAGE CONTENT -->
 <div class="page-content">
   <div class="header">
-    <h2><strong>SIMULASI</strong></h2>
+    <h2><strong>Analisa</strong></h2>
     <div class="breadcrumb-wrapper">
       <ol class="breadcrumb">
         <li><a href="/backoffice">Dashboard</a>
@@ -19,7 +23,7 @@
           <div style="display: flex;">
             <div style="width: 28%;">
               <select class="form-control" name="id_kab" id="id_kab" data-search="true">
-                <option value="-"   >-- PILIH --</option>
+                <option value="-"   >-- Pilih  --</option>
                 <% for(var i=0; i<kabupaten.length; i++){ %> 
                 
                 <option value="<%= kabupaten[i]['id_kab']%>"   ><%= kabupaten[i]['kab']%> </option>
@@ -29,7 +33,7 @@
             <div style="width: 2%;"></div>
             <div style="width: 38%;">
               <select class="form-control" name="id_pekerjaan" id="id_pekerjaan" data-search="true">
-                <option value="-"   >-- PILIH --</option>
+                <option value="-"   >-- Pilih --</option>
                 <% for(var i=0; i<pekerjaan.length; i++){ %> 
                 
                 <option value="<%= pekerjaan[i]['id']%>"  satuan="<%= pekerjaan[i]['satuan']%>"  ><%= pekerjaan[i]['nama_pekerjaan']%> </option>
@@ -44,7 +48,7 @@
             <div style="width: 3%;display: flex;height: 35px;justify-content: center;align-items: center;"><span class="satuan"></span></div>
             <div style="width: 1%;"></div>
             <div style="width: 12%;">
-              <button class="btn btn-primary btn-embossed" id="simulasi">SIMULASI</button>
+              <button class="btn btn-primary btn-embossed" id="simulasi">Analisa</button>
             </div>
           </div>
            
@@ -93,7 +97,7 @@
 
                 <tr>
                     <td colspan="6" style="text-align: right;">Jumlah Harga Tenaga Kerja</td>
-                    <td id="total_tenaga">-</td>
+                    <td id="total_tenaga" style="text-align: right;">-</td>
                 </tr>
 
 
@@ -111,7 +115,7 @@
 
                 <tr>
                     <td colspan="6" style="text-align: right;">Jumlah Harga Bahan</td>
-                    <td id="total_bahan">-</td>
+                    <td id="total_bahan" style="text-align: right;">-</td>
                 </tr>
 
                 <tr id="peralatan">
@@ -128,7 +132,7 @@
 
                 <tr>
                     <td colspan="6" style="text-align: right;">Jumlah Harga Peralatan</td>
-                    <td id="total_peralatan">-</td>
+                    <td id="total_peralatan" style="text-align: right;">-</td>
                 </tr>
 
                 <tr>
@@ -136,14 +140,14 @@
                     <td style="text-align: left;" colspan="3">Jumlah Harga Tenaga, Bahan dan Peralatan (A+B+C)</td>
                     <td >&nbsp;</td>
                     <td >&nbsp;</td>
-                    <td id="total_keseluruhan">&nbsp;</td>
+                    <td id="total_keseluruhan" style="text-align: right;">&nbsp;</td>
                 </tr>
 
                 <tr>
                     <td style="text-align: center;">E</td>
                     <td style="text-align: left;" colspan="3">Overhead + profit (Contoh 15%)</td>
                     <td colspan="2" style="text-align: center;">15 % x D</td>
-                    <td id="total_profit">&nbsp;</td>
+                    <td id="total_profit" style="text-align: right;">&nbsp;</td>
                 </tr>
 
                 <tr>
@@ -151,7 +155,7 @@
                     <td style="text-align: left;" colspan="3"><strong>Harga Satuan Pekerjaan per - <span id="jumlahTampil"></span> <span class="satuan"></span> (D+E)</strong></td>
                     <td >&nbsp;</td>
                     <td >&nbsp;</td>
-                    <td id="total">&nbsp;</td>
+                    <td id="total" style="text-align: right;">&nbsp;</td>
                 </tr>
             </tbody>
         </table>
@@ -162,8 +166,8 @@
   <div class="footer">
     <div class="copyright">
       <p class="pull-left sm-pull-reset">
-        <span>Copyright <span class="copyright">©</span> 2019</span>
-        <span>Pemerintah</span>.
+        <span>Copyright <span class="copyright">©</span> 2021 </span>
+        <span>Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah</span>.
       </p>
     </div>
   </div>
@@ -173,6 +177,9 @@
 <% include ../../template-backoffice/footer.ejs %>
 
 <script type="text/javascript">
+function numberWithCommas(x) {
+		  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+		}
   $(document).ready(function() {
 
 
@@ -211,8 +218,8 @@ let total_bahan =0;
               <td style="text-align: center;">${e.kode}</td>
               <td style="text-align: center;">${e.satuan}</td>
               <td style="text-align: center;">${e.koefisien}</td>
-              <td style="text-align: center;">${e.harga}</td>
-              <td style="text-align: center;">${e.koefisien * e.harga * jumlah}</td>
+              <td style="text-align: right;">${numberWithCommas(e.harga)}</td>
+              <td style="text-align: right;">${numberWithCommas(e.koefisien * e.harga * jumlah)}</td>
           </tr>`);
           total_bahan += (e.koefisien * e.harga * jumlah)
         });
@@ -225,8 +232,8 @@ let total_bahan =0;
               <td style="text-align: center;">${e.kode}</td>
               <td style="text-align: center;">${e.satuan}</td>
               <td style="text-align: center;">${e.koefisien}</td>
-              <td style="text-align: center;">${e.harga}</td>
-              <td style="text-align: center;">${e.koefisien * e.harga * jumlah}</td> 
+              <td style="text-align: right;">${numberWithCommas(e.harga)}</td>
+              <td style="text-align: right;">${numberWithCommas(e.koefisien * e.harga * jumlah)}</td> 
           </tr>`);
           total_tenaga += (e.koefisien * e.harga * jumlah)
         });
@@ -239,21 +246,21 @@ let total_bahan =0;
               <td style="text-align: center;">${e.kode}</td>
               <td style="text-align: center;">${e.satuan}</td>
               <td style="text-align: center;">${e.koefisien}</td>
-              <td style="text-align: center;">${e.harga}</td>
-              <td style="text-align: center;">${e.koefisien * e.harga * jumlah}</td>
+              <td style="text-align: right;">${numberWithCommas(e.harga)}</td>
+              <td style="text-align: right;">${numberWithCommas(e.koefisien * e.harga * jumlah)}</td>
           </tr>`);
           total_peralatan += (e.koefisien * e.harga * jumlah)
         });
 
-        $('#total_bahan').html(total_bahan)
-        $('#total_tenaga').html(total_tenaga)
-        $('#total_peralatan').html(total_peralatan)
+        $('#total_bahan').html(numberWithCommas(total_bahan))
+        $('#total_tenaga').html(numberWithCommas(total_tenaga))
+        $('#total_peralatan').html(numberWithCommas(total_peralatan))
         let total_keseluruhan = total_bahan+ total_peralatan + total_tenaga;
-        $('#total_keseluruhan').html(total_keseluruhan)
+        $('#total_keseluruhan').html(numberWithCommas(total_keseluruhan))
         let total_profit = (total_keseluruhan * 15)/100;
-        $('#total_profit').html(total_profit)
+        $('#total_profit').html(numberWithCommas(total_profit))
         let total = total_keseluruhan + total_profit;
-        $('#total').html(total)
+        $('#total').html(numberWithCommas(total))
         })
       }
     

@@ -26,6 +26,9 @@ var info_jakon = require('./isine/info_jakon');
 var manajemen_master = require('./isine/manajemen_master');
 var manajemen_master_ssh = require('./isine/manajemen_master_ssh');
 var manajemen_backup = require('./isine/manajemen_backup');
+var manajemen_berita = require('./isine/manajemen_berita');
+var manajemen_peraturan = require('./isine/manajemen_peraturan');
+var manajemen_tenaga_kerja = require('./isine/manajemen_tenaga_kerja');
 var sql_enak = require('./database/mysql_enak.js').connection;
 const uploadd = require('express-fileupload')
 var app = express();
@@ -152,6 +155,9 @@ app.use('/info_jakon', info_jakon);
 app.use('/manajemen_master', manajemen_master);
 app.use('/manajemen_master_ssh', manajemen_master_ssh);
 app.use('/manajemen_backup', manajemen_backup);
+app.use('/manajemen_berita', manajemen_berita);
+app.use('/manajemen_peraturan', manajemen_peraturan);
+app.use('/manajemen_tenaga_kerja', manajemen_tenaga_kerja);
 
 
 app.get('/' , function (req, res) {
