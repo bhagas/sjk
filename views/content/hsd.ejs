@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <%
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+%>
 <head>
 
     <meta charset="utf-8">
@@ -84,8 +88,8 @@
                                             <div class="tab-pane fade show active" id="bahan" role="tabpanel" aria-labelledby="bahan-tab">
                                                 <div class="row" style="margin-top: 15px;">
                                                     <div class="col-md-12 col-lg-12">
-                                                        <table class="table table-bordered data_bahan">
-                                                            <thead>
+                                                        <table class="table table-bordered data_bahan table-striped">
+                                                            <thead style="background-color: #007bff;color: #fff;">
                                                                 <tr>
                                                                     <th style="width: 30px;">No.</th>
                                                                     <th>Jenis</th>
@@ -160,8 +164,8 @@
                                             <div class="tab-pane fade" id="upah" role="tabpanel" aria-labelledby="upah-tab">
                                                 <div class="row" style="margin-top: 15px;">
                                                     <div class="col-md-12 col-lg-12">
-                                                        <table class="table table-bordered data_upah" style="width: 100%;">
-                                                            <thead>
+                                                        <table class="table table-bordered data_upah table-striped" style="width: 100%;">
+                                                            <thead style="background-color: #007bff;color: #fff;">
                                                                 <tr>
                                                                     <th style="width: 30px;">No.</th>
                                                                     <th>Nama</th>
@@ -181,8 +185,8 @@
                                             <div class="tab-pane fade" id="alat" role="tabpanel" aria-labelledby="alat-tab">
                                                 <div class="row" style="margin-top: 15px;">
                                                     <div class="col-md-12 col-lg-12">
-                                                        <table class="table table-bordered data_alat">
-                                                            <thead>
+                                                        <table class="table table-bordered data_alat table-striped" style="width: 100%;">
+                                                            <thead style="background-color: #007bff;color: #fff;">
                                                                 <tr>
                                                                     <th style="width: 30px;">No.</th>
                                                                     <th>Alat</th>
@@ -224,6 +228,9 @@
    
     <!-- End Plugins This Page -->
     <script type="text/javascript">
+    function numberWithCommas(x) {
+		  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+		}
       $(document).ready(function() {
           let bahan='';
     var t  =  $('.data_bahan').DataTable({
@@ -251,7 +258,10 @@
                { "data": "jenis"},
                { "data": "nama"},
                { "data": "satuan"},
-               { "data": "hargaMin"},
+            //    { "data": "hargaMin"},
+               { "data": "hargaMin", render: function(item){
+                    return '<span style="float:right">'+numberWithCommas(parseInt(item))+'</span>';
+                } },
               
          ],
          'rowsGroup': [1],
@@ -320,7 +330,10 @@
              
                { "data": "nama"},
                { "data": "satuan"},
-               { "data": "harga"},
+            //    { "data": "harga"},
+               { "data": "harga", render: function(item){
+                    return '<span style="float:right">'+numberWithCommas(parseInt(item))+'</span>';
+                } },
               
          ],
         //  'rowsGroup': [1],
@@ -388,7 +401,10 @@
              
                { "data": "nama"},
                { "data": "satuan"},
-               { "data": "harga"},
+            //    { "data": "harga"},
+               { "data": "harga", render: function(item){
+                    return '<span style="float:right">'+numberWithCommas(parseInt(item))+'</span>';
+                } },
               
          ],
         //  'rowsGroup': [1],
