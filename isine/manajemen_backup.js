@@ -75,6 +75,7 @@ router.get('/list_json/:id_kab', cek_login, function(req, res) {
 
 router.get('/arsip/:id_kab/:tahun/:triwulan', cek_login, async function(req, res){
   //hsd
+  try{
   let pekerjaan = await  axios.get('http://localhost:8862/manajemen_master/pekerjaan/list_json/'+req.params.id_kab)
   let upah = await  axios.get('http://localhost:8862/manajemen_master/pekerjaan/list_json_upah/'+req.params.id_kab)
   let peralatan = await  axios.get('http://localhost:8862/manajemen_master/pekerjaan/list_json_peralatan/'+req.params.id_kab)
@@ -91,39 +92,37 @@ router.get('/arsip/:id_kab/:tahun/:triwulan', cek_login, async function(req, res
 
 
 
+
+
     //hspk
-    let done = false;
      data=[]
-    connection.query("SELECT a.* from master_pekerjaan a ", function(err, data_detail_pekerjaan, fields) {
-      // console.log("SELECT a.*, b.nama, b.satuan, b.kode from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id and c.id_kab = '"+req.params.id_kab+"'") 
-     data = data_detail_pekerjaan
-        done = true;
-      }) 
-      deasync.loopWhile(function(){return !done;});
-  
-      data.forEach(function(item, index){
-        done = false;
+     data =  await sql_enak.raw("SELECT a.* from master_pekerjaan a ");
+    
+      data = data[0];
+      // console.log(data[0])
+      for(let index =0 ; index < data.length; index++){
+
         data[index].total = 0
-       connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+item.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id", function(err, data_harga, fields) {
-        //  console.log(data_harga);
-         data[index].list = data_harga;
-         data_harga.forEach(function(harga_item){
-           data[index].total += harga_item.harga * harga_item.koefisien;
-         })
-         done = true;
-       }) 
-        deasync.loopWhile(function(){return !done;});
+     
+        let data_harga=  await sql_enak.select(sql_enak.raw(" a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+data[index].id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id"));
+        // console.log("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+item.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id")
+     
+        data[index].list = data_harga;
+        // console.log(data[index].list);
+        data_harga.forEach(function(harga_item){
+          data[index].total += harga_item.harga * harga_item.koefisien;
+        })
         data[index].profit = (data[index].total * 15)/100;
         data[index].total_keseluruhan = data[index].total + data[index].profit;
-       })
+       
+       }
+       console.log(data);
        let dataa = JSON.stringify(data, null, 2);
+       
        fs.writeFileSync(`./public/arsip/HSPK-${req.params.id_kab}-${req.params.tahun}-${req.params.triwulan}.json`, dataa);
      
-       done = false;
-       connection.query(`DELETE from arsip where id_kab = ${req.params.id_kab} and tahun = ${req.params.tahun} and triwulan = ${req.params.triwulan} `, function(err, hasil, fields) {
-        done = true;
-      })
-      deasync.loopWhile(function(){return !done;});
+       await sql_enak.raw(`DELETE from arsip where id_kab = ${req.params.id_kab} and tahun = ${req.params.tahun} and triwulan = ${req.params.triwulan} `)
+      
       
      await sql_enak.insert({
         id_kab : req.params.id_kab,
@@ -134,7 +133,10 @@ router.get('/arsip/:id_kab/:tahun/:triwulan', cek_login, async function(req, res
       }).into("arsip")
 
       res.json({status:200});
-      
+    }catch(err){
+      console.log(err, 'aaaax')
+      res.json({status: err})
+    }
   });
   
   // router.get('/hspk/:id_kab/:tahun/:triwulan', function(req, res) {

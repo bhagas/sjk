@@ -295,7 +295,7 @@
 
             <div class="row" style="margin-top: 30px;">
                 <div class="col-md-12 col-lg-12">
-                    <table class="table table-bordered table-sm table-striped">
+                    <table class="table table-bordered table-sm table-striped tabelDefault">
                         <thead style="background-color: #007bff;color: #fff;">
                             <tr>
                                 <th style="text-align: center;">No.</th>
@@ -364,8 +364,8 @@
             
                             <tr>
                                 <td style="text-align: center;">E</td>
-                                <td style="text-align: left;" colspan="3">Overhead + profit (Contoh 15%)</td>
-                                <td colspan="2" style="text-align: center;">15 % x D</td>
+                                <td style="text-align: left;" colspan="3">Overhead + profit (Contoh 10%)</td>
+                                <td colspan="2" style="text-align: center;">10 % x D</td>
                                 <td id="total_profit" style="text-align: right;">&nbsp;</td>
                             </tr>
             
@@ -470,15 +470,15 @@ let total_bahan =0;
       total_peralatan += (e.koefisien * e.harga * jumlah)
     });
 
-    $('#total_bahan').html(numberWithCommas(total_bahan))
-    $('#total_tenaga').html(numberWithCommas(total_tenaga))
-    $('#total_peralatan').html(numberWithCommas(total_peralatan))
+    $('#total_bahan').html(numberWithCommas(Math.round(total_bahan)))
+    $('#total_tenaga').html(numberWithCommas(Math.round(total_tenaga)))
+    $('#total_peralatan').html(numberWithCommas(Math.round(total_peralatan)))
     let total_keseluruhan = total_bahan+ total_peralatan + total_tenaga;
-    $('#total_keseluruhan').html(numberWithCommas(total_keseluruhan))
-    let total_profit = (total_keseluruhan * 15)/100;
-    $('#total_profit').html(numberWithCommas(total_profit))
+    $('#total_keseluruhan').html(numberWithCommas(Math.round(total_keseluruhan)))
+    let total_profit = (total_keseluruhan * 10)/100;
+    $('#total_profit').html(numberWithCommas(Math.round(total_profit)))
     let total = total_keseluruhan + total_profit;
-    $('#total').html(numberWithCommas(total))
+    $('#total').html(numberWithCommas(Math.round(total)))
     })
   }
 
@@ -571,8 +571,8 @@ function doReset(){
 
             <tr>
                 <td style="text-align: center;">E</td>
-                <td style="text-align: left;" colspan="3">Overhead + profit (Contoh 15%)</td>
-                <td colspan="2" style="text-align: center;">15 % x D</td>
+                <td style="text-align: left;" colspan="3">Overhead + profit (Contoh 10%)</td>
+                <td colspan="2" style="text-align: center;">10 % x D</td>
                 <td id="total_profit">&nbsp;</td>
             </tr>
 
