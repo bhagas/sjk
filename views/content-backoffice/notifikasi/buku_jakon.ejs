@@ -1,0 +1,898 @@
+<!--  BACKUP ASLI SERVER BENAR -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="#" type="image/png">
+
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        body {
+            background: rgb(204,204,204); 
+            font-size:12pt;
+            line-height:1.5em;
+            font-family: 'Roboto', sans-serif !important;
+        }
+
+        page {
+            background: white;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 5mm;
+            box-shadow: 0 0 5mm rgba(0,0,0,0.5);
+            /*border:2px solid black;*/
+        }
+
+        page[size="A4"] {
+            width: 210mm;
+            /* height: 310mm;   */
+            /*border:1px solid black;*/
+            /*background-color: red;*/
+            /* float: left; */
+        }
+
+        @page {
+            size: A4 portrait;
+            margin:15mm 15mm;
+            background-color: red;
+        }
+        
+        /* span{
+            color:red !important;
+        } */
+        @media print {
+            body, page {
+            margin: 0;
+            box-shadow: none;
+            }
+
+            #btn-print{
+            display: none !important;
+            }
+        }
+
+        .m-t-0{
+            margin-top: 0;
+        }
+
+        .m-b-0{
+            margin-bottom: 0;
+        }
+
+        /* table { page-break-inside:auto } */
+        /* tr    { page-break-inside:avoid; page-break-after:auto} */
+        .border {border: 0.5mm solid black !important}
+
+
+        h4{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-weight: normal;
+        }
+
+        /* span{
+            color: red;
+        } */
+
+        .button {
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .button:hover{
+            background-color: #fff;
+            color: black;
+        }
+      /* div{
+        page-break-inside: avoid;
+      } */
+      /* tbody { page-break-inside:avoid } */
+      /* tr   { page-break-inside:avoid;} */
+      /* thead { display:table-header-group }
+      tfoot { page-break-inside:avoid; page-break-after:auto  } */
+    </style>
+</head>
+
+<body style="position: relative;">
+    <button class="button"  id="btn-print">Cetak</button>
+    <page size="A4">
+        <div style="width: 100%;border:1px solid black;">
+            <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;"><strong>DAFTAR HARGA SATUAN PEKERJAAN<br/>BERDASARKAN PERMEN PUPERA NO. 28/PRT/M/2016</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td>SUMBER DANA</td>
+                        <td>:</td>
+                        <td>PASAR BEBAS</td>
+                    </tr>
+
+                    <tr>
+                        <td>DAERAH</td>
+                        <td>:</td>
+                        <td>KOTA SEMARANG DAN SEKITARNYA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="width: 100%;margin-top: 2.5mm;">
+            <table border="1" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th>NO.</th>
+                        <th>KODE</th>
+                        <th>URAIAN PEKERJAAN</th>
+                        <th>SAT</th>
+                        <th>HARGA SATUAN PEKERJAAN<br/>Rp</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td style="text-align: center;">1.</td>
+                        <td style="text-align: center;">A.2.3.1.1</td>
+                        <td>Pagar Sementara dari Seng Gelombang</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">742.340.50</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">2.</td>
+                        <td style="text-align: center;">A.2.3.1.2</td>
+                        <td>Pagar Sementara dari Seng Gelombang</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">742.340.50</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">3.</td>
+                        <td style="text-align: center;">A.2.3.1.2</td>
+                        <td>Pagar Sementara dari Seng Gelombang</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">742.340.50</td>
+                    </tr>
+
+                    <!--  -->
+
+                    <tr>
+                        <td style="text-align: center;">1.</td>
+                        <td style="text-align: center;">A.2.3.1.1</td>
+                        <td>Pagar Sementara dari Seng Gelombang</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">742.340.50</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">2.</td>
+                        <td style="text-align: center;">A.2.3.1.2</td>
+                        <td>Pagar Sementara dari Seng Gelombang</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">742.340.50</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">3.</td>
+                        <td style="text-align: center;">A.2.3.1.2</td>
+                        <td>Pagar Sementara dari Seng Gelombang</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">742.340.50</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">1.</td>
+                        <td style="text-align: center;">A.2.3.1.1</td>
+                        <td>Pagar Sementara dari Seng Gelombang</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">742.340.50</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">2.</td>
+                        <td style="text-align: center;">A.2.3.1.2</td>
+                        <td>Pagar Sementara dari Seng Gelombang</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">742.340.50</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">3.</td>
+                        <td style="text-align: center;">A.2.3.1.2</td>
+                        <td>Pagar Sementara dari Seng Gelombang</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">742.340.50</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">1.</td>
+                        <td style="text-align: center;">A.2.3.1.1</td>
+                        <td>Pagar Sementara dari Seng Gelombang</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">742.340.50</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">2.</td>
+                        <td style="text-align: center;">A.2.3.1.2</td>
+                        <td>Pagar Sementara dari Seng Gelombang</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">742.340.50</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">3.</td>
+                        <td style="text-align: center;">A.2.3.1.2</td>
+                        <td>Pagar Sementara dari Seng Gelombang</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">742.340.50</td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div style="width: 100%;border:1px solid black;margin-top: 5mm;">
+            <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;letter-spacing: 5px;"><strong>DAFTAR HARGA SATUAN BAHAN BANGUNAN</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td>SUMBER DANA</td>
+                        <td>:</td>
+                        <td>PASAR BEBAS</td>
+                    </tr>
+
+                    <tr>
+                        <td>DAERAH</td>
+                        <td>:</td>
+                        <td>KOTA SEMARANG DAN SEKITARNYA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="width: 100%;margin-top: 2.5mm;">
+            <table border="1" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th>NO.</th>
+                        <th colspan="2">JENIS BAHAN</th>
+                        <th>SAT</th>
+                        <th>HARGA<br/>Rp</th>
+                        <th>KET</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;"><strong>I.</strong></td>
+                        <td colspan="5"><strong>BAHAN DASAR</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">1.</td>
+                        <td style="text-align: left;width: 240px;">BATU KALI</td>
+                        <td style="width: 200px;">Bulat Utuh</td>
+                        <td style="text-align: center;">m3</td>
+                        <td style="text-align: right;">230.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: center;"></td>
+                        <td>Bulat Belah</td>
+                        <td style="text-align: center;">m3</td>
+                        <td style="text-align: right;">230.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: center;"></td>
+                        <td>Bulat Pecah 10/15</td>
+                        <td style="text-align: center;">m3</td>
+                        <td style="text-align: right;">230.000</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="text-align: center;">2.</td>
+                        <td style="text-align: left;">PORTLAND CEMENT</td>
+                        <td>Merk I 40 Kg</td>
+                        <td style="text-align: center;">Zak</td>
+                        <td style="text-align: right;">230.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;"></td>
+                        <td>Merk I 50 Kg</td>
+                        <td style="text-align: center;">Zak</td>
+                        <td style="text-align: right;">230.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;"><strong>II.</strong></td>
+                        <td colspan="5"><strong>BAHAN PENUTUP ATAP</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">1.</td>
+                        <td style="text-align: left;">ASBES GELOMBANG BESAR</td>
+                        <td>200 cm x 102 cm x 5 cm</td>
+                        <td style="text-align: center;">bh</td>
+                        <td style="text-align: right;">230.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;"></td>
+                        <td>255 cm x 102 cm x 5 cm</td>
+                        <td style="text-align: center;">bh</td>
+                        <td style="text-align: right;">230.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">2.</td>
+                        <td style="text-align: left;">ASBES PLAT</td>
+                        <td>100 cm x 10 cm x 3 mm</td>
+                        <td style="text-align: center;">bh</td>
+                        <td style="text-align: right;">230.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;"></td>
+                        <td>100 cm x 10 cm x 4 mm</td>
+                        <td style="text-align: center;">bh</td>
+                        <td style="text-align: right;">230.000</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="text-align: center;"><strong>III.</strong></td>
+                        <td colspan="5"><strong>BAHAN KAYU</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">1.</td>
+                        <td style="text-align: left;">JATI</td>
+                        <td>Papan</td>
+                        <td style="text-align: center;">m</td>
+                        <td style="text-align: right;">230.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;"></td>
+                        <td>Balok/pasagen</td>
+                        <td style="text-align: center;">bh</td>
+                        <td style="text-align: right;">230.000</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div style="width: 100%;border:1px solid black;margin-top: 5mm;">
+            <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;letter-spacing: 5px;"><strong>DAFTAR UPAH PEKERJA</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td>SUMBER DANA</td>
+                        <td>:</td>
+                        <td>PASAR BEBAS</td>
+                    </tr>
+
+                    <tr>
+                        <td>DAERAH</td>
+                        <td>:</td>
+                        <td>KOTA SEMARANG DAN SEKITARNYA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="width: 100%;margin-top: 2.5mm;">
+            <table border="1" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th>NO.</th>
+                        <th>URAIAN PEKERJA</th>
+                        <th>SATUAN</th>
+                        <th>HARGA<br/>Rp</th>
+                        <th>KET</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">1.</td>
+                        <td>Pekerja</td>
+                        <td style="text-align: center;">Hr</td>
+                        <td style="text-align: right;">104.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">2.</td>
+                        <td>Mandor</td>
+                        <td style="text-align: center;">Hr</td>
+                        <td style="text-align: right;">104.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">3.</td>
+                        <td>Tukang Listrik</td>
+                        <td style="text-align: center;">Hr</td>
+                        <td style="text-align: right;">104.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">4.</td>
+                        <td>Tukang Listrik</td>
+                        <td style="text-align: center;">Hr</td>
+                        <td style="text-align: right;">104.000</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="width: 100%;border:1px solid black;margin-top: 5mm;">
+            <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;letter-spacing: 5px;" colspan="3"><strong>DAFTAR SEWA PERALATAN</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td>SUMBER DANA</td>
+                        <td>:</td>
+                        <td>PASAR BEBAS</td>
+                    </tr>
+
+                    <tr>
+                        <td>DAERAH</td>
+                        <td>:</td>
+                        <td>KOTA SEMARANG DAN SEKITARNYA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="width: 100%;margin-top: 5mm;">
+            <table border="1" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="width:40px">NO.</th>
+                        <th>URAIAN PEKERJA</th>
+                        <th>SATUAN</th>
+                        <th>HARGA<br/>Rp</th>
+                        <th>KET</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">1.</td>
+                        <td>Dump Truck 3 ton</td>
+                        <td style="text-align: center;">Jam</td>
+                        <td style="text-align: right;">104.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">2.</td>
+                        <td>Truk Bak Terbuka Engkel</td>
+                        <td style="text-align: center;">Jam</td>
+                        <td style="text-align: right;">104.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">3.</td>
+                        <td>Excavator</td>
+                        <td style="text-align: center;">Jam</td>
+                        <td style="text-align: right;">104.000</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">4.</td>
+                        <td>Baby Roller</td>
+                        <td style="text-align: center;">Jam</td>
+                        <td style="text-align: right;">104.000</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="width: 100%;border:1px solid black;margin-top: 5mm;">
+            <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;"><strong>DAFTAR HARGA SATUAN PERKERJAAN (AHSP) NO. 28/PRT/M/2016<BR/>BIDANG CIPTA KARYA</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td>SUMBER DANA</td>
+                        <td>:</td>
+                        <td>PASAR BEBAS</td>
+                    </tr>
+
+                    <tr>
+                        <td>DAERAH</td>
+                        <td>:</td>
+                        <td>KOTA SEMARANG DAN SEKITARNYA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="width: 100%;margin-top: 5mm;">
+            <table border="1" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th style="width:40px">NO.</th>
+                        <th>SNI</th>
+                        <th>KODE</th>
+                        <th>KOEF</th>
+                        <th>SAT</th>
+                        <th>URAIAN PERKERJAAN</th>
+                        <th>HARGA BAHAN/UPAH</th>
+                        <th>JUMLAH</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;"><strong>I.</strong></td>
+                        <td style="text-align: center;"><strong>A.2.2.1</strong></td>
+                        <td><strong>K.3</strong></td>
+                        <td></td>
+                        <td colspan="4"><strong>HARGA SATUAN PEKERJAAN PERSIAPAN</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;"><strong>1.</strong></td>
+                        <td style="text-align: center;"><strong>A.2.2.1</strong></td>
+                        <td></td>
+                        <td style="text-align: right;"><strong>1</strong></td>
+                        <td style="text-align: center;"><strong>m</strong></td>
+                        <td><strong>Pagar Sementara dari Seng Gelombang Tinggi 2.00 m</strong></td>
+                        <td style="text-align: right;"><strong>000.000</strong></td>
+                        <td style="text-align: right;"><strong>700.000</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><strong>A</strong></td>
+                        <td><strong>TENAGA</strong></td>
+                        <td style="text-align: right;"><strong>140.000</strong></td>
+                        <td style="text-align: right;"><strong>700.000</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: right;">L.01</td>
+                        <td style="text-align: right;">0.2</td>
+                        <td style="text-align: center;">OH</td>
+                        <td>Pekerja</td>
+                        <td style="text-align: right;">140.000</td>
+                        <td style="text-align: right;">600.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: right;">L.02</td>
+                        <td style="text-align: right;">0.4</td>
+                        <td style="text-align: center;">OH</td>
+                        <td>Tukang Kayu</td>
+                        <td style="text-align: right;">140.000</td>
+                        <td style="text-align: right;">600.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: right;">L.03</td>
+                        <td style="text-align: right;">0.02</td>
+                        <td style="text-align: center;">OH</td>
+                        <td>Kepala Tukang</td>
+                        <td style="text-align: right;">140.000</td>
+                        <td style="text-align: right;">600.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><strong>B</strong></td>
+                        <td><strong>BAHAN</strong></td>
+                        <td style="text-align: right;"><strong>200.000</strong></td>
+                        <td style="text-align: right;"><strong>700.000</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: right;">1.25</td>
+                        <td style="text-align: center;">Btg</td>
+                        <td>Kayu Doklen</td>
+                        <td style="text-align: right;">140.000</td>
+                        <td style="text-align: right;">600.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: right;">2.5</td>
+                        <td style="text-align: center;">Kg</td>
+                        <td>Portland Cement</td>
+                        <td style="text-align: right;">140.000</td>
+                        <td style="text-align: right;">600.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><strong>C</strong></td>
+                        <td><strong>PERALATAN</strong></td>
+                        <td style="text-align: right;"></td>
+                        <td style="text-align: right;"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><strong>D</strong></td>
+                        <td><strong>Jumlah A + B + C</strong></td>
+                        <td style="text-align: right;">0.000.000</td>
+                        <td style="text-align: right;">0.000.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><strong>D</strong></td>
+                        <td><strong>Overhead & Profit (contoh 10%)</strong></td>
+                        <td style="text-align: right;">0.000.000</td>
+                        <td style="text-align: right;">0.000.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><strong>D</strong></td>
+                        <td><strong>Harga Satuan Pekerjaan (D + E)</strong></td>
+                        <td style="text-align: right;">0.000.000</td>
+                        <td style="text-align: right;">0.000.000</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;"><strong>2.</strong></td>
+                        <td style="text-align: center;"><strong>A.2.2.1.4</strong></td>
+                        <td></td>
+                        <td style="text-align: right;"><strong>1</strong></td>
+                        <td style="text-align: center;"><strong>m</strong></td>
+                        <td><strong>Pengukuran dan Pemasangan Bouwplank</strong></td>
+                        <td style="text-align: right;"><strong>000.000</strong></td>
+                        <td style="text-align: right;"><strong>700.000</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><strong>A</strong></td>
+                        <td><strong>TENAGA</strong></td>
+                        <td style="text-align: right;"><strong>140.000</strong></td>
+                        <td style="text-align: right;"><strong>700.000</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: right;">L.01</td>
+                        <td style="text-align: right;">0.2</td>
+                        <td style="text-align: center;">OH</td>
+                        <td>Pekerja</td>
+                        <td style="text-align: right;">140.000</td>
+                        <td style="text-align: right;">600.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: right;">L.02</td>
+                        <td style="text-align: right;">0.4</td>
+                        <td style="text-align: center;">OH</td>
+                        <td>Tukang Kayu</td>
+                        <td style="text-align: right;">140.000</td>
+                        <td style="text-align: right;">600.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: right;">L.03</td>
+                        <td style="text-align: right;">0.02</td>
+                        <td style="text-align: center;">OH</td>
+                        <td>Kepala Tukang</td>
+                        <td style="text-align: right;">140.000</td>
+                        <td style="text-align: right;">600.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><strong>B</strong></td>
+                        <td><strong>BAHAN</strong></td>
+                        <td style="text-align: right;"><strong>200.000</strong></td>
+                        <td style="text-align: right;"><strong>700.000</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: right;">1.25</td>
+                        <td style="text-align: center;">Btg</td>
+                        <td>Kayu Doklen</td>
+                        <td style="text-align: right;">140.000</td>
+                        <td style="text-align: right;">600.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: right;">2.5</td>
+                        <td style="text-align: center;">Kg</td>
+                        <td>Portland Cement</td>
+                        <td style="text-align: right;">140.000</td>
+                        <td style="text-align: right;">600.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><strong>C</strong></td>
+                        <td><strong>PERALATAN</strong></td>
+                        <td style="text-align: right;"></td>
+                        <td style="text-align: right;"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><strong>D</strong></td>
+                        <td><strong>Jumlah A + B + C</strong></td>
+                        <td style="text-align: right;">0.000.000</td>
+                        <td style="text-align: right;">0.000.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><strong>D</strong></td>
+                        <td><strong>Overhead & Profit (contoh 10%)</strong></td>
+                        <td style="text-align: right;">0.000.000</td>
+                        <td style="text-align: right;">0.000.000</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><strong>D</strong></td>
+                        <td><strong>Harga Satuan Pekerjaan (D + E)</strong></td>
+                        <td style="text-align: right;">0.000.000</td>
+                        <td style="text-align: right;">0.000.000</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+    </page>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+    $('#btn-print').click(function(){
+         window.print();
+    });
+    </script>
+</body>
+</html>
