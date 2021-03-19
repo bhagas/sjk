@@ -59,15 +59,62 @@ var upload = multer({ storage: storage })
 
 //start-------------------------------------
 router.get('/', cek_login, function(req, res) {
-  res.render('content-backoffice/manajemen_tenaga_kerja/list'); 
+  connection.query("SELECT a.*, b.kab from tenaga_kerja a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, rows, fields) {
+  res.render('content-backoffice/manajemen_tenaga_kerja/list',{data:rows}); 
+});
 });
 
 router.get('/insert', cek_login, function(req, res) {
-  res.render('content-backoffice/manajemen_tenaga_kerja/insert'); 
+  connection.query("SELECT * from kabupaten ", function(err, kabupaten, fields) {
+  res.render('content-backoffice/manajemen_tenaga_kerja/insert', {kabupaten}); 
+});
 });
 
 router.get('/edit/:id', cek_login, function(req, res) {
-  res.render('content-backoffice/manajemen_tenaga_kerja/edit'); 
+  connection.query("SELECT * from tenaga_kerja where id='"+req.params.id+"'", function(err, rows, fields) {
+    connection.query("SELECT * from kabupaten ", function(err, kabupaten, fields) {
+  res.render('content-backoffice/manajemen_tenaga_kerja/edit', {data:rows,kabupaten}); 
+});
+});
 });
 
+
+router.post('/submit_insert', cek_login,  function(req, res){
+  var post = {}
+ post = req.body;
+    console.log(post)
+   sql_enak.insert(post).into("tenaga_kerja").then(function (id) {
+  console.log(id);
+})
+.finally(function() {
+  //sql_enak.destroy();
+  res.redirect('/manajemen_tenaga_kerja'); 
+});
+});
+
+router.post('/submit_edit', cek_login, function(req, res){
+  var post = {}
+ post = req.body;
+    console.log(post)
+   sql_enak("tenaga_kerja").where("id", req.body.id)
+  .update(post).then(function (count) {
+ console.log(count);
+})
+.finally(function() {
+  //sql_enak.destroy();
+  res.redirect('/manajemen_tenaga_kerja');
+});
+});
+
+router.get('/delete/:id', cek_login, function(req, res) {
+  
+  // senjata
+  // console.log(req.params.id)
+  connection.query("update tenaga_kerja SET deleted=1 WHERE id='"+req.params.id+"' ", function(err, rows, fields) {
+  //  if (err) throw err;
+    numRows = rows.affectedRows;
+  })
+
+  res.redirect('/manajemen_tenaga_kerja');
+});
 module.exports = router;

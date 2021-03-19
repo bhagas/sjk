@@ -17,14 +17,15 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-content">
-          <form role="form" action="#" method="POST" enctype="multipart/form-data">
+          <form role="form" action="/manajemen_peraturan/submit_edit" method="post" enctype="multipart/form-data">
+            <input type="hidden" class="form-control" name="id" id="" value="<%= data[0].id%>">
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="form-group">
                   <label>Judul</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="judul" id="">
+                      <input type="text" class="form-control" name="judul" id="" value="<%= data[0].judul%>">
                     </div>
                   </div>
                 </div>
@@ -33,7 +34,7 @@
                   <label>Kategori</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                     <select class="form-control" name="kategori" id="">
+                     <select class="form-control" name="kategori" id="kategori">
                        <option value="">-- Pilih --</option>
                        <option>Undang-undang</option>
                        <option>PP</option>
@@ -48,7 +49,8 @@
                   <label>Upload File Peraturan</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="file" class="form-control" name="file" id="">
+                      <input type="file" class="form-control" name="file1" id="">
+                      <a href="/foto/<%= data[0].file1%>" target="_blank"><img style="width:100px" src="/foto/<%= data[0].file1%>"></a>
                     </div>
                   </div>
                 </div>
@@ -75,5 +77,5 @@
 
 <% include ../../template-backoffice/footer.ejs %>
 <script type="text/javascript">
-
+$("#kategori").val('<%= data[0].kategori%>');
 </script>

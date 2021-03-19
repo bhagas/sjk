@@ -58,7 +58,15 @@ var upload = multer({ storage: storage })
 
 //start-------------------------------------
 router.get('/', function(req, res) {
-  res.render('content/peraturan'); 
+  connection.query("SELECT * from peraturan where deleted=0 and kategori='Undang-undang'", function(err, data_undang, fields) {
+    connection.query("SELECT * from peraturan where deleted=0 and kategori='PP'", function(err, data_pp, fields) {
+      connection.query("SELECT * from peraturan where deleted=0 and kategori='Permen'", function(err, data_permen, fields) {
+        connection.query("SELECT * from peraturan where deleted=0 and kategori='Peraturan Lainnya'", function(err, data_lain, fields) {
+  res.render('content/peraturan', {undang:data_undang, pp:data_pp, permen:data_permen, lain:data_lain}); 
+});
+});
+});
+});
 });
 
 module.exports = router;

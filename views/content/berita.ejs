@@ -43,77 +43,26 @@
             </div>
 
             <div class="row" >
-                <div class="col-md-4 col-lg-4" style="margin-top: 30px;">
-                    <a href="/berita/detail/1">
-                        <div style="width: 100%;position: relative;">
-                            <img src="https://via.placeholder.com/360" alt="" style="width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+                <% for(var i=0; i<berita.length; i++){ %>
+                <div class="col-md-6 col-lg-6" style="margin-top: 30px;">
+                    
+                    <a href="/berita/detail/<%= berita[i].id%>">
 
-                            <div style="width: 100%;position: absolute;left: 0;right: 0;bottom: 0;padding: 10px;background-color: rgba(0, 0, 0, 0.5);">
-                                <h5 class="mt-0 mb-0" style="color: #fff;"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, distinctio.</strong></h5>
+                        <div class="row">
+                            <div class="col-md-5 col-lg-5">
+                                <img src="/foto/<%= berita[i].file1%>" alt="" style="width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+                            </div>
+                            <div class="col-md-7 col-lg-7">
+                                <h5 class="mt-0 mb-0"><strong><%= berita[i].judul%></strong></h5>
+                                <h6 class="mt-0 mb-0"><%= berita[i].tgl%></h6>
+
+                                <p><%- berita[i].deskripsi.substring(0,100)%> ....</p>
                             </div>
                         </div>
                     </a>
                 </div>
-
-                <div class="col-md-4 col-lg-4" style="margin-top: 30px;">
-                    <a href="/berita/detail/1">
-                        <div style="width: 100%;position: relative;">
-                            <img src="https://via.placeholder.com/360" alt="" style="width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;">
-
-                            <div style="width: 100%;position: absolute;left: 0;right: 0;bottom: 0;padding: 10px;background-color: rgba(0, 0, 0, 0.5);">
-                                <h5 class="mt-0 mb-0" style="color: #fff;"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, distinctio.</strong></h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-lg-4" style="margin-top: 30px;">
-                    <a href="/berita/detail/1">
-                        <div style="width: 100%;position: relative;">
-                            <img src="https://via.placeholder.com/360" alt="" style="width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;">
-
-                            <div style="width: 100%;position: absolute;left: 0;right: 0;bottom: 0;padding: 10px;background-color: rgba(0, 0, 0, 0.5);">
-                                <h5 class="mt-0 mb-0" style="color: #fff;"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, distinctio.</strong></h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-lg-4" style="margin-top: 30px;">
-                    <a href="/berita/detail/1">
-                        <div style="width: 100%;position: relative;">
-                            <img src="https://via.placeholder.com/360" alt="" style="width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;">
-
-                            <div style="width: 100%;position: absolute;left: 0;right: 0;bottom: 0;padding: 10px;background-color: rgba(0, 0, 0, 0.5);">
-                                <h5 class="mt-0 mb-0" style="color: #fff;"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, distinctio.</strong></h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-lg-4" style="margin-top: 30px;">
-                    <a href="/berita/detail/1">
-                        <div style="width: 100%;position: relative;">
-                            <img src="https://via.placeholder.com/360" alt="" style="width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;">
-
-                            <div style="width: 100%;position: absolute;left: 0;right: 0;bottom: 0;padding: 10px;background-color: rgba(0, 0, 0, 0.5);">
-                                <h5 class="mt-0 mb-0" style="color: #fff;"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, distinctio.</strong></h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-lg-4" style="margin-top: 30px;">
-                    <a href="/berita/detail/1">
-                        <div style="width: 100%;position: relative;">
-                            <img src="https://via.placeholder.com/360" alt="" style="width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;">
-
-                            <div style="width: 100%;position: absolute;left: 0;right: 0;bottom: 0;padding: 10px;background-color: rgba(0, 0, 0, 0.5);">
-                                <h5 class="mt-0 mb-0" style="color: #fff;"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, distinctio.</strong></h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                <% } %>
+                
                 
             </div>
         </div>

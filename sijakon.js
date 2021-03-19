@@ -29,6 +29,7 @@ var manajemen_backup = require('./isine/manajemen_backup');
 var manajemen_berita = require('./isine/manajemen_berita');
 var manajemen_peraturan = require('./isine/manajemen_peraturan');
 var manajemen_tenaga_kerja = require('./isine/manajemen_tenaga_kerja');
+var manajemen_badan_usaha = require('./isine/manajemen_badan_usaha');
 var sql_enak = require('./database/mysql_enak.js').connection;
 const uploadd = require('express-fileupload')
 var app = express();
@@ -158,14 +159,17 @@ app.use('/manajemen_backup', manajemen_backup);
 app.use('/manajemen_berita', manajemen_berita);
 app.use('/manajemen_peraturan', manajemen_peraturan);
 app.use('/manajemen_tenaga_kerja', manajemen_tenaga_kerja);
+app.use('/manajemen_badan_usaha', manajemen_badan_usaha);
 
 
 app.get('/' , function (req, res) {
   connection.query("select * from kabupaten", function(err, kabupaten, fields) {
     connection.query("select * from master_pekerjaan", function(err, pekerjaan, fields) {
-      res.render('content/index', {kabupaten, pekerjaan});
+      connection.query("select * from berita where deleted=0 ORDER BY id DESC LIMIT 3", function(err, data_berita, fields) {
+      res.render('content/index', {kabupaten, pekerjaan, berita: data_berita});
       
     })
+  })
     
   })
 });

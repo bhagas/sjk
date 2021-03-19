@@ -111,29 +111,28 @@ if(req.files.file2){
 });
 });
 
-router.post('/submit_edit', cek_login, upload.fields([{ name: 'file1', maxCount: 1 },{ name: 'file2', maxCount: 1 },{ name: 'file3', maxCount: 1 }]), function(req, res){
+router.post('/submit_edit', cek_login, function(req, res){
   var post = {}
  post = req.body;
- if(req.files){
- if(req.files['file1']){
-      var nama_file = req.files['file1'][0].filename;
-     // nama_file = nama_file.slice(0, -4)
-         post['file1'] = nama_file;
-      }
-
-      if(req.files['file2']){
-        var nama_file = req.files['file2'][0].filename;
-       // nama_file = nama_file.slice(0, -4)
-           post['file2'] = nama_file;
-        }
-
-        if(req.files['file3']){
-          var nama_file = req.files['file3'][0].filename;
-         // nama_file = nama_file.slice(0, -4)
-             post['file3'] = nama_file;
-          }
+ if(req.files.file1){
+  req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
     
+  }))
+  post.file1= req.files.file1.name
+}
+if(req.files.file2){
+  req.files.file2.mv('./public/foto/'+req.files.file2.name,(async err=>{
+    
+  }))
+  post.file2= req.files.file2.name
     }
+
+    if(req.files.file3){
+      req.files.file3.mv('./public/foto/'+req.files.file3.name,(async err=>{
+        
+      }))
+      post.file3= req.files.file3.name
+        }
     console.log(post)
    sql_enak("berita").where("id", req.body.id)
   .update(post).then(function (count) {

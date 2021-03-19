@@ -45,65 +45,136 @@
 
             <div class="row" style="margin-top: 30px;">
                 <div class="col-md-12 col-lg-12">
-                    <table class="table table-bordered table-striped datane">
-                        <thead style="background-color: #007bff;color: #fff;">
-                            <tr>
-                                <th>No</th>
-                                <th>Judul</th>
-                                <th>Option</th>
-                            </tr>
-                        </thead>
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" id="bahan-tab" data-toggle="tab" href="#bahan" role="tab" aria-controls="bahan" aria-selected="true" style="font-weight: bold;">Undang-Undang</a>
+                        </li>
 
-                        <tbody>
-                            <tr>
-                                <td colspan="3" style="background-color: #e0e0e0;"><strong>UNDANG-UNDANG</strong></td>
-                                <td style="display: none;">&nbsp;</td>
-                                <td style="display: none;">&nbsp;</td>
-                            </tr>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="upah-tab" data-toggle="tab" href="#upah" role="tab" aria-controls="upah" aria-selected="false" style="font-weight: bold;">PP</a>
+                        </li>
 
-                            <tr>
-                                <td>1.</td>
-                                <td>Undang-Undang Nomor 2 Tahun 2017 Tentang Jasa Konstruksi</td>
-                                <td><a href="#" class="btn btn-primary">Download</a></td>
-                            </tr>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="alat-tab" data-toggle="tab" href="#alat" role="tab" aria-controls="alat" aria-selected="false" style="font-weight: bold;">Permen</a>
+                        </li>
 
-                            <tr>
-                                <td colspan="3" style="background-color: #e0e0e0;"><strong>PP</strong></td>
-                                <td style="display: none;">&nbsp;</td>
-                                <td style="display: none;">&nbsp;</td>
-                            </tr>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="lain-tab" data-toggle="tab" href="#lain" role="tab" aria-controls="lain" aria-selected="false" style="font-weight: bold;">Peraturan Lainnya</a>
+                          </li>
+                    </ul>
 
-                            <tr>
-                                <td>1.</td>
-                                <td>PP No 22 Tahun 2020 Tentang Peraturan Pelaksanaan Undang-Undang Nomor 2 Tahun 2017 Tentang Jasa Konstruksi</td>
-                                <td><a href="#" class="btn btn-primary">Download</a></td>
-                            </tr>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="bahan" role="tabpanel" aria-labelledby="bahan-tab">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-md-12 col-lg-12">
+                                    <table class="table table-bordered table-striped datane">
+                                        <thead style="background-color: #007bff;color: #fff;">
+                                            <tr>
+                                                <th style="width: 15px;">No</th>
+                                                <th>Judul</th>
+                                                <th style="width: 100px;">Option</th>
+                                            </tr>
+                                        </thead>
+                
+                                        <tbody>
+                                            <% for(var i=0; i<undang.length; i++){ %>
+                                            <tr>
+                                                <td><%= i+1%></td>
+                                                <td><%= undang[i].judul%></td>
+                                                <td><a href="/foto/<%= undang[i].file1%>" class="btn btn-primary">Download</a></td>
+                                            </tr>
+                                            <%}%>
+                
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="upah" role="tabpanel" aria-labelledby="upah-tab">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-md-12 col-lg-12">
+                                    <table class="table table-bordered table-striped datane">
+                                        <thead style="background-color: #007bff;color: #fff;">
+                                            <tr>
+                                                <th style="width: 15px;">No</th>
+                                                <th>Judul</th>
+                                                <th style="width: 100px;">Option</th>
+                                            </tr>
+                                        </thead>
+                
+                                        <tbody>
+                                            <% for(var i=0; i<pp.length; i++){ %>
+                                            <tr>
+                                                <td><%= i+1%></td>
+                                                <td><%= pp[i].judul%></td>
+                                                <td><a href="/foto/<%= pp[i].file1%>" class="btn btn-primary">Download</a></td>
+                                            </tr>
+                                            <%}%>
+                
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="alat" role="tabpanel" aria-labelledby="alat-tab">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-md-12 col-lg-12">
+                                    <table class="table table-bordered table-striped datane">
+                                        <thead style="background-color: #007bff;color: #fff;">
+                                            <tr>
+                                                <th style="width: 15px;">No</th>
+                                                <th>Judul</th>
+                                                <th style="width: 100px;">Option</th>
+                                            </tr>
+                                        </thead>
+                
+                                        <tbody>
+                                            <% for(var i=0; i<permen.length; i++){ %>
+                                            <tr>
+                                                <td><%= i+1%></td>
+                                                <td><%= permen[i].judul%></td>
+                                                <td><a href="/foto/<%= permen[i].file1%>" class="btn btn-primary">Download</a></td>
+                                            </tr>
+                                            <%}%>
+                
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
 
-                            <tr>
-                                <td colspan="3" style="background-color: #e0e0e0;"><strong>Permen</strong></td>
-                                <td style="display: none;">&nbsp;</td>
-                                <td style="display: none;">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td>1.</td>
-                                <td>Permen PUPR No 28 Tahun 2016 Tentang Pedoman Analisis Harga Satuan Pekerjaan Bidang Pekerjaan Umum</td>
-                                <td><a href="#" class="btn btn-primary">Download</a></td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="3" style="background-color: #e0e0e0;"><strong>Peraturan Lainnya</strong></td>
-                                <td style="display: none;">&nbsp;</td>
-                                <td style="display: none;">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td>1.</td>
-                                <td>Perda No 16 Tahun 2014 Tentang Penyelenggaraan Dan Pembinaan Jasa Konstruksi Prov Jateng</td>
-                                <td><a href="#" class="btn btn-primary">Download</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <div class="tab-pane fade" id="alat" role="tabpanel" aria-labelledby="alat-tab">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-md-12 col-lg-12">
+                                    <table class="table table-bordered table-striped datane">
+                                        <thead style="background-color: #007bff;color: #fff;">
+                                            <tr>
+                                                <th style="width: 15px;">No</th>
+                                                <th>Judul</th>
+                                                <th style="width: 100px;">Option</th>
+                                            </tr>
+                                        </thead>
+                
+                                        <tbody>
+                                            <% for(var i=0; i<lain.length; i++){ %>
+                                            <tr>
+                                                <td><%= i+1%></td>
+                                                <td><%= lain[i].judul%></td>
+                                                <td><a href="/foto/<%= lain[i].file1%>" class="btn btn-primary">Download</a></td>
+                                            </tr>
+                                            <%}%>
+                
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
