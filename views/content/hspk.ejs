@@ -51,7 +51,6 @@
                             <div class="card-header" id="headingOne">
                             <h2 class="mb-0">
                                 <select class="form-control" name="id_kab" id="id_kab" data-search="true">
-                                    <option value="-"   >-- PILIH --</option>
                                     <% for(var i=0; i<kabupaten.length; i++){ %> 
                                     
                                     <option value="<%= kabupaten[i]['id_kab']%>"   ><%= kabupaten[i]['kab']%> </option>
@@ -74,7 +73,7 @@
                                                     <th>Kode</th>
                                                     <th>Satuan</th>
                                                     <th>Uraian Pekerjaan</th>
-                                                    <!-- <th>Harga Satuan (Rp)</th> -->
+                                                    <th>Harga Satuan (Rp)</th>
                                                 </tr>
                                             </thead>
                     
@@ -288,7 +287,7 @@
       },
   
       "processing": true,
-           "ajax": "/manajemen_master/pekerjaan/list/"+$('#id_kab').val(),
+           "ajax": "/manajemen_master/pekerjaan/list_arsip/"+$('#id_kab').val(),
            "columns": [
                { "data": null},
                { "data": "mata_pembayaran"},
@@ -298,7 +297,9 @@
 
                   return `<a href="#" class="hspk" idnya="${data.id}">${data.nama_pekerjaan}</a>`;
                }},
-            //    { "data": "total_keseluruhan"},
+               { "data": "total_keseluruhan",render: function(data){
+                   return "Rp "+numberWithCommas(Math.round(data))+",-"
+               }},
               
          ],
         
@@ -433,7 +434,7 @@ let total_bahan =0;
 
     $('#id_kab').change(function(){
    
-   t.ajax.url( `/manajemen_master/pekerjaan/list/${$('#id_kab').val()}` ).load();
+   t.ajax.url( `/manajemen_master/pekerjaan/list_arsip/${$('#id_kab').val()}` ).load();
  })
   });
   function doReset(){
@@ -524,7 +525,7 @@ let total_bahan =0;
             <tr>
                 <td style="text-align: center;">E</td>
                 <td style="text-align: left;" colspan="3">Overhead + profit (Contoh 10%)</td>
-                <td colspan="2" style="text-align: center;">15 % x D</td>
+                <td colspan="2" style="text-align: center;">10 % x D</td>
                 <td id="total_profit">&nbsp;</td>
             </tr>
 

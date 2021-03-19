@@ -78,26 +78,28 @@ router.post('/submit_insert', cek_login,  function(req, res){
   var post = {}
  post = req.body;
 
-
- if(req.files.file1){
-  req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
-    
-  }))
-  post.file1= req.files.file1.name
+if(req.files){
+  if(req.files.file1){
+    req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
+      
+    }))
+    post.file1= req.files.file1.name
+  }
+  if(req.files.file2){
+    req.files.file2.mv('./public/foto/'+req.files.file2.name,(async err=>{
+      
+    }))
+    post.file2= req.files.file2.name
+      }
+  
+      if(req.files.file3){
+        req.files.file3.mv('./public/foto/'+req.files.file3.name,(async err=>{
+          
+        }))
+        post.file3= req.files.file3.name
+          }
 }
-if(req.files.file2){
-  req.files.file2.mv('./public/foto/'+req.files.file2.name,(async err=>{
-    
-  }))
-  post.file2= req.files.file2.name
-    }
-
-    if(req.files.file3){
-      req.files.file3.mv('./public/foto/'+req.files.file3.name,(async err=>{
-        
-      }))
-      post.file3= req.files.file3.name
-        }
+ 
     
 
   
@@ -114,25 +116,27 @@ if(req.files.file2){
 router.post('/submit_edit', cek_login, function(req, res){
   var post = {}
  post = req.body;
- if(req.files.file1){
-  req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
-    
-  }))
-  post.file1= req.files.file1.name
+ if(req.files){
+  if(req.files.file1){
+    req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
+      
+    }))
+    post.file1= req.files.file1.name
+  }
+  if(req.files.file2){
+    req.files.file2.mv('./public/foto/'+req.files.file2.name,(async err=>{
+      
+    }))
+    post.file2= req.files.file2.name
+      }
+  
+      if(req.files.file3){
+        req.files.file3.mv('./public/foto/'+req.files.file3.name,(async err=>{
+          
+        }))
+        post.file3= req.files.file3.name
+          }
 }
-if(req.files.file2){
-  req.files.file2.mv('./public/foto/'+req.files.file2.name,(async err=>{
-    
-  }))
-  post.file2= req.files.file2.name
-    }
-
-    if(req.files.file3){
-      req.files.file3.mv('./public/foto/'+req.files.file3.name,(async err=>{
-        
-      }))
-      post.file3= req.files.file3.name
-        }
     console.log(post)
    sql_enak("berita").where("id", req.body.id)
   .update(post).then(function (count) {

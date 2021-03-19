@@ -78,11 +78,13 @@ router.post('/submit_insert', cek_login,  function(req, res){
   var post = {}
  post = req.body;
 
+if(req.files){
 
- if(req.files.file1){
-  req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
-    
-  }))
+  if(req.files.file1){
+   req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
+     
+   }))
+}
   post.file1= req.files.file1.name
 }
 
@@ -102,10 +104,13 @@ router.post('/submit_insert', cek_login,  function(req, res){
 router.post('/submit_edit', cek_login, function(req, res){
   var post = {}
  post = req.body;
- if(req.files.file1){
-  req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
-    
-  }))
+ if(req.files){
+
+  if(req.files.file1){
+   req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
+     
+   }))
+}
   post.file1= req.files.file1.name
 }
     console.log(post)

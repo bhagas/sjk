@@ -310,6 +310,26 @@ router.get('/pekerjaan/list/:id_kab', function(req, res) {
     res.json({data})
 
 });
+
+router.get('/pekerjaan/list_arsip/:id_kab', function(req, res) {
+  let done = false;
+  let data=[]
+  connection.query("SELECT a.* from arsip a where a.id_kab="+req.params.id_kab+" ORDER BY a.tahun DESC, a.triwulan DESC limit 1", function(err, data_detail_pekerjaan, fields) {
+    // console.log("SELECT a.*, b.nama, b.satuan, b.kode from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id and c.id_kab = '"+req.params.id_kab+"'") 
+  // console.log(data_detail_pekerjaan)
+    if(data_detail_pekerjaan.length>0){
+    let hspk = fs.readFileSync(`./public/arsip/HSPK-${data_detail_pekerjaan[0].id_kab}-${data_detail_pekerjaan[0].tahun}-${data_detail_pekerjaan[0].triwulan}.json`);
+    data = JSON.parse(hspk);
+   }
+      done = true;
+    }) 
+    deasync.loopWhile(function(){return !done;});
+
+   
+    res.json({data})
+
+});
+
 router.get('/pekerjaan/detail_satuan/:id/:id_kab', function(req, res) {
   let done = false;
   let data={}
@@ -584,10 +604,13 @@ router.get('/detail_pekerjaan/export_excel/:id_kab', async function(req,res){
   XLSX.utils.sheet_add_aoa(worksheet, [[67890]], {origin: "E13"});
   // XLSX.utils.book_append_sheet(workbook, worksheet, first_sheet_name);
   // res.json({nama: first_sheet_name, ws: worksheet})
+  var hsbgn = workbook.Sheets['HSBGN'];
+  console.log(hsbgn)
+
   var wbbuf = XLSX.write(workbook, {
     type: 'base64'
   });
-  res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename= HSBGN.xlsx"]]);
+  // res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename= HSBGN.xlsx"]]);
   // res.writeHead(200, [['Content-Disposition',  "attachment; filename=" + "HSDMaster.xlsx"]]);
   res.end( new Buffer(wbbuf, 'base64') );
   
