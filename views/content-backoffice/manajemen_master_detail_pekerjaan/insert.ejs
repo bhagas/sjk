@@ -6,7 +6,7 @@
     <div class="breadcrumb-wrapper">
       <ol class="breadcrumb">
         <li><a href="/backoffice">Dashboard</a></li>
-        <li><a href="/list_ssh">Data Master Detail Pekerjaan</a></li>
+        <li><a href="/manajemen_master/list_ssh">Data Master Detail Pekerjaan</a></li>
         <li class="active">Tambah Data</li>
       </ol>
     </div>
@@ -18,11 +18,11 @@
         <div class="panel-content">
           <form role="form" action="/manajemen_master/detail_pekerjaan/submit_insert" method="POST" enctype="multipart/form-data">
             <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">
                 <div class="form-group">
                   <label>Kabupaten</label>
                   <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                       <select class="form-control" name="id_kab" id="id_kab" data-search="true">
                         <option value="-">-- Pilih --</option>
                        
@@ -38,7 +38,7 @@
                 <div class="form-group">
                   <label>Toko</label>
                   <div class="row">
-                    <div class="col-xs-8 col-sm-8 col-md-6 col-lg-6">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                       <select class="form-control" name="id_toko" id="id_toko" data-search="true">
                       
                      
@@ -46,8 +46,8 @@
                       
                     </div>
 
-                    <div class="col-xs-4 col-sm-4 col-md-6 col-lg-6">
-                      <a href="#" id="refreshToko" class="btn btn-warning btn-sm btn-embossed">Refresh Toko</a>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <a href="#" id="refreshToko" class="btn btn-warning btn-embossed">Refresh Toko</a>
                     </div>
                     <button id="export" class="btn btn-success btn-embossed">Export Master Excel</button>
 
@@ -55,25 +55,41 @@
 
                 </div>
 
-              
-
-               
-              
-
                 <div class="form-group">
-                  <label>Upload File Excel</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="file" class="form-control" name="file_ssh" id="">
-                    </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 col-lg-12">
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-6">
+                <div class="panel bg-blue">
+                  <div class="panel-header">
+                    <h3 style="margin-bottom: 0;"><strong>Export Excel</strong></h3>
+                  </div>
+                  <div class="panel-content">
+                    <p>Silahkan Export excel untuk melihat harga toko dari kabupaten yang anda pilih</p>
+                    <button id="export" class="btn btn-success btn-embossed">Export Master Excel</button>
                   </div>
                 </div>
-
-                <ul class="list-inline">
-                  <li><button type="submit" class="btn btn-primary btn-embossed">IMPORT</button></li>
-                </ul>
                 
-                
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <div class="panel bg-purple">
+                  <div class="panel-header">
+                    <h3 style="margin-bottom: 0;"><strong>Import Excel</strong></h3>
+                  </div>
+                  <div class="panel-content">
+                    <p>Silahkan Import excel untuk menginput harga toko dari kabupaten yang anda pilih</p>
+                    <input type="file" class="form-control" name="file_ssh" id="">
+                    <button type="submit" class="btn btn-primary btn-embossed" style="margin-top: 15px;">Import Excel</button>
+                  </div>
+                </div>
               </div>
             </div>
           </form>

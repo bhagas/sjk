@@ -378,7 +378,7 @@ let total_bahan =0;
           <td style="text-align: center;">${e.satuan}</td>
           <td style="text-align: center;">${e.koefisien}</td>
           <td style="text-align: right;">${numberWithCommas(e.harga)}</td>
-          <td style="text-align: right;">${numberWithCommas((e.koefisien * e.harga * jumlah))}</td>
+          <td style="text-align: right;">${numberWithCommas(Math.round(e.koefisien * e.harga * jumlah))}</td>
       </tr>`);
       total_bahan += (e.koefisien * e.harga * jumlah)
       
@@ -393,7 +393,7 @@ let total_bahan =0;
           <td style="text-align: center;">${e.satuan}</td>
           <td style="text-align: center;">${e.koefisien}</td>
           <td style="text-align: right;">${numberWithCommas(e.harga)}</td>
-          <td style="text-align: right;">${numberWithCommas(e.koefisien * e.harga * jumlah)}</td> 
+          <td style="text-align: right;">${numberWithCommas(Math.round(e.koefisien * e.harga * jumlah))}</td> 
       </tr>`);
       total_tenaga += (e.koefisien * e.harga * jumlah)
     });
@@ -407,7 +407,7 @@ let total_bahan =0;
           <td style="text-align: center;">${e.satuan}</td>
           <td style="text-align: center;">${e.koefisien}</td>
           <td style="text-align: right;">${numberWithCommas(e.harga)}</td>
-          <td style="text-align: right;">${numberWithCommas(e.koefisien * e.harga * jumlah)}</td>
+          <td style="text-align: right;">${numberWithCommas(Math.round(e.koefisien * e.harga * jumlah))}</td>
       </tr>`);
       total_peralatan += (e.koefisien * e.harga * jumlah)
     });
