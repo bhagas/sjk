@@ -60,21 +60,21 @@ var upload = multer({ storage: storage })
 //start-------------------------------------
 router.get('/jasa_pelaksana', cek_login, function(req, res) {
   connection.query("SELECT a.*, b.kab from jasa_pelaksana a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, rows, fields) {
-  res.render('content-backoffice/manajemen_badan_usaha/list',{data:rows}); 
+  res.render('content-backoffice/manajemen_jasa_pelaksana/list',{data:rows}); 
 });
 });
 
 router.get('/jasa_pelaksana/insert', cek_login, function(req, res) {
   connection.query("SELECT * from kabupaten ", function(err, kabupaten, fields) {
 
-  res.render('content-backoffice/manajemen_badan_usaha/insert',{kabupaten}); 
+  res.render('content-backoffice/manajemen_jasa_pelaksana/insert',{kabupaten}); 
 });
 });
 
 router.get('/jasa_pelaksana/edit/:id', cek_login, function(req, res) {
   connection.query("SELECT * from jasa_pelaksana where id='"+req.params.id+"'", function(err, rows, fields) {
     connection.query("SELECT * from kabupaten ", function(err, kabupaten, fields) {
-  res.render('content-backoffice/manajemen_badan_usaha/edit', {data:rows,kabupaten}); 
+  res.render('content-backoffice/manajemen_jasa_pelaksana/edit', {data:rows,kabupaten}); 
 });
 });
 });
@@ -116,6 +116,70 @@ router.get('/jasa_pelaksana/delete/:id', cek_login, function(req, res) {
   })
 
   res.redirect('/manajemen_badan_usaha/jasa_pelaksana');
+});
+
+
+
+
+
+router.get('/jasa_perencana', cek_login, function(req, res) {
+  connection.query("SELECT a.*, b.kab from jasa_pelaksana a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, rows, fields) {
+  res.render('content-backoffice/manajemen_jasa_perencana/list',{data:rows}); 
+});
+});
+
+router.get('/jasa_perencana/insert', cek_login, function(req, res) {
+  connection.query("SELECT * from kabupaten ", function(err, kabupaten, fields) {
+
+  res.render('content-backoffice/manajemen_jasa_perencana/insert',{kabupaten}); 
+});
+});
+
+router.get('/jasa_perencana/edit/:id', cek_login, function(req, res) {
+  connection.query("SELECT * from jasa_pelaksana where id='"+req.params.id+"'", function(err, rows, fields) {
+    connection.query("SELECT * from kabupaten ", function(err, kabupaten, fields) {
+  res.render('content-backoffice/manajemen_jasa_perencana/edit', {data:rows,kabupaten}); 
+});
+});
+});
+
+router.post('/jasa_perencana/submit_insert', cek_login,  function(req, res){
+  var post = {}
+ post = req.body;
+    console.log(post)
+   sql_enak.insert(post).into("jasa_pelaksana").then(function (id) {
+  console.log(id);
+})
+.finally(function() {
+  //sql_enak.destroy();
+  res.redirect('/manajemen_badan_usaha/jasa_perencana'); 
+});
+});
+
+router.post('/jasa_perencana/submit_edit', cek_login, function(req, res){
+  var post = {}
+ post = req.body;
+    console.log(post)
+   sql_enak("jasa_pelaksana").where("id", req.body.id)
+  .update(post).then(function (count) {
+ console.log(count);
+})
+.finally(function() {
+  //sql_enak.destroy();
+  res.redirect('/manajemen_badan_usaha/jasa_perencana');
+});
+});
+
+router.get('/jasa_perencana/delete/:id', cek_login, function(req, res) {
+  
+  // senjata
+  // console.log(req.params.id)
+  connection.query("update jasa_pelaksana SET deleted=1 WHERE id='"+req.params.id+"' ", function(err, rows, fields) {
+  //  if (err) throw err;
+    numRows = rows.affectedRows;
+  })
+
+  res.redirect('/manajemen_badan_usaha/jasa_perencana');
 });
 
 module.exports = router;
