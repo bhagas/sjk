@@ -58,11 +58,15 @@ var upload = multer({ storage: storage })
 
 //start-------------------------------------
 router.get('/', function(req, res) {
-  res.render('content/berita'); 
+  connection.query("select *, DATE_FORMAT(tgl,'%d %M %Y') as tgl from berita where deleted=0 ORDER BY tgl DESC", function(err, data_berita, fields) {
+  res.render('content/berita', {berita:data_berita}); 
+});
 });
 
 router.get('/detail/:id', function(req, res) {
-  res.render('content/detail_berita'); 
+  connection.query("SELECT *, DATE_FORMAT(tgl,'%d %M %Y') as tgl from berita where id='"+req.params.id+"'", function(err, rows, fields) {
+  res.render('content/detail_berita', {data:rows}); 
+});
 });
 
 module.exports = router;

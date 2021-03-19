@@ -23,8 +23,13 @@
                   <label>Kabupaten/Kota</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <select class="form-control" name="kabkot" id="">
-                        <option >-- Pilih --</option>
+                      <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+                        <option value="-">-- Pilih --</option>
+                       
+                        <% for(var i=0; i<kabupaten.length; i++){ %> 
+                          
+                          <option value="<%= kabupaten[i]['id_kab']%>"><%= kabupaten[i]['kab']%></option>
+                          <% }%>
                       </select>
                     </div>
                   </div>
@@ -34,7 +39,7 @@
                   <label>Jumlah SKA</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="" id="">
+                      <input type="text" class="form-control" name="ska" id="">
                     </div>
                   </div>
                 </div>
@@ -43,7 +48,7 @@
                   <label>Jumlah SKT</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="" id="">
+                      <input type="text" class="form-control" name="skt" id="">
                     </div>
                   </div>
                 </div>

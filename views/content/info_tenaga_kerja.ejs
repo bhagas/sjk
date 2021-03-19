@@ -44,26 +44,34 @@
             </div>
 
             <div class="row" style="margin-top: 30px;">
-                <div class="col-md-9 col-lg-9">
+                <div class="col-md-8 col-lg-8">
                     <div id="chartContainer" style="height: 500px; width: 100%;"></div>
                 </div>
 
-                <div class="col-md-3 col-lg-3">
-                    <table class="table table-bordered">
+                <div class="col-md-4 col-lg-4">
+                    <table class="table table-bordered datane">
                         <thead>
                             <tr>
-                                <th>Kabupaten/Kota</th>
-                                <th>Jumlah</th>
+                                <th rowspan="2">Kabupaten/Kota</th>
+                                <th colspan="2">Jumlah Tenaga Kerja</th>
+                            </tr>
+
+                            <tr>
+                                <th>SKA</th>
+                                <th>SKT</th>
                             </tr>
                         </thead>
 
                         <tbody>
+                            <% for(var i=0; i<data_tenaga_kerja.length; i++){ %>
                             <tr>
-                                <td><a href="#" class="btn-detail"> Kabupaten Cilacap</a></td>
-                                <td>100</td>
+                                <td><%= data_tenaga_kerja[i].kab%></td>
+                                <td><%= data_tenaga_kerja[i].ska%></td>
+                                <td><%= data_tenaga_kerja[i].skt%></td>
                             </tr>
+                            <%}%>
 
-                            <tr>
+                            <!-- <tr>
                                 <td><a href="#"> Kabupaten Banyumas</a></td>
                                 <td>200</td>
                             </tr>
@@ -76,7 +84,7 @@
                             <tr>
                                 <td><a href="#"> dst.....</a></td>
                                 <td>dst .....</td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>
@@ -85,7 +93,7 @@
         </div>
     </section>
 
-    <section id="detail" style="padding: 0px 0px 90px 0px;">
+    <!-- <section id="detail" style="padding: 0px 0px 90px 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-12">
@@ -99,7 +107,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <% include ../template/footer.ejs %>
 
@@ -113,31 +121,34 @@
     <!-- End Plugins This Page -->
     <script type="text/javascript">
       $('.datane').DataTable({
-          order:false,
+        "searching": false
       });
-
+      var data_ska=[];
+    var data_skt=[];
+    <% for(var i=0; i<data_ska.length; i++){ %>
+        data_ska.push( { label: "<%= data_ska[i].kab%>", y: <%= data_ska[i].ska%> });
+    <%}%>
+    <% for(var i=0; i<data_skt.length; i++){ %>
+        data_skt.push( { label: "<%= data_skt[i].kab%>", y: <%= data_skt[i].skt%> });
+    <%}%>
       var chart = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,
+        toolTip: {
+		shared: true
+	},
         axisX: {
             interval:1,
 	    },
         data: [{
             type: "column",
-            name: "Proven Oil Reserves (bn)",
-            dataPoints:[
-                { label: "Kab. Banyumas", y: 266.21 },
-                { label: "Kab. Cilacap", y: 302.25 },
-                { label: "Kab. Jepara", y: 157.20 },
-                { label: "kab. Wonogiri", y: 148.77 },
-                { label: "Kab. Pemalang", y: 101.50 },
-                { label: "Kab. Pekalongan", y: 97.8 },
-                { label: "Kab. Batang", y: 266.21 },
-                { label: "Kab. Blora", y: 302.25 },
-                { label: "Kab. Boyolali", y: 157.20 },
-                { label: "Kota Salatiga", y: 148.77 },
-                { label: "Kota Semarang", y: 101.50 },
-                { label: "Kota Tegal", y: 97.8 }
-            ]
+            name: "Tenaga Kerja SKA",
+            showInLegend: true,
+            dataPoints: data_ska
+        },{
+            type: "column",
+            showInLegend: true,
+            name: "Tenaga Kerja SKT",
+            dataPoints: data_skt
         }]
     });
     chart.render();

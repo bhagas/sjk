@@ -1,63 +1,72 @@
 <% include ../../template-backoffice/header.ejs %>
-
 <!-- BEGIN PAGE CONTENT -->
 <div class="page-content">
   <div class="header">
-    <h2><strong>Edit Data Material</strong></h2>
+    <h2><strong>Tambah Data Badan Usaha Jasa Pelaksana Konstruksi</strong></h2>
     <div class="breadcrumb-wrapper">
       <ol class="breadcrumb">
         <li><a href="/backoffice">Dashboard</a></li>
-        <li><a href="/manajemen_master_ssh">Data Master SSH</a></li>
-        <li class="active">Edit Data</li>
+        <li><a href="/manajemen_badan_usaha">Data</a></li>
+        <li class="active">Tambah Data</li>
       </ol>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-content">
-          <form role="form" action="/manajemen_master_ssh/submit_edit" method="POST">
-            <input type="hidden" class="form-control" name="id" id="" value="<%= data[0].id%>">
+          <form role="form" action="/manajemen_badan_usaha/jasa_pelaksana/submit_insert" method="POST">
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="form-group">
-                  <label>Kode</label>
+                  <label>Kabupaten/Kota</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="kode" id="" value="<%= data[0].kode%>">
+                      <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+                        <option value="-">-- Pilih --</option>
+                       
+                        <% for(var i=0; i<kabupaten.length; i++){ %> 
+                          
+                          <option value="<%= kabupaten[i]['id_kab']%>"><%= kabupaten[i]['kab']%></option>
+                          <% }%>
+                      </select>
                     </div>
                   </div>
                 </div>
+
                 <div class="form-group">
-                  <label>Kategori</label>
+                  <label>Jumlah Badan Usaha Klasifikasi Bangunan Gedung</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="kategori" id="" value="<%= data[0].kategori%>">
+                      <input type="text" class="form-control" name="ska" id="">
                     </div>
                   </div>
                 </div>
+
                 <div class="form-group">
-                  <label>Jenis</label>
+                  <label>Jumlah Badan Usaha Klasifikasi Bangunan Sipil</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="jenis" id="" value="<%= data[0].jenis%>">
+                      <input type="text" class="form-control" name="skt" id="">
                     </div>
                   </div>
                 </div>
+
                 <div class="form-group">
-                  <label>Nama</label>
+                  <label>Jumlah Badan Usaha Klasifikasi Mekanikal Elektrikal</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="nama" id="" value="<%= data[0].nama%>">
+                      <input type="text" class="form-control" name="skt" id="">
                     </div>
                   </div>
                 </div>
+
                 <div class="form-group">
-                  <label>Satuan</label>
+                  <label>Jumlah Badan Usaha Klasifikasi Jasa Pelaksana Lainnya</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="satuan" id="" value="<%= data[0].satuan%>">
+                      <input type="text" class="form-control" name="skt" id="">
                     </div>
                   </div>
                 </div>
@@ -70,12 +79,11 @@
       </div>
     </div>
   </div>
-
   <div class="footer">
     <div class="copyright">
       <p class="pull-left sm-pull-reset">
-        <span>Copyright <span class="copyright">©</span> 2021 </span>
-        <span>Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah</span>.
+        <span>Copyright <span class="copyright">©</span> 2018 </span>
+        <span>Pemerintah</span>.
       </p>
     </div>
   </div>

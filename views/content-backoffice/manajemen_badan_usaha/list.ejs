@@ -3,7 +3,7 @@
 <!-- BEGIN PAGE CONTENT -->
 <div class="page-content">
   <div class="header">
-    <h2><strong>Data Tenaga Kerja</strong></h2>
+    <h2><strong>Data Badan Usaha</strong></h2>
     <div class="breadcrumb-wrapper">
       <ol class="breadcrumb">
         <li><a href="/backoffice">Dashboard</a>
@@ -16,7 +16,7 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-header header-line">
-           <a class="btn btn-primary btn-embossed" href="/manajemen_tenaga_kerja/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a>
+           <a class="btn btn-primary btn-embossed" href="/manajemen_badan_usaha/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a>
         </div>
         <div class="panel-content pagination2">
           <table class="table table-bordered table-striped table-hover" id="data">
@@ -24,13 +24,17 @@
               <tr>
                 <th class="header" rowspan="2">No.</th>
                 <th class="header" rowspan="2">Kabupaten/Kota</th>
-                <th class="header" colspan="2">Tenaga Kerja</th>
+                <th class="header" colspan="6">Klasifikasi</th>
                 <th class="header" rowspan="2">Option</th>
               </tr>
 
               <tr>
-                <td>SKA</td>
-                <td>SKT</td>
+                <td>Bangunan Gedung</td>
+                <td>Bangunan Sipil</td>
+                <td>Instalasi Mekanikal Elektrikal</td>
+                <td>Jasa Pelaksana Lainnya</td>
+                <td>Pelaksanaan Spesialis</td>
+                <td>Pelaksanaan Keterampilan</td>
               </tr>
             </thead>
             
@@ -39,14 +43,17 @@
             <tr>
               <td><%= i+1%></td>
               <td><%= data[i].kab%></td>
-              <td><%= data[i].ska%></td>
-              <td><%= data[i].skt%></td>
+              <td><%= data[i].gedung%></td>
+              <td><%= data[i].sipil%></td>
+              <td><%= data[i].lain%></td>
+              <td><%= data[i].spesialis%></td>
+              <td><%= data[i].keterampilan%></td>
               <td>
                 <center>
                 <ul class="list-inline">
-                  <li><a class="btn btn-warning btn-embossed btn-sm" href="/manajemen_tenaga_kerja/edit/<%= data[i].id%>" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+                  <li><a class="btn btn-warning btn-embossed btn-sm" href="/manajemen_badan_usaha/edit/<%= data[i].id%>" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
                   <li class="separator">|</li>
-                  <li><a class="btn btn-danger btn-embossed btn-sm" href="/manajemen_tenaga_kerja/delete/<%= data[i].id%>" role="button" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+                  <li><a class="btn btn-danger btn-embossed btn-sm" href="/manajemen_badan_usaha/delete/<%= data[i].id%>" role="button" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
                 </ul>
                 </center>
               </td>

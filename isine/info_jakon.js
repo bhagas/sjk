@@ -58,7 +58,15 @@ var upload = multer({ storage: storage })
 
 //start-------------------------------------
 router.get('/tenaga_kerja', function(req, res) {
-  res.render('content/info_tenaga_kerja'); 
+  connection.query("SELECT a.ska, b.kab from tenaga_kerja a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, ska, fields) {
+    connection.query("SELECT a.skt, b.kab from tenaga_kerja a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, skt, fields) {
+  connection.query("SELECT * from tenaga_kerja a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, tenaga_kerja, fields) {
+
+  res.render('content/info_tenaga_kerja', {data_ska:ska, data_skt:skt, data_tenaga_kerja:tenaga_kerja}); 
+  // res.json({data_ska:ska, data_skt:skt,data_tenaga_kerja:tenaga_kerja})
+});
+});
+});
 });
 
 router.get('/badan_usaha', function(req, res) {

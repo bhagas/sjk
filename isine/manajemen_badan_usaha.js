@@ -59,76 +59,63 @@ var upload = multer({ storage: storage })
 
 //start-------------------------------------
 router.get('/', cek_login, function(req, res) {
-  connection.query("SELECT * from peraturan where deleted=0", function(err, rows, fields) {
-  res.render('content-backoffice/manajemen_peraturan/list',{data:rows}); 
+  connection.query("SELECT a.*, b.kab from badan_usaha a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, rows, fields) {
+  res.render('content-backoffice/manajemen_badan_usaha/list',{data:rows}); 
 });
 });
 
 router.get('/insert', cek_login, function(req, res) {
-  res.render('content-backoffice/manajemen_peraturan/insert'); 
+  connection.query("SELECT * from kabupaten ", function(err, kabupaten, fields) {
+
+  res.render('content-backoffice/manajemen_badan_usaha/insert',{kabupaten}); 
+});
 });
 
 router.get('/edit/:id', cek_login, function(req, res) {
-  connection.query("SELECT * from peraturan where id='"+req.params.id+"'", function(err, rows, fields) {
-  res.render('content-backoffice/manajemen_peraturan/edit',{data:rows}); 
+  connection.query("SELECT * from badan_usaha where id='"+req.params.id+"'", function(err, rows, fields) {
+    connection.query("SELECT * from kabupaten ", function(err, kabupaten, fields) {
+  res.render('content-backoffice/manajemen_badan_usaha/edit', {data:rows,kabupaten}); 
+});
 });
 });
 
 router.post('/submit_insert', cek_login,  function(req, res){
   var post = {}
  post = req.body;
-
-
- if(req.files.file1){
-  req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
-    
-  }))
-  post.file1= req.files.file1.name
-}
-
-    
-
-  
     console.log(post)
-   sql_enak.insert(post).into("peraturan").then(function (id) {
+   sql_enak.insert(post).into("badan_usaha").then(function (id) {
   console.log(id);
 })
 .finally(function() {
   //sql_enak.destroy();
-  res.redirect('/manajemen_peraturan'); 
+  res.redirect('/manajemen_badan_usaha'); 
 });
 });
 
 router.post('/submit_edit', cek_login, function(req, res){
   var post = {}
  post = req.body;
- if(req.files.file1){
-  req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
-    
-  }))
-  post.file1= req.files.file1.name
-}
     console.log(post)
-   sql_enak("peraturan").where("id", req.body.id)
+   sql_enak("badan_usaha").where("id", req.body.id)
   .update(post).then(function (count) {
  console.log(count);
 })
 .finally(function() {
   //sql_enak.destroy();
-  res.redirect('/manajemen_peraturan'); 
+  res.redirect('/manajemen_badan_usaha');
 });
 });
-
 
 router.get('/delete/:id', cek_login, function(req, res) {
   
   // senjata
   // console.log(req.params.id)
-  connection.query("update peraturan SET deleted=1 WHERE id='"+req.params.id+"' ", function(err, rows, fields) {
+  connection.query("update badan_usaha SET deleted=1 WHERE id='"+req.params.id+"' ", function(err, rows, fields) {
   //  if (err) throw err;
     numRows = rows.affectedRows;
   })
 
-  res.redirect('/manajemen_peraturan');
+  res.redirect('/manajemen_badan_usaha');
 });
+
 module.exports = router;
