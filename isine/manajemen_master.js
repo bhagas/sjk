@@ -606,10 +606,15 @@ router.get('/detail_pekerjaan/export_excel/:id_kab', async function(req,res){
   const columnA = Object.keys(worksheet).filter(x => /^AG\d+/.test(x)).map(x => { return {kolom: x,data: worksheet[x].v}}) 
 
 // console.log(columnA)
-
+let harga= await sql_enak.raw("SELECT b.id_standar_harga, MIN(b.harga) as hargaMin from standar_harga_kab b where b.id_kab = "+req.params.id_kab+"  ")
+ 
 for(let i =1; i < columnA.length;i++){
-   let hasil= await sql_enak.raw("SELECT MIN(b.harga) as hargaMin from standar_harga_kab b where b.id_kab = "+req.params.id_kab+" and b.id_standar_harga="+columnA[i].data+" ")
-   XLSX.utils.sheet_add_aoa(worksheet, [[hasil[0].hargaMin]], {origin: columnA[i].kolom});
+  for(let a =1; a < harga.length;a++){
+      if(harga[a].id_standar_harga==columnA[i].data){
+
+        XLSX.utils.sheet_add_aoa(worksheet, [[hasil[a].hargaMin]], {origin: columnA[i].kolom});
+      }
+  }
   }
   // XLSX.utils.book_append_sheet(workbook, worksheet, first_sheet_name);
   // res.json({nama: first_sheet_name, ws: worksheet})
@@ -631,7 +636,23 @@ for(let i =1; i < columnA.length;i++){
   // res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename= HSBGN.xlsx"]]);
   // res.writeHead(200, [['Content-Disposition',  "attachment; filename=" + "HSDMaster.xlsx"]]);
   // res.end( new Buffer(wbbuf, 'base64') );
-  res.json(hsbgn)
+  let data=[];
+
+  data[0]= {};
+  
+  data[0].gts = hsbgn['B10'].v;
+  data[0].gs = hsbgn['D10'].v;
+  data[0].tipea = hsbgn['C14'].v;
+  data[0].tipeb = hsbgn['C14'].v;
+  data[0].tipec = hsbgn['D14'].v;
+  data[0].pgndepan = hsbgn['B19'].v;
+  data[0].pgnbelakang = hsbgn['C19'].v;
+  data[0].pgnsamping = hsbgn['D19'].v;
+  data[0].prndepan = hsbgn['B24'].v;
+  data[0].prnbelakang = hsbgn['C24'].v;
+  data[0].prnsamping = hsbgn['D24'].v;
+  
+  res.json(data)
   
 })
 
