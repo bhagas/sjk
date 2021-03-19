@@ -587,7 +587,7 @@ router.get('/detail_pekerjaan/export_excel/:id_kab', async function(req,res){
   var wbbuf = XLSX.write(workbook, {
     type: 'base64'
   });
-  res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename= telo.xls"]]);
+  res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename= HSBGN.xlsx"]]);
   // res.writeHead(200, [['Content-Disposition',  "attachment; filename=" + "HSDMaster.xlsx"]]);
   res.end( new Buffer(wbbuf, 'base64') );
   

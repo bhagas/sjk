@@ -116,7 +116,7 @@ router.get('/arsip/:id_kab/:tahun/:triwulan', cek_login, async function(req, res
         data[index].total_keseluruhan = data[index].total + data[index].profit;
        
        }
-       console.log(data);
+      //  console.log(data);
        let dataa = JSON.stringify(data, null, 2);
        
        fs.writeFileSync(`./public/arsip/HSPK-${req.params.id_kab}-${req.params.tahun}-${req.params.triwulan}.json`, dataa);
