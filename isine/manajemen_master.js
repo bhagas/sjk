@@ -598,21 +598,40 @@ router.post('/detail_pekerjaan/submit_insert', cek_login,  function(req, res){
         }))
 });
 router.get('/detail_pekerjaan/export_excel/:id_kab', async function(req,res){
-  var workbook = XLSX.readFile('./public/excel/hsbgn.xls');
+  var workbook = XLSX.readFile('./public/excel/temp'+req.params.id_kab+'.xlsx');
   var first_sheet_name = workbook.SheetNames[3];
-  var worksheet = workbook.Sheets[first_sheet_name];
-  XLSX.utils.sheet_add_aoa(worksheet, [[67890]], {origin: "E13"});
+  var worksheet = workbook.Sheets['D'];
+
+
+  const columnA = Object.keys(worksheet).filter(x => /^AG\d+/.test(x)).map(x => { return {kolom: x,data: worksheet[x].v}}) 
+
+// console.log(columnA)
+
+for(let i =1; i < columnA.length;i++){
+   let hasil= await sql_enak.raw("SELECT MIN(b.harga) as hargaMin from standar_harga_kab b where b.id_kab = "+req.params.id_kab+" and b.id_standar_harga="+columnA[i].data+" ")
+   XLSX.utils.sheet_add_aoa(worksheet, [[hasil[0].hargaMin]], {origin: columnA[i].kolom});
+  }
   // XLSX.utils.book_append_sheet(workbook, worksheet, first_sheet_name);
   // res.json({nama: first_sheet_name, ws: worksheet})
-  var hsbgn = workbook.Sheets['HSBGN'];
-  console.log(hsbgn)
+  // var hsbgn = workbook.Sheets['HSBGN'];
+  // console.log(hsbgn)
 
-  var wbbuf = XLSX.write(workbook, {
-    type: 'base64'
-  });
+  // var wbbuf = XLSX.write(workbook, {
+  //   type: 'base64'
+  // });
+
+
+
+  XLSX.writeFile(workbook, './public/excel/temp'+req.params.id_kab+'.xlsx');
+
+  //mulai membaca
+  var hsbgn_workbook = XLSX.readFile('./public/excel/temp'+req.params.id_kab+'.xlsx');
+  // var hsbgn_name = workbook.SheetNames[4];
+  var hsbgn = hsbgn_workbook.Sheets['HSBGN'];
   // res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename= HSBGN.xlsx"]]);
   // res.writeHead(200, [['Content-Disposition',  "attachment; filename=" + "HSDMaster.xlsx"]]);
-  res.end( new Buffer(wbbuf, 'base64') );
+  // res.end( new Buffer(wbbuf, 'base64') );
+  res.json(hsbgn)
   
 })
 
