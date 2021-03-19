@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+%>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah, SIJAKONS, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN,">
+    <meta name="author" content="Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah | Balai Jasa Konstruksi Provinsi Jawa Tengah">
+    <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
+    <title>SIJAKONS | Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah</title>
+
+    <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/template/css/style.css" rel="stylesheet">
+    <link href="/stylesheets/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Plugin This Page --> 
+    <link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+    <!-- End Plugins This Page -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    
+    </style>
+</head>
+
+<body>
+    
+    <% include ../template/header.ejs %>
+
+
+    <section style="padding: 90px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h2 class="m-t-0 m-b-0 text-center"><strong>HARGA SATUAN BANGUNAN GEDUNG NEGARA (HSBGN)</strong></h2>
+                </div>
+            </div>
+            
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-12 col-lg-12">
+                    <div class="alert alert-primary" role="alert">
+                        <select class="form-control" name="" id="">
+                            <option value="">-- Pilih Kabupaten/Kota --</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th colspan="2" style="text-align: center;">Gedung Negara</th>
+                                <th colspan="3" style="text-align: center;">Rumah Negara</th>
+                                <th colspan="3" style="text-align: center;">Pagar Gedung Negara</th>
+                                <th colspan="3" style="text-align: center;">Pagar Rumah negara</th>
+                            </tr>
+
+                            <tr>
+                                <th style="text-align: center;">Sederhana</th>
+                                <th style="text-align: center;">Tidak Sederhana</th>
+
+                                <th style="text-align: center;">Tipe A</th>
+                                <th style="text-align: center;">Tipe B</th>
+                                <th style="text-align: center;">Tipe C,D,E</th>
+
+                                <th style="text-align: center;">Depan<br/>(Tinggi : 1.5 m)</th>
+                                <th style="text-align: center;">Belakang<br/>(Tinggi : 3 m)</th>
+                                <th style="text-align: center;">Samping<br/>(Tinggi : 2 m)</th>
+
+                                <th style="text-align: center;">Depan<br/>(Tinggi : 1.5 m)</th>
+                                <th style="text-align: center;">Belakang<br/>(Tinggi : 2.5 m)</th>
+                                <th style="text-align: center;">Samping<br/>(Tinggi : 2 m)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <% include ../template/footer.ejs %>
+
+
+    <script src="/javascripts/template/jquery.min.js"></script>
+    <script src="/javascripts/template/bootstrap.bundle.min.js"></script>
+    <!-- Plugins This Page -->
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+       <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+       <script src="/javascripts/template/rowsgroup.js"></script>
+   
+    <!-- End Plugins This Page -->
+    <script type="text/javascript">
+    function numberWithCommas(x) {
+		  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+		}
+      $(document).ready(function() {
+          let bahan='';
+    var t  =  $('.data_bahan').DataTable({
+      "language": {
+        "sProcessing":   '<span>Sedang memproses...</span><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>',
+          "sLengthMenu":   "_MENU_",
+          "sZeroRecords":  "Tidak ditemukan data yang sesuai",
+          "sInfo":         "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
+          "sInfoEmpty":    "Menampilkan 0 sampai 0 dari 0 entri",
+          "sInfoFiltered": "(disaring dari _MAX_ entri keseluruhan)",
+          "sInfoPostFix":  "",
+          "sUrl":          "",
+          "oPaginate": {
+            "sFirst":    "Pertama",
+            "sPrevious": "Sebelumnya",
+            "sNext":     "Selanjutnya",
+            "sLast":     "Terakhir"
+          }
+      },
+
+      "pageLength": 50,
+  
+      "processing": true,
+           "ajax": "/manajemen_master/pekerjaan/list_json/"+$('#id_kab').val(),
+           "columns": [
+               { "data": null},
+               { "data": "jenis"},
+               { "data": "nama"},
+               { "data": "satuan"},
+            //    { "data": "hargaMin"},
+               { "data": "hargaMin", render: function(item){
+                    return '<span style="float:right">'+numberWithCommas(parseInt(item))+'</span>';
+                } },
+              
+         ],
+        //  'rowsGroup': [1],
+         'createdRow': function(row, data, dataIndex){
+         // Use empty value in the "Office" column
+         // as an indication that grouping with COLSPAN is needed
+        //  this.rowsgroup.update()
+         console.log(data)
+        //  if(data[1] === ''){
+        //     // Add COLSPAN attribute
+        //     $('td:eq(0)', row).attr('colspan', 5);
+
+        //     // Hide required number of columns
+        //     // next to the cell with COLSPAN attribute
+        //     $('td:eq(1)', row).css('display', 'none');
+        //     $('td:eq(2)', row).css('display', 'none');
+        //     $('td:eq(3)', row).css('display', 'none');
+      
+        //  }
+      },
+         "deferRender": true,
+         // "ordering": false,
+        //  "columnDefs": [
+        //      { "width": "3%" },
+        //      { "width": "20%" },
+        //      { "width": "24%" },
+        //      { "width": "10%" },
+        //      { "width": "20%" },
+        //      { "width": "20%" },
+    
+        //      { "width": "20%" }
+        //   ],
+         "fnRowCallback": function( row, data, iDisplayIndex ) {
+                   var index = iDisplayIndex +1;
+                   $('td:eq(0)',row).html(index);
+                   return row;
+         },
+    //   "columnDefs": [
+    //       { "width": "100px", "targets": 14}
+    //   ],
+    });
+
+
+    var x  =  $('.data_upah').DataTable({
+      "language": {
+        "sProcessing":   '<span>Sedang memproses...</span><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>',
+          "sLengthMenu":   "_MENU_",
+          "sZeroRecords":  "Tidak ditemukan data yang sesuai",
+          "sInfo":         "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
+          "sInfoEmpty":    "Menampilkan 0 sampai 0 dari 0 entri",
+          "sInfoFiltered": "(disaring dari _MAX_ entri keseluruhan)",
+          "sInfoPostFix":  "",
+          "sUrl":          "",
+          "oPaginate": {
+            "sFirst":    "Pertama",
+            "sPrevious": "Sebelumnya",
+            "sNext":     "Selanjutnya",
+            "sLast":     "Terakhir"
+          }
+      },
+      
+      "pageLength": 50,
+
+      "processing": true,
+           "ajax": "/manajemen_master/pekerjaan/list_json_upah/"+$('#id_kab').val(),
+           "columns": [
+               { "data": null},
+             
+               { "data": "nama"},
+               { "data": "satuan"},
+            //    { "data": "harga"},
+               { "data": "hargaMin", render: function(item){
+                    return '<span style="float:right">'+numberWithCommas(parseInt(item))+'</span>';
+                } },
+              
+         ],
+        //  'rowsGroup': [1],
+         'createdRow': function(row, data, dataIndex){
+         // Use empty value in the "Office" column
+         // as an indication that grouping with COLSPAN is needed
+        //  this.rowsgroup.update()
+         console.log(data)
+        //  if(data[1] === ''){
+        //     // Add COLSPAN attribute
+        //     $('td:eq(0)', row).attr('colspan', 5);
+
+        //     // Hide required number of columns
+        //     // next to the cell with COLSPAN attribute
+        //     $('td:eq(1)', row).css('display', 'none');
+        //     $('td:eq(2)', row).css('display', 'none');
+        //     $('td:eq(3)', row).css('display', 'none');
+      
+        //  }
+      },
+         "deferRender": true,
+         // "ordering": false,
+        //  "columnDefs": [
+        //      { "width": "3%" },
+        //      { "width": "20%" },
+        //      { "width": "24%" },
+        //      { "width": "10%" },
+        //      { "width": "20%" },
+        //      { "width": "20%" },
+    
+        //      { "width": "20%" }
+        //   ],
+         "fnRowCallback": function( row, data, iDisplayIndex ) {
+                   var index = iDisplayIndex +1;
+                   $('td:eq(0)',row).html(index);
+                   return row;
+         },
+    //   "columnDefs": [
+    //       { "width": "100px", "targets": 14}
+    //   ],
+    });
+
+    var z  =  $('.data_alat').DataTable({
+      "language": {
+        "sProcessing":   '<span>Sedang memproses...</span><i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>',
+          "sLengthMenu":   "_MENU_",
+          "sZeroRecords":  "Tidak ditemukan data yang sesuai",
+          "sInfo":         "Menampilkan _START_ sampai _END_ dari _TOTAL_ entri",
+          "sInfoEmpty":    "Menampilkan 0 sampai 0 dari 0 entri",
+          "sInfoFiltered": "(disaring dari _MAX_ entri keseluruhan)",
+          "sInfoPostFix":  "",
+          "sUrl":          "",
+          "oPaginate": {
+            "sFirst":    "Pertama",
+            "sPrevious": "Sebelumnya",
+            "sNext":     "Selanjutnya",
+            "sLast":     "Terakhir"
+          }
+      },
+      
+      "pageLength": 50,
+
+      "processing": true,
+           "ajax": "/manajemen_master/pekerjaan/list_json_peralatan/"+$('#id_kab').val(),
+           "columns": [
+               { "data": null},
+             
+               { "data": "nama"},
+               { "data": "satuan"},
+            //    { "data": "harga"},
+               { "data": "hargaMin", render: function(item){
+                    return '<span style="float:right">'+numberWithCommas(parseInt(item))+'</span>';
+                } },
+              
+         ],
+        //  'rowsGroup': [1],
+         'createdRow': function(row, data, dataIndex){
+         // Use empty value in the "Office" column
+         // as an indication that grouping with COLSPAN is needed
+        //  this.rowsgroup.update()
+         console.log(data)
+        //  if(data[1] === ''){
+        //     // Add COLSPAN attribute
+        //     $('td:eq(0)', row).attr('colspan', 5);
+
+        //     // Hide required number of columns
+        //     // next to the cell with COLSPAN attribute
+        //     $('td:eq(1)', row).css('display', 'none');
+        //     $('td:eq(2)', row).css('display', 'none');
+        //     $('td:eq(3)', row).css('display', 'none');
+      
+        //  }
+      },
+         "deferRender": true,
+         // "ordering": false,
+        //  "columnDefs": [
+        //      { "width": "3%" },
+        //      { "width": "20%" },
+        //      { "width": "24%" },
+        //      { "width": "10%" },
+        //      { "width": "20%" },
+        //      { "width": "20%" },
+    
+        //      { "width": "20%" }
+        //   ],
+         "fnRowCallback": function( row, data, iDisplayIndex ) {
+                   var index = iDisplayIndex +1;
+                   $('td:eq(0)',row).html(index);
+                   return row;
+         },
+    //   "columnDefs": [
+    //       { "width": "100px", "targets": 14}
+    //   ],
+    });
+
+  
+
+
+
+
+    $('#id_kab').change(function(){
+   
+   t.ajax.url( `/manajemen_master/pekerjaan/list_json/${$('#id_kab').val()}` ).load();
+   x.ajax.url( `/manajemen_master/pekerjaan/list_json_upah/${$('#id_kab').val()}` ).load();
+   z.ajax.url( `/manajemen_master/pekerjaan/list_json_peralatan/${$('#id_kab').val()}` ).load();
+ })
+  });
+
+
+
+    </script>
+</body>
+</html>

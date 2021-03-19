@@ -298,7 +298,7 @@
                   return `<a href="#" class="hspk" idnya="${data.id}">${data.nama_pekerjaan}</a>`;
                }},
                { "data": "total_keseluruhan",render: function(data){
-                   return "Rp "+numberWithCommas(Math.round(data))+",-"
+                   return "<span class='pull-right'>Rp "+numberWithCommas(Math.round(data))+",-</span>"
                }},
               
          ],

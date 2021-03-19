@@ -88,10 +88,10 @@
                                             <div class="tab-pane fade show active" id="bahan" role="tabpanel" aria-labelledby="bahan-tab">
                                                 <div class="row" style="margin-top: 15px;">
                                                     <div class="col-md-12 col-lg-12">
-                                                        <table class="table table-bordered data_bahan table-striped">
+                                                        <table class="table table-bordered data_bahan table-striped table-sm" style="width: 100%;">
                                                             <thead style="background-color: #007bff;color: #fff;">
                                                                 <tr>
-                                                                    <th style="width: 30px;">No.</th>
+                                                                    <th>No.</th>
                                                                     <th>Jenis</th>
                                                                     <th>Bahan</th>
                                                                     <th>Satuan</th>
@@ -164,10 +164,10 @@
                                             <div class="tab-pane fade" id="upah" role="tabpanel" aria-labelledby="upah-tab">
                                                 <div class="row" style="margin-top: 15px;">
                                                     <div class="col-md-12 col-lg-12">
-                                                        <table class="table table-bordered data_upah table-striped" style="width: 100%;">
+                                                        <table class="table table-bordered data_upah table-striped table-sm" style="width: 100%;">
                                                             <thead style="background-color: #007bff;color: #fff;">
                                                                 <tr>
-                                                                    <th style="width: 30px;">No.</th>
+                                                                    <th>No.</th>
                                                                     <th>Nama</th>
                                                                     <th>Satuan</th>
                                                                     <th>Harga (Rp)</th>
@@ -185,10 +185,10 @@
                                             <div class="tab-pane fade" id="alat" role="tabpanel" aria-labelledby="alat-tab">
                                                 <div class="row" style="margin-top: 15px;">
                                                     <div class="col-md-12 col-lg-12">
-                                                        <table class="table table-bordered data_alat table-striped" style="width: 100%;">
+                                                        <table class="table table-bordered data_alat table-striped table-sm" style="width: 100%;">
                                                             <thead style="background-color: #007bff;color: #fff;">
                                                                 <tr>
-                                                                    <th style="width: 30px;">No.</th>
+                                                                    <th>No.</th>
                                                                     <th>Alat</th>
                                                                     <th>Satuan</th>
                                                                     <th>Harga (Rp)</th>
@@ -250,6 +250,8 @@
             "sLast":     "Terakhir"
           }
       },
+
+      "pageLength": 50,
   
       "processing": true,
            "ajax": "/manajemen_master/pekerjaan/list_json/"+$('#id_kab').val(),
@@ -260,11 +262,11 @@
                { "data": "satuan"},
             //    { "data": "hargaMin"},
                { "data": "hargaMin", render: function(item){
-                    return '<span style="float:right">'+numberWithCommas(parseInt(item))+'</span>';
+                    return '<span style="float:right">'+numberWithCommas(Math.round(item))+'</span>';
                 } },
               
          ],
-         'rowsGroup': [1],
+        //  'rowsGroup': [1],
          'createdRow': function(row, data, dataIndex){
          // Use empty value in the "Office" column
          // as an indication that grouping with COLSPAN is needed
@@ -322,7 +324,9 @@
             "sLast":     "Terakhir"
           }
       },
-  
+      
+      "pageLength": 50,
+
       "processing": true,
            "ajax": "/manajemen_master/pekerjaan/list_json_upah/"+$('#id_kab').val(),
            "columns": [
@@ -332,7 +336,7 @@
                { "data": "satuan"},
             //    { "data": "harga"},
                { "data": "hargaMin", render: function(item){
-                    return '<span style="float:right">'+numberWithCommas(parseInt(item))+'</span>';
+                    return '<span style="float:right">'+numberWithCommas(Math.round(item))+'</span>';
                 } },
               
          ],
@@ -393,7 +397,9 @@
             "sLast":     "Terakhir"
           }
       },
-  
+      
+      "pageLength": 50,
+
       "processing": true,
            "ajax": "/manajemen_master/pekerjaan/list_json_peralatan/"+$('#id_kab').val(),
            "columns": [
@@ -403,7 +409,7 @@
                { "data": "satuan"},
             //    { "data": "harga"},
                { "data": "hargaMin", render: function(item){
-                    return '<span style="float:right">'+numberWithCommas(parseInt(item))+'</span>';
+                    return '<span style="float:right">'+numberWithCommas(Math.round(item))+'</span>';
                 } },
               
          ],
