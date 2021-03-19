@@ -58,64 +58,64 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage })
 
 //start-------------------------------------
-router.get('/', cek_login, function(req, res) {
-  connection.query("SELECT a.*, b.kab from badan_usaha a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, rows, fields) {
+router.get('/jasa_pelaksana', cek_login, function(req, res) {
+  connection.query("SELECT a.*, b.kab from jasa_pelaksana a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, rows, fields) {
   res.render('content-backoffice/manajemen_badan_usaha/list',{data:rows}); 
 });
 });
 
-router.get('/insert', cek_login, function(req, res) {
+router.get('/jasa_pelaksana/insert', cek_login, function(req, res) {
   connection.query("SELECT * from kabupaten ", function(err, kabupaten, fields) {
 
   res.render('content-backoffice/manajemen_badan_usaha/insert',{kabupaten}); 
 });
 });
 
-router.get('/edit/:id', cek_login, function(req, res) {
-  connection.query("SELECT * from badan_usaha where id='"+req.params.id+"'", function(err, rows, fields) {
+router.get('/jasa_pelaksana/edit/:id', cek_login, function(req, res) {
+  connection.query("SELECT * from jasa_pelaksana where id='"+req.params.id+"'", function(err, rows, fields) {
     connection.query("SELECT * from kabupaten ", function(err, kabupaten, fields) {
   res.render('content-backoffice/manajemen_badan_usaha/edit', {data:rows,kabupaten}); 
 });
 });
 });
 
-router.post('/submit_insert', cek_login,  function(req, res){
+router.post('/jasa_pelaksana/submit_insert', cek_login,  function(req, res){
   var post = {}
  post = req.body;
     console.log(post)
-   sql_enak.insert(post).into("badan_usaha").then(function (id) {
+   sql_enak.insert(post).into("jasa_pelaksana").then(function (id) {
   console.log(id);
 })
 .finally(function() {
   //sql_enak.destroy();
-  res.redirect('/manajemen_badan_usaha'); 
+  res.redirect('/manajemen_badan_usaha/jasa_pelaksana'); 
 });
 });
 
-router.post('/submit_edit', cek_login, function(req, res){
+router.post('/jasa_pelaksana/submit_edit', cek_login, function(req, res){
   var post = {}
  post = req.body;
     console.log(post)
-   sql_enak("badan_usaha").where("id", req.body.id)
+   sql_enak("jasa_pelaksana").where("id", req.body.id)
   .update(post).then(function (count) {
  console.log(count);
 })
 .finally(function() {
   //sql_enak.destroy();
-  res.redirect('/manajemen_badan_usaha');
+  res.redirect('/manajemen_badan_usaha/jasa_pelaksana');
 });
 });
 
-router.get('/delete/:id', cek_login, function(req, res) {
+router.get('/jasa_pelaksana/delete/:id', cek_login, function(req, res) {
   
   // senjata
   // console.log(req.params.id)
-  connection.query("update badan_usaha SET deleted=1 WHERE id='"+req.params.id+"' ", function(err, rows, fields) {
+  connection.query("update jasa_pelaksana SET deleted=1 WHERE id='"+req.params.id+"' ", function(err, rows, fields) {
   //  if (err) throw err;
     numRows = rows.affectedRows;
   })
 
-  res.redirect('/manajemen_badan_usaha');
+  res.redirect('/manajemen_badan_usaha/jasa_pelaksana');
 });
 
 module.exports = router;
