@@ -30,7 +30,7 @@
                        
                         <% for(var i=0; i<kabupaten.length; i++){ %> 
                           
-                          <option value="<%= kabupaten[i]['id_kab']%>"><%= kabupaten[i]['kab']%></option>
+                          <option value="<%= kabupaten[i]['id_kab']%>" <%= (data[0].id_kab==kabupaten[i]['id_kab'])?'selected':'' %>><%= kabupaten[i]['kab']%></option>
                           <% }%>
                       </select>
                     </div>
@@ -93,5 +93,5 @@
 
 <% include ../../template-backoffice/footer.ejs %>
 <script type="text/javascript">
-
+$("#kategori").val('<%= data[0].kategori%>');
 </script>

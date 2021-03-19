@@ -1,25 +1,23 @@
 <% include ../../template-backoffice/header.ejs %>
-
 <!-- BEGIN PAGE CONTENT -->
 <div class="page-content">
   <div class="header">
-    <h2><strong>Edit Data Tenaga Kerja</strong></h2>
+    <h2><strong>Edit Data Badan Usaha Jasa Pelaksana Konstruksi</strong></h2>
     <div class="breadcrumb-wrapper">
       <ol class="breadcrumb">
         <li><a href="/backoffice">Dashboard</a></li>
-        <li><a href="/manajemen_tenaga_kerja">Data</a></li>
+        <li><a href="/manajemen_badan_usaha/jasa_pelaksana">Data</a></li>
         <li class="active">Edit Data</li>
       </ol>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-content">
-          <form role="form" action="/manajemen_tenaga_kerja/submit_edit" method="POST" enctype="multipart/form-data">
+          <form role="form" action="/manajemen_badan_usaha/jasa_pelaksana/submit_edit" method="POST">
             <input type="hidden" class="form-control" name="id" id="" value="<%= data[0].id%>">
-
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="form-group">
@@ -37,25 +35,38 @@
                     </div>
                   </div>
                 </div>
-
+                
                 <div class="form-group">
-                  <label>Jumlah SKA</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="ska" id="" value="<%= data[0].ska%>">
-                    </div>
-                  </div>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th colspan="6" style="text-align: center;">Jumlah Badan Usaha Berdasarkan Klasifikasi</th>
+                      </tr>
+
+                      <tr>
+                        <th>Bangunan Gedung</th>
+                        <th>Bangunan Sipil</th>
+                        <th>Bangunan Mekanikal Elektrikal</th>
+                        <th>Jasa Pelaksana Lainnya</th>
+                        <th>Pelaksanaan Spesialis</th>
+                        <th>Pelaksanaan Keterampilan</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td><input type="text" class="form-control" name="gedung" id="" value="<%= data[0].gedung%>"></td>
+                        <td><input type="text" class="form-control" name="sipil" id="" value="<%= data[0].sipil%>"></td>
+                        <td><input type="text" class="form-control" name="mekanikal" id="" value="<%= data[0].mekanikal%>"></td>
+                        <td><input type="text" class="form-control" name="lainnya" id="" value="<%= data[0].lainnya%>"></td>
+                        <td><input type="text" class="form-control" name="spesialis" id="" value="<%= data[0].spesialis%>"></td>
+                        <td><input type="text" class="form-control" name="keterampilan" id="" value="<%= data[0].keterampilan%>"></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
 
-                <div class="form-group">
-                  <label>Jumlah SKT</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="skt" id="" value="<%= data[0].skt%>">
-                    </div>
-                  </div>
-                </div>
-
+                
                 <button type="submit" class="btn btn-primary btn-embossed">Simpan</button>
               </div>
             </div>
@@ -64,11 +75,10 @@
       </div>
     </div>
   </div>
-
   <div class="footer">
     <div class="copyright">
       <p class="pull-left sm-pull-reset">
-        <span>Copyright <span class="copyright">©</span> 2018</span>
+        <span>Copyright <span class="copyright">©</span> 2018 </span>
         <span>Pemerintah</span>.
       </p>
     </div>
