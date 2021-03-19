@@ -74,7 +74,12 @@ router.get('/hspk', function(req, res) {
 });
 
 router.get('/hsgbn', function(req, res) {
-  res.render('content/hsgbn'); 
+  connection.query("select * from kabupaten", function(err, kabupaten, fields) {
+    res.render('content/hsgbn', {kabupaten});
+    
+  
+})
+
 });
 
 module.exports = router;
