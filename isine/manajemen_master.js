@@ -598,7 +598,7 @@ router.post('/detail_pekerjaan/submit_insert', cek_login,  function(req, res){
         }))
 });
 router.get('/detail_pekerjaan/export_excel/:id_kab', async function(req,res){
-  var workbook = XLSX.readFile('./public/excel/temp'+req.params.id_kab+'.xlsx');
+  var workbook = XLSX.readFile('./public/excel/temp.xlsx');
   var first_sheet_name = workbook.SheetNames[3];
   var worksheet = workbook.Sheets['D'];
 
@@ -606,13 +606,14 @@ router.get('/detail_pekerjaan/export_excel/:id_kab', async function(req,res){
   const columnA = Object.keys(worksheet).filter(x => /^AG\d+/.test(x)).map(x => { return {kolom: x,data: worksheet[x].v}}) 
 
 // console.log(columnA)
-let harga= await sql_enak.raw("SELECT b.id_standar_harga, MIN(b.harga) as hargaMin from standar_harga_kab b where b.id_kab = "+req.params.id_kab+"  ")
- 
+let harga= await sql_enak.raw("SELECT b.id_standar_harga, MIN(b.harga) as hargaMin from standar_harga_kab b where b.id_kab = "+req.params.id_kab+" group by b.id_standar_harga  ")
+ harga = harga[0]
 for(let i =1; i < columnA.length;i++){
   for(let a =1; a < harga.length;a++){
+    // console.log(harga[a].id_standar_harga, columnA[i].data)
       if(harga[a].id_standar_harga==columnA[i].data){
-
-        XLSX.utils.sheet_add_aoa(worksheet, [[hasil[a].hargaMin]], {origin: columnA[i].kolom});
+        worksheet[columnA[i].kolom.replace("G", "H")].v = harga[a].hargaMin;
+        // XLSX.utils.sheet_add_aoa(worksheet, [[harga[a].hargaMin]], {origin: columnA[i].kolom.replace("G", "H")});
       }
   }
   }
@@ -621,41 +622,67 @@ for(let i =1; i < columnA.length;i++){
   // var hsbgn = workbook.Sheets['HSBGN'];
   // console.log(hsbgn)
 
-  // var wbbuf = XLSX.write(workbook, {
-  //   type: 'base64'
-  // });
+  var wbbuf = XLSX.write(workbook, {
+    type: 'base64'
+  });
+
+      res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename= HSBGN.xlsx"]]);
+    // res.writeHead(200, [['Content-Disposition',  "attachment; filename=" + "HSDMaster.xlsx"]]);
+    res.end( new Buffer(wbbuf, 'base64') );
 
 
 
-  XLSX.writeFile(workbook, './public/excel/temp'+req.params.id_kab+'.xlsx');
+  //  XLSX.writeFileAsync( './public/excel/temp'+req.params.id_kab+'.xlsx',workbook, function(err){
+  //   res.json(ambil_excel(req.params.id_kab))
+  //  });
 
-  //mulai membaca
-  var hsbgn_workbook = XLSX.readFile('./public/excel/temp'+req.params.id_kab+'.xlsx');
-  // var hsbgn_name = workbook.SheetNames[4];
-  var hsbgn = hsbgn_workbook.Sheets['HSBGN'];
-  // res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename= HSBGN.xlsx"]]);
-  // res.writeHead(200, [['Content-Disposition',  "attachment; filename=" + "HSDMaster.xlsx"]]);
-  // res.end( new Buffer(wbbuf, 'base64') );
-  let data=[];
 
-  data[0]= {};
-  
-  data[0].gts = hsbgn['B10'].v;
-  data[0].gs = hsbgn['D10'].v;
-  data[0].tipea = hsbgn['C14'].v;
-  data[0].tipeb = hsbgn['C14'].v;
-  data[0].tipec = hsbgn['D14'].v;
-  data[0].pgndepan = hsbgn['B19'].v;
-  data[0].pgnbelakang = hsbgn['C19'].v;
-  data[0].pgnsamping = hsbgn['D19'].v;
-  data[0].prndepan = hsbgn['B24'].v;
-  data[0].prnbelakang = hsbgn['C24'].v;
-  data[0].prnsamping = hsbgn['D24'].v;
-  
-  res.json(data)
+
+
   
 })
 
+function ambil_excel(id_kab){
+    //mulai membaca
+    var hsbgn_workbook = XLSX.readFile('./public/excel/temp'+id_kab+'.xlsx');
+    // var hsbgn_name = workbook.SheetNames[4];
+    var hsbgn = hsbgn_workbook.Sheets['HSBGN'];
+    // console.log(hsbgn)
+    // res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename= HSBGN.xlsx"]]);
+    // res.writeHead(200, [['Content-Disposition',  "attachment; filename=" + "HSDMaster.xlsx"]]);
+    // res.end( new Buffer(wbbuf, 'base64') );
+    let data=[];
+  
+    data[0]= {};
+    
+    data[0].gts = 0;
+    data[0].gs = 0;
+    data[0].tipea = 0;
+    data[0].tipeb = 0;
+    data[0].tipec = 0;
+    data[0].pgndepan = 0;
+    data[0].pgnbelakang = 0;
+    data[0].pgnsamping = 0;
+    data[0].prndepan = 0;
+    data[0].prnbelakang = 0;
+    data[0].prnsamping = 0;
+  
+  if(hsbgn['B10'].v){
+  
+    data[0].gts = hsbgn['B10'].v;
+    data[0].gs = hsbgn['D10'].v;
+    data[0].tipea = hsbgn['C14'].v;
+    data[0].tipeb = hsbgn['C14'].v;
+    data[0].tipec = hsbgn['D14'].v;
+    data[0].pgndepan = hsbgn['B19'].v;
+    data[0].pgnbelakang = hsbgn['C19'].v;
+    data[0].pgnsamping = hsbgn['D19'].v;
+    data[0].prndepan = hsbgn['B24'].v;
+    data[0].prnbelakang = hsbgn['C24'].v;
+    data[0].prnsamping = hsbgn['D24'].v;
+  }
+  return data;
+}
 router.get('/detail_pekerjaan/export_excel/:id_kab/:id_toko', cek_login, async function(req,res){
   /* original data */
 

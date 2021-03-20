@@ -6,6 +6,7 @@
     "start": "node testnode.js"
   },
   "dependencies": {
+    "@formulajs/formulajs": "^2.6.5",
     "async": "~2.0.1",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
@@ -41,7 +42,8 @@
     "topojson": "~1.6.26",
     "wellknown": "~0.4.2",
     "wkx": "~0.2.0",
-    "xlsx": "^0.16.9"
+    "xlsx": "^0.16.9",
+    "xlsx-calc": "^0.6.8"
   },
   "description": "keren",
   "main": "testnode.js",
