@@ -59,7 +59,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-12">
+                <!-- <div class="col-md-12 col-lg-12">
                     <table class="table table-bordered">
                         <thead>
                             <tr>
@@ -103,7 +103,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -169,22 +169,23 @@
     });
 
 $('#id_kab').change(function(){
-    $.getJSON(`/manajemen_master/detail_pekerjaan/export_excel/${$('#id_kab').val()}`, function(data){
-        // console.log(data)
-        $('#gts').html(numberWithCommas(data[0].gts))
-        $('#gs').html(numberWithCommas(data[0].gs))
-        $('#tipea').html(numberWithCommas(data[0].tipea))
-        $('#tipeb').html(numberWithCommas(data[0].tipeb))
-        $('#tipec').html(numberWithCommas(data[0].tipec))
+    window.location.href = `/manajemen_master/detail_pekerjaan/export_excel/${$('#id_kab').val()}`;
+    // $.getJSON(`/manajemen_master/detail_pekerjaan/export_excel/${$('#id_kab').val()}`, function(data){
+    //     // console.log(data)
+    //     $('#gts').html(numberWithCommas(data[0].gts))
+    //     $('#gs').html(numberWithCommas(data[0].gs))
+    //     $('#tipea').html(numberWithCommas(data[0].tipea))
+    //     $('#tipeb').html(numberWithCommas(data[0].tipeb))
+    //     $('#tipec').html(numberWithCommas(data[0].tipec))
 
-        $('#pgndepan').html(numberWithCommas(data[0].pgndepan))
-        $('#pgnbelakang').html(numberWithCommas(data[0].pgnbelakang))
-        $('#pgnsamping').html(numberWithCommas(data[0].pgnsamping))
+    //     $('#pgndepan').html(numberWithCommas(data[0].pgndepan))
+    //     $('#pgnbelakang').html(numberWithCommas(data[0].pgnbelakang))
+    //     $('#pgnsamping').html(numberWithCommas(data[0].pgnsamping))
 
-        $('#prndepan').html(numberWithCommas(data[0].prndepan))
-        $('#prnbelakang').html(numberWithCommas(data[0].prnbelakang))
-        $('#prnsamping').html(numberWithCommas(data[0].prnsamping))
-    })
+    //     $('#prndepan').html(numberWithCommas(data[0].prndepan))
+    //     $('#prnbelakang').html(numberWithCommas(data[0].prnbelakang))
+    //     $('#prnsamping').html(numberWithCommas(data[0].prnsamping))
+    // })
 })
  
   });
