@@ -156,7 +156,7 @@
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Detail</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Analisa Harga Satuan Pekerjaan</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -285,7 +285,9 @@
             "sLast":     "Terakhir"
           }
       },
-  
+      
+      "pageLength": 50,
+
       "processing": true,
            "ajax": "/manajemen_master/pekerjaan/list_arsip/"+$('#id_kab').val(),
            "columns": [
@@ -439,7 +441,7 @@ let total_bahan =0;
   });
   function doReset(){
   $('.tabelDefault').html(` <table class="table table-bordered">
-        <thead>
+        <thead style="background-color: #007bff;color: #fff;">
             <tr>
                 <th style="text-align: center;">No.</th>
                 <th style="text-align: center;">Uraian</th>
@@ -476,7 +478,7 @@ let total_bahan =0;
 
             <tr>
                 <td colspan="6" style="text-align: right;">Jumlah Harga Tenaga Kerja</td>
-                <td id="total_tenaga">-</td>
+                <td id="total_tenaga" style="text-align: right;">-</td>
             </tr>
 
 
@@ -494,7 +496,7 @@ let total_bahan =0;
 
             <tr>
                 <td colspan="6" style="text-align: right;">Jumlah Harga Bahan</td>
-                <td id="total_bahan">-</td>
+                <td id="total_bahan" style="text-align: right;">-</td>
             </tr>
 
             <tr id="peralatan">
@@ -511,7 +513,7 @@ let total_bahan =0;
 
             <tr>
                 <td colspan="6" style="text-align: right;">Jumlah Harga Peralatan</td>
-                <td id="total_peralatan">-</td>
+                <td id="total_peralatan" style="text-align: right;">-</td>
             </tr>
 
             <tr>
@@ -519,14 +521,14 @@ let total_bahan =0;
                 <td style="text-align: left;" colspan="3">Jumlah Harga Tenaga, Bahan dan Peralatan (A+B+C)</td>
                 <td >&nbsp;</td>
                 <td >&nbsp;</td>
-                <td id="total_keseluruhan">&nbsp;</td>
+                <td id="total_keseluruhan" style="text-align: right;">&nbsp;</td>
             </tr>
 
             <tr>
                 <td style="text-align: center;">E</td>
                 <td style="text-align: left;" colspan="3">Overhead + profit (Contoh 10%)</td>
                 <td colspan="2" style="text-align: center;">10 % x D</td>
-                <td id="total_profit">&nbsp;</td>
+                <td id="total_profit" style="text-align: right;">&nbsp;</td>
             </tr>
 
             <tr>
@@ -534,7 +536,7 @@ let total_bahan =0;
                 <td style="text-align: left;" colspan="3"><strong>Harga Satuan Pekerjaan per - <span id="jumlahTampil"></span> <span class="satuan"></span> (D+E)</strong></td>
                 <td >&nbsp;</td>
                 <td >&nbsp;</td>
-                <td id="total">&nbsp;</td>
+                <td id="total" style="text-align: right;">&nbsp;</td>
             </tr>
         </tbody>
     </table>`)
