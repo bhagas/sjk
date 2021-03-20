@@ -787,7 +787,7 @@
     "nama": "BATU BATA ex lokal ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 123141
+    "hargaMin": 20000
   },
   {
     "id": 508,
@@ -1138,6 +1138,16 @@
     "satuan": "kg",
     "deleted": 0,
     "hargaMin": 123141
+  },
+  {
+    "id": 721,
+    "kode": "",
+    "kategori": "",
+    "jenis": "",
+    "nama": "Besi tempa",
+    "satuan": "m2",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 254,
@@ -2108,6 +2118,16 @@
     "satuan": "m3",
     "deleted": 0,
     "hargaMin": 123141
+  },
+  {
+    "id": 722,
+    "kode": "",
+    "kategori": "",
+    "jenis": "",
+    "nama": "IMB",
+    "satuan": "m2",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 712,
