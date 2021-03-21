@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "kode": "",
+    "kode": "A.2.2.1.1",
     "nama_pekerjaan": "Pembuatan pagar sementara dari kayu tinggi 2 meter",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -180,7 +180,7 @@
   },
   {
     "id": 2,
-    "kode": "",
+    "kode": "A.2.2.1.2",
     "nama_pekerjaan": "Pembuatan pagar sementara dari seng gelombang tinggi 2 meter",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -374,7 +374,7 @@
   },
   {
     "id": 3,
-    "kode": "",
+    "kode": "A.2.2.1.3",
     "nama_pekerjaan": "Pembuatan pagar sementara dari kawat duri tinggi 1,8 meter",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -568,7 +568,7 @@
   },
   {
     "id": 4,
-    "kode": "",
+    "kode": "A.2.2.1.4",
     "nama_pekerjaan": "Pengukuran dan pemasangan bowplank",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -687,13 +687,13 @@
   },
   {
     "id": 5,
-    "kode": "",
+    "kode": "A.2.2.1.5",
     "nama_pekerjaan": "Pembuatan kantor semenetara lantai plesteran",
     "mata_pembayaran": "",
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PERSIAPAN",
-    "total": 9102582.72,
+    "total": 6008352.720000001,
     "list": [
       {
         "id": 35,
@@ -798,7 +798,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 42,
@@ -966,12 +966,12 @@
         "harga": 123141
       }
     ],
-    "profit": 1365387.408,
-    "total_keseluruhan": 10467970.128
+    "profit": 901252.9080000002,
+    "total_keseluruhan": 6909605.6280000005
   },
   {
     "id": 6,
-    "kode": "",
+    "kode": "A.2.2.1.6",
     "nama_pekerjaan": "Pembuatan rumah jaga (konstruksi kayu)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1105,7 +1105,7 @@
   },
   {
     "id": 7,
-    "kode": "",
+    "kode": "A.2.2.1.7",
     "nama_pekerjaan": "Pembutan gudang semen dan peralatan",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1299,7 +1299,7 @@
   },
   {
     "id": 8,
-    "kode": "",
+    "kode": "A.2.2.1.8",
     "nama_pekerjaan": "Pembutan bendeng pekerja",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1493,7 +1493,7 @@
   },
   {
     "id": 9,
-    "kode": "",
+    "kode": "A.2.2.1.9",
     "nama_pekerjaan": "Pembersihan lapangan dan peralatan",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1537,7 +1537,7 @@
   },
   {
     "id": 10,
-    "kode": "",
+    "kode": "A.2.2.1.10",
     "nama_pekerjaan": "Pembutan steger / perancah dari bambu",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1641,7 +1641,7 @@
   },
   {
     "id": 11,
-    "kode": "",
+    "kode": "A.2.2.1.11",
     "nama_pekerjaan": "Pembuatan kotak adukan ukuran 40 cm x 50 cm x 25 cm",
     "mata_pembayaran": "",
     "satuan": "bh",
@@ -1730,7 +1730,7 @@
   },
   {
     "id": 12,
-    "kode": "",
+    "kode": "A.2.2.1.12",
     "nama_pekerjaan": "Pembutan jalan sementara",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -1819,7 +1819,7 @@
   },
   {
     "id": 13,
-    "kode": "",
+    "kode": "A.2.2.1.13",
     "nama_pekerjaan": "Pembongkaran beton bertulang",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -1863,7 +1863,7 @@
   },
   {
     "id": 14,
-    "kode": "",
+    "kode": "A.2.2.1.14",
     "nama_pekerjaan": "Pembongkaran dinding tembok bata",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -1907,7 +1907,7 @@
   },
   {
     "id": 15,
-    "kode": "",
+    "kode": "A.2.2.1.15",
     "nama_pekerjaan": "Pemasangan pagar kawat jaringan galvanis panjang 240 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -2011,7 +2011,7 @@
   },
   {
     "id": 16,
-    "kode": "",
+    "kode": "A.2.2.1.16",
     "nama_pekerjaan": "Pemasangan panel beton pracetak 5x50x240 cm untuk pagar",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -2197,7 +2197,7 @@
   },
   {
     "id": 21,
-    "kode": "",
+    "kode": "A.2.3.1.1.",
     "nama_pekerjaan": "Penggalian tanah biasa sedalam 1 m",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2241,7 +2241,7 @@
   },
   {
     "id": 22,
-    "kode": "",
+    "kode": "A.2.3.1.2",
     "nama_pekerjaan": "Penggalian tanah biasa sedalam 2 m",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2285,7 +2285,7 @@
   },
   {
     "id": 23,
-    "kode": "",
+    "kode": "A.2.3.1.3",
     "nama_pekerjaan": "Penggalian tanah biasa sedalam 3 m",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2329,7 +2329,7 @@
   },
   {
     "id": 24,
-    "kode": "",
+    "kode": "A.2.3.1.4",
     "nama_pekerjaan": "Penggalian tanah keras sedalam 1 m",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2373,7 +2373,7 @@
   },
   {
     "id": 25,
-    "kode": "",
+    "kode": "A.2.3.1.5",
     "nama_pekerjaan": "Penggalian tanah cadas sedalam 1 m",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2417,7 +2417,7 @@
   },
   {
     "id": 26,
-    "kode": "",
+    "kode": "A.2.3.1.6",
     "nama_pekerjaan": "Penggalian tanah lumpur sedalam 1 m",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2461,8 +2461,8 @@
   },
   {
     "id": 27,
-    "kode": "",
-    "nama_pekerjaan": "Pengerjaan sripping tanah tebing setinggi 1 m",
+    "kode": "A.2.3.1.7",
+    "nama_pekerjaan": "Pengerjaan stripping tanah tebing setinggi 1 m",
     "mata_pembayaran": "",
     "satuan": "m2",
     "deleted": 0,
@@ -2505,7 +2505,7 @@
   },
   {
     "id": 28,
-    "kode": "",
+    "kode": "A.2.3.1.8",
     "nama_pekerjaan": "Pembuangan tanah sejauh 30 meter",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2549,7 +2549,7 @@
   },
   {
     "id": 29,
-    "kode": "",
+    "kode": "A.2.3.1.9",
     "nama_pekerjaan": "Pengurugan kembali galian tanah",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2593,7 +2593,7 @@
   },
   {
     "id": 30,
-    "kode": "",
+    "kode": "A.2.3.1.10",
     "nama_pekerjaan": "Pemadatan tanah ( per 20 cm )",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2637,7 +2637,7 @@
   },
   {
     "id": 31,
-    "kode": "",
+    "kode": "A.2.3.1.11",
     "nama_pekerjaan": "Pengurugan dengan pasir urug",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2696,7 +2696,7 @@
   },
   {
     "id": 32,
-    "kode": "",
+    "kode": "A.2.3.1.12",
     "nama_pekerjaan": "Pemasangan lapisan pudel campuran 1KP : 3PP : 7TL",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2815,7 +2815,7 @@
   },
   {
     "id": 33,
-    "kode": "",
+    "kode": "A.2.3.1.13",
     "nama_pekerjaan": "Pemasangan lapisan ijuk tebal 10 cm untuk bidang resapan",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2874,7 +2874,7 @@
   },
   {
     "id": 34,
-    "kode": "",
+    "kode": "A.2.3.1.14",
     "nama_pekerjaan": "Pengurugan sirtu padat",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -2946,7 +2946,7 @@
   },
   {
     "id": 36,
-    "kode": "",
+    "kode": "A.3.2.1.1",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 3PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3065,7 +3065,7 @@
   },
   {
     "id": 37,
-    "kode": "",
+    "kode": "A.3.2.1.2",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 4PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3184,7 +3184,7 @@
   },
   {
     "id": 38,
-    "kode": "",
+    "kode": "A.3.2.1.3",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 5PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3303,7 +3303,7 @@
   },
   {
     "id": 39,
-    "kode": "",
+    "kode": "A.3.2.1.4",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 6PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3422,7 +3422,7 @@
   },
   {
     "id": 40,
-    "kode": "",
+    "kode": "A.3.2.1.5",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 8PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3541,7 +3541,7 @@
   },
   {
     "id": 41,
-    "kode": "",
+    "kode": "A.3.2.1.6",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 1KP : 2PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3675,7 +3675,7 @@
   },
   {
     "id": 42,
-    "kode": "",
+    "kode": "A.3.2.1.7",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1SP : 3KP : 10PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3809,7 +3809,7 @@
   },
   {
     "id": 43,
-    "kode": "",
+    "kode": "A.3.2.1.8",
     "nama_pekerjaan": "Pemasangan pondasi batu belah campuran 1/4SP : 1KP : 4PP",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -3943,7 +3943,7 @@
   },
   {
     "id": 44,
-    "kode": "",
+    "kode": "A.3.2.1.9",
     "nama_pekerjaan": "Pemasangan batu kosong (anstamping)",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4047,7 +4047,7 @@
   },
   {
     "id": 45,
-    "kode": "",
+    "kode": "A.3.2.1.10",
     "nama_pekerjaan": "Pemasangan pondasi siklop, 60% beton campuran 1SP : 2PB : 3KR dan 40% batu belah",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4211,8 +4211,8 @@
   },
   {
     "id": 46,
-    "kode": "",
-    "nama_pekerjaan": "Pemasangan pondasi sumuran, siameter 100 cm",
+    "kode": "A.3.2.1.11",
+    "nama_pekerjaan": "Pemasangan pondasi sumuran, diameter 100 cm",
     "mata_pembayaran": "",
     "satuan": "m3",
     "deleted": 0,
@@ -4360,7 +4360,7 @@
   },
   {
     "id": 47,
-    "kode": "",
+    "kode": "A.4.1.1.1",
     "nama_pekerjaan": "Membuat beton mutu f'c = 7,4 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4494,7 +4494,7 @@
   },
   {
     "id": 48,
-    "kode": "",
+    "kode": "A.4.1.1.2",
     "nama_pekerjaan": "Membuat beton mutu f'c = 9,8 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4628,7 +4628,7 @@
   },
   {
     "id": 49,
-    "kode": "",
+    "kode": "A.4.1.1.3",
     "nama_pekerjaan": "Membuat beton mutu f'c = 12,2 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4762,7 +4762,7 @@
   },
   {
     "id": 50,
-    "kode": "",
+    "kode": "A.4.1.1.4",
     "nama_pekerjaan": "Membuat lantai kerja beton mutu f'c = 7,4 Mpa slump (3-6) cm, w/c = 0,87",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -4896,7 +4896,7 @@
   },
   {
     "id": 51,
-    "kode": "",
+    "kode": "A.4.1.1.5",
     "nama_pekerjaan": "Membuat beton mutu f'c = 14,5 Mpa slump (120 +/- 20) mm",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5030,7 +5030,7 @@
   },
   {
     "id": 52,
-    "kode": "",
+    "kode": "A.4.1.1.6",
     "nama_pekerjaan": "Membuat beton mutu f'c = 16,9 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5164,7 +5164,7 @@
   },
   {
     "id": 53,
-    "kode": "",
+    "kode": "A.4.1.1.7",
     "nama_pekerjaan": "Membuat beton mutu f'c = 19,3 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5298,7 +5298,7 @@
   },
   {
     "id": 54,
-    "kode": "",
+    "kode": "A.4.1.1.8",
     "nama_pekerjaan": "Membuat beton mutu f'c = 21,7 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5432,7 +5432,7 @@
   },
   {
     "id": 55,
-    "kode": "",
+    "kode": "A.4.1.1.9",
     "nama_pekerjaan": "Membuat beton mutu f'c = 24,0 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5566,7 +5566,7 @@
   },
   {
     "id": 56,
-    "kode": "",
+    "kode": "A.4.1.1.10",
     "nama_pekerjaan": "Membuat beton mutu f'c = 26,4 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5700,7 +5700,7 @@
   },
   {
     "id": 57,
-    "kode": "",
+    "kode": "A.4.1.1.11",
     "nama_pekerjaan": "Membuat beton mutu f'c = 28,8 Mpa",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5834,7 +5834,7 @@
   },
   {
     "id": 58,
-    "kode": "",
+    "kode": "A.4.1.1.12",
     "nama_pekerjaan": "Membuat beton mutu f'c = 31,2 Mpa, slump (120 +/- 20 ) mm",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -5968,7 +5968,7 @@
   },
   {
     "id": 59,
-    "kode": "",
+    "kode": "A.4.1.1.13",
     "nama_pekerjaan": "Membuat beton kedap air dengan strorox - 100",
     "mata_pembayaran": "",
     "satuan": "m3",
@@ -6102,7 +6102,7 @@
   },
   {
     "id": 60,
-    "kode": "",
+    "kode": "A.4.1.1.14",
     "nama_pekerjaan": "Pemasangan PVC Waterstop lebar 150 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -6191,7 +6191,7 @@
   },
   {
     "id": 61,
-    "kode": "",
+    "kode": "A.4.1.1.15",
     "nama_pekerjaan": "Pemasangan PVC Waterstop lebar 200 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -6280,7 +6280,7 @@
   },
   {
     "id": 62,
-    "kode": "",
+    "kode": "A.4.1.1.16",
     "nama_pekerjaan": "Pemasangan PVC Waterstop lebar 230 mm - 320 mm",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -6369,7 +6369,7 @@
   },
   {
     "id": 63,
-    "kode": "",
+    "kode": "A.4.1.1.17",
     "nama_pekerjaan": "Pembesian 10 kg dengan besi polos atau besi ulir",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -6473,7 +6473,7 @@
   },
   {
     "id": 64,
-    "kode": "",
+    "kode": "A.4.1.1.18",
     "nama_pekerjaan": "Pemsangan 10 kg kabel prategang (prestresses) polos/stands",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -6577,7 +6577,7 @@
   },
   {
     "id": 65,
-    "kode": "",
+    "kode": "A.4.1.1.19",
     "nama_pekerjaan": "Pemsangan 10 kg jaring kawat baja (wiremesh)",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -6681,7 +6681,7 @@
   },
   {
     "id": 66,
-    "kode": "",
+    "kode": "A.4.1.1.20",
     "nama_pekerjaan": "Pemasangan bekisting untuk pondasi",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -6800,7 +6800,7 @@
   },
   {
     "id": 67,
-    "kode": "",
+    "kode": "A.4.1.1.21",
     "nama_pekerjaan": "Pemasangan bekisting untuk sloof",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -6919,7 +6919,7 @@
   },
   {
     "id": 68,
-    "kode": "",
+    "kode": "A.4.1.1.22",
     "nama_pekerjaan": "Pemasangan bekisting untuk kolom",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -7083,7 +7083,7 @@
   },
   {
     "id": 69,
-    "kode": "",
+    "kode": "A.4.1.1.23",
     "nama_pekerjaan": "Pemasangan bekisting untuk balok",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -7247,7 +7247,7 @@
   },
   {
     "id": 70,
-    "kode": "",
+    "kode": "A.4.1.1.24",
     "nama_pekerjaan": "Pemasangan bekisting untuk lantai",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -7411,7 +7411,7 @@
   },
   {
     "id": 71,
-    "kode": "",
+    "kode": "A.4.1.1.25",
     "nama_pekerjaan": "Pemasangan bekisting untuk dinding",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -7575,7 +7575,7 @@
   },
   {
     "id": 72,
-    "kode": "",
+    "kode": "A.4.1.1.26",
     "nama_pekerjaan": "Pemasangan bekisting untuk tangga",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -7739,7 +7739,7 @@
   },
   {
     "id": 73,
-    "kode": "",
+    "kode": "A.4.1.1.27",
     "nama_pekerjaan": "Pemasangan jembatan untuk pengecoran beton",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -7858,7 +7858,7 @@
   },
   {
     "id": 74,
-    "kode": "",
+    "kode": "A.4.1.1.35",
     "nama_pekerjaan": "Pembuatan kolom praktis beton bertulang (11x11)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -8082,7 +8082,7 @@
   },
   {
     "id": 75,
-    "kode": "",
+    "kode": "A.4.1.1.36",
     "nama_pekerjaan": "Pembuatan ring balok beton bertulang (10x15)",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -8527,7 +8527,7 @@
   },
   {
     "id": 93,
-    "kode": "",
+    "kode": "A.4.2.1.1",
     "nama_pekerjaan": "Pemasangan besi profil",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -8616,7 +8616,7 @@
   },
   {
     "id": 94,
-    "kode": "",
+    "kode": "A.4.2.1.2",
     "nama_pekerjaan": "Pemasangan rangka kuda-kuda baja IWF",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -8705,7 +8705,7 @@
   },
   {
     "id": 95,
-    "kode": "",
+    "kode": "A.4.2.1.3",
     "nama_pekerjaan": "Pengerjaan pekerjaan perakitan",
     "mata_pembayaran": "",
     "satuan": "kg",
@@ -8809,7 +8809,7 @@
   },
   {
     "id": 96,
-    "kode": "",
+    "kode": "A.4.2.1.4",
     "nama_pekerjaan": "Pembuatan pintu besi pelat baja tebal 2 mm rangkap, rangka baja siku",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -8913,8 +8913,8 @@
   },
   {
     "id": 97,
-    "kode": "",
-    "nama_pekerjaan": "Pengerjaan pengelasan dengan las listrik",
+    "kode": "A.4.2.1.5",
+    "nama_pekerjaan": "Pengerjaan 10 cm pengelasan dengan las listrik",
     "mata_pembayaran": "",
     "satuan": "cm",
     "deleted": 0,
@@ -9017,7 +9017,7 @@
   },
   {
     "id": 98,
-    "kode": "",
+    "kode": "A.4.2.1.6",
     "nama_pekerjaan": "Pembuatan rangka jendela besi scuare tube",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -9091,7 +9091,7 @@
   },
   {
     "id": 99,
-    "kode": "",
+    "kode": "A.4.2.1.7",
     "nama_pekerjaan": "Pemasangan pintu rolling door besi",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -9180,8 +9180,8 @@
   },
   {
     "id": 100,
-    "kode": "",
-    "nama_pekerjaan": "Pemasangan pintu lipat (folding door)",
+    "kode": "A.4.2.1.8",
+    "nama_pekerjaan": "Pemasangan pintu lipat (folding door) bahan pastik / PVC",
     "mata_pembayaran": "",
     "satuan": "m2",
     "deleted": 0,
@@ -9269,8 +9269,8 @@
   },
   {
     "id": 101,
-    "kode": "",
-    "nama_pekerjaan": "Pemasangan sunscreen aluminium",
+    "kode": "A.4.2.1.9",
+    "nama_pekerjaan": "Pemasangan sunscreen alluminium",
     "mata_pembayaran": "",
     "satuan": "m2",
     "deleted": 0,
@@ -9358,7 +9358,7 @@
   },
   {
     "id": 102,
-    "kode": "",
+    "kode": "A.4.2.1.10",
     "nama_pekerjaan": "Pemasangan pintu rolling door alluminium",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -9447,7 +9447,7 @@
   },
   {
     "id": 103,
-    "kode": "",
+    "kode": "A.4.2.1.11",
     "nama_pekerjaan": "Pemasangan kusen pintu alluminium",
     "mata_pembayaran": "",
     "satuan": "m",
@@ -9566,7 +9566,7 @@
   },
   {
     "id": 104,
-    "kode": "",
+    "kode": "A.4.2.1.12",
     "nama_pekerjaan": "Pemasangan pintu allumunium strip lebar 8 cm",
     "mata_pembayaran": "",
     "satuan": "m2",
@@ -10665,7 +10665,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 21413111.631,
+    "total": 6973371.631,
     "list": [
       {
         "id": 736,
@@ -10755,7 +10755,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3109,
@@ -10773,8 +10773,8 @@
         "harga": 123141
       }
     ],
-    "profit": 3211966.7446500002,
-    "total_keseluruhan": 24625078.37565
+    "profit": 1046005.74465,
+    "total_keseluruhan": 8019377.37565
   },
   {
     "id": 119,
@@ -10784,7 +10784,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 20625255.513,
+    "total": 6185515.513,
     "list": [
       {
         "id": 707,
@@ -10874,7 +10874,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3110,
@@ -10892,8 +10892,8 @@
         "harga": 123141
       }
     ],
-    "profit": 3093788.32695,
-    "total_keseluruhan": 23719043.83995
+    "profit": 927827.3269500001,
+    "total_keseluruhan": 7113342.839950001
   },
   {
     "id": 120,
@@ -10903,7 +10903,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 20090700.432,
+    "total": 5650960.432,
     "list": [
       {
         "id": 714,
@@ -10993,7 +10993,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3111,
@@ -11011,8 +11011,8 @@
         "harga": 123141
       }
     ],
-    "profit": 3013605.0648000003,
-    "total_keseluruhan": 23104305.4968
+    "profit": 847644.0648,
+    "total_keseluruhan": 6498604.4968
   },
   {
     "id": 121,
@@ -11022,7 +11022,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 19637541.552,
+    "total": 5197801.552,
     "list": [
       {
         "id": 721,
@@ -11112,7 +11112,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3112,
@@ -11130,8 +11130,8 @@
         "harga": 123141
       }
     ],
-    "profit": 2945631.2328000003,
-    "total_keseluruhan": 22583172.7848
+    "profit": 779670.2328,
+    "total_keseluruhan": 5977471.7848000005
   },
   {
     "id": 122,
@@ -11141,7 +11141,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 18600448.05,
+    "total": 4160708.05,
     "list": [
       {
         "id": 728,
@@ -11246,7 +11246,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3113,
@@ -11264,8 +11264,8 @@
         "harga": 123141
       }
     ],
-    "profit": 2790067.2075,
-    "total_keseluruhan": 21390515.2575
+    "profit": 624106.2075,
+    "total_keseluruhan": 4784814.2575
   },
   {
     "id": 123,
@@ -11275,7 +11275,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 11010406.233,
+    "total": 3790536.233,
     "list": [
       {
         "id": 754,
@@ -11365,7 +11365,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3114,
@@ -11383,8 +11383,8 @@
         "harga": 123141
       }
     ],
-    "profit": 1651560.9349499997,
-    "total_keseluruhan": 12661967.167949999
+    "profit": 568580.43495,
+    "total_keseluruhan": 4359116.66795
   },
   {
     "id": 124,
@@ -11394,7 +11394,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 10446666.735,
+    "total": 3226796.735,
     "list": [
       {
         "id": 761,
@@ -11484,7 +11484,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3115,
@@ -11502,8 +11502,8 @@
         "harga": 123141
       }
     ],
-    "profit": 1567000.0102499998,
-    "total_keseluruhan": 12013666.74525
+    "profit": 484019.51025,
+    "total_keseluruhan": 3710816.2452499997
   },
   {
     "id": 125,
@@ -11513,7 +11513,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 10125268.725,
+    "total": 2905398.725,
     "list": [
       {
         "id": 768,
@@ -11603,7 +11603,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3116,
@@ -11621,8 +11621,8 @@
         "harga": 123141
       }
     ],
-    "profit": 1518790.30875,
-    "total_keseluruhan": 11644059.03375
+    "profit": 435809.80875,
+    "total_keseluruhan": 3341208.53375
   },
   {
     "id": 126,
@@ -11632,7 +11632,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 9869751.149999999,
+    "total": 2649881.15,
     "list": [
       {
         "id": 775,
@@ -11722,7 +11722,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3117,
@@ -11740,8 +11740,8 @@
         "harga": 123141
       }
     ],
-    "profit": 1480462.6724999996,
-    "total_keseluruhan": 11350213.822499998
+    "profit": 397482.1725,
+    "total_keseluruhan": 3047363.3225
   },
   {
     "id": 127,
@@ -11870,7 +11870,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 9478778.475,
+    "total": 2258908.475,
     "list": [
       {
         "id": 789,
@@ -11960,7 +11960,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3119,
@@ -11978,8 +11978,8 @@
         "harga": 123141
       }
     ],
-    "profit": 1421816.77125,
-    "total_keseluruhan": 10900595.24625
+    "profit": 338836.27125,
+    "total_keseluruhan": 2597744.74625
   },
   {
     "id": 129,
@@ -11989,7 +11989,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 9480625.59,
+    "total": 2260755.59,
     "list": [
       {
         "id": 796,
@@ -12094,7 +12094,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3120,
@@ -12112,8 +12112,8 @@
         "harga": 123141
       }
     ],
-    "profit": 1422093.8384999998,
-    "total_keseluruhan": 10902719.4285
+    "profit": 339113.33849999995,
+    "total_keseluruhan": 2599868.9285
   },
   {
     "id": 130,
@@ -12123,7 +12123,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 8676638.001,
+    "total": 1456768.001,
     "list": [
       {
         "id": 808,
@@ -12228,11 +12228,11 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       }
     ],
-    "profit": 1301495.70015,
-    "total_keseluruhan": 9978133.70115
+    "profit": 218515.20015000002,
+    "total_keseluruhan": 1675283.2011499999
   },
   {
     "id": 131,
@@ -12242,7 +12242,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN PASANGAN DINDING",
-    "total": 8679100.821,
+    "total": 1459230.821,
     "list": [
       {
         "id": 815,
@@ -12362,11 +12362,11 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       }
     ],
-    "profit": 1301865.12315,
-    "total_keseluruhan": 9980965.94415
+    "profit": 218884.62315,
+    "total_keseluruhan": 1678115.4441499999
   },
   {
     "id": 132,
@@ -36692,7 +36692,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN SANITASI DALAM GEDUNG",
-    "total": 2057686.1099999999,
+    "total": 1335699.1099999999,
     "list": [
       {
         "id": 2048,
@@ -36767,7 +36767,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 2053,
@@ -36815,8 +36815,8 @@
         "harga": 123141
       }
     ],
-    "profit": 308652.9165,
-    "total_keseluruhan": 2366339.0264999997
+    "profit": 200354.86649999997,
+    "total_keseluruhan": 1536053.9764999999
   },
   {
     "id": 389,
@@ -37197,7 +37197,7 @@
     "satuan": "bh",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN SANITASI DALAM GEDUNG",
-    "total": 78764677.83,
+    "total": 63293527.83,
     "list": [
       {
         "id": 2076,
@@ -37302,7 +37302,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3536,
@@ -37320,8 +37320,8 @@
         "harga": 123141
       }
     ],
-    "profit": 11814701.6745,
-    "total_keseluruhan": 90579379.5045
+    "profit": 9494029.1745,
+    "total_keseluruhan": 72787557.0045
   },
   {
     "id": 394,
@@ -37777,7 +37777,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 2125,
@@ -37821,7 +37821,7 @@
     "satuan": "bh",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN SANITASI DALAM GEDUNG",
-    "total": 18670268.997,
+    "total": 11450398.997,
     "list": [
       {
         "id": 2126,
@@ -37941,7 +37941,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3554,
@@ -37959,8 +37959,8 @@
         "harga": 123141
       }
     ],
-    "profit": 2800540.3495500004,
-    "total_keseluruhan": 21470809.346550003
+    "profit": 1717559.84955,
+    "total_keseluruhan": 13167958.846549999
   },
   {
     "id": 400,
@@ -37970,7 +37970,7 @@
     "satuan": "bh",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN SANITASI DALAM GEDUNG",
-    "total": 29764903.674000002,
+    "total": 17078560.674,
     "list": [
       {
         "id": 2142,
@@ -38090,7 +38090,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3556,
@@ -38108,8 +38108,8 @@
         "harga": 123141
       }
     ],
-    "profit": 4464735.5511,
-    "total_keseluruhan": 34229639.2251
+    "profit": 2561784.1010999996,
+    "total_keseluruhan": 19640344.7751
   },
   {
     "id": 401,
@@ -39528,7 +39528,7 @@
     "satuan": "m",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN SANITASI DALAM GEDUNG",
-    "total": 523472.39099999995,
+    "total": 520687.584,
     "list": [
       {
         "id": 2239,
@@ -39633,7 +39633,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3590,
@@ -39651,8 +39651,8 @@
         "harga": 123141
       }
     ],
-    "profit": 78520.85865,
-    "total_keseluruhan": 601993.2496499999
+    "profit": 78103.1376,
+    "total_keseluruhan": 598790.7215999999
   },
   {
     "id": 418,
@@ -39662,7 +39662,7 @@
     "satuan": "m",
     "deleted": 0,
     "jenis_pekerjaan": "HARGA SATUAN PEKERJAAN SANITASI DALAM GEDUNG",
-    "total": 1426957.908,
+    "total": 1370230.358,
     "list": [
       {
         "id": 2247,
@@ -39767,7 +39767,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3592,
@@ -39785,8 +39785,8 @@
         "harga": 123141
       }
     ],
-    "profit": 214043.6862,
-    "total_keseluruhan": 1641001.5942000002
+    "profit": 205534.55370000002,
+    "total_keseluruhan": 1575764.9117
   },
   {
     "id": 419,
@@ -56762,7 +56762,7 @@
     "satuan": "m2",
     "deleted": 0,
     "jenis_pekerjaan": null,
-    "total": 22710894.630000003,
+    "total": 8271154.63,
     "list": [
       {
         "id": 3102,
@@ -56852,7 +56852,7 @@
         "nama": "BATU BATA ex lokal ",
         "satuan": "bh ",
         "kode": "",
-        "harga": 123141
+        "harga": 20000
       },
       {
         "id": 3108,
@@ -56870,8 +56870,8 @@
         "harga": 123141
       }
     ],
-    "profit": 3406634.1945000007,
-    "total_keseluruhan": 26117528.824500002
+    "profit": 1240673.1945,
+    "total_keseluruhan": 9511827.8245
   },
   {
     "id": 691,

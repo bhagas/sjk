@@ -1,0 +1,353 @@
+<% include ../../template-backoffice/header.ejs %>
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content">
+  <div class="header">
+    <h2><strong>Edit Data Profil Pembinaan Jakon</strong></h2>
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb">
+        <li><a href="/backoffice">Dashboard</a></li>
+        <li><a href="/manajemen_pembina">Data</a></li>
+        <li class="active">Edit Data</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="panel">
+        <div class="panel-content">
+          <form role="form" action="/manajemen_pembina/submit_edit" method="POST" enctype="multipart/form-data">
+            <input type="hidden" class="form-control" name="id" id="" value="<%= data[0].id%>">
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label>Kabupaten/Kota</label>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+                        <option value="-">-- Pilih --</option>
+                        <% for(var i=0; i<kabupaten.length; i++){ %> 
+                          
+                          <option value="<%= kabupaten[i]['id_kab']%>" <%= (data[0].id_kab==kabupaten[i]['id_kab'])?'selected':'' %>><%= kabupaten[i]['kab']%></option>
+                          <% }%>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            UNIT PEMBINA JASA KONSTRUKSI
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12 col-lg-12">
+                              <div class="form-group">
+                                <label>Nama Instansi</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="instansi_pembina" id="" value="<%= data[0].instansi_pembina%>">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label>Nama Bidang / Subdit (Es. III)</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="bidang_pembina" id="" value="<%= data[0].bidang_pembina%>">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label>Nama Sub Bidang / Seksi (Es. IV)</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="sub_bid_pembina" id="" value="<%= data[0].sub_bid_pembina%>">
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="form-group">
+                                <label>Alamat Kantor</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="kantor_pembina" id="" value="<%= data[0].kantor_pembina%>">
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="form-group">
+                                <label>No. Telp. / Fax</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="tlpn_pembina" id="" value="<%= data[0].tlpn_pembina%>">
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="form-group">
+                                <label>Email</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="email_pembina" id="" value="<%= data[0].email_pembina%>">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label>Tugas Dan Fungsi Jasa Konstruksi</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="tupoksi_pembina" id="" value="<%= data[0].tupoksi_pembina%>">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label>Peraturan Daerah Tentang Struktur Organisasi Daerah</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                    <input type="text" class="form-control" name="no_perda_pembina" id="" placeholder="Perda No" value="<%= data[0].no_perda_pembina%>">
+                                  </div>
+
+                                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <input type="text" class="form-control" name="tentang_perda_pembina" id="" placeholder="Tentang" value="<%= data[0].tentang_perda_pembina%>">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            TIM PEMBINA JASA KONSTRUKSI
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                              <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                  <h4>1. Instansi Pembina Jasa Konstruksi</h4>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                  <div class="form-group">
+                                    <label>Nama</label>
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <input type="text" class="form-control" name="nama_tp_1" id="" value="<%= data[0].nama_tp_1%>">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="form-group">
+                                    <label>Alamat Kantor</label>
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <input type="text" class="form-control" name="kantor_tp_1" id="" value="<%= data[0].kantor_tp_1%>">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="form-group">
+                                    <label>No. Telp/Fax</label>
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <input type="text" class="form-control" name="tlpn_tp_1" id="" value="<%= data[0].tlpn_tp_1%>">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="form-group">
+                                    <label>Email</label>
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <input type="text" class="form-control" name="email_tp_1" id="" value="<%= data[0].email_tp_1%>">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                              <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                  <h4>2. Instansi Pembina Jasa Konstruksi</h4>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-md-12 col-lg-12">
+                                  <div class="form-group">
+                                    <label>Nama</label>
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <input type="text" class="form-control" name="nama_tp_2" id="" value="<%= data[0].nama_tp_2%>">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="form-group">
+                                    <label>Alamat Kantor</label>
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <input type="text" class="form-control" name="kantor_tp_2" id="" value="<%= data[0].kantor_tp_2%>">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="form-group">
+                                    <label>No. Telp/Fax</label>
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <input type="text" class="form-control" name="tlpn_tp_2" id="" value="<%= data[0].tlpn_tp_2%>">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="form-group">
+                                    <label>Email</label>
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <input type="text" class="form-control" name="email_tp_2" id="" value="<%= data[0].email_tp_2%>">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            UNIT PENERBIT IUJK
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12 col-lg-12">
+                              <div class="form-group">
+                                <label>Nama Instansi</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="nama_up" id="" value="<%= data[0].nama_up%>"> 
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label>Nama Bidang / Subdit (Es. III)</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="bidang_up" id="" value="<%= data[0].bidang_up%>">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label>Nama Sub Bidang / Seksi (Es. IV)</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="sub_bid_up" id="" value="<%= data[0].sub_bid_up%>">
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="form-group">
+                                <label>Alamat Kantor</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="kantor_up" id="" value="<%= data[0].kantor_up%>">
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="form-group">
+                                <label>No. Telp. / Fax</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="tlpn_up" id="" value="<%= data[0].tlpn_up%>">
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="form-group">
+                                <label>Email</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="email_up" id="" value="<%= data[0].email_up%>">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label>Tugas Dan Fungsi Jasa Konstruksi</label>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" name="tupoksi_up" id="" value="<%= data[0].tupoksi_up%>">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-embossed">Simpan</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="copyright">
+      <p class="pull-left sm-pull-reset">
+        <span>Copyright <span class="copyright">©</span> 2018 </span>
+        <span>Pemerintah</span>.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include ../../template-backoffice/footer.ejs %>
+<script type="text/javascript">
+
+</script>

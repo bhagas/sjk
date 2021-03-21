@@ -1,0 +1,91 @@
+<% include ../../template-backoffice/header.ejs %>
+<!-- BEGIN PAGE CONTENT -->
+<div class="page-content">
+  <div class="header">
+    <h2><strong>Tambah Data Badan Usaha Konsultan</strong></h2>
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb">
+        <li><a href="/backoffice">Dashboard</a></li>
+        <li><a href="/manajemen_badan_usaha/konsultan">Data</a></li>
+        <li class="active">Tambah Data</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="panel">
+        <div class="panel-content">
+          <form role="form" action="/manajemen_badan_usaha/konsultan/submit_insert" method="POST">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label>Kabupaten/Kota</label>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+                        <option value="-">-- Pilih --</option>
+                       
+                        <% for(var i=0; i<kabupaten.length; i++){ %> 
+                          
+                          <option value="<%= kabupaten[i]['id_kab']%>"><%= kabupaten[i]['kab']%></option>
+                          <% }%>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th colspan="6" style="text-align: center;">Jumlah Badan Usaha Berdasarkan Klasifikasi</th>
+                      </tr>
+
+                      <tr>
+                        <th>TA Bidang Arsitektur</th>
+                        <th>TA Bidang Sipil</th>
+                        <th>TA Bidang Mekanikal</th>
+                        <th>TA Bidang Elektrikal</th>
+                        <th>TA Bidang Tata Lingkungan</th>
+                        <th>TA Bidang Manajemen Pelaksana</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td><input type="text" class="form-control" name="arsitektur" id=""></td>
+                        <td><input type="text" class="form-control" name="sipil" id=""></td>
+                        <td><input type="text" class="form-control" name="mekanikal" id=""></td>
+                        <td><input type="text" class="form-control" name="elektrikal" id=""></td>
+                        <td><input type="text" class="form-control" name="lingkungan" id=""></td>
+                        <td><input type="text" class="form-control" name="pelaksana" id=""></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                
+                <button type="submit" class="btn btn-primary btn-embossed">Simpan</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="copyright">
+      <p class="pull-left sm-pull-reset">
+        <span>Copyright <span class="copyright">©</span> 2018 </span>
+        <span>Pemerintah</span>.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- END PAGE CONTENT -->
+
+<% include ../../template-backoffice/footer.ejs %>
+<script type="text/javascript">
+
+</script>

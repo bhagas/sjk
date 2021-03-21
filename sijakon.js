@@ -30,6 +30,7 @@ var manajemen_berita = require('./isine/manajemen_berita');
 var manajemen_peraturan = require('./isine/manajemen_peraturan');
 var manajemen_tenaga_kerja = require('./isine/manajemen_tenaga_kerja');
 var manajemen_badan_usaha = require('./isine/manajemen_badan_usaha');
+var manajemen_pembina = require('./isine/manajemen_pembina');
 var sql_enak = require('./database/mysql_enak.js').connection;
 const uploadd = require('express-fileupload')
 var app = express();
@@ -160,6 +161,7 @@ app.use('/manajemen_berita', manajemen_berita);
 app.use('/manajemen_peraturan', manajemen_peraturan);
 app.use('/manajemen_tenaga_kerja', manajemen_tenaga_kerja);
 app.use('/manajemen_badan_usaha', manajemen_badan_usaha);
+app.use('/manajemen_pembina', manajemen_pembina);
 
 
 app.get('/' , function (req, res) {
