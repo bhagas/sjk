@@ -286,7 +286,7 @@ router.get('/pekerjaan/detail/:id', cek_login, function(req, res) {
 
 router.get('/pekerjaan/detail_json/:id/:id_kab', function(req, res) {
   // "SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" group by a.nama"
-    connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id", function(err, data_detail_pekerjaan, fields) {
+    connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' and c.harga>0 group by a.id", function(err, data_detail_pekerjaan, fields) {
       // console.log("SELECT a.*, b.nama, b.satuan, b.kode from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id and c.id_kab = '"+req.params.id_kab+"'") 
       res.json(data_detail_pekerjaan)
         }) 
@@ -335,7 +335,7 @@ router.get('/pekerjaan/detail_satuan/:id/:id_kab', function(req, res) {
   let data={}
 
       data.total = 0
-     connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id", function(err, data_harga, fields) {
+     connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' and c.harga>0 group by a.id", function(err, data_harga, fields) {
       //  console.log(data_harga);
         data.list = data_harga;
        data_harga.forEach(function(harga_item){
