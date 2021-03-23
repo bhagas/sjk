@@ -355,7 +355,7 @@ router.get('/pekerjaan/list_json/:id_kab', function(req, res) {
   let done= false;
   let result =[]
   if(req.params.id_kab!='-'){
-    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" group by a.nama", function(err, data, fields) {
+    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" and b.harga >0 group by a.nama", function(err, data, fields) {
       // console.log(data_detail_pekerjaan)
       
       result = data;
@@ -410,7 +410,7 @@ router.get('/pekerjaan/detail_toko/:id_standar_harga/:id_kab', function(req, res
 
 router.get('/pekerjaan/list_json_upah/:id_kab', function(req, res) {
   if(req.params.id_kab!="-"){
-    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='TENAGA KERJA' group by a.nama", function(err, data, fields) {
+    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='TENAGA KERJA' and b.harga>0 group by a.nama", function(err, data, fields) {
       // console.log(data_detail_pekerjaan)
       res.json( {data});
       
@@ -423,7 +423,7 @@ router.get('/pekerjaan/list_json_upah/:id_kab', function(req, res) {
 
 router.get('/pekerjaan/list_json_peralatan/:id_kab', function(req, res) {
   if(req.params.id_kab!="-"){
-    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='PERALATAN' group by a.nama", function(err, data, fields) {
+    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='PERALATAN' and b.harga>0 group by a.nama", function(err, data, fields) {
       // console.log(data_detail_pekerjaan)
       res.json( {data});
       
@@ -607,7 +607,7 @@ router.get('/detail_pekerjaan/export_excel/:id_kab', async function(req,res){
   const columnA = Object.keys(worksheet).filter(x => /^AG\d+/.test(x)).map(x => { return {kolom: x,data: worksheet[x].v}}) 
 
 // console.log(columnA)
-let harga= await sql_enak.raw("SELECT b.id_standar_harga, MIN(b.harga) as hargaMin from standar_harga_kab b where b.id_kab = "+req.params.id_kab+" group by b.id_standar_harga  ")
+let harga= await sql_enak.raw("SELECT b.id_standar_harga, MIN(b.harga) as hargaMin from standar_harga_kab b where b.id_kab = "+req.params.id_kab+" and b.harga>0 group by b.id_standar_harga  ")
  harga = harga[0]
 for(let i =1; i < columnA.length;i++){
   for(let a =1; a < harga.length;a++){
