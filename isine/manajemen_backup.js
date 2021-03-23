@@ -104,7 +104,7 @@ router.get('/arsip/:id_kab/:tahun/:triwulan', cek_login, async function(req, res
 
         data[index].total = 0
      
-        let data_harga=  await sql_enak.select(sql_enak.raw(" a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+data[index].id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id"));
+        let data_harga=  await sql_enak.select(sql_enak.raw(" a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+data[index].id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' and c.harga>0 group by a.id"));
         // console.log("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+item.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' group by a.id")
      
         data[index].list = data_harga;
