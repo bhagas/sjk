@@ -546,7 +546,7 @@ router.post('/detail_pekerjaan/submit_insert', cek_login,  function(req, res){
             else{
                 let result =  await importExcel({
                     sourceFile :'./public/excel/'+namafile,
-                    header     :   {rows:1},
+                    header     :   {rows:8},
                     columnToKey:{A:'id_standar_harga',F:'harga'},
                     sheets :['Harga Dasar']
                     
@@ -575,7 +575,8 @@ router.post('/detail_pekerjaan/submit_insert', cek_login,  function(req, res){
                   })
                   // console.log(hasil)
                   if(hasil.length){
-                    connection.query("DELETE FROM standar_harga_kab where id_kab='"+req.body.id_kab+"' and id_kab='"+req.body.id_toko+"'", function(err, rows, fields) {
+                    connection.query("DELETE FROM standar_harga_kab where id_kab='"+req.body.id_kab+"' and id_toko='"+req.body.id_toko+"'", function(err, rows, fields) {
+
                       sql_enak('standar_harga_kab').insert(hasil)
                       .then(async data=>{
                         let t = await del(['./public/excel/*.xlsx'])
@@ -613,7 +614,7 @@ for(let i =1; i < columnA.length;i++){
     // console.log(harga[a].id_standar_harga, columnA[i].data)
       if(harga[a].id_standar_harga==columnA[i].data){
         worksheet[columnA[i].kolom.replace("G", "H")].v = harga[a].hargaMin;
-        // XLSX.utils.sheet_add_aoa(worksheet, [[harga[a].hargaMin]], {origin: columnA[i].kolom.replace("G", "H")});
+        XLSX.utils.sheet_add_aoa(worksheet, [[harga[a].hargaMin]], {origin: columnA[i].kolom.replace("G", "H")});
       }
   }
   }
@@ -632,9 +633,9 @@ for(let i =1; i < columnA.length;i++){
 
 
 
-  //  XLSX.writeFileAsync( './public/excel/temp'+req.params.id_kab+'.xlsx',workbook, function(err){
-  //   res.json(ambil_excel(req.params.id_kab))
-  //  });
+   XLSX.writeFileAsync( './public/excel/temp.xlsx',workbook, function(err){
+    // res.json(ambil_excel(req.params.id_kab))
+   });
 
 
 
@@ -686,36 +687,51 @@ function ambil_excel(id_kab){
 router.get('/detail_pekerjaan/export_excel/:id_kab/:id_toko', cek_login, async function(req,res){
   /* original data */
 
-      var data = [['ID','KATEGORI','JENIS','NAMA', 'SATUAN', 'HARGA']]
+      var data = []
       var ws_name = "Harga Dasar";
       var done = false;
       connection.query(`SELECT  b.id, b.kategori, b.jenis, b.nama, b.satuan, a.harga FROM standar_harga_kab a right join standar_harga b on a.id_standar_harga = b.id and a.id_kab = ${req.params.id_kab} and a.id_toko  = ${req.params.id_toko} `, function(err, rows, fields) {
           // console.log(rows)
           rows.forEach(function(item){
             (!item.harga)?item.harga=0:item.harga;
-            data.push([item.id, item.kategori, item.jenis, item.nama, item.satuan, item.harga])
+            // id kategori	KATEGORI BAHAN	id jenis	JENIS BAHAN	id nama	NAMA BAHAN	SATUAN	HARGA	KETERANGAN
+            data.push({"ID": item.id, "KATEGORI BAHAN": item.kategori,"JENIS BAHAN": item.jenis,"NAMA BAHAN": item.nama,"SATUAN": item.satuan, "HARGA": item.harga, "KETERANGAN":''})
           })
           done = true;
       })
       require('deasync').loopWhile(function(){return !done;});
-
-      var wb = XLSX.utils.book_new(), ws = XLSX.utils.aoa_to_sheet(data);
+      var workbook = XLSX.readFile('./public/excel/temp_hsd.xlsx');
+      // var first_sheet_name = workbook.SheetNames[3];
+      var worksheet = workbook.Sheets[ws_name];
+      // let ws = XLSX.utils.aoa_to_sheet(data, {origin: "A9"});
       
       /* add worksheet to workbook */
-      XLSX.utils.book_append_sheet(wb, ws, ws_name);
-
-      var wbbuf = XLSX.write(wb, {
-        type: 'base64'
-      });
+      // XLSX.utils.book_append_sheet(wb, ws, ws_name);
+      // XLSX.utils.sheet_add_aoa(worksheet, [data], {origin: "A9"});
+      // console.log(data)
+   
       var done = false;
       let toko ="";
-      connection.query(`SELECT  a.nama_toko, b.kab FROM master_toko a  join kabupaten b on a.id_kab = b.id_kab where  a.id  = ${req.params.id_toko} `, function(err, rows, fields) {
+      connection.query(`SELECT  a.nama_toko, b.kab, a.alamat FROM master_toko a  join kabupaten b on a.id_kab = b.id_kab where  a.id  = ${req.params.id_toko} `, function(err, rows, fields) {
           // console.log(rows)
         toko = rows
           done = true;
       })
       require('deasync').loopWhile(function(){return !done;});
+      var d = new Date();
 
+      XLSX.utils.sheet_add_aoa(worksheet, [["TAHUN : "+d.getFullYear()]], {origin: "A4"});
+      XLSX.utils.sheet_add_aoa(worksheet, [["DAERAH : "+toko[0].kab]], {origin: "A5"});
+      XLSX.utils.sheet_add_aoa(worksheet, [["NAMA TOKO : "+toko[0].nama_toko]], {origin: "A6"});
+      XLSX.utils.sheet_add_aoa(worksheet, [["ALAMAT : "+toko[0].alamat]], {origin: "A7"});
+      XLSX.utils.sheet_add_json(worksheet, data, {header:["ID","KATEGORI BAHAN","JENIS BAHAN","NAMA BAHAN","SATUAN","HARGA","KETERANGAN"], origin: "A8"});
+
+      var wbbuf = XLSX.write(workbook, {
+        type: 'base64'
+      });
+      XLSX.writeFileAsync( './public/excel/temp_hsd.xlsx',workbook, function(err){
+        // res.json(ambil_excel(req.params.id_kab))
+       });
       res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'], ['Content-Disposition',  "attachment; filename=" + ""+toko[0].kab+"-"+toko[0].nama_toko+".xlsx"]]);
       // res.writeHead(200, [['Content-Disposition',  "attachment; filename=" + "HSDMaster.xlsx"]]);
       res.end( new Buffer(wbbuf, 'base64') );
