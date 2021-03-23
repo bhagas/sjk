@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah, SIJAKONS, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN,">
+    <meta name="author" content="Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah | Balai Jasa Konstruksi Provinsi Jawa Tengah">
     <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
-    <title></title>
+    <title>SIJAKONS | Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah</title>
 
     <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/template/css/style.css" rel="stylesheet">
@@ -111,17 +111,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-12 col-lg-12" style="margin-top: 15px;">
-                        <div class="card">
-                            <div class="card-header">
-                              <h3><strong>KONSULTAN</strong></h3>
-                            </div>
-                            <div class="card-body">
-                                <div id="konsultan" style="height: 500px; width: 100%;"></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -140,6 +129,9 @@
        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <!-- End Plugins This Page -->
     <script type="text/javascript">
+    $(function() {
+      $('#menu-badan-usaha').addClass('custom');
+    });
       $('.datane').DataTable({
           order:false,
       });
@@ -187,26 +179,6 @@
         {
             type: "bar",
             name: "Jasa Perencana Konstruksi",
-            showInLegend: true,
-
-            dataPoints:[
-                { label: "Kab. Banyumas", y: 266.21 },
-                { label: "Kab. Cilacap", y: 302.25 },
-                { label: "Kab. Jepara", y: 157.20 },
-                { label: "kab. Wonogiri", y: 148.77 },
-                { label: "Kab. Pemalang", y: 101.50 },
-                { label: "Kab. Pekalongan", y: 97.8 },
-                { label: "Kab. Batang", y: 266.21 },
-                { label: "Kab. Blora", y: 302.25 },
-                { label: "Kab. Boyolali", y: 157.20 },
-                { label: "Kota Salatiga", y: 148.77 },
-                { label: "Kota Semarang", y: 101.50 },
-                { label: "Kota Tegal", y: 97.8 }
-            ]
-        },
-        {
-            type: "bar",
-            name: "Konsultan",
             showInLegend: true,
 
             dataPoints:[
@@ -293,37 +265,6 @@
         }]
     });
     chart3.render();
-
-
-    var chart4 = new CanvasJS.Chart("konsultan", {
-        animationEnabled: true,
-        axisX: {
-            interval:1,
-            labelFontSize: 14,
-	    },
-        
-        axisY: {
-            // interval:1,
-            labelFontSize: 14,
-	    },
-
-        toolTip: {
-		    shared: true
-        },
-        data: [{
-            type: "column",
-            name: "Proven Oil Reserves (bn)",
-            dataPoints:[
-                { label: "Perencana Arsitektur", y: 266.21 },
-                { label: "Perencana Rekayasa", y: 302.25 },
-                { label: "Pengawas Arsitektur", y: 157.20 },
-                { label: "Pengawas Rekayasa", y: 148.77 },
-                { label: "dst.........", y: 101.50 }
-            ]
-        }]
-    });
-    chart4.render();
-    
 
     $('#detail').hide();
     $('#detail2').hide();
