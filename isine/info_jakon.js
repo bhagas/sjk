@@ -70,7 +70,23 @@ router.get('/tenaga_kerja', function(req, res) {
 });
 
 router.get('/badan_usaha', function(req, res) {
-  res.render('content/info_badan_usaha'); 
+  //select a.kab as label, (sum(b.gedung)+sum(b.sipil)+sum(b.mekanikal)+sum(b.lainnya)+sum(b.spesialis)+sum(b.keterampilan)) as y from kabupaten a left join jasa_pelaksana b on a.id_kab = b.id_kab group by a.id_kab
+  connection.query("select a.kab as label, a.id_kab, (sum(b.gedung)+sum(b.sipil)+sum(b.mekanikal)+sum(b.lainnya)+sum(b.spesialis)+sum(b.keterampilan)) as y from kabupaten a left join jasa_pelaksana b on a.id_kab = b.id_kab group by a.id_kab", function(err, pelaksana, fields) {
+    connection.query("select a.kab as label, (sum(b.arsitektur)+sum(b.rekayasa)+sum(b.penataan_ruang)+sum(b.p_arsitektur)+sum(b.p_rekayasa)+sum(b.p_penataan_ruang)+sum(b.spesialis)+sum(b.lainnya)) as y from kabupaten a left join jasa_perencana b on a.id_kab = b.id_kab group by a.id_kab", function(err, perencana, fields) {
+      res.render('content/info_badan_usaha', {pelaksana, perencana}); 
+    });
+  });
+ 
+});
+
+router.get('/jumlah_badan_usaha/:id_kab', function(req, res) {
+  //select a.kab as label, (sum(b.gedung)+sum(b.sipil)+sum(b.mekanikal)+sum(b.lainnya)+sum(b.spesialis)+sum(b.keterampilan)) as y from kabupaten a left join jasa_pelaksana b on a.id_kab = b.id_kab group by a.id_kab
+  connection.query("select * from jasa_pelaksana where id_kab="+req.params.id_kab, function(err, pelaksana, fields) {
+    connection.query("select * from jasa_perencana where id_kab="+req.params.id_kab, function(err, perencana, fields) {
+      res.json({pelaksana, perencana})
+    });
+  });
+ 
 });
 
 router.get('/profil_pembinaan', function(req, res) {

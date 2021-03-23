@@ -58,25 +58,13 @@
                         </thead>
 
                         <tbody>
+                            <% for(let i =0; i<pelaksana.length; i++){%>
                             <tr>
-                                <td><a href="#" class="btn-detail"> Kabupaten Cilacap</a></td>
-                                <td>100</td>
+                                <td><a href="#" class="btn-detail" onclick="ambilJumlah('<%=pelaksana[i].id_kab%>')"><%= pelaksana[i].label%></a></td>
+                                <td><%= pelaksana[i].y + perencana[i].y%></td>
                             </tr>
-
-                            <tr>
-                                <td><a href="#"> Kabupaten Banyumas</a></td>
-                                <td>200</td>
-                            </tr>
-
-                            <tr>
-                                <td><a href="#"> Kabupaten Jepara</a></td>
-                                <td>300</td>
-                            </tr>
-
-                            <tr>
-                                <td><a href="#"> dst.....</a></td>
-                                <td>dst .....</td>
-                            </tr>
+                           <%}%> 
+                           
                         </tbody>
                     </table>
                 </div>
@@ -129,6 +117,10 @@
        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <!-- End Plugins This Page -->
     <script type="text/javascript">
+
+
+
+
     $(function() {
       $('#menu-badan-usaha').addClass('custom');
     });
@@ -161,45 +153,19 @@
             name: "Jasa Pelaksana Konstruksi",
             showInLegend: true,
 
-            dataPoints:[
-                { label: "Kab. Banyumas", y: 266.21 },
-                { label: "Kab. Cilacap", y: 302.25 },
-                { label: "Kab. Jepara", y: 157.20 },
-                { label: "kab. Wonogiri", y: 148.77 },
-                { label: "Kab. Pemalang", y: 101.50 },
-                { label: "Kab. Pekalongan", y: 97.8 },
-                { label: "Kab. Batang", y: 266.21 },
-                { label: "Kab. Blora", y: 302.25 },
-                { label: "Kab. Boyolali", y: 157.20 },
-                { label: "Kota Salatiga", y: 148.77 },
-                { label: "Kota Semarang", y: 101.50 },
-                { label: "Kota Tegal", y: 97.8 }
-            ]
+            dataPoints: <%- JSON.stringify(pelaksana) %>
         },
         {
             type: "bar",
             name: "Jasa Perencana Konstruksi",
             showInLegend: true,
 
-            dataPoints:[
-                { label: "Kab. Banyumas", y: 266.21 },
-                { label: "Kab. Cilacap", y: 302.25 },
-                { label: "Kab. Jepara", y: 157.20 },
-                { label: "kab. Wonogiri", y: 148.77 },
-                { label: "Kab. Pemalang", y: 101.50 },
-                { label: "Kab. Pekalongan", y: 97.8 },
-                { label: "Kab. Batang", y: 266.21 },
-                { label: "Kab. Blora", y: 302.25 },
-                { label: "Kab. Boyolali", y: 157.20 },
-                { label: "Kota Salatiga", y: 148.77 },
-                { label: "Kota Semarang", y: 101.50 },
-                { label: "Kota Tegal", y: 97.8 }
-            ]
+            dataPoints:<%- JSON.stringify(perencana) %>
         }]
     });
     chart.render();
 
-
+let data_pelaksana=[]
     var chart2 = new CanvasJS.Chart("jasa_pelaksana", {
         animationEnabled: true,
         axisX: {
@@ -217,18 +183,12 @@
         },
         data: [{
             type: "column",
-            name: "Proven Oil Reserves (bn)",
-            dataPoints:[
-                { label: "Bangunan Gedung", y: 266.21 },
-                { label: "Bangunan Sipil", y: 302.25 },
-                { label: "Instalasi Mekanikal Elektrikal", y: 157.20 },
-                { label: "Jasa Pelaksana Lainnya", y: 148.77 },
-                { label: "dst.........", y: 101.50 }
-            ]
+            name: "Pelaksana",
+            dataPoints:data_pelaksana
         }]
     });
     chart2.render();
-
+let data_perencana =[]
     var chart3 = new CanvasJS.Chart("jasa_perencana", {
         animationEnabled: true,
 
@@ -248,20 +208,7 @@
         data: [{
             type: "column",
             name: "Proven Oil Reserves (bn)",
-            dataPoints:[
-            { label: "Kab. Banyumas", y: 266.21 },
-                { label: "Kab. Cilacap", y: 302.25 },
-                { label: "Kab. Jepara", y: 157.20 },
-                { label: "kab. Wonogiri", y: 148.77 },
-                { label: "Kab. Pemalang", y: 101.50 },
-                { label: "Kab. Pekalongan", y: 97.8 },
-                { label: "Kab. Batang", y: 266.21 },
-                { label: "Kab. Blora", y: 302.25 },
-                { label: "Kab. Boyolali", y: 157.20 },
-                { label: "Kota Salatiga", y: 148.77 },
-                { label: "Kota Semarang", y: 101.50 },
-                { label: "Kota Tegal", y: 97.8 }
-            ]
+            dataPoints:data_perencana
         }]
     });
     chart3.render();
@@ -282,6 +229,31 @@
             scrollTop: $("#detail2").offset().top
             }, 1000);
     });
+
+    function ambilJumlah(id_kab){
+        $.getJSON( "/info_jakon/jumlah_badan_usaha/"+id_kab ,function( data ) {
+            // console.log(data);
+            data_pelaksana.push({label: 'Gedung', y:Number(data.pelaksana[0].gedung)});
+            data_pelaksana.push({label: 'Keterampilan', y:Number(data.pelaksana[0].keterampilan)});
+            data_pelaksana.push({label: 'Mekanikal', y:Number(data.pelaksana[0].mekanikal)});
+            data_pelaksana.push({label: 'Sipil', y:Number(data.pelaksana[0].sipil)});
+            data_pelaksana.push({label: 'Spesialis', y:Number(data.pelaksana[0].spesialis)});
+            data_pelaksana.push({label: 'Lainnya', y:Number(data.pelaksana[0].lainnya)});
+
+            chart2.render()
+
+
+            data_perencana.push({label: 'Arsitektur', y:Number(data.perencana[0].arsitektur)});
+            data_perencana.push({label: 'Rekayasa', y:Number(data.perencana[0].rekayasa)});
+            data_perencana.push({label: 'Penataan Ruang', y:Number(data.perencana[0].penataan_ruang)});
+            data_perencana.push({label: 'Spesialis', y:Number(data.perencana[0].sipil)});
+            data_perencana.push({label: 'Pengawas Arsitektur', y:Number(data.perencana[0].p_arsitektur)});
+            data_perencana.push({label: 'Pengawas Rekayasa', y:Number(data.perencana[0].p_rekayasa)});
+            data_perencana.push({label: 'Pengawas Penataan Ruang', y:Number(data.perencana[0].p_penataan_ruang)});
+
+            chart3.render()
+        })
+    }
     </script>
 </body>
 </html>
