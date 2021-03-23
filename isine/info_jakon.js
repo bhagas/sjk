@@ -74,12 +74,33 @@ router.get('/badan_usaha', function(req, res) {
 });
 
 router.get('/profil_pembinaan', function(req, res) {
-  res.render('content/info_profil_pembinaan'); 
+  connection.query("SELECT * from kabupaten", function(err, kabupaten, fields) {
+    res.render('content/info_profil_pembinaan', {kabupaten}); 
+  });
+
 });
 
 router.get('/profil_balai', function(req, res) {
   connection.query("SELECT * from tenaga_kerja_balai where deleted=0", function(err, rows, fields) {
   res.render('content/info_profil_balai', {data:rows}); 
+});
+});
+
+
+router.get('/profil_pembinaan_json/:id_kab', function(req, res) {
+  let data =[]
+  connection.query("SELECT * from profil_pembinaan_jakon where deleted=0 and id_kab="+req.params.id_kab, function(err, rows, fields) {
+    data= rows;
+    if(rows.length>0){
+      connection.query("SELECT * from tpjk where id_pembina="+rows[0].id, function(err, rowss, fields) {
+        data[0].tpjk=rowss;
+        res.json({data})
+      });
+    }else{
+      res.json({data})
+    }
+   
+
 });
 });
 
