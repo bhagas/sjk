@@ -165,7 +165,28 @@
     });
     chart.render();
 
-let data_pelaksana=[]
+
+    // chart3.render();
+
+    $('#detail').hide();
+    $('#detail2').hide();
+
+    $('.btn-detail').click(function() {
+        $('#detail').show();
+            $('html, body').animate({
+            scrollTop: $("#detail").offset().top
+            }, 1000);
+    });
+
+    $('.btn-detail2').click(function() {
+        $('#detail2').show();
+            $('html, body').animate({
+            scrollTop: $("#detail2").offset().top
+            }, 1000);
+    });
+
+    function ambilJumlah(id_kab){
+      let data_pelaksana=[]
     var chart2 = new CanvasJS.Chart("jasa_pelaksana", {
         animationEnabled: true,
         axisX: {
@@ -187,7 +208,7 @@ let data_pelaksana=[]
             dataPoints:data_pelaksana
         }]
     });
-    chart2.render();
+    // chart2.render();
 let data_perencana =[]
     var chart3 = new CanvasJS.Chart("jasa_perencana", {
         animationEnabled: true,
@@ -211,37 +232,19 @@ let data_perencana =[]
             dataPoints:data_perencana
         }]
     });
-    chart3.render();
-
-    $('#detail').hide();
-    $('#detail2').hide();
-
-    $('.btn-detail').click(function() {
-        $('#detail').show();
-            $('html, body').animate({
-            scrollTop: $("#detail").offset().top
-            }, 1000);
-    });
-
-    $('.btn-detail2').click(function() {
-        $('#detail2').show();
-            $('html, body').animate({
-            scrollTop: $("#detail2").offset().top
-            }, 1000);
-    });
-
-    function ambilJumlah(id_kab){
         $.getJSON( "/info_jakon/jumlah_badan_usaha/"+id_kab ,function( data ) {
-            // console.log(data);
+          
+           
             data_pelaksana.push({label: 'Gedung', y:Number(data.pelaksana[0].gedung)});
             data_pelaksana.push({label: 'Keterampilan', y:Number(data.pelaksana[0].keterampilan)});
             data_pelaksana.push({label: 'Mekanikal', y:Number(data.pelaksana[0].mekanikal)});
             data_pelaksana.push({label: 'Sipil', y:Number(data.pelaksana[0].sipil)});
             data_pelaksana.push({label: 'Spesialis', y:Number(data.pelaksana[0].spesialis)});
             data_pelaksana.push({label: 'Lainnya', y:Number(data.pelaksana[0].lainnya)});
-
+            // console.log(data_pelaksana);
+            // console.log(data_pelaksana);
             chart2.render()
-
+            // data_pelaksana=[]
 
             data_perencana.push({label: 'Arsitektur', y:Number(data.perencana[0].arsitektur)});
             data_perencana.push({label: 'Rekayasa', y:Number(data.perencana[0].rekayasa)});
@@ -252,6 +255,7 @@ let data_perencana =[]
             data_perencana.push({label: 'Pengawas Penataan Ruang', y:Number(data.perencana[0].p_penataan_ruang)});
 
             chart3.render()
+            // data_perencana=[]
         })
     }
     </script>
