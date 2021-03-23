@@ -2,11 +2,11 @@
 <!-- BEGIN PAGE CONTENT -->
 <div class="page-content">
   <div class="header">
-    <h2><strong>Tambah Data Tenaga Kerja</strong></h2>
+    <h2><strong>Tambah Data Pelatihan Tenaga Kerja Balai</strong></h2>
     <div class="breadcrumb-wrapper">
       <ol class="breadcrumb">
         <li><a href="/backoffice">Dashboard</a></li>
-        <li><a href="/manajemen_tenaga_kerja">Data</a></li>
+        <li><a href="/manajemen_profil_balai/tenaga_kerja">Data</a></li>
         <li class="active">Tambah Data</li>
       </ol>
     </div>
@@ -16,43 +16,55 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-content">
-          <form role="form" action="/manajemen_tenaga_kerja/submit_insert" method="POST">
+          <form role="form" action="/manajemen_profil_balai/tenaga_kerja/submit_insert" method="POST">
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="form-group">
-                  <label>Kabupaten/Kota</label>
+                  <label>Nama</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <select class="form-control" name="id_kab" id="id_kab" data-search="true">
-                        <option value="-">-- Pilih --</option>
-                       
-                        <% for(var i=0; i<kabupaten.length; i++){ %> 
-                          
-                          <option value="<%= kabupaten[i]['id_kab']%>"><%= kabupaten[i]['kab']%></option>
-                          <% }%>
-                      </select>
+                      <input type="text" class="form-control" name="nama" id="">
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label>Jumlah SKA</label>
+                  <label>Alamat</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="ska" id="">
+                      <input type="text" class="form-control" name="alamat" id="">
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label>Jumlah SKT</label>
+                  <label>No. Telepon</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="skt" id="">
+                      <input type="text" class="form-control" name="tlpn" id="">
                     </div>
                   </div>
                 </div>
 
+                <div class="form-group">
+                  <label>Email</label>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <input type="text" class="form-control" name="email" id="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Pendidika Terakhir</label>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <input type="text" class="form-control" name="pendidikan_terakhir" id="">
+                    </div>
+                  </div>
+                </div>
+
+                
                 <button type="submit" class="btn btn-primary btn-embossed">Simpan</button>
               </div>
             </div>

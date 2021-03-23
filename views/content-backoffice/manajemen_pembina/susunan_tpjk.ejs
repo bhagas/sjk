@@ -16,14 +16,16 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-content">
-          <form role="form" action="#" method="POST" enctype="multipart/form-data">
+          <form role="form" action="/manajemen_pembina/susunan_tpjk/submit_insert" method="POST" enctype="multipart/form-data">
+            <input type="hidden" class="form-control" name="id_pembina" id="" value="<%= data[0].id%>">
+
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="form-group">
                   <label>Nama / Jabatan Kedinasan</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <input type="text" class="form-control" name="" id="">
+                      <input type="text" class="form-control" name="jabatan_kedinasan" id="">
                     </div>
                   </div>
                 </div>
@@ -32,7 +34,7 @@
                   <label>Nama</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <input type="text" class="form-control" name="" id="">
+                      <input type="text" class="form-control" name="nama" id="">
                     </div>
                   </div>
                 </div>
@@ -41,7 +43,7 @@
                   <label>Jabatan</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <input type="text" class="form-control" name="" id="">
+                      <input type="text" class="form-control" name="jabatan" id="">
                     </div>
                   </div>
                 </div>
@@ -50,7 +52,7 @@
                   <label>Email</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <input type="text" class="form-control" name="" id="">
+                      <input type="text" class="form-control" name="email" id="">
                     </div>
                   </div>
                 </div>
@@ -63,7 +65,7 @@
                   <label>Alamat Kantor</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <input type="text" class="form-control" name="" id="">
+                      <input type="text" class="form-control" name="alamat" id="">
                     </div>
                   </div>
                 </div>
@@ -72,7 +74,7 @@
                   <label>Telepon Kantor</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <input type="text" class="form-control" name="" id="">
+                      <input type="text" class="form-control" name="telepon" id="">
                     </div>
                   </div>
                 </div>
@@ -81,7 +83,7 @@
                   <label>Fax</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <input type="text" class="form-control" name="" id="">
+                      <input type="text" class="form-control" name="fax" id="">
                     </div>
                   </div>
                 </div>
@@ -112,16 +114,18 @@
                 </thead>
 
                 <tbody>
+                  <% for(var i=0; i<tpjk.length; i++){ %>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td><button class="btn btn-danger btn-sm btn-embossed">Hapus</button></td>
+                    <td><%= tpjk[i].jabatan_kedinasan%></td>
+                    <td><%= tpjk[i].nama%></td>
+                    <td><%= tpjk[i].jabatan%></td>
+                    <td><%= tpjk[i].email%></td>
+                    <td><%= tpjk[i].alamat%></td>
+                    <td><%= tpjk[i].telepon%></td>
+                    <td><%= tpjk[i].fax%></td>
+                    <td><a href="/manajemen_pembina/susunan_tpjk/delete/<%= tpjk[i].id%>/<%= tpjk[i].id_pembina%>" class="btn btn-danger btn-sm btn-embossed" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');">Hapus</a></td>
                   </tr>
+                  <%}%>
                 </tbody>
               </table>
             </div>
@@ -132,11 +136,8 @@
   </div>
   <div class="footer">
     <div class="copyright">
-      <p class="pull-left sm-pull-reset">
-        <span>Copyright <span class="copyright">©</span> 2018 </span>
-        <span>Pemerintah</span>.
-      </p>
-    </div>
+      <span>Copyright <span class="copyright">©</span> 2021 </span>
+        <span>Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah</span>.
   </div>
 </div>
 <!-- END PAGE CONTENT -->
