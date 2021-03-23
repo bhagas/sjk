@@ -3,7 +3,7 @@
 <!-- BEGIN PAGE CONTENT -->
 <div class="page-content">
   <div class="header">
-    <h2><strong>Data Badan Usaha Konsultan</strong></h2>
+    <h2><strong>Data Pelatihan Tenaga Kerja Balai</strong></h2>
     <div class="breadcrumb-wrapper">
       <ol class="breadcrumb">
         <li><a href="/backoffice">Dashboard</a>
@@ -16,25 +16,19 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-header header-line">
-           <a class="btn btn-primary btn-embossed" href="/manajemen_badan_usaha/konsultan/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a>
+           <a class="btn btn-primary btn-embossed" href="/manajemen_profil_balai/tenaga_kerja/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a>
         </div>
         <div class="panel-content pagination2">
           <table class="table table-bordered table-striped table-hover" id="data">
             <thead>
               <tr>
-                <th class="header" rowspan="2">No.</th>
-                <th class="header" rowspan="2">Kabupaten/Kota</th>
-                <th class="header" colspan="6" style="text-align: center;">Klasifikasi Badan Usaha</th>
-                <th class="header" rowspan="2">Option</th>
-              </tr>
-
-              <tr>
-                <th>TA Bidang Arsitektur</th>
-                <th>TA Bidang Sipil</th>
-                <th>TA Bidang Mekanikal</th>
-                <th>TA Bidang Elektrikal</th>
-                <th>TA Bidang Tata Lingkungan</th>
-                <th>TA Bidang Manajemen Pelaksana</th>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>No. Telepon</th>
+                <th>Email</th>
+                <th>Pendidikan Terakhir</th>
+                <th>Option</th>
               </tr>
             </thead>
             
@@ -42,19 +36,17 @@
               <% for(var i=0; i<data.length; i++){ %>
             <tr>
               <td><%= i+1%></td>
-              <td><%= data[i].kab%></td>
-              <td><%= data[i].arsitektur%></td>
-              <td><%= data[i].sipil%></td>
-              <td><%= data[i].mekanikal%></td>
-              <td><%= data[i].elektrikal%></td>
-              <td><%= data[i].lingkungan%></td>
-              <td><%= data[i].pelaksana%></td>
+              <td><%= data[i].nama%></td>
+              <td><%= data[i].alamat%></td>
+              <td><%= data[i].tlpn%></td>
+              <td><%= data[i].email%></td>
+              <td><%= data[i].pendidikan_terakhir%></td>>
               <td>
                 <center>
                 <ul class="list-inline">
-                  <li><a class="btn btn-warning btn-embossed btn-sm" href="/manajemen_badan_usaha/konsultan/edit/<%= data[i].id%>" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+                  <li><a class="btn btn-warning btn-embossed btn-sm" href="/manajemen_profil_balai/tenaga_kerja/edit/<%= data[i].id%>" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
                   <li class="separator">|</li>
-                  <li><a class="btn btn-danger btn-embossed btn-sm" href="/manajemen_badan_usaha/konsultan/delete/<%= data[i].id%>" role="button" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+                  <li><a class="btn btn-danger btn-embossed btn-sm" href="/manajemen_profil_balai/tenaga_kerja/delete/<%= data[i].id%>" role="button" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
                 </ul>
                 </center>
               </td>
@@ -99,7 +91,7 @@
           }
       },
       "columnDefs": [
-          { "width": "100px", "targets": 8}
+          { "width": "100px", "targets": 6}
       ],
     });
   });

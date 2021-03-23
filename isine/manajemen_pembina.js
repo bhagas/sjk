@@ -59,7 +59,7 @@ var upload = multer({ storage: storage })
 
 //start-------------------------------------
 router.get('/', cek_login, function(req, res) {
-  connection.query("SELECT a.*, b.kab from jasa_perencana a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, rows, fields) {
+  connection.query("SELECT a.*, b.kab from profil_pembinaan_jakon a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, rows, fields) {
   res.render('content-backoffice/manajemen_pembina/list', {data:rows}); 
 });
 });
@@ -119,6 +119,37 @@ router.get('/delete/:id', cek_login, function(req, res) {
 
 
 router.get('/susunan_tpjk/:id', cek_login, function(req, res) {
-  res.render('content-backoffice/manajemen_pembina/susunan_tpjk'); 
+  connection.query("SELECT id from profil_pembinaan_jakon where id='"+req.params.id+"'", function(err, rows, fields) {
+    connection.query("SELECT * from tpjk where deleted=0 and id_pembina='"+req.params.id+"'", function(err, data_tpjk, fields) {
+  res.render('content-backoffice/manajemen_pembina/susunan_tpjk',{data:rows, tpjk:data_tpjk}); 
+  // res.json({data:rows})
+});
+});
+});
+
+
+router.post('/susunan_tpjk/submit_insert', cek_login,  function(req, res){
+  var post = {}
+ post = req.body;
+    console.log(post)
+   sql_enak.insert(post).into("tpjk").then(function (id) {
+  console.log(id);
+})
+.finally(function() {
+  //sql_enak.destroy();
+  res.redirect('/manajemen_pembina/susunan_tpjk/'+post.id_pembina); 
+});
+});
+
+router.get('/susunan_tpjk/delete/:id/:id_pembina', cek_login, function(req, res) {
+  
+  // senjata
+  // console.log(req.params.id)
+  connection.query("update tpjk SET deleted=1 WHERE id='"+req.params.id+"' ", function(err, rows, fields) {
+  //  if (err) throw err;
+    numRows = rows.affectedRows;
+  })
+
+  res.redirect('/manajemen_pembina/susunan_tpjk/'+req.params.id_pembina);
 });
 module.exports = router;

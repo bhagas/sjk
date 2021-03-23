@@ -78,7 +78,9 @@ router.get('/profil_pembinaan', function(req, res) {
 });
 
 router.get('/profil_balai', function(req, res) {
-  res.render('content/info_profil_balai'); 
+  connection.query("SELECT * from tenaga_kerja_balai where deleted=0", function(err, rows, fields) {
+  res.render('content/info_profil_balai', {data:rows}); 
+});
 });
 
 module.exports = router;

@@ -2,7 +2,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
+    <%
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+%>
 <head>
 
     <meta charset="utf-8">
@@ -134,11 +138,11 @@
 
             <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td>SUMBER DANA</td>
                         <td>:</td>
                         <td>PASAR BEBAS</td>
-                    </tr>
+                    </tr> -->
 
                     <tr>
                         <td>DAERAH</td>
@@ -168,7 +172,7 @@
                         <td style="text-align: center;"><%= hspk[i].kode%></td>
                         <td><%= hspk[i].nama_pekerjaan%></td>
                         <td style="text-align: center;"><%= hspk[i].satuan%></td>
-                        <td style="text-align: right;"><%= hspk[i].total%></td>
+                        <td style="text-align: right;"><%= numberWithCommas(Math.round(hspk[i].total))%></td>
                     </tr>
                     <%}%>
                  
@@ -189,11 +193,11 @@
 
             <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td>SUMBER DANA</td>
                         <td>:</td>
                         <td>PASAR BEBAS</td>
-                    </tr>
+                    </tr> -->
 
                     <tr>
                         <td>DAERAH</td>
@@ -228,7 +232,7 @@
                             <td style="text-align: left;width: 240px;"><%= hsd[i].jenis%></td>
                             <td style="width: 200px;"><%= hsd[i].nama%></td>
                             <td style="text-align: center;"><%= hsd[i].satuan%></td>
-                            <td style="text-align: right;"><%= hsd[i].hargaMin%></td>
+                            <td style="text-align: right;"><%= numberWithCommas(Math.round(hsd[i].hargaMin))%></td>
                             <td></td>
                         </tr>
                         <%}}%>
@@ -251,11 +255,11 @@
 
             <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td>SUMBER DANA</td>
                         <td>:</td>
                         <td>PASAR BEBAS</td>
-                    </tr>
+                    </tr> -->
 
                     <tr>
                         <td>DAERAH</td>
@@ -288,7 +292,7 @@
                             <td style="text-align: center;"><%=  i +1%></td>
                             <td><%= hsd[i].nama%></td>
                             <td style="text-align: center;"><%= hsd[i].satuan%></td>
-                            <td style="text-align: right;"><%= hsd[i].hargaMin%></td>
+                            <td style="text-align: right;"><%= numberWithCommas(Math.round(hsd[i].hargaMin))%></td>
                             <td></td>
                         </tr>
                          <%}}%>
@@ -308,11 +312,11 @@
 
             <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td>SUMBER DANA</td>
                         <td>:</td>
                         <td>PASAR BEBAS</td>
-                    </tr>
+                    </tr> -->
 
                     <tr>
                         <td>DAERAH</td>
@@ -346,7 +350,7 @@
                             <td style="text-align: center;"><%=  i +1%></td>
                             <td><%= hsd[i].nama%></td>
                             <td style="text-align: center;"><%= hsd[i].satuan%></td>
-                            <td style="text-align: right;"><%= hsd[i].hargaMin%></td>
+                            <td style="text-align: right;"><%= numberWithCommas(Math.round(hsd[i].hargaMin))%></td>
                             <td></td>
                         </tr>
                          <%}}%>
@@ -366,11 +370,11 @@
 
             <table border="0" cellpadding="5" cellspacing="0" style="width: 100%;border-collapse: collapse;">
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td>SUMBER DANA</td>
                         <td>:</td>
                         <td>PASAR BEBAS</td>
-                    </tr>
+                    </tr> -->
 
                     <tr>
                         <td>DAERAH</td>
@@ -431,8 +435,8 @@
                             <td style="text-align: right;"><%=hspk[i].list[a].koefisien%></td>
                             <td style="text-align: center;">OH</td>
                             <td><%=hspk[i].list[a].nama%></td>
-                            <td style="text-align: right;"><%=hspk[i].list[a].harga%></td>
-                            <td style="text-align: right;"><%=hspk[i].list[a].harga * hspk[i].list[a].koefisien%></td>
+                            <td style="text-align: right;"><%=numberWithCommas(Math.round(hspk[i].list[a].harga))%></td>
+                            <td style="text-align: right;"><%=numberWithCommas(Math.round(hspk[i].list[a].harga * hspk[i].list[a].koefisien))%></td>
                         </tr>
     
                        
@@ -456,8 +460,8 @@
                             <td style="text-align: right;"><%=hspk[i].list[a].koefisien%></td>
                             <td style="text-align: center;">OH</td>
                             <td><%=hspk[i].list[a].nama%></td>
-                            <td style="text-align: right;"><%=hspk[i].list[a].harga%></td>
-                            <td style="text-align: right;"><%=hspk[i].list[a].harga * hspk[i].list[a].koefisien%></td>
+                            <td style="text-align: right;"><%=numberWithCommas(Math.round(hspk[i].list[a].harga))%></td>
+                            <td style="text-align: right;"><%=numberWithCommas(Math.round(hspk[i].list[a].harga * hspk[i].list[a].koefisien))%></td>
                         </tr>
     
                        
@@ -483,8 +487,8 @@
                             <td style="text-align: right;"><%=hspk[i].list[a].koefisien%></td>
                             <td style="text-align: center;">OH</td>
                             <td><%=hspk[i].list[a].nama%></td>
-                            <td style="text-align: right;"><%=hspk[i].list[a].harga%></td>
-                            <td style="text-align: right;"><%=hspk[i].list[a].harga * hspk[i].list[a].koefisien%></td>
+                            <td style="text-align: right;"><%=numberWithCommas(Math.round(hspk[i].list[a].harga))%></td>
+                            <td style="text-align: right;"><%=numberWithCommas(Math.round(hspk[i].list[a].harga * hspk[i].list[a].koefisien))%></td>
                         </tr>
     
                        
@@ -497,7 +501,7 @@
                             <td style="text-align: center;"><strong>D</strong></td>
                             <td><strong>Jumlah A + B + C</strong></td>
                             <td style="text-align: right;"></td>
-                            <td style="text-align: right;"><%=hspk[i].total_keseluruhan%></td>
+                            <td style="text-align: right;"><%=numberWithCommas(Math.round(hspk[i].total_keseluruhan))%></td>
                         </tr>
     
                         <tr>
@@ -508,7 +512,7 @@
                             <td style="text-align: center;"><strong>D</strong></td>
                             <td><strong>Overhead & Profit (contoh 10%)</strong></td>
                             <td style="text-align: right;"></td>
-                            <td style="text-align: right;"><%=hspk[i].profit%></td>
+                            <td style="text-align: right;"><%=numberWithCommas(Math.round(hspk[i].profit))%></td>
                         </tr>
     
                         <tr>
@@ -519,7 +523,7 @@
                             <td style="text-align: center;"><strong>D</strong></td>
                             <td><strong>Harga Satuan Pekerjaan (D + E)</strong></td>
                             <td style="text-align: right;"></td>
-                            <td style="text-align: right;"><%=hspk[i].total_keseluruhan + hspk[i].profit%></td>
+                            <td style="text-align: right;"><%=numberWithCommas(Math.round(hspk[i].total_keseluruhan + hspk[i].profit))%></td>
                         </tr>
                         
                         <%}%>
@@ -533,6 +537,9 @@
     </page>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script type="text/javascript">
+    function numberWithCommas(x) {
+		  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+		}
     $('#btn-print').click(function(){
          window.print();
     });

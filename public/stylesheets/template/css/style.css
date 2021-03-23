@@ -208,32 +208,32 @@ body{
 }
 
 .dropdown-menu a{
-	color: #e98112;
+	color: #333;
 	font-weight: bold;
 }
 
 .dropdown-menu a:hover{
-	color: #039556;
+	color: #007bff;
 	font-weight: bold;
 }
 
 .dropdown-menu a:focus{
-	color: #039556;
+	color: #007bff;
 	font-weight: bold;
 }
 
-.menu a h6{
-	color: #e98112;
+.menu a{
+	color: #333;
 	font-weight: bold;
 }
 
-.menu a:hover h6{
-	color: #039556;
+.menu a:hover{
+	color: #007bff !important;
 	font-weight: bold;
 }
 
-.menu a:focus h6{
-	color: #039556;
+.menu a:focus{
+	color: #007bff;
 	font-weight: bold;
 }
 
@@ -245,13 +245,16 @@ body{
 }
 
 .btn-link:hover{
-	color: #039556;
+	color: #007bff !important;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 .btn-link:focus{
-	color: #039556;
+	color: #007bff;
 	font-weight: bold;
 	text-decoration: none;
+}
+.custom{
+	color: #007bff !important;
 }

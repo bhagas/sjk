@@ -71,8 +71,9 @@
                                                 <tr>
                                                     <th>No.</th>
                                                     <th>Kode</th>
-                                                    <th>Satuan</th>
+                                                    
                                                     <th>Uraian Pekerjaan</th>
+                                                    <th>Satuan</th>
                                                     <th>Harga Satuan (Rp)</th>
                                                 </tr>
                                             </thead>
@@ -263,6 +264,10 @@
        <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
     <!-- End Plugins This Page -->
     <script type="text/javascript">
+    $(function() {
+      $('#menu-hspk').addClass('custom');
+    });
+
      function numberWithCommas(x) {
 		  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 		}
@@ -291,12 +296,13 @@
            "columns": [
                { "data": null},
                { "data": "kode"},
-               { "data": "satuan"},
+               
              
                { "data": null, render: function(data){
 
                   return `<a href="#" class="hspk" idnya="${data.id}">${data.nama_pekerjaan}</a>`;
                }},
+               { "data": "satuan"},
                { "data": "total_keseluruhan",render: function(data){
                    return "<span class='pull-right'>Rp "+numberWithCommas(Math.round(data))+",-</span>"
                }},
