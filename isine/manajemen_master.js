@@ -299,7 +299,7 @@ router.get('/pekerjaan/detail_json/:id/:id_kab', function(req, res) {
 router.get('/pekerjaan/list/:id_kab', function(req, res) {
   let done = false;
   let data=[]
-  connection.query("SELECT a.* from master_pekerjaan a ", function(err, data_detail_pekerjaan, fields) {
+  connection.query("SELECT a.* from master_pekerjaan a where a.deleted =0; ", function(err, data_detail_pekerjaan, fields) {
     // console.log("SELECT a.*, b.nama, b.satuan, b.kode from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id and c.id_kab = '"+req.params.id_kab+"'") 
    data = data_detail_pekerjaan
       done = true;

@@ -96,7 +96,7 @@ router.get('/arsip/:id_kab/:tahun/:triwulan', cek_login, async function(req, res
 
     //hspk
      data=[]
-     data =  await sql_enak.raw("SELECT a.* from master_pekerjaan a ");
+     data =  await sql_enak.raw("SELECT a.* from master_pekerjaan a where a.deleted=0");
     
       data = data[0];
       // console.log(data[0])
