@@ -25,8 +25,9 @@
                 <th class="header">No.</th>
                 <th class="header">Kode</th>
                 <th class="header">Pekerjaan</th>
-                <th class="header">Mata Pembayaran</th>
+               
                 <th class="header">Satuan</th>
+                <th class="header">Bidang</th>
                 <th class="header">Option</th>
               </tr>
             </thead>
@@ -37,8 +38,9 @@
                   <td><%= i+1%></td>
                   <td><%= data[i].kode%></td>
                   <td><%= data[i].nama_pekerjaan%></td>
-                  <td><%= data[i].mata_pembayaran%></td>
+              
                   <td><%= data[i].satuan%></td>
+                  <td><%= (data[i].bidang==1)?'Ciptakarya':'Binamarga'%></td>
               <td>
                 <center>
                 <ul class="list-inline" style="text-align: center;">
