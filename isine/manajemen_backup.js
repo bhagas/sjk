@@ -112,7 +112,7 @@ router.get('/arsip/:id_kab/:tahun/:triwulan', cek_login, async function(req, res
         data_harga.forEach(function(harga_item){
           data[index].total += harga_item.harga * harga_item.koefisien;
         })
-        data[index].profit = (data[index].total * 15)/100;
+        data[index].profit = (data[index].total * 10)/100;
         data[index].total_keseluruhan = data[index].total + data[index].profit;
        
        }

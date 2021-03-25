@@ -64,7 +64,7 @@ var upload = multer({ storage: storage })
 
 //start-------------------------------------
 router.get('/toko', cek_login, function(req, res) {
-  connection.query("SELECT a.*, b.kab from master_toko a join kabupaten b on a.id_kab = b.id_kab where deleted=0", function(err, rows, fields) {
+  connection.query("SELECT a.*, b.kab from master_toko a join kabupaten b on a.id_kab = b.id_kab where a.deleted=0", function(err, rows, fields) {
 
   res.render('content-backoffice/manajemen_master_toko/list',{data:rows});
 });
@@ -355,7 +355,7 @@ router.get('/pekerjaan/list_json/:id_kab', function(req, res) {
   let done= false;
   let result =[]
   if(req.params.id_kab!='-'){
-    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" and b.harga >0 group by a.nama", function(err, data, fields) {
+    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" and b.harga >0 where a.deleted=0 group by a.nama", function(err, data, fields) {
       // console.log(data_detail_pekerjaan)
       
       result = data;
@@ -410,7 +410,7 @@ router.get('/pekerjaan/detail_toko/:id_standar_harga/:id_kab', function(req, res
 
 router.get('/pekerjaan/list_json_upah/:id_kab', function(req, res) {
   if(req.params.id_kab!="-"){
-    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='TENAGA KERJA' and b.harga>0 group by a.nama", function(err, data, fields) {
+    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='TENAGA KERJA' and b.harga>0 and a.deleted=0 group by a.nama", function(err, data, fields) {
       // console.log(data_detail_pekerjaan)
       res.json( {data});
       
@@ -423,7 +423,7 @@ router.get('/pekerjaan/list_json_upah/:id_kab', function(req, res) {
 
 router.get('/pekerjaan/list_json_peralatan/:id_kab', function(req, res) {
   if(req.params.id_kab!="-"){
-    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='PERALATAN' and b.harga>0 group by a.nama", function(err, data, fields) {
+    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='PERALATAN' and b.harga>0 and a.deleted=0 group by a.nama", function(err, data, fields) {
       // console.log(data_detail_pekerjaan)
       res.json( {data});
       
@@ -687,15 +687,27 @@ function ambil_excel(id_kab){
 router.get('/detail_pekerjaan/export_excel/:id_kab/:id_toko', cek_login, async function(req,res){
   /* original data */
 
-      var data = []
+      var bahan_dasar = []
+      // var lainnya = []
+      var peralatan = []
+      var upah = []
       var ws_name = "Harga Dasar";
       var done = false;
-      connection.query(`SELECT  b.id, b.kategori, b.jenis, b.nama, b.satuan, a.harga FROM standar_harga_kab a right join standar_harga b on a.id_standar_harga = b.id and a.id_kab = ${req.params.id_kab} and a.id_toko  = ${req.params.id_toko} `, function(err, rows, fields) {
+      connection.query(`SELECT  b.id, b.kategori, b.jenis, b.nama, b.satuan, a.harga FROM standar_harga_kab a right join standar_harga b on a.id_standar_harga = b.id and a.id_kab = ${req.params.id_kab} and a.id_toko  = ${req.params.id_toko} where b.deleted=0`, function(err, rows, fields) {
           // console.log(rows)
           rows.forEach(function(item){
             (!item.harga)?item.harga=0:item.harga;
             // id kategori	KATEGORI BAHAN	id jenis	JENIS BAHAN	id nama	NAMA BAHAN	SATUAN	HARGA	KETERANGAN
-            data.push({"ID": item.id, "KATEGORI BAHAN": item.kategori,"JENIS BAHAN": item.jenis,"NAMA BAHAN": item.nama,"SATUAN": item.satuan, "HARGA": item.harga, "KETERANGAN":''})
+            if(item.kategori=='TENAGA KERJA'){
+
+              upah.push({"ID": item.id, "KATEGORI BAHAN": item.kategori,"JENIS BAHAN": item.jenis,"NAMA BAHAN": item.nama,"SATUAN": item.satuan, "HARGA": item.harga, "KETERANGAN":''})
+            }else if(item.kategori=='PERALATAN'){
+              peralatan.push({"ID": item.id, "KATEGORI BAHAN": item.kategori,"JENIS BAHAN": item.jenis,"NAMA BAHAN": item.nama,"SATUAN": item.satuan, "HARGA": item.harga, "KETERANGAN":''})
+            
+            }else{
+              bahan_dasar.push({"ID": item.id, "KATEGORI BAHAN": item.kategori,"JENIS BAHAN": item.jenis,"NAMA BAHAN": item.nama,"SATUAN": item.satuan, "HARGA": item.harga, "KETERANGAN":''})
+            
+            }
           })
           done = true;
       })
@@ -724,7 +736,9 @@ router.get('/detail_pekerjaan/export_excel/:id_kab/:id_toko', cek_login, async f
       XLSX.utils.sheet_add_aoa(worksheet, [["DAERAH : "+toko[0].kab]], {origin: "A5"});
       XLSX.utils.sheet_add_aoa(worksheet, [["NAMA TOKO : "+toko[0].nama_toko]], {origin: "A6"});
       XLSX.utils.sheet_add_aoa(worksheet, [["ALAMAT : "+toko[0].alamat]], {origin: "A7"});
-      XLSX.utils.sheet_add_json(worksheet, data, {header:["ID","KATEGORI BAHAN","JENIS BAHAN","NAMA BAHAN","SATUAN","HARGA","KETERANGAN"], origin: "A8"});
+      XLSX.utils.sheet_add_json(worksheet, bahan_dasar, {header:["ID","KATEGORI BAHAN","JENIS BAHAN","NAMA BAHAN","SATUAN","HARGA","KETERANGAN"], origin: "A8"});
+      XLSX.utils.sheet_add_json(worksheet, peralatan, {skipHeader:true, origin: "A"+(8+bahan_dasar.length)});
+      XLSX.utils.sheet_add_json(worksheet, upah, {skipHeader:true, origin: "A"+(8+bahan_dasar.length+peralatan.length)});
 
       var wbbuf = XLSX.write(workbook, {
         type: 'base64'
