@@ -16,61 +16,147 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-header header-line">
-           <a class="btn btn-primary btn-embossed" href="/manajemen_hsbgn/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a>
+          <div class="row">
+            <div class="col-md-6 co-lg-6"><a class="btn btn-primary btn-embossed" href="/manajemen_hsbgn/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a></div>
+            <div class="col-md-6 co-lg-6"><button class="btn btn-success btn-embossed pull-right" id="btnExport1">Export Excel</button></div>
+          </div>
+           
         </div>
         <div class="panel-content pagination2">
-          <table class="table table-bordered table-striped table-hover" id="data">
-            <thead>
-              <tr>
-                <th class="header" rowspan="2">No.</th>
-                <th class="header" colspan="2">Gedung Negara</th>
-                <th class="header" colspan="3">Rumah Negara</th>
-                <th class="header" colspan="3">Pagar Gedung Negara</th>
-                <th class="header" colspan="3">Pagar Rumah Negara</th>
-                <th class="header" rowspan="2">Option</th>
-              </tr>
 
-              <tr>
-                <th class="header">Sederhana</th>
-                <th class="header">Tidak Sederhana</th>
-                <th class="header">Tipe A</th>
-                <th class="header">Tipe B</th>
-                <th class="header">Tipe C,D,E</th>
-                <th class="header">Depan (Tinggi : 1.5 m)</th>
-                <th class="header">Belakang (Tinggi : 3 m)</th>
-                <th class="header">Samping (Tinggi : 2 m)</th>
-                <th class="header">Depan (Tinggi : 1.5 m)</th>
-                <th class="header">Belakang (Tinggi : 2.5 m)</th>
-                <th class="header">Samping (Tinggi : 2 m)</th>
-              </tr>
-            </thead>
-            
-            <tbody>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>
-                <center>
-                <ul class="list-inline" style="text-align: center;">
-                  <li><a class="btn btn-warning btn-embossed btn-sm" href="/manajemen_hsbgn/edit/1" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
-                  <li class="separator">|</li>
-                  <li><a class="btn btn-danger btn-embossed btn-sm" href="/manajemen_hsbgn/delete/1" role="button" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
-                </ul>
-                </center>
-              </td>
-            </tr>
-            </tbody>
-          </table>
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <table class="table table-bordered table-striped table-hover" id="data">
+                <thead>
+                  <tr>
+                    <th class="header" rowspan="2">No.</th>
+                    <th class="header" rowspan="2" style="text-align: center;">Kabupaten/Kota</th>
+                    <th class="header" colspan="2" style="text-align: center;">Gedung Negara (Bertingkat)</th>
+                    <th class="header" colspan="2" style="text-align: center;">Gedung Negara (Tidak Bertingkat)</th>
+                    <th class="header" colspan="3" style="text-align: center;">Rumah Negara</th>
+                    <th class="header" colspan="3" style="text-align: center;">Pagar Gedung Negara</th>
+                    <th class="header" colspan="3" style="text-align: center;">Pagar Rumah Negara</th>
+                    <!-- <th class="header" rowspan="2" style="text-align: center;">Tahun</th> -->
+                    <th class="header" rowspan="2" style="text-align: center;min-width: 100px;">Option</th>
+                  </tr>
+    
+                  <tr>
+                    <th class="header">Sederhana</th>
+                    <th class="header">Tidak Sederhana</th>
+
+                    <th class="header">Sederhana</th>
+                    <th class="header">Tidak Sederhana</th>
+                    <th class="header">Tipe A</th>
+                    <th class="header">Tipe B</th>
+                    <th class="header">Tipe C,D,E</th>
+                    <th class="header">Depan (Tinggi : 1.5 m)</th>
+                    <th class="header">Belakang (Tinggi : 3 m)</th>
+                    <th class="header">Samping (Tinggi : 2 m)</th>
+                    <th class="header">Depan (Tinggi : 1.5 m)</th>
+                    <th class="header">Belakang (Tinggi : 2.5 m)</th>
+                    <th class="header">Samping (Tinggi : 2 m)</th>
+                  </tr>
+                </thead>
+                
+                <tbody>
+                  <% for(var i=0; i<data.length; i++){ %>
+                <tr>
+                  <td><%= i+1%></td>
+                  <td><%= data[i].kab%></td>
+                  <td><%= data[i].gn_tingkat_sederhana%></td>
+                  <td><%= data[i].gn_tingkat_tdk_sederhana%></td>
+                  <td><%= data[i].gn_sederhana%></td>
+                    <td><%= data[i].gn_tdk_sederhana%></td>
+                  <td><%= data[i].rumneg_a%></td>
+                  <td><%= data[i].rumneg_b%></td>
+                  <td><%= data[i].rumneg_cde%></td>
+                  <td><%= data[i].pagar_gn_depan%></td>
+                  <td><%= data[i].pagar_gn_belakang%></td>
+                  <td><%= data[i].pagar_gn_samping%></td>
+                  <td><%= data[i].pagar_rumneg_depan%></td>
+                  <td><%= data[i].pagar_rumneg_belakang%></td>
+                  <td><%= data[i].pagar_rumneg_samping%></td>
+                  <!-- <td><%= data[i].tahun%></td> -->
+                  <td>
+                    <center>
+                      <!-- /manajemen_master/detail_pekerjaan/export_excel/${$('#id_kab').val()} -->
+                    <ul class="list-inline" style="text-align: center;">
+                      <li><a class="btn btn-embossed btn-embossed btn-sm" href="/manajemen_master/detail_pekerjaan/export_excel/<%= data[i].id_kab%>" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+                      <li class="separator">|</li>
+                    
+                      <li><a class="btn btn-warning btn-embossed btn-sm" href="/manajemen_hsbgn/edit/<%= data[i].id%>" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+                      <li class="separator">|</li>
+                      <li><a class="btn btn-danger btn-embossed btn-sm" href="/manajemen_hsbgn/delete/<%= data[i].id%>" role="button" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+                    </ul>
+                    </center>
+                  </td>
+                </tr>
+                <%}%>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+
+          <div class="row" style="display: none;">
+            <div class="col-md-12 col-lg-12">
+              <div id="table_wrapper1">
+                <table border="1" cellpadding="5" cellspacing="5" style="width: 100%;border-collapse: collapse;" >
+                  <thead>
+                    <tr>
+                      <th class="header" rowspan="2">No.</th>
+                      <th class="header" rowspan="2" style="text-align: center;">Kabupaten/Kota</th>
+                      <th class="header" colspan="2" style="text-align: center;">Gedung Negara (Bertingkat)</th>
+                      <th class="header" colspan="2" style="text-align: center;">Gedung Negara (Tidak Bertingkat)</th>
+                      <th class="header" colspan="3" style="text-align: center;">Rumah Negara</th>
+                      <th class="header" colspan="3" style="text-align: center;">Pagar Gedung Negara</th>
+                      <th class="header" colspan="3" style="text-align: center;">Pagar Rumah Negara</th>
+                      <th class="header" rowspan="2" style="text-align: center;">Tahun</th>
+                    </tr>
+                    <tr>
+                      <th class="header">Sederhana</th>
+                      <th class="header">Tidak Sederhana</th>
+                      <th class="header">Sederhana</th>
+                      <th class="header">Tidak Sederhana</th>
+                      <th class="header">Tipe A</th>
+                      <th class="header">Tipe B</th>
+                      <th class="header">Tipe C,D,E</th>
+                      <th class="header">Depan (Tinggi : 1.5 m)</th>
+                      <th class="header">Belakang (Tinggi : 3 m)</th>
+                      <th class="header">Samping (Tinggi : 2 m)</th>
+                      <th class="header">Depan (Tinggi : 1.5 m)</th>
+                      <th class="header">Belakang (Tinggi : 2.5 m)</th>
+                      <th class="header">Samping (Tinggi : 2 m)</th>
+                    </tr>
+                  </thead>
+                  
+                  <tbody>
+                    <% for(var i=0; i<data.length; i++){ %>
+                  <tr>
+                    <td><%= i+1%></td>
+                    <td><%= data[i].kab%></td>
+                    <td><%= data[i].gn_tingkat_sederhana%></td>
+                    <td><%= data[i].gn_tingkat_tdk_sederhana%></td>
+                    <td><%= data[i].gn_sederhana%></td>
+                    <td><%= data[i].gn_tdk_sederhana%></td>
+                    <td><%= data[i].rumneg_a%></td>
+                    <td><%= data[i].rumneg_b%></td>
+                    <td><%= data[i].rumneg_cde%></td>
+                    <td><%= data[i].pagar_gn_depan%></td>
+                    <td><%= data[i].pagar_gn_belakang%></td>
+                    <td><%= data[i].pagar_gn_samping%></td>
+                    <td><%= data[i].pagar_rumneg_depan%></td>
+                    <td><%= data[i].pagar_rumneg_belakang%></td>
+                    <td><%= data[i].pagar_rumneg_samping%></td>
+                    <td><%= data[i].tahun%></td>
+                  </tr>
+                  <%}%>
+                  </tbody>
+                </table>
+              </div>
+              
+            </div>
+          </div>
         </div>
       </div>
     </div>  
@@ -78,8 +164,8 @@
   <div class="footer">
     <div class="copyright">
       <p class="pull-left sm-pull-reset">
-        <span>Copyright <span class="copyright">©</span> 2018 </span>
-        <span>Pemerintah</span>.
+        <span>Copyright <span class="copyright">©</span> 2021 </span>
+        <span>Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah</span>.
       </p>
     </div>
   </div>
@@ -108,8 +194,22 @@
           }
       },
       "columnDefs": [
-          { "width": "100px", "targets": 1}
+          { "width": "100px", "targets": 13}
       ],
     });
+  });
+
+  $("#btnExport1").click(function(e) {
+    e.preventDefault();
+
+    //getting data from our table
+    var data_type = 'data:application/vnd.ms-excel';
+    var table_div = document.getElementById('table_wrapper1');
+    var table_html = table_div.outerHTML.replace(/ /g, '%20');
+
+    var a = document.createElement('a');
+    a.href = data_type + ', ' + table_html;
+    a.download = 'HSBGN_' + Math.floor((Math.random() * 9999999) + 1000000) + '.xls';
+    a.click();
   });
 </script>

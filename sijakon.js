@@ -34,6 +34,7 @@ var manajemen_pembina = require('./isine/manajemen_pembina');
 var manajemen_profil_balai = require('./isine/manajemen_profil_balai');
 var manajemen_running_text = require('./isine/manajemen_running_text');
 var manajemen_hsbgn = require('./isine/manajemen_hsbgn');
+var manajemen_banner = require('./isine/manajemen_banner');
 var sql_enak = require('./database/mysql_enak.js').connection;
 const uploadd = require('express-fileupload')
 var app = express();
@@ -168,6 +169,7 @@ app.use('/manajemen_pembina', manajemen_pembina);
 app.use('/manajemen_profil_balai', manajemen_profil_balai);
 app.use('/manajemen_running_text', manajemen_running_text);
 app.use('/manajemen_hsbgn', manajemen_hsbgn);
+app.use('/manajemen_banner', manajemen_banner);
 
 
 app.get('/' , function (req, res) {

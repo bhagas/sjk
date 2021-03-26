@@ -3,7 +3,7 @@
 <!-- BEGIN PAGE CONTENT -->
 <div class="page-content">
   <div class="header">
-    <h2><strong>Data Pengumuman</strong></h2>
+    <h2><strong>Data Banner</strong></h2>
     <div class="breadcrumb-wrapper">
       <ol class="breadcrumb">
         <li><a href="/backoffice">Dashboard</a>
@@ -16,14 +16,14 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-header header-line">
-           <a class="btn btn-primary btn-embossed" href="/manajemen_running_text/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a>
+           <a class="btn btn-primary btn-embossed" href="/manajemen_banner/insert" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Tambah Data</a>
         </div>
         <div class="panel-content pagination2">
           <table class="table table-bordered table-striped table-hover" id="data">
             <thead>
               <tr>
                 <th class="header">No.</th>
-                <th class="header">Pengumuman</th>
+                <th class="header">Banner</th>
                 <th class="header">Option</th>
               </tr>
             </thead>
@@ -32,13 +32,13 @@
               <% for(var i=0; i<data.length; i++){ %>
             <tr>
               <td><%= i+1%></td>
-              <td><%= data[i].pengumuman%></td>
+              <td><img src="/foto/<%= data[i].file1%>" alt="" style="width: 300px;"></td>
               <td>
                 <center>
                 <ul class="list-inline">
-                  <li><a class="btn btn-warning btn-embossed btn-sm" href="/manajemen_running_text/edit/<%= data[i].id%>" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+                  <li><a class="btn btn-warning btn-embossed btn-sm" href="/manajemen_banner/edit/<%= data[i].id%>" role="button" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
                   <li class="separator">|</li>
-                  <li><a class="btn btn-danger btn-embossed btn-sm" href="/manajemen_running_text/delete/<%= data[i].id%>" role="button" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+                  <li><a class="btn btn-danger btn-embossed btn-sm" href="/manajemen_banner/delete/<%= data[i].id%>" role="button" onclick="return confirm('Apakah anda yakin untuk menghapus data ini ?');"><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
                 </ul>
                 </center>
               </td>

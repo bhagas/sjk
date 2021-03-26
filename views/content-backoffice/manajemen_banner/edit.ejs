@@ -3,11 +3,11 @@
 <!-- BEGIN PAGE CONTENT -->
 <div class="page-content">
   <div class="header">
-    <h2><strong>Edit Data Berita</strong></h2>
+    <h2><strong>Edit Data Banner</strong></h2>
     <div class="breadcrumb-wrapper">
       <ol class="breadcrumb">
         <li><a href="/backoffice">Dashboard</a></li>
-        <li><a href="/manajemen_berita">Data</a></li>
+        <li><a href="/manajemen_banner">Data</a></li>
         <li class="active">Edit Data</li>
       </ol>
     </div>
@@ -17,66 +17,21 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-content">
-          <form role="form" action="/manajemen_berita/submit_edit" method="POST" enctype="multipart/form-data">
+          <form role="form" action="/manajemen_banner/submit_edit" method="POST" enctype="multipart/form-data">
             <input type="hidden" class="form-control" name="id" id="" value="<%= data[0].id%>">
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="form-group">
-                  <label>Judul</label>
+                  <label>Upload Banner</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="judul" id="" value="<%= data[0].judul%>">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Deskripsi</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <textarea name="deskripsi" id="deskripsi" class="form-control" rows="10"><%- data[0].deskripsi%></textarea>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Tanggal</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control tgl" name="tgl" id="" value="<%= data[0].tgl2%>">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Upload Foto 1 (Foto Utama)</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="file" class="form-control" name="file1" id="">
+                      <input type="file" class="form-control" name="file1" id="" >
                       <a href="/foto/<%= data[0].file1%>" target="_blank"><img style="width:100px" src="/foto/<%= data[0].file1%>"></a>
                     </div>
                   </div>
                 </div>
 
-                <div class="form-group">
-                  <label>Upload Foto 2</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="file" class="form-control" name="file2" id="">
-                      <a href="/foto/<%= data[0].file2%>" target="_blank"><img style="width:100px" src="/foto/<%= data[0].file2%>"></a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label>Upload Foto 3</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="file" class="form-control" name="file3" id="">
-                      <a href="/foto/<%= data[0].file3%>" target="_blank"><img style="width:100px" src="/foto/<%= data[0].file3%>"></a>
-                    </div>
-                  </div>
-                </div>
+                
 
                 <button type="submit" class="btn btn-primary btn-embossed">Simpan</button>
               </div>

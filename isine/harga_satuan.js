@@ -75,7 +75,12 @@ router.get('/hspk', function(req, res) {
 
 router.get('/hsgbn', function(req, res) {
   connection.query("select * from kabupaten", function(err, kabupaten, fields) {
-    res.render('content/hsgbn', {kabupaten});
+    connection.query("select a.*, b.kab from hsbgn a join kabupaten b on a.id_kab=b.id_kab where a.deleted =0", function(err, data, fields) {
+      res.render('content/hsgbn', {kabupaten, data});
+      
+    
+  })
+    // res.render('content/hsgbn', {kabupaten});
     
   
 })

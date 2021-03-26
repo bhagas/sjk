@@ -63,7 +63,7 @@
                                         <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
                                             <ul class="list-inline text-center m-b-0">
                                                 <% for(var i=0; i<pengumuman.length; i++){ %>
-                                                <li class="list-inline-item"><h5 style="color: #fff;"><strong><%= pengumuman[i].pengumuman%></strong></h5></li>
+                                                <li class="list-inline-item"><h5 style="color: #fff;"><strong><%= pengumuman[i].pengumuman%></strong>&nbsp;<a href="<%= pengumuman[i].link%>" target="_blank" style="color: #fff;"><u>Selengkapnya...</u></a></h5></li>
                                                 <% } %>
                                                 
                                             </ul>
@@ -120,6 +120,7 @@
                                   <a class="dropdown-item" href="/info_jakon/profil_balai" id="menu-balai">PROFIL BALAI JASA KONSTRUKSI PROVINSI JAWA TENGAH</a>
                                 </div>
                             </div>
+                            <a href="/backoffice" class="btn btn-primary" style="color: #fff;" target="_blank">LOGIN</a>
                         </div>
                     </div>
                 </div>

@@ -1,39 +1,138 @@
 <% include ../../template-backoffice/header.ejs %>
-
 <!-- BEGIN PAGE CONTENT -->
 <div class="page-content">
   <div class="header">
-    <h2><strong>Edit Data</strong></h2>
+    <h2><strong>Edit Data HSBGN</strong></h2>
     <div class="breadcrumb-wrapper">
       <ol class="breadcrumb">
         <li><a href="/backoffice">Dashboard</a></li>
-        <li><a href="/manajemen_basic">Data</a></li>
+        <li><a href="/manajemen_hsbgn">Data</a></li>
         <li class="active">Edit Data</li>
       </ol>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-content">
-          <form role="form" action="#" method="POST" enctype="multipart/form-data">
+          <form role="form" action="/manajemen_hsbgn/submit_edit" method="POST" enctype="multipart/form-data">
+            <input type="hidden" class="form-control" name="id" id="" value="<%= data[0].id%>">
+
             <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="form-group">
-                  <label>Basic 1</label>
+                  <label>Kabupaten/Kota</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="text" class="form-control" name="" id="">
+                      <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+                        <option value="-">-- Pilih --</option>
+                        <% for(var i=0; i<kabupaten.length; i++){ %> 
+                          
+                          <option value="<%= kabupaten[i]['id_kab']%>" <%= (data[0].id_kab==kabupaten[i]['id_kab'])?'selected':'' %>><%= kabupaten[i]['kab']%></option>
+                          <% }%>
+                      </select>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" style="width: 200px;">Gedung Negara (Bertingkat)</td>
+                    </tr>
+
+                    <tr>
+                      <td style="width: 200px;">Sederhana</td>
+                      <td><input type="text" class="form-control" name="gn_tingkat_sederhana" id="" value="<%= data[0].gn_tingkat_sederhana%>"></td>
+                    </tr>
+
+                    <tr>
+                      <td>Tidak Sederhana</td>
+                      <td><input type="text" class="form-control" name="gn_tingkat_tdk_sederhana" id="" value="<%= data[0].gn_tingkat_tdk_sederhana%>"></td>
+                    </tr>
+
+                    <tr>
+                      <td rowspan="3" style="width: 200px;">Gedung Negara (Tidak Bertingkat)</td>
+                    </tr>
+
+                    <tr>
+                      <td style="width: 200px;">Sederhana</td>
+                      <td><input type="text" class="form-control" name="gn_sederhana" id="" value="<%= data[0].gn_sederhana%>"></td>
+                    </tr>
+
+                    <tr>
+                      <td>Tidak Sederhana</td>
+                      <td><input type="text" class="form-control" name="gn_tdk_sederhana" id="" value="<%= data[0].gn_tdk_sederhana%>"></td>
+                    </tr>
+
+                    <tr>
+                      <td rowspan="4">Rumah Negara</td>
+                    </tr>
+
+                    <tr>
+                      <td>Tipe A</td>
+                      <td><input type="text" class="form-control" name="rumneg_a" id="" value="<%= data[0].rumneg_a%>"></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>Tipe B</td>
+                      <td><input type="text" class="form-control" name="rumneg_b" id="" value="<%= data[0].rumneg_b%>"></td>
+                    </tr>
+
+                    <tr>
+                      <td>Tipe C,D,E</td>
+                      <td><input type="text" class="form-control" name="rumneg_cde" id="" value="<%= data[0].rumneg_cde%>"></td>
+                    </tr>
+
+                    <tr>
+                      <td rowspan="4">Pagar Gedung Negara</td>
+                    </tr>
+
+                    <tr>
+                      <td>Depan (Tinggi : 1.5 m)</td>
+                      <td><input type="text" class="form-control" name="pagar_gn_depan" id="" value="<%= data[0].pagar_gn_depan%>"></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>Belakang (Tinggi : 3 m)</td>
+                      <td><input type="text" class="form-control" name="pagar_gn_belakang" id="" value="<%= data[0].pagar_gn_belakang%>"></td>
+                    </tr>
+
+                    <tr>
+                      <td>Samping (Tinggi : 2 m)</td>
+                      <td><input type="text" class="form-control" name="pagar_gn_samping" id="" value="<%= data[0].pagar_gn_samping%>"></td>
+                    </tr>
+
+                    <tr>
+                      <td rowspan="4">Pagar Rumah Negara</td>
+                    </tr>
+
+                    <tr>
+                      <td>Depan (Tinggi : 1.5 m)</td>
+                      <td><input type="text" class="form-control" name="pagar_rumneg_depan" id="" value="<%= data[0].pagar_rumneg_depan%>"></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>Belakang (Tinggi : 2.5 m)</td>
+                      <td><input type="text" class="form-control" name="pagar_rumneg_belakang" id="" value="<%= data[0].pagar_rumneg_belakang%>"></td>
+                    </tr>
+
+                    <tr>
+                      <td>Samping (Tinggi : 2 m)</td>
+                      <td><input type="text" class="form-control" name="pagar_rumneg_samping" id="" value="<%= data[0].pagar_rumneg_samping%>"></td>
+                    </tr>
+                  </tbody>
+                </table>
 
                 <div class="form-group">
-                  <label>Basic 2</label>
+                  <label>Tahun</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <input type="file" class="form-control" name="" id="">
+                      <input type="text" class="form-control" name="tahun" id="" value="<%= data[0].tahun%>">
                     </div>
                   </div>
                 </div>
@@ -46,12 +145,11 @@
       </div>
     </div>
   </div>
-
   <div class="footer">
     <div class="copyright">
       <p class="pull-left sm-pull-reset">
-        <span>Copyright <span class="copyright">©</span> 2018</span>
-        <span>Pemerintah</span>.
+        <span>Copyright <span class="copyright">©</span> 2021 </span>
+        <span>Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah</span>.
       </p>
     </div>
   </div>

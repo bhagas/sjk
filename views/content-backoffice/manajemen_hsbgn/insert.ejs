@@ -23,7 +23,13 @@
                   <label>Kabupaten/Kota</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      
+                      <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+                        <option value="-">-- Pilih --</option>
+                        <% for(var i=0; i<kabupaten.length; i++){ %> 
+                          
+                          <option value="<%= kabupaten[i]['id_kab']%>"><%= kabupaten[i]['kab']%></option>
+                          <% }%>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -34,17 +40,31 @@
                 <table class="table table-bordered">
                   <tbody>
                     <tr>
-                      <td rowspan="3" style="width: 200px;">Gedung Negara</td>
+                      <td rowspan="3" style="width: 200px;">Gedung Negara (Bertingkat)</td>
                     </tr>
 
                     <tr>
                       <td style="width: 200px;">Sederhana</td>
-                      <td><input type="text" class="form-control" name="" id=""></td>
+                      <td><input type="text" class="form-control" name="gn_tingkat_sederhana" id=""></td>
                     </tr>
 
                     <tr>
                       <td>Tidak Sederhana</td>
-                      <td><input type="text" class="form-control" name="" id=""></td>
+                      <td><input type="text" class="form-control" name="gn_tingkat_tdk_sederhana" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td rowspan="3" style="width: 200px;">Gedung Negara (Tidak Bertingkat)</td>
+                    </tr>
+
+                    <tr>
+                      <td style="width: 200px;">Sederhana</td>
+                      <td><input type="text" class="form-control" name="gn_sederhana" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td>Tidak Sederhana</td>
+                      <td><input type="text" class="form-control" name="gn_tdk_sederhana" id=""></td>
                     </tr>
 
                     <tr>
@@ -53,17 +73,17 @@
 
                     <tr>
                       <td>Tipe A</td>
-                      <td><input type="text" class="form-control" name="" id=""></td>
+                      <td><input type="text" class="form-control" name="rumneg_a" id=""></td>
                     </tr>
                     
                     <tr>
                       <td>Tipe B</td>
-                      <td><input type="text" class="form-control" name="" id=""></td>
+                      <td><input type="text" class="form-control" name="rumneg_b" id=""></td>
                     </tr>
 
                     <tr>
                       <td>Tipe C,D,E</td>
-                      <td><input type="text" class="form-control" name="" id=""></td>
+                      <td><input type="text" class="form-control" name="rumneg_cde" id=""></td>
                     </tr>
 
                     <tr>
@@ -72,17 +92,17 @@
 
                     <tr>
                       <td>Depan (Tinggi : 1.5 m)</td>
-                      <td><input type="text" class="form-control" name="" id=""></td>
+                      <td><input type="text" class="form-control" name="pagar_gn_depan" id=""></td>
                     </tr>
                     
                     <tr>
                       <td>Belakang (Tinggi : 3 m)</td>
-                      <td><input type="text" class="form-control" name="" id=""></td>
+                      <td><input type="text" class="form-control" name="pagar_gn_belakang" id=""></td>
                     </tr>
 
                     <tr>
                       <td>Samping (Tinggi : 2 m)</td>
-                      <td><input type="text" class="form-control" name="" id=""></td>
+                      <td><input type="text" class="form-control" name="pagar_gn_samping" id=""></td>
                     </tr>
 
                     <tr>
@@ -91,24 +111,34 @@
 
                     <tr>
                       <td>Depan (Tinggi : 1.5 m)</td>
-                      <td><input type="text" class="form-control" name="" id=""></td>
+                      <td><input type="text" class="form-control" name="pagar_rumneg_depan" id=""></td>
                     </tr>
                     
                     <tr>
                       <td>Belakang (Tinggi : 2.5 m)</td>
-                      <td><input type="text" class="form-control" name="" id=""></td>
+                      <td><input type="text" class="form-control" name="pagar_rumneg_belakang" id=""></td>
                     </tr>
 
                     <tr>
                       <td>Samping (Tinggi : 2 m)</td>
-                      <td><input type="text" class="form-control" name="" id=""></td>
+                      <td><input type="text" class="form-control" name="pagar_rumneg_samping" id=""></td>
                     </tr>
                   </tbody>
                 </table>
 
+                <div class="form-group">
+                  <label>Tahun</label>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <input type="text" class="form-control" name="tahun" id="">
+                    </div>
+                  </div>
+                </div>
+
                 <button type="submit" class="btn btn-primary btn-embossed">Simpan</button>
               </div>
             </div>
+            
           </form>
         </div>
       </div>
@@ -117,8 +147,8 @@
   <div class="footer">
     <div class="copyright">
       <p class="pull-left sm-pull-reset">
-        <span>Copyright <span class="copyright">©</span> 2018 </span>
-        <span>Pemerintah</span>.
+        <span>Copyright <span class="copyright">©</span> 2021 </span>
+        <span>Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah</span>.
       </p>
     </div>
   </div>

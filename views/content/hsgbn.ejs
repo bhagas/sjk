@@ -48,7 +48,7 @@
             </div>
             
             <div class="row" style="margin-top: 30px;">
-                <div class="col-md-12 col-lg-12">
+                <!-- <div class="col-md-12 col-lg-12">
                     <div class="alert alert-primary" role="alert">
                         <select class="form-control" name="id_kab" id="id_kab" data-search="true">
                             <option value="">--PILIH--</option>
@@ -58,18 +58,24 @@
                             <% }%>
                         </select>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-md-12 col-lg-12">
-                    <table class="table table-bordered">
+                    <table class="table table-bordered table-responsive">
                         <thead>
                             <tr>
-                                <th colspan="2" style="text-align: center;">Gedung Negara</th>
+                                <th rowspan="2" style="text-align: center;">Kabupaten</th>
+                               
+                                <th colspan="2" style="text-align: center;">Gedung Negara (Bertingkat)</th>
+                                <th colspan="2" style="text-align: center;">Gedung Negara (Tidak Bertingkat)</th>
                                 <th colspan="3" style="text-align: center;">Rumah Negara</th>
                                 <th colspan="3" style="text-align: center;">Pagar Gedung Negara</th>
                                 <th colspan="3" style="text-align: center;">Pagar Rumah negara</th>
                             </tr>
 
                             <tr>
+                                <th style="text-align: center;">Sederhana</th>
+                                <th style="text-align: center;">Tidak Sederhana</th>
+
                                 <th style="text-align: center;">Sederhana</th>
                                 <th style="text-align: center;">Tidak Sederhana</th>
 
@@ -88,7 +94,7 @@
                         </thead>
 
                         <tbody>
-                            <tr>
+                            <!-- <tr>
                                 <td id="gs">-</td>
                                 <td id="gts">-</td>
                                 <td id="tipea">-</td>
@@ -100,7 +106,28 @@
                                 <td id="prndepan">-</td>
                                 <td id="prnbelakang">-</td>
                                 <td id="prnsamping">-</td>
-                            </tr>
+                                <td id="prnbelakang">-</td>
+                                <td id="prnsamping">-</td>
+                            </tr> -->
+                            <% for(var i=0; i<data.length; i++){ %>
+                                <tr>
+                                  <td><%= data[i].kab%></td>
+                                  <td><%= numberWithCommas(data[i].gn_tingkat_sederhana)%></td>
+                                  <td><%= numberWithCommas(data[i].gn_tingkat_tdk_sederhana)%></td>
+                                  <td><%= numberWithCommas(data[i].gn_sederhana)%></td>
+                                    <td><%= numberWithCommas(data[i].gn_tdk_sederhana)%></td>
+                                  <td><%= numberWithCommas(data[i].rumneg_a)%></td>
+                                  <td><%= numberWithCommas(data[i].rumneg_b)%></td>
+                                  <td><%= numberWithCommas(data[i].rumneg_cde)%></td>
+                                  <td><%= numberWithCommas(data[i].pagar_gn_depan)%></td>
+                                  <td><%= numberWithCommas(data[i].pagar_gn_belakang)%></td>
+                                  <td><%= numberWithCommas(data[i].pagar_gn_samping)%></td>
+                                  <td><%= numberWithCommas(data[i].pagar_rumneg_depan)%></td>
+                                  <td><%= numberWithCommas(data[i].pagar_rumneg_belakang)%></td>
+                                  <td><%= numberWithCommas(data[i].pagar_rumneg_samping)%></td>
+                                  
+                                </tr>
+                                <%}%>
                         </tbody>
                     </table>
                 </div>
