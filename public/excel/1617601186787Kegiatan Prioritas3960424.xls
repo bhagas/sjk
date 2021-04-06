@@ -1,0 +1,445 @@
+<div id="all" style="display:none">
+  <table border="1" cellpadding="5" cellspacing="5" style="width: 100%;border-collapse: collapse;">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Kegiatan</th>
+          <th>Jenis Pekerjaan</th>
+          <th>Lokasi</th>
+          <th>Kecamatan</th>
+          <th>Kelurahan</th>
+          <th>Volume</th>
+          <th>Jenis Anggaran</th>
+          <th>Jumlah Anggaran (Rp)</th>
+          <th>Pelaksana</th>
+          <th>Kesesuain Dengan PERWALI</th>
+          <th>Keterangan</th>
+          <th>Aprroveal</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        
+          <tr>
+            <td>1</td>
+            <td>Rehab saluran air</td>
+            <td>Drainase</td>
+            <td>RW 01 Cebongan</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>137050.00</td>
+            <td>APBDKEL</td>
+            <td>47967500000</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td>rehab saluran air se wilayah rw 1 terdiri dari beberapa titik</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>2</td>
+            <td>Sumur resapan air hujan</td>
+            <td>Sumur Resapan</td>
+            <td>RW 01 Cebongan</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>67.17</td>
+            <td>APBDKEL</td>
+            <td>2953599</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td>sumur resapan di rw 01</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>3</td>
+            <td>Pembangunan saluran</td>
+            <td>Drainase</td>
+            <td>RT 05 RW 01 Cebongan</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>24.53</td>
+            <td>APBDKEL</td>
+            <td>30446440</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td></td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>4</td>
+            <td>Pembangunan cross grill</td>
+            <td>Drainase</td>
+            <td>RT 02 RW 02 Sukosari</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>416.50</td>
+            <td>APBDKEL</td>
+            <td>687960123</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td>pembangunan crossgril</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>5</td>
+            <td>Rehab drainase</td>
+            <td>Drainase</td>
+            <td>RT 03 RW 02 Sukosari</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>22.80</td>
+            <td>APBDKEL</td>
+            <td>0</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td>rehab drainase menggunakan udit</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>6</td>
+            <td>Rehab drainase</td>
+            <td>Drainase</td>
+            <td>RT 1,2,3 RW 03 isep isep</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>19.00</td>
+            <td>APBDKEL</td>
+            <td>23582648</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td></td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>7</td>
+            <td>Pembangunan gapura</td>
+            <td>Bangunan</td>
+            <td>RT 1,2 RW 03 isep isep</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>23.68</td>
+            <td>APBDKEL</td>
+            <td>0</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td>Pembangunan gapura</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>8</td>
+            <td>Pengecoran jalan</td>
+            <td>Jalan</td>
+            <td>RT 02 RW 03 isep-isep</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>152.31</td>
+            <td>APBDKEL</td>
+            <td>0</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td>Pengecoran jalan / betonisasi</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>9</td>
+            <td>Pembangunan pos kampling</td>
+            <td>Bangunan</td>
+            <td>RT 03 RW 05 Jagalan</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>63.00</td>
+            <td>APBDKEL</td>
+            <td>0</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td>pembangunan pos kampling </td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>10</td>
+            <td>Betonisasi jalan</td>
+            <td>Jalan</td>
+            <td>RT 02 RW 05 Jagalan</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>103.29</td>
+            <td>APBDKEL</td>
+            <td>0</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td>betonisasi jalan</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>11</td>
+            <td>Rehab pos kampling</td>
+            <td>Bangunan</td>
+            <td>RT 02 RW 05 Jagalan</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>22.47</td>
+            <td>APBDKEL</td>
+            <td>0</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td>rehab pos kampling</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>12</td>
+            <td>Pembangunan balai RW</td>
+            <td>Bangunan</td>
+            <td>RT 03 RW 06 Sukoharjo</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>200.00</td>
+            <td>APBDKEL</td>
+            <td>311282000</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td>Pembangunan balai rw</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>13</td>
+            <td>Sumur resapan</td>
+            <td>Sumur Resapan</td>
+            <td>RT 1,2,3 RW 06 Sukoharjo</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>3.00</td>
+            <td>APBDKEL</td>
+            <td>45000000</td>
+            <td>KELURAHAN</td>
+            <td>Tidak</td>
+            <td>sumur resapan diwilayah cebongan terdiri dari rw 2,4 dan 6</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>14</td>
+            <td>Pelebaran Jembatan</td>
+            <td>Jembatan</td>
+            <td>RT 03 RW 05 Jagalan</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>600.00</td>
+            <td>APBD</td>
+            <td>500000000</td>
+            <td>DPUPR</td>
+            <td>Tidak</td>
+            <td></td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>15</td>
+            <td>Pembangunan jalan lingkungan</td>
+            <td>Jalan</td>
+            <td>JL.Sukorahayu</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>305.91</td>
+            <td>APBD</td>
+            <td>0</td>
+            <td>DPU PR</td>
+            <td>Tidak</td>
+            <td></td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>16</td>
+            <td>Pembangunan talud ( tinggi 2m)</td>
+            <td>Talud</td>
+            <td>Depan Kel.Cebongan</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>150.00</td>
+            <td>APBD</td>
+            <td>0</td>
+            <td>DPU PR</td>
+            <td>Tidak</td>
+            <td></td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>17</td>
+            <td>Pembangunan kantor LPMK dan PKK</td>
+            <td>Bangunan</td>
+            <td>Kelurahan Cebongan</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>242.20</td>
+            <td>APBD</td>
+            <td>0</td>
+            <td>DPU PR</td>
+            <td>Tidak</td>
+            <td></td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>18</td>
+            <td>Sumur bor</td>
+            <td>Lainnya</td>
+            <td>RW 02 RW 06 Sukoharjo</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>0.00</td>
+            <td>APBD</td>
+            <td>0</td>
+            <td>DPU PR</td>
+            <td>Tidak</td>
+            <td>lokasi di 2 titik.
+1 lokasi di RW 02 Sukosari
+1 lokasi di RW 06 Sukoharjo</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>19</td>
+            <td>Rumah tidak layak huni (RTLH)</td>
+            <td>Bangunan</td>
+            <td>SE KEL Cebongan</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>162.00</td>
+            <td>APBD</td>
+            <td>15000000</td>
+            <td>RTLH PKP</td>
+            <td>Tidak</td>
+            <td>RTLH sebanyak 40 Titik di Se kelurahan Cebongan </td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>20</td>
+            <td>TPS 3R</td>
+            <td>Bangunan</td>
+            <td>RW 02 Sukorasi</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>1200.00</td>
+            <td>APBD</td>
+            <td>150000000</td>
+            <td>DLH</td>
+            <td>Tidak</td>
+            <td>lokasi tanah bengkok</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>21</td>
+            <td>Penerangan jalan</td>
+            <td>LPJU</td>
+            <td>SE KEL Cebongan</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>0.00</td>
+            <td>APBD</td>
+            <td>825000000</td>
+            <td>DLH</td>
+            <td>Tidak</td>
+            <td>penerangan jalan untuk wilayah 
+1 RW 01 30 titik
+2 RW 03 30 titik
+3 RW 04 15 titik
+4 RW 06 35 titik</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>22</td>
+            <td>Pelebaran jembatan</td>
+            <td>Jembatan</td>
+            <td>RT 02 RW 03 isep-isep</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>84.00</td>
+            <td>APBD</td>
+            <td>100000000</td>
+            <td>DPU PR</td>
+            <td>Tidak</td>
+            <td></td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+          <tr>
+            <td>23</td>
+            <td>Pembuatan saluran air tertutup</td>
+            <td>Drainase</td>
+            <td>RT 2,3 RW 05 Jagalan</td>
+            <td>Argomulyo</td>
+            <td>Cebongan</td>
+            <td>152.00</td>
+            <td>APBD</td>
+            <td>337450000</td>
+            <td>DPU PR</td>
+            <td>Tidak</td>
+            <td>pembuatan saluran tertutup diwilayar rt 02 , 03 RW 05 jagalan</td>
+            <td>Tidak</td>
+            
+    
+          </tr>
+          
+      </tbody>
+  </table>
+</div>

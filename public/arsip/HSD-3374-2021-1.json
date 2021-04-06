@@ -7,7 +7,7 @@
     "nama": " BESI BETON Ø 10\" ",
     "satuan": "btg/lonjor ",
     "deleted": 0,
-    "hargaMin": null
+    "hargaMin": 76000
   },
   {
     "id": 156,
@@ -17,7 +17,7 @@
     "nama": " BESI BETON Ø 12\" ",
     "satuan": "btg/lonjor ",
     "deleted": 0,
-    "hargaMin": null
+    "hargaMin": 12115
   },
   {
     "id": 157,
@@ -27,7 +27,7 @@
     "nama": " BESI BETON Ø 16\" ",
     "satuan": "btg/lonjor ",
     "deleted": 0,
-    "hargaMin": null
+    "hargaMin": 195000
   },
   {
     "id": 154,
@@ -37,7 +37,7 @@
     "nama": " BESI BETON Ø 8\" ",
     "satuan": "btg/lonjor ",
     "deleted": 0,
-    "hargaMin": null
+    "hargaMin": 51500
   },
   {
     "id": 366,
@@ -47,7 +47,7 @@
     "nama": " Kusen Almunium 4\" Putih ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 95000
+    "hargaMin": null
   },
   {
     "id": 333,
@@ -57,7 +57,7 @@
     "nama": " PAKU - ukuran 1\" s/d 4\" ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 17000
+    "hargaMin": 19500
   },
   {
     "id": 192,
@@ -67,7 +67,7 @@
     "nama": " Pipa PVC DN 110 (  4\" ) ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 270000
+    "hargaMin": 182000
   },
   {
     "id": 193,
@@ -77,7 +77,7 @@
     "nama": " Pipa PVC DN 160 ( 6\" ) ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 311900
+    "hargaMin": 700500
   },
   {
     "id": 186,
@@ -87,7 +87,7 @@
     "nama": " Pipa PVC DN 20 ( ½\" )  AW JIS ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 27300
+    "hargaMin": 30000
   },
   {
     "id": 194,
@@ -97,7 +97,7 @@
     "nama": " Pipa PVC DN 200 ( 8\" ) ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 535900
+    "hargaMin": null
   },
   {
     "id": 187,
@@ -107,7 +107,7 @@
     "nama": " Pipa PVC DN 25 ( ¾\" )  AW JIS ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 33800
+    "hargaMin": 36500
   },
   {
     "id": 195,
@@ -117,7 +117,7 @@
     "nama": " Pipa PVC DN 250 (  10\" ) ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 907900
+    "hargaMin": null
   },
   {
     "id": 196,
@@ -127,7 +127,7 @@
     "nama": " Pipa PVC DN 315 ( 12\" ) ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 1221100
+    "hargaMin": null
   },
   {
     "id": 188,
@@ -137,7 +137,7 @@
     "nama": " Pipa PVC DN 32 (  1\" )  AW JIS ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 45700
+    "hargaMin": 41000
   },
   {
     "id": 189,
@@ -147,7 +147,7 @@
     "nama": " Pipa PVC DN 40 ( 1½\" ) ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 69500
+    "hargaMin": 84500
   },
   {
     "id": 190,
@@ -157,7 +157,7 @@
     "nama": " Pipa PVC DN 63 ( 2\" ) ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 85000
+    "hargaMin": 61000
   },
   {
     "id": 191,
@@ -167,17 +167,117 @@
     "nama": " Pipa PVC DN 90 ( 3\" ) ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 165000
+    "hargaMin": 130000
+  },
+  {
+    "id": 855,
+    "kode": "E16",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
+    "nama": "3-Wheel Roller",
+    "satuan": "Jam",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 444,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "A M P",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 5500000
+    "hargaMin": null
+  },
+  {
+    "id": 845,
+    "kode": "M67a",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Additive",
+    "satuan": "ltr",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 784,
+    "kode": "",
+    "kategori": "BAHAN DASAR",
+    "jenis": "AGREGAT",
+    "nama": "Agg. Halus LP A",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 800,
+    "kode": "M26",
+    "kategori": "BAHAN DASAR",
+    "jenis": "AGREGAT",
+    "nama": "Agr. Base Kelas A",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 801,
+    "kode": "M27",
+    "kategori": "BAHAN DASAR",
+    "jenis": "AGREGAT",
+    "nama": "Agr. Base Kelas B",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 802,
+    "kode": "M28",
+    "kategori": "BAHAN DASAR",
+    "jenis": "AGREGAT",
+    "nama": "Agr. Base Kelas C",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 803,
+    "kode": "M29",
+    "kategori": "BAHAN DASAR",
+    "jenis": "AGREGAT",
+    "nama": "Agr. Base Kelas C2",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 783,
+    "kode": "",
+    "kategori": "BAHAN DASAR",
+    "jenis": "AGREGAT",
+    "nama": "Agregat Pecah Kasar",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 852,
+    "kode": "",
+    "kategori": "BAHAN DASARA",
+    "jenis": "AGREGAT",
+    "nama": "Agregat Pecah Mesin 0-5 mm",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 853,
+    "kode": "",
+    "kategori": "BAHAN DASAR",
+    "jenis": "AGREGAT",
+    "nama": "Agregat Pecah Mesin 5-10 & 10-15 mm",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 391,
@@ -187,7 +287,7 @@
     "nama": "Air ",
     "satuan": "m3",
     "deleted": 0,
-    "hargaMin": 20000
+    "hargaMin": null
   },
   {
     "id": 208,
@@ -197,7 +297,7 @@
     "nama": "AKUSTIK-uk : 30 X 30 ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 5800
+    "hargaMin": null
   },
   {
     "id": 209,
@@ -207,7 +307,7 @@
     "nama": "AKUSTIK-uk : 30 X 60 ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 13200
+    "hargaMin": null
   },
   {
     "id": 210,
@@ -217,23 +317,33 @@
     "nama": "AKUSTIK-uk : 60 X 120 ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 42000
+    "hargaMin": null
+  },
+  {
+    "id": 781,
+    "kode": "",
+    "kategori": "Peralatan",
+    "jenis": "Peralatan",
+    "nama": "Alat Bantu",
+    "satuan": "Ls",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 452,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Alat Pengecat Marka ",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 300000
+    "hargaMin": null
   },
   {
     "id": 479,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Alluminium strip",
     "satuan": "m",
     "deleted": 0,
@@ -247,13 +357,13 @@
     "nama": "Allumunium Foil ",
     "satuan": "m2",
     "deleted": 0,
-    "hargaMin": 12000
+    "hargaMin": null
   },
   {
     "id": 559,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Aluminium gelombang  tebal 0,55",
     "satuan": "lbr",
     "deleted": 0,
@@ -267,13 +377,23 @@
     "nama": "ANGKUR BAUT ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 13000
+    "hargaMin": 5000
+  },
+  {
+    "id": 817,
+    "kode": "M45",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Arbocell",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 550,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Asbes gelombang",
     "satuan": "lbr",
     "deleted": 0,
@@ -287,7 +407,7 @@
     "nama": "ASBES GELOMBANG BESAR 200 cm X  102 cm X 5 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 90000
+    "hargaMin": 99500
   },
   {
     "id": 49,
@@ -297,7 +417,7 @@
     "nama": "ASBES GELOMBANG BESAR 200 cm X  102 cm X 6 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 144000
+    "hargaMin": null
   },
   {
     "id": 47,
@@ -307,7 +427,7 @@
     "nama": "ASBES GELOMBANG BESAR 225 cm X  102 cm X 5 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 103700
+    "hargaMin": 107500
   },
   {
     "id": 50,
@@ -317,7 +437,7 @@
     "nama": "ASBES GELOMBANG BESAR 225 cm X  102 cm X 6 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 130000
+    "hargaMin": null
   },
   {
     "id": 48,
@@ -327,7 +447,7 @@
     "nama": "ASBES GELOMBANG BESAR 250 cm X  102 cm X 5 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 109000
+    "hargaMin": 115500
   },
   {
     "id": 51,
@@ -337,7 +457,7 @@
     "nama": "ASBES GELOMBANG BESAR 250 cm X  102 cm X 6 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 140000
+    "hargaMin": 141000
   },
   {
     "id": 52,
@@ -347,7 +467,7 @@
     "nama": "ASBES GELOMBANG KECIL 150 cm X 105 cm X 4 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 42500
+    "hargaMin": 53500
   },
   {
     "id": 53,
@@ -357,7 +477,7 @@
     "nama": "ASBES GELOMBANG KECIL 180 cm X 105 cm X 4 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 52000
+    "hargaMin": 59500
   },
   {
     "id": 54,
@@ -367,7 +487,7 @@
     "nama": "ASBES GELOMBANG KECIL 210 cm X 105 cm X 4 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 65300
+    "hargaMin": 69000
   },
   {
     "id": 55,
@@ -377,7 +497,7 @@
     "nama": "ASBES GELOMBANG KECIL 240 cm X 105 cm X 4 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 76300
+    "hargaMin": 79000
   },
   {
     "id": 56,
@@ -387,7 +507,7 @@
     "nama": "ASBES GELOMBANG KECIL 270 cm X 105 cm X 4 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 84900
+    "hargaMin": 89000
   },
   {
     "id": 57,
@@ -397,7 +517,7 @@
     "nama": "ASBES GELOMBANG KECIL 300 cm X 105 cm X 4 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 111500
+    "hargaMin": 100000
   },
   {
     "id": 67,
@@ -407,7 +527,7 @@
     "nama": "ASBES PLAT 100cm X 100 cm X 3 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 17000
+    "hargaMin": 17500
   },
   {
     "id": 68,
@@ -417,7 +537,7 @@
     "nama": "ASBES PLAT 100cm X 100 cm X 4 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 20000
+    "hargaMin": null
   },
   {
     "id": 70,
@@ -427,7 +547,7 @@
     "nama": "ASBES PLAT 40 cm X 200 cm X 3 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 14000
+    "hargaMin": null
   },
   {
     "id": 69,
@@ -437,7 +557,7 @@
     "nama": "ASBES PLAT 50 cm X 200 cm X 3 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 14200
+    "hargaMin": null
   },
   {
     "id": 73,
@@ -447,7 +567,7 @@
     "nama": "ASBES PLAT UNTUK PLAFOND  uk. 122cm x 244cm x 4mm",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 77000
+    "hargaMin": null
   },
   {
     "id": 72,
@@ -457,7 +577,47 @@
     "nama": "ASBES PLAT UNTUK PLAFOND uk. 120cm x 240cm x 4mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 75000
+    "hargaMin": null
+  },
+  {
+    "id": 851,
+    "kode": "E41",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
+    "nama": "Asp. Distributor",
+    "satuan": "Jam",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 854,
+    "kode": "E02",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
+    "nama": "Asp. Finisher",
+    "satuan": "Jam",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 856,
+    "kode": "E03",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
+    "nama": "Asp. Sprayer",
+    "satuan": "Jam",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 850,
+    "kode": "M10",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Aspal",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 368,
@@ -467,7 +627,7 @@
     "nama": "ASPAL Aspal  Ex Pertamina isi Net 160 kg ",
     "satuan": "drum ",
     "deleted": 0,
-    "hargaMin": 1100500
+    "hargaMin": null
   },
   {
     "id": 373,
@@ -486,6 +646,16 @@
     "jenis": "ASPAL ",
     "nama": "ASPAL Cold Mix ",
     "satuan": "ton ",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 805,
+    "kode": "M31",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Aspal Emulsi",
+    "satuan": "kg",
     "deleted": 0,
     "hargaMin": null
   },
@@ -603,27 +773,27 @@
     "id": 445,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Asphalt  Finisher",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 340000
+    "hargaMin": null
   },
   {
     "id": 442,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Asphalt  Sprayer",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 135000
+    "hargaMin": null
   },
   {
     "id": 503,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Assesoris (perkuatan; las dll)",
     "satuan": "Ls",
     "deleted": 0,
@@ -637,35 +807,65 @@
     "nama": "Awning Almunium ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 225000
+    "hargaMin": null
   },
   {
     "id": 438,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Baby Roller ",
     "satuan": "jam",
     "deleted": 0,
-    "hargaMin": 40000
+    "hargaMin": null
   },
   {
     "id": 436,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Baby Roller / Pedestrian",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 110000
+    "hargaMin": null
   },
   {
     "id": 769,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Bahan bakar",
     "satuan": "ltr",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 832,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Bahan Pengaman Tebing Galian, kayu",
+    "satuan": "Ls",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 792,
+    "kode": "M09",
+    "kategori": "BAHAN DASAR",
+    "jenis": "LAIN-LAIN",
+    "nama": "Bahan Pilihan",
+    "satuan": "M09",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 791,
+    "kode": "M08",
+    "kategori": "BAHAN DASAR",
+    "jenis": "TANAH",
+    "nama": "Bahan Tanah Timbunan",
+    "satuan": "m3",
     "deleted": 0,
     "hargaMin": null
   },
@@ -677,7 +877,7 @@
     "nama": "BAJA  RINGAN Galvalume lebar : 7,5cm tebal : 1mm panjang 6 m",
     "satuan": "btg",
     "deleted": 0,
-    "hargaMin": 132000
+    "hargaMin": 145000
   },
   {
     "id": 164,
@@ -687,7 +887,7 @@
     "nama": "BAJA  RINGAN Type CT 75 lebar : 7,5cm tebal : 0,65mm panjang 6 m",
     "satuan": "btg",
     "deleted": 0,
-    "hargaMin": 93000
+    "hargaMin": null
   },
   {
     "id": 163,
@@ -697,14 +897,64 @@
     "nama": "BAJA  RINGAN Type CT 75 lebar : 7,5cm tebal : 0.75mm panjang 6  m",
     "satuan": "btg",
     "deleted": 0,
-    "hargaMin": 103000
+    "hargaMin": 88000
+  },
+  {
+    "id": 821,
+    "kode": "M48",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Baja Struktur",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 587,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Baja tulangan",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 812,
+    "kode": "M39a",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Baja tulangan (polos) U24",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 813,
+    "kode": "M39b",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Baja tulangan (ulir) D32",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 848,
+    "kode": "M94",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Baja Tulangan Polos/Dowel D32",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 847,
+    "kode": "M10",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Baja Wire Mesh",
     "satuan": "kg",
     "deleted": 0,
     "hargaMin": null
@@ -712,8 +962,8 @@
   {
     "id": 588,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Bak cuci piring",
     "satuan": "unit",
     "deleted": 0,
@@ -722,8 +972,8 @@
   {
     "id": 585,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Bak fiberglass",
     "satuan": "unit",
     "deleted": 0,
@@ -732,8 +982,8 @@
   {
     "id": 486,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Bata Berongga",
     "satuan": "m3",
     "deleted": 0,
@@ -742,8 +992,8 @@
   {
     "id": 542,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Bata pelapis",
     "satuan": "bh",
     "deleted": 0,
@@ -752,8 +1002,8 @@
   {
     "id": 507,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN DASAR",
+    "jenis": "BATU BATA",
     "nama": "Bata Ringan Tebal 10 cm",
     "satuan": "m3",
     "deleted": 0,
@@ -762,8 +1012,8 @@
   {
     "id": 505,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN DASAR",
+    "jenis": "BATU BATA",
     "nama": "Bata Ringan Tebal 7,5 cm",
     "satuan": "m3",
     "deleted": 0,
@@ -772,18 +1022,28 @@
   {
     "id": 485,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Bata Rooster",
     "satuan": "m3",
     "deleted": 0,
     "hargaMin": null
   },
   {
+    "id": 838,
+    "kode": "E43",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
+    "nama": "Batching Plant",
+    "satuan": "Jam",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
     "id": 584,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Batchuip",
     "satuan": "bh",
     "deleted": 0,
@@ -797,13 +1057,13 @@
     "nama": "BATU BATA ex lokal ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 520
+    "hargaMin": 680
   },
   {
     "id": 508,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN DASAR",
+    "jenis": "BATU",
     "nama": "Batu granit",
     "satuan": "kg",
     "deleted": 0,
@@ -817,7 +1077,7 @@
     "nama": "BATU KALI Bulat Belah ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 320000
+    "hargaMin": null
   },
   {
     "id": 1,
@@ -827,7 +1087,7 @@
     "nama": "BATU KALI Bulat Utuh ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 230000
+    "hargaMin": 386000
   },
   {
     "id": 3,
@@ -837,7 +1097,7 @@
     "nama": "BATU KALI Pecah  10/15",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 270000
+    "hargaMin": null
   },
   {
     "id": 5,
@@ -847,7 +1107,7 @@
     "nama": "BATU KALI Pecah  3/5",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 300000
+    "hargaMin": null
   },
   {
     "id": 4,
@@ -857,7 +1117,7 @@
     "nama": "BATU KALI Pecah  5/7",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 270000
+    "hargaMin": null
   },
   {
     "id": 131,
@@ -867,13 +1127,13 @@
     "nama": "BATU POROS ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 115000
+    "hargaMin": null
   },
   {
     "id": 676,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Batu Split Pecah Mesin 1/2",
     "satuan": "m3",
     "deleted": 0,
@@ -887,15 +1147,25 @@
     "nama": "BATU TEMPEL HITAM ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 120000
+    "hargaMin": null
   },
   {
     "id": 509,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN DASAR",
+    "jenis": "BATU",
     "nama": "Batu traso",
     "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 828,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Bekisting",
+    "satuan": "m2",
     "deleted": 0,
     "hargaMin": null
   },
@@ -907,7 +1177,7 @@
     "nama": "BENGKIRAI Balok/pesagen ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 9400000
+    "hargaMin": 110500
   },
   {
     "id": 102,
@@ -917,7 +1187,17 @@
     "nama": "BENGKIRAI Papan ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 10500000
+    "hargaMin": 221000
+  },
+  {
+    "id": 797,
+    "kode": "M20",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Bensin",
+    "satuan": "ltr",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 258,
@@ -927,7 +1207,7 @@
     "nama": "BESI  Fibre glass (tanki air) ",
     "satuan": "",
     "deleted": 0,
-    "hargaMin": null
+    "hargaMin": 32000
   },
   {
     "id": 260,
@@ -937,7 +1217,7 @@
     "nama": "BESI  kapasitas 1100 liter. ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 1650000
+    "hargaMin": null
   },
   {
     "id": 259,
@@ -947,7 +1227,7 @@
     "nama": "BESI  kapasitas 550 liter. ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 783300
+    "hargaMin": null
   },
   {
     "id": 257,
@@ -957,13 +1237,13 @@
     "nama": "BESI  Residu (teer/aspal) ",
     "satuan": "drum ",
     "deleted": 0,
-    "hargaMin": 60000
+    "hargaMin": null
   },
   {
     "id": 473,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN BESI",
+    "jenis": "LAIN-LAIN",
     "nama": "Besi baja IWF",
     "satuan": "kg",
     "deleted": 0,
@@ -977,7 +1257,7 @@
     "nama": "Besi Beton Polos ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 10232
+    "hargaMin": null
   },
   {
     "id": 158,
@@ -987,13 +1267,13 @@
     "nama": "besi beton prestress ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 14000
+    "hargaMin": null
   },
   {
     "id": 678,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Besi Beton U-24",
     "satuan": "kg",
     "deleted": 0,
@@ -1002,8 +1282,8 @@
   {
     "id": 679,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Besi Beton U-39",
     "satuan": "kg",
     "deleted": 0,
@@ -1017,7 +1297,7 @@
     "nama": "besi beton ulir ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 13200
+    "hargaMin": null
   },
   {
     "id": 253,
@@ -1027,7 +1307,7 @@
     "nama": "BESI Cat ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 40000
+    "hargaMin": 59000
   },
   {
     "id": 252,
@@ -1037,13 +1317,13 @@
     "nama": "BESI Cat mengkilat ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 59800
+    "hargaMin": 53000
   },
   {
     "id": 494,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Besi Hollow (50x50x3) mm",
     "satuan": "kg",
     "deleted": 0,
@@ -1057,13 +1337,13 @@
     "nama": "BESI Lem Aica Aibon ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 28500
+    "hargaMin": 11000
   },
   {
     "id": 500,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Besi List Kaca 1 x 1 cm",
     "satuan": "m",
     "deleted": 0,
@@ -1077,7 +1357,7 @@
     "nama": "BESI Menie ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 25000
+    "hargaMin": 36000
   },
   {
     "id": 255,
@@ -1087,7 +1367,7 @@
     "nama": "BESI Minyak cat ",
     "satuan": "ltr ",
     "deleted": 0,
-    "hargaMin": 20000
+    "hargaMin": 9500
   },
   {
     "id": 161,
@@ -1097,13 +1377,13 @@
     "nama": "Besi Profil ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 14500
+    "hargaMin": 42500
   },
   {
     "id": 499,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Besi Scuare tube",
     "satuan": "m",
     "deleted": 0,
@@ -1117,7 +1397,7 @@
     "nama": "BESI SIKU 40 X 40 X 4 ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 135000
+    "hargaMin": 132500
   },
   {
     "id": 173,
@@ -1127,7 +1407,7 @@
     "nama": "BESI SIKU 50 X 50 X 5 ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 217500
+    "hargaMin": 272500
   },
   {
     "id": 174,
@@ -1137,7 +1417,7 @@
     "nama": "BESI SIKU 60 X 60 X 6 ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 318500
+    "hargaMin": null
   },
   {
     "id": 160,
@@ -1147,13 +1427,13 @@
     "nama": "Besi Strip ",
     "satuan": "kg",
     "deleted": 0,
-    "hargaMin": 14000
+    "hargaMin": 35000
   },
   {
     "id": 721,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Besi tempa",
     "satuan": "m2",
     "deleted": 0,
@@ -1167,7 +1447,7 @@
     "nama": "BESI Thinner  A ",
     "satuan": "ltr ",
     "deleted": 0,
-    "hargaMin": 16000
+    "hargaMin": 20000
   },
   {
     "id": 256,
@@ -1177,14 +1457,54 @@
     "nama": "BESI Thinner  Super ",
     "satuan": "ltr ",
     "deleted": 0,
-    "hargaMin": 17500
+    "hargaMin": 17000
+  },
+  {
+    "id": 818,
+    "kode": "M47",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Beton K.125",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 586,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Beton K.150",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 811,
+    "kode": "M37",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Beton K.250",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 833,
+    "kode": "M59",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Beton K.300",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 826,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Beton mutu, f’c = 14,5 MPa (K175)",
     "satuan": "m3",
     "deleted": 0,
     "hargaMin": null
@@ -1192,8 +1512,8 @@
   {
     "id": 562,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Bilik Bambu",
     "satuan": "m2",
     "deleted": 0,
@@ -1202,8 +1522,8 @@
   {
     "id": 706,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "Box panel PVC isi 4 MCB",
     "satuan": "bh",
     "deleted": 0,
@@ -1212,8 +1532,8 @@
   {
     "id": 552,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Bubung stel gelombang",
     "satuan": "lbr",
     "deleted": 0,
@@ -1227,7 +1547,7 @@
     "nama": "BUIS BETON    U 10 cm - 100 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 30000
+    "hargaMin": null
   },
   {
     "id": 143,
@@ -1237,7 +1557,7 @@
     "nama": "BUIS BETON    U 15 cm - 100 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 35000
+    "hargaMin": null
   },
   {
     "id": 144,
@@ -1247,7 +1567,7 @@
     "nama": "BUIS BETON    U 20 cm - 100 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 39000
+    "hargaMin": null
   },
   {
     "id": 145,
@@ -1257,7 +1577,7 @@
     "nama": "BUIS BETON    U 30 cm - 100 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 40000
+    "hargaMin": null
   },
   {
     "id": 146,
@@ -1267,7 +1587,7 @@
     "nama": "BUIS BETON    U 50 cm - 100 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 65000
+    "hargaMin": null
   },
   {
     "id": 136,
@@ -1277,7 +1597,7 @@
     "nama": "BUIS BETON    Ø 10 cm - 100 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 40000
+    "hargaMin": null
   },
   {
     "id": 137,
@@ -1287,7 +1607,7 @@
     "nama": "BUIS BETON    Ø 20 cm - 100 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 47000
+    "hargaMin": null
   },
   {
     "id": 138,
@@ -1297,7 +1617,7 @@
     "nama": "BUIS BETON    Ø 30 cm - 100 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 64500
+    "hargaMin": null
   },
   {
     "id": 139,
@@ -1307,7 +1627,7 @@
     "nama": "BUIS BETON    Ø 50 cm - 100 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 135000
+    "hargaMin": null
   },
   {
     "id": 140,
@@ -1317,7 +1637,7 @@
     "nama": "BUIS BETON    Ø 60 cm - 100 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 185000
+    "hargaMin": null
   },
   {
     "id": 141,
@@ -1327,23 +1647,23 @@
     "nama": "BUIS BETON    Ø 70 cm - 100 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 244400
+    "hargaMin": null
   },
   {
     "id": 430,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Bulldozer 100 - 150 hp",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 675000
+    "hargaMin": null
   },
   {
     "id": 411,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "BURUH TAK TERLATIH",
     "satuan": "OH",
     "deleted": 0,
@@ -1352,9 +1672,69 @@
   {
     "id": 577,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Cat antara",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 841,
+    "kode": "M95",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Cat Anti Karat",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 794,
+    "kode": "M17a",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Cat Marka (Non Thermoplas)",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 795,
+    "kode": "M17b",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Cat Marka (Thermoplastic)",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 860,
+    "kode": "",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
+    "nama": "Chainsaw",
+    "satuan": "Jam",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 814,
+    "kode": "M41",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Chipping",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 815,
+    "kode": "M41kg",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Chipping (kg)",
     "satuan": "kg",
     "deleted": 0,
     "hargaMin": null
@@ -1363,57 +1743,87 @@
     "id": 447,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Compressor",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 310000
+    "hargaMin": null
+  },
+  {
+    "id": 840,
+    "kode": "0.0037",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
+    "nama": "Conc. Paver (Slipform paver)",
+    "satuan": "Jam",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 446,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Concrete  Vibrator",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 55000
+    "hargaMin": null
   },
   {
     "id": 449,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Concrete Cutter",
     "satuan": "jam",
     "deleted": 0,
-    "hargaMin": 37500
+    "hargaMin": null
   },
   {
     "id": 448,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Concrete Mixer 0,125m3",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 75000
+    "hargaMin": null
+  },
+  {
+    "id": 858,
+    "kode": "E28",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
+    "nama": "Concrete pump",
+    "satuan": "Jam",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 434,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Crane 35 ton",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 550000
+    "hargaMin": null
+  },
+  {
+    "id": 844,
+    "kode": "M98",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Curing Compound",
+    "satuan": "ltr",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 492,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Dinabolt Ø 12 mm (10 s/d 15 cm)",
     "satuan": "bh",
     "deleted": 0,
@@ -1427,7 +1837,7 @@
     "nama": "DOLKEN Bambu ",
     "satuan": "bt ",
     "deleted": 0,
-    "hargaMin": 12000
+    "hargaMin": null
   },
   {
     "id": 106,
@@ -1437,7 +1847,7 @@
     "nama": "DOLKEN Besar  10 x 12 x 400 cm ",
     "satuan": "bt ",
     "deleted": 0,
-    "hargaMin": 31000
+    "hargaMin": null
   },
   {
     "id": 108,
@@ -1447,7 +1857,7 @@
     "nama": "DOLKEN Kayu bakar ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 150000
+    "hargaMin": null
   },
   {
     "id": 107,
@@ -1457,7 +1867,7 @@
     "nama": "DOLKEN Kayu cetakan ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 2200000
+    "hargaMin": null
   },
   {
     "id": 105,
@@ -1467,7 +1877,7 @@
     "nama": "DOLKEN Kecil   6 x  7 x 400 cm ",
     "satuan": "bt ",
     "deleted": 0,
-    "hargaMin": 18000
+    "hargaMin": null
   },
   {
     "id": 104,
@@ -1477,13 +1887,13 @@
     "nama": "DOLKEN Sedang  8 x 10 x 400 cm ",
     "satuan": "bt ",
     "deleted": 0,
-    "hargaMin": 21000
+    "hargaMin": null
   },
   {
     "id": 565,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Door closer",
     "satuan": "set",
     "deleted": 0,
@@ -1492,8 +1902,8 @@
   {
     "id": 566,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Door holder",
     "satuan": "bh",
     "deleted": 0,
@@ -1502,8 +1912,8 @@
   {
     "id": 717,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "Downlight / PLC 13 W",
     "satuan": "bh",
     "deleted": 0,
@@ -1513,21 +1923,21 @@
     "id": 426,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Dump Truck 3 ton",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 85000
+    "hargaMin": null
   },
   {
     "id": 427,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Dump Truck 9 ton",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 110000
+    "hargaMin": null
   },
   {
     "id": 312,
@@ -1537,7 +1947,7 @@
     "nama": "ENGSEL DAN GERENDEL    Engsel Angin",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 30000
+    "hargaMin": 12500
   },
   {
     "id": 319,
@@ -1547,7 +1957,7 @@
     "nama": "ENGSEL DAN GERENDEL  Door Stop ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 117300
+    "hargaMin": null
   },
   {
     "id": 315,
@@ -1557,7 +1967,7 @@
     "nama": "ENGSEL DAN GERENDEL  Espagnoled - ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 40000
+    "hargaMin": 17500
   },
   {
     "id": 317,
@@ -1567,7 +1977,7 @@
     "nama": "ENGSEL DAN GERENDEL  Grendel biasa ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 8000
+    "hargaMin": 17500
   },
   {
     "id": 316,
@@ -1577,7 +1987,7 @@
     "nama": "ENGSEL DAN GERENDEL  Grendel Tanam luar negeri ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 11000
+    "hargaMin": 6500
   },
   {
     "id": 318,
@@ -1587,7 +1997,7 @@
     "nama": "ENGSEL DAN GERENDEL  Kait Angin ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 17600
+    "hargaMin": 22000
   },
   {
     "id": 313,
@@ -1597,7 +2007,7 @@
     "nama": "ENGSEL DAN GERENDEL  Kupu-kupu biasa ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 5000
+    "hargaMin": 9500
   },
   {
     "id": 314,
@@ -1607,17 +2017,27 @@
     "nama": "ENGSEL DAN GERENDEL  Nylon kupu-kupu ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 7500
+    "hargaMin": 17500
   },
   {
     "id": 433,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Excavator",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 650000
+    "hargaMin": null
+  },
+  {
+    "id": 846,
+    "kode": "M96",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Expansion Cap",
+    "satuan": "m2",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 78,
@@ -1627,7 +2047,7 @@
     "nama": "FIBER GLASS (JABES) 180 X  92 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 56000
+    "hargaMin": 65000
   },
   {
     "id": 81,
@@ -1637,7 +2057,7 @@
     "nama": "FIBER GLASS (JABES) 180 X 105 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 68000
+    "hargaMin": null
   },
   {
     "id": 79,
@@ -1647,7 +2067,7 @@
     "nama": "FIBER GLASS (JABES) 200 X  92 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 65000
+    "hargaMin": null
   },
   {
     "id": 82,
@@ -1657,7 +2077,7 @@
     "nama": "FIBER GLASS (JABES) 210 X 105 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 70000
+    "hargaMin": 76000
   },
   {
     "id": 80,
@@ -1667,7 +2087,7 @@
     "nama": "FIBER GLASS (JABES) 250 X  92 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 67000
+    "hargaMin": null
   },
   {
     "id": 83,
@@ -1677,7 +2097,7 @@
     "nama": "FIBER GLASS (JABES) 250 X 105 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 80000
+    "hargaMin": null
   },
   {
     "id": 71,
@@ -1687,7 +2107,17 @@
     "nama": "FIBER PLAT uk. 100cm x 100cm x 4mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 25000
+    "hargaMin": null
+  },
+  {
+    "id": 789,
+    "kode": "M05",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Filler ",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 298,
@@ -1697,7 +2127,7 @@
     "nama": "FITING Flaon ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 17000
+    "hargaMin": 5000
   },
   {
     "id": 299,
@@ -1707,7 +2137,7 @@
     "nama": "FITING Gantung ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 10500
+    "hargaMin": 6500
   },
   {
     "id": 300,
@@ -1717,7 +2147,7 @@
     "nama": "FITING Kap ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 15000
+    "hargaMin": 14000
   },
   {
     "id": 301,
@@ -1727,13 +2157,13 @@
     "nama": "FITING Kombinasi ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 10000
+    "hargaMin": null
   },
   {
     "id": 777,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Fitting",
     "satuan": "bh",
     "deleted": 0,
@@ -1742,8 +2172,8 @@
   {
     "id": 718,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "Fitting plafond + lampu SL",
     "satuan": "bh",
     "deleted": 0,
@@ -1753,11 +2183,11 @@
     "id": 435,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Flat Bed Truck",
     "satuan": "jam",
     "deleted": 0,
-    "hargaMin": 430000
+    "hargaMin": null
   },
   {
     "id": 332,
@@ -1767,15 +2197,25 @@
     "nama": "Floor drain",
     "satuan": "bh",
     "deleted": 0,
-    "hargaMin": 35000
+    "hargaMin": 4500
   },
   {
     "id": 490,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Floor Hardener",
     "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 849,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Formwork Plate tebal 6 mm",
+    "satuan": "m2",
     "deleted": 0,
     "hargaMin": null
   },
@@ -1787,7 +2227,7 @@
     "nama": "FUSE BOX (SEKERING KASA)  1 group ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 50000
+    "hargaMin": 24500
   },
   {
     "id": 292,
@@ -1797,7 +2237,7 @@
     "nama": "FUSE BOX (SEKERING KASA)  2 group ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 60000
+    "hargaMin": 28500
   },
   {
     "id": 293,
@@ -1807,13 +2247,33 @@
     "nama": "FUSE BOX (SEKERING KASA)  3 group ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 90000
+    "hargaMin": 32000
+  },
+  {
+    "id": 819,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Galian Tanah Biasa",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 806,
+    "kode": "M32",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Gebalan Rumput",
+    "satuan": "m2",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 755,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Genset 1500  watt",
     "satuan": "hari",
     "deleted": 0,
@@ -1823,17 +2283,17 @@
     "id": 451,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Genset 5-25kva+bbm",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 180000
+    "hargaMin": null
   },
   {
     "id": 554,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Genteng aspal",
     "satuan": "bh",
     "deleted": 0,
@@ -1847,7 +2307,7 @@
     "nama": "Genteng Beton Warna Khusus ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 14800
+    "hargaMin": null
   },
   {
     "id": 30,
@@ -1857,7 +2317,7 @@
     "nama": "Genteng Beton Warna Special ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 9800
+    "hargaMin": null
   },
   {
     "id": 29,
@@ -1867,7 +2327,7 @@
     "nama": "Genteng Beton Warna standard ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 6000
+    "hargaMin": 6500
   },
   {
     "id": 44,
@@ -1877,7 +2337,7 @@
     "nama": "GENTENG KACA Kodok tebal 3 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 15000
+    "hargaMin": null
   },
   {
     "id": 45,
@@ -1897,7 +2357,7 @@
     "nama": "GENTENG KACA Vlaam tebal 3 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 15000
+    "hargaMin": null
   },
   {
     "id": 43,
@@ -1907,13 +2367,13 @@
     "nama": "GENTENG KACA Vlaam tebal 5 mm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 17000
+    "hargaMin": null
   },
   {
     "id": 556,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Genteng metal",
     "satuan": "bh",
     "deleted": 0,
@@ -1927,7 +2387,7 @@
     "nama": "GENTENG TANAH LIAT Kodok ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 2500
+    "hargaMin": null
   },
   {
     "id": 37,
@@ -1937,7 +2397,7 @@
     "nama": "GENTENG TANAH LIAT Kodok Glasur ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 4250
+    "hargaMin": null
   },
   {
     "id": 38,
@@ -1947,7 +2407,7 @@
     "nama": "GENTENG TANAH LIAT Nok kerpus Kodok ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 6500
+    "hargaMin": null
   },
   {
     "id": 39,
@@ -1957,7 +2417,7 @@
     "nama": "GENTENG TANAH LIAT Nok kerpus Kodok Glasur ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 12000
+    "hargaMin": null
   },
   {
     "id": 41,
@@ -1967,7 +2427,7 @@
     "nama": "GENTENG TANAH LIAT Nok kerpus plentong super ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 9000
+    "hargaMin": null
   },
   {
     "id": 40,
@@ -1977,7 +2437,7 @@
     "nama": "GENTENG TANAH LIAT Plentong super besar 18 bh/m2 ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 5100
+    "hargaMin": null
   },
   {
     "id": 35,
@@ -1987,7 +2447,27 @@
     "nama": "GENTENG TANAH LIAT Vlaam/Plentong ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 2600
+    "hargaMin": null
+  },
+  {
+    "id": 804,
+    "kode": "M30",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Geotextile",
+    "satuan": "m2",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 780,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "GLASS BEAD",
+    "nama": "Glass Bead",
+    "satuan": "Kg",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 134,
@@ -1997,7 +2477,7 @@
     "nama": "GRANITO 30 x 30  cm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 300000
+    "hargaMin": null
   },
   {
     "id": 133,
@@ -2007,7 +2487,17 @@
     "nama": "GRANITO 40 x 40  cm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 220000
+    "hargaMin": null
+  },
+  {
+    "id": 790,
+    "kode": "M07",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Gravel",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 77,
@@ -2017,7 +2507,7 @@
     "nama": "GRC BOARD uk.122cm x 244cm x 10mm",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 255000
+    "hargaMin": null
   },
   {
     "id": 74,
@@ -2027,7 +2517,7 @@
     "nama": "GRC BOARD uk.122cm x 244cm x 5mm",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 100000
+    "hargaMin": 59500
   },
   {
     "id": 75,
@@ -2037,7 +2527,7 @@
     "nama": "GRC BOARD uk.122cm x 244cm x 6mm",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 130000
+    "hargaMin": 145000
   },
   {
     "id": 76,
@@ -2047,7 +2537,7 @@
     "nama": "GRC BOARD uk.122cm x 244cm x 8mm",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 199500
+    "hargaMin": null
   },
   {
     "id": 215,
@@ -2057,7 +2547,7 @@
     "nama": "GYPROC  uk.120cmx240cmx9mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 60000
+    "hargaMin": null
   },
   {
     "id": 213,
@@ -2067,13 +2557,13 @@
     "nama": "Gypsum tebal 9 mm  ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 64300
+    "hargaMin": 61000
   },
   {
     "id": 686,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Handle pintu",
     "satuan": "bh",
     "deleted": 0,
@@ -2087,13 +2577,13 @@
     "nama": "HARD BOARD-uk:  4'X  8' ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 51000
+    "hargaMin": null
   },
   {
     "id": 484,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "HB-10",
     "satuan": "m3",
     "deleted": 0,
@@ -2102,8 +2592,8 @@
   {
     "id": 483,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "HB-15",
     "satuan": "m3",
     "deleted": 0,
@@ -2112,8 +2602,8 @@
   {
     "id": 482,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "HB-20",
     "satuan": "m3",
     "deleted": 0,
@@ -2127,7 +2617,7 @@
     "nama": "HOLLOW GALVANIS LIPAT tinggi 2 cm; tebal : 0,3 mm panjang 4 m",
     "satuan": "btg",
     "deleted": 0,
-    "hargaMin": 19000
+    "hargaMin": null
   },
   {
     "id": 168,
@@ -2137,13 +2627,13 @@
     "nama": "HOLLOW GALVANIS LIPAT tinggi 4 cm; tebal : 0,3 mm panjang 4 m",
     "satuan": "btg",
     "deleted": 0,
-    "hargaMin": 25000
+    "hargaMin": null
   },
   {
     "id": 460,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Ijuk",
     "satuan": "m3",
     "deleted": 0,
@@ -2152,8 +2642,8 @@
   {
     "id": 722,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "IMB",
     "satuan": "m2",
     "deleted": 0,
@@ -2162,8 +2652,8 @@
   {
     "id": 712,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "Isolasi",
     "satuan": "bh",
     "deleted": 0,
@@ -2177,7 +2667,7 @@
     "nama": "Jabes nok - Kerpus Genteng ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 31000
+    "hargaMin": null
   },
   {
     "id": 62,
@@ -2187,7 +2677,7 @@
     "nama": "Jabes nok - Paten Besar ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 43000
+    "hargaMin": null
   },
   {
     "id": 61,
@@ -2197,7 +2687,17 @@
     "nama": "Jabes nok - Stel Besar  ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 65000
+    "hargaMin": 61000
+  },
+  {
+    "id": 830,
+    "kode": "(E26)",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
+    "nama": "Jack Hammer",
+    "satuan": "Jam",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 169,
@@ -2207,7 +2707,7 @@
     "nama": "JARING-JARING BAJA Diameter    4 - 15 ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 14000
+    "hargaMin": null
   },
   {
     "id": 170,
@@ -2217,7 +2717,7 @@
     "nama": "JARING-JARING BAJA Diameter    6 - 15 ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 14000
+    "hargaMin": null
   },
   {
     "id": 171,
@@ -2227,7 +2727,7 @@
     "nama": "JARING-JARING BAJA Kawat Bronjong ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 12500
+    "hargaMin": null
   },
   {
     "id": 93,
@@ -2237,7 +2737,7 @@
     "nama": "JATI Balok/pesagen ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 25000000
+    "hargaMin": null
   },
   {
     "id": 92,
@@ -2247,13 +2747,13 @@
     "nama": "JATI Papan ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 28000000
+    "hargaMin": null
   },
   {
     "id": 423,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "JURU UKUR",
     "satuan": "OH",
     "deleted": 0,
@@ -2267,7 +2767,7 @@
     "nama": "KABEL LISTRIK NYA - 1 X 1 1/2 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 2200
+    "hargaMin": 2800
   },
   {
     "id": 280,
@@ -2277,13 +2777,13 @@
     "nama": "KABEL LISTRIK NYM 2 X 1 1/2 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 6900
+    "hargaMin": 8500
   },
   {
     "id": 709,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "KABEL LISTRIK NYM 2 X 2,5 mm2",
     "satuan": "m",
     "deleted": 0,
@@ -2292,8 +2792,8 @@
   {
     "id": 710,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "KABEL LISTRIK NYM 3 X 2,5 mm2",
     "satuan": "m",
     "deleted": 0,
@@ -2307,7 +2807,7 @@
     "nama": "KABEL LISTRIK NYY 2 X 1 1/2 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 11500
+    "hargaMin": 10300
   },
   {
     "id": 273,
@@ -2317,7 +2817,7 @@
     "nama": "KABEL LISTRIK PRIMA 2 X 1 1/2 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 16500
+    "hargaMin": 14100
   },
   {
     "id": 281,
@@ -2327,7 +2827,7 @@
     "nama": "KABEL LISTRIK PRIMA 2 X 2 1/2 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 12000
+    "hargaMin": 12160
   },
   {
     "id": 274,
@@ -2337,7 +2837,7 @@
     "nama": "KABEL LISTRIK PRIMA 2 X 4 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 24000
+    "hargaMin": null
   },
   {
     "id": 275,
@@ -2347,7 +2847,7 @@
     "nama": "KABEL LISTRIK PRIMA 2 X 6 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 39000
+    "hargaMin": null
   },
   {
     "id": 276,
@@ -2357,7 +2857,7 @@
     "nama": "KABEL LISTRIK PRIMA 3 X 1 1/2 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 14500
+    "hargaMin": 10940
   },
   {
     "id": 277,
@@ -2367,7 +2867,7 @@
     "nama": "KABEL LISTRIK PRIMA 3 X 2 1/2 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 22100
+    "hargaMin": 15800
   },
   {
     "id": 278,
@@ -2377,7 +2877,7 @@
     "nama": "KABEL LISTRIK PRIMA 3 X 4 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 36000
+    "hargaMin": 24340
   },
   {
     "id": 279,
@@ -2387,7 +2887,7 @@
     "nama": "KABEL LISTRIK PRIMA 3 X 6 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 49000
+    "hargaMin": null
   },
   {
     "id": 269,
@@ -2397,7 +2897,7 @@
     "nama": "KABEL LISTRIK SPLN LMK 1 X 1 1/2 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 6200
+    "hargaMin": 4600
   },
   {
     "id": 270,
@@ -2407,7 +2907,7 @@
     "nama": "KABEL LISTRIK SPLN LMK 1 X 4 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 7750
+    "hargaMin": null
   },
   {
     "id": 271,
@@ -2417,13 +2917,13 @@
     "nama": "KABEL LISTRIK SPLN LMK 1 X 6 mm2 ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 11000
+    "hargaMin": null
   },
   {
     "id": 711,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "Kabel telephone 4 x 0.5 mm",
     "satuan": "m",
     "deleted": 0,
@@ -2432,8 +2932,8 @@
   {
     "id": 568,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kaca buram 12 mm",
     "satuan": "m2",
     "deleted": 0,
@@ -2447,13 +2947,13 @@
     "nama": "KACA Cermin  tebal 5 mm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 221400
+    "hargaMin": null
   },
   {
     "id": 569,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kaca cermin 8 mm",
     "satuan": "m2",
     "deleted": 0,
@@ -2467,7 +2967,7 @@
     "nama": "Kaca Es Kabur 3 mm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 85000
+    "hargaMin": null
   },
   {
     "id": 265,
@@ -2477,13 +2977,13 @@
     "nama": "Kaca Es Kabur 5 mm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 95000
+    "hargaMin": null
   },
   {
     "id": 571,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kaca patri 5 mm",
     "satuan": "m2",
     "deleted": 0,
@@ -2497,7 +2997,7 @@
     "nama": "Kaca Polos 3 mm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 82000
+    "hargaMin": null
   },
   {
     "id": 263,
@@ -2507,13 +3007,13 @@
     "nama": "Kaca Polos 5 mm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 98800
+    "hargaMin": null
   },
   {
     "id": 691,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kaca Polos 8 mm",
     "satuan": "m2",
     "deleted": 0,
@@ -2527,7 +3027,7 @@
     "nama": "Kaca Ray Band 3 mm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 85100
+    "hargaMin": null
   },
   {
     "id": 267,
@@ -2537,13 +3037,13 @@
     "nama": "Kaca Ray Band 5 mm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 105000
+    "hargaMin": null
   },
   {
     "id": 570,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kaca wireglassed 5 mm",
     "satuan": "m2",
     "deleted": 0,
@@ -2557,7 +3057,7 @@
     "nama": "KAMPER Balok/pesagen ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 8400000
+    "hargaMin": null
   },
   {
     "id": 94,
@@ -2567,13 +3067,13 @@
     "nama": "KAMPER Papan ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 8700000
+    "hargaMin": null
   },
   {
     "id": 459,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kapur Padam",
     "satuan": "m3",
     "deleted": 0,
@@ -2587,7 +3087,7 @@
     "nama": "KAPUR Pasang ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 300000
+    "hargaMin": null
   },
   {
     "id": 20,
@@ -2597,13 +3097,13 @@
     "nama": "KAPUR Semen Merah ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 200000
+    "hargaMin": null
   },
   {
     "id": 487,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Karpet",
     "satuan": "m2",
     "deleted": 0,
@@ -2617,7 +3117,7 @@
     "nama": "KAWAT  Ikat Beton/Bendrat ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 20000
+    "hargaMin": 19500
   },
   {
     "id": 185,
@@ -2627,13 +3127,13 @@
     "nama": "Kawat bronjong ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 15590
+    "hargaMin": 29500
   },
   {
     "id": 547,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kawat diameter 4 mm",
     "satuan": "kg",
     "deleted": 0,
@@ -2647,7 +3147,7 @@
     "nama": "Kawat duri ",
     "satuan": "rol ",
     "deleted": 0,
-    "hargaMin": 110000
+    "hargaMin": 70000
   },
   {
     "id": 177,
@@ -2657,7 +3157,7 @@
     "nama": "KAWAT Harmonika 12 X 24 mm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 20000
+    "hargaMin": null
   },
   {
     "id": 176,
@@ -2667,7 +3167,7 @@
     "nama": "KAWAT Harmonika 12 X 45 mm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 22000
+    "hargaMin": null
   },
   {
     "id": 178,
@@ -2677,7 +3177,7 @@
     "nama": "KAWAT Harmonika 14 X 30 mm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 21000
+    "hargaMin": null
   },
   {
     "id": 179,
@@ -2687,7 +3187,7 @@
     "nama": "KAWAT Harmonika 14 X 35 mm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 27500
+    "hargaMin": null
   },
   {
     "id": 181,
@@ -2697,13 +3197,13 @@
     "nama": "Kawat Kasa ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 15000
+    "hargaMin": 17500
   },
   {
     "id": 497,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kawat las",
     "satuan": "kg",
     "deleted": 0,
@@ -2717,7 +3217,7 @@
     "nama": "Kawat loket ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 17000
+    "hargaMin": 17500
   },
   {
     "id": 180,
@@ -2727,7 +3227,17 @@
     "nama": "Kawat Nyamuk Nylon ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 20000
+    "hargaMin": null
+  },
+  {
+    "id": 837,
+    "kode": "M99",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Kayu Acuan",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 233,
@@ -2737,7 +3247,7 @@
     "nama": "KAYU Ambril/amplas ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 3400
+    "hargaMin": 4000
   },
   {
     "id": 234,
@@ -2747,7 +3257,7 @@
     "nama": "KAYU Batu Apung ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 75000
+    "hargaMin": 14500
   },
   {
     "id": 235,
@@ -2757,7 +3267,7 @@
     "nama": "KAYU Cat dasar ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 40000
+    "hargaMin": 60000
   },
   {
     "id": 239,
@@ -2767,7 +3277,7 @@
     "nama": "KAYU Deculux ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 75000
+    "hargaMin": null
   },
   {
     "id": 232,
@@ -2777,7 +3287,7 @@
     "nama": "KAYU Dempul plamur  ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 25000
+    "hargaMin": 36000
   },
   {
     "id": 236,
@@ -2787,13 +3297,13 @@
     "nama": "KAYU Emco ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 65000
+    "hargaMin": 60000
   },
   {
     "id": 681,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kayu klas I",
     "satuan": "m3",
     "deleted": 0,
@@ -2802,8 +3312,8 @@
   {
     "id": 682,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kayu klas IV",
     "satuan": "m3",
     "deleted": 0,
@@ -2817,7 +3327,7 @@
     "nama": "KAYU Koas ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 17500
+    "hargaMin": 4500
   },
   {
     "id": 231,
@@ -2827,7 +3337,17 @@
     "nama": "KAYU Menie  ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 28200
+    "hargaMin": 32500
+  },
+  {
+    "id": 796,
+    "kode": "M19",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Kayu Perancah",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 242,
@@ -2837,7 +3357,7 @@
     "nama": "KAYU Plitur jadi ",
     "satuan": "ltr ",
     "deleted": 0,
-    "hargaMin": 54200
+    "hargaMin": 37500
   },
   {
     "id": 240,
@@ -2847,7 +3367,7 @@
     "nama": "KAYU Siralax ",
     "satuan": "ons ",
     "deleted": 0,
-    "hargaMin": 20000
+    "hargaMin": null
   },
   {
     "id": 241,
@@ -2857,7 +3377,7 @@
     "nama": "KAYU Spiritus ",
     "satuan": "ltr ",
     "deleted": 0,
-    "hargaMin": 18000
+    "hargaMin": 12000
   },
   {
     "id": 237,
@@ -2867,13 +3387,13 @@
     "nama": "KAYU Yunior 66 (nippon paint) ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 41500
+    "hargaMin": 26500
   },
   {
     "id": 398,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "KEPALA TUKANG",
     "satuan": "OH",
     "deleted": 0,
@@ -2883,7 +3403,7 @@
     "id": 418,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "KEPALA TUKANG ALUMUNIUM ",
     "satuan": "OH",
     "deleted": 0,
@@ -2897,7 +3417,7 @@
     "nama": "KERAMIK 15 x 20  cm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 75000
+    "hargaMin": null
   },
   {
     "id": 126,
@@ -2907,7 +3427,7 @@
     "nama": "KERAMIK 20 X 20 cm  ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 76000
+    "hargaMin": 46500
   },
   {
     "id": 128,
@@ -2917,7 +3437,7 @@
     "nama": "KERAMIK 25 x 25  cm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 75000
+    "hargaMin": 55500
   },
   {
     "id": 125,
@@ -2927,7 +3447,7 @@
     "nama": "KERAMIK 30 X 30 cm  ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 78000
+    "hargaMin": 40000
   },
   {
     "id": 127,
@@ -2937,13 +3457,13 @@
     "nama": "KERAMIK 33 x 33  cm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 78000
+    "hargaMin": 42500
   },
   {
     "id": 539,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "LAIN-LAIN",
     "nama": "Keramik artistik 10 x 20 cm",
     "satuan": "bh",
     "deleted": 0,
@@ -2952,8 +3472,8 @@
   {
     "id": 540,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "LAIN-LAIN",
     "nama": "Keramik artistik 5 x 20 cm",
     "satuan": "bh",
     "deleted": 0,
@@ -2965,9 +3485,9 @@
     "kategori": "BAHAN DASAR",
     "jenis": "KERIKIL",
     "nama": "KERIKIL Beton ",
-    "satuan": "m3 ",
+    "satuan": "Kg",
     "deleted": 0,
-    "hargaMin": 310000
+    "hargaMin": 195
   },
   {
     "id": 11,
@@ -2977,7 +3497,7 @@
     "nama": "KERIKIL Biasa ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 210000
+    "hargaMin": null
   },
   {
     "id": 7,
@@ -2987,7 +3507,7 @@
     "nama": "KERIKIL Sawur / Koral ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 170000
+    "hargaMin": null
   },
   {
     "id": 6,
@@ -2997,7 +3517,7 @@
     "nama": "KERIKIL Timbun ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 180000
+    "hargaMin": 343000
   },
   {
     "id": 12,
@@ -3007,7 +3527,17 @@
     "nama": "KERIKIL Tras Giling ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 280000
+    "hargaMin": null
+  },
+  {
+    "id": 793,
+    "kode": "M11",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Kerosen/Minyak Tanah",
+    "satuan": "ltr",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 34,
@@ -3017,7 +3547,7 @@
     "nama": "Kerpus Beton Warna Khusus ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 13200
+    "hargaMin": null
   },
   {
     "id": 33,
@@ -3027,7 +3557,7 @@
     "nama": "Kerpus Beton Warna Special ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 11250
+    "hargaMin": null
   },
   {
     "id": 32,
@@ -3037,13 +3567,13 @@
     "nama": "Kerpus Beton Warna Standard ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 9100
+    "hargaMin": 21000
   },
   {
     "id": 695,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kitchen zink",
     "satuan": "unit",
     "deleted": 0,
@@ -3052,8 +3582,8 @@
   {
     "id": 775,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Klem",
     "satuan": "bh",
     "deleted": 0,
@@ -3062,8 +3592,8 @@
   {
     "id": 700,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Klep diameter 3/4",
     "satuan": "bh",
     "deleted": 0,
@@ -3077,7 +3607,7 @@
     "nama": "KLOSET DUDUK ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 1850000
+    "hargaMin": 398500
   },
   {
     "id": 321,
@@ -3087,7 +3617,7 @@
     "nama": "KLOSET JONGKOK ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 296300
+    "hargaMin": 190000
   },
   {
     "id": 392,
@@ -3097,13 +3627,13 @@
     "nama": "Koas Alang-alang ",
     "satuan": "ikat",
     "deleted": 0,
-    "hargaMin": 2500
+    "hargaMin": null
   },
   {
     "id": 457,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN CETAK",
+    "jenis": "LAIN-LAIN",
     "nama": "Kolom Beton Pracetak",
     "satuan": "btg",
     "deleted": 0,
@@ -3117,13 +3647,13 @@
     "nama": "Kran Air",
     "satuan": "bh",
     "deleted": 0,
-    "hargaMin": 45000
+    "hargaMin": 24000
   },
   {
     "id": 696,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kran dinding",
     "satuan": "bh",
     "deleted": 0,
@@ -3132,8 +3662,8 @@
   {
     "id": 694,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kran zink",
     "satuan": "bh",
     "deleted": 0,
@@ -3147,7 +3677,7 @@
     "nama": "KREI  25 MM ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 45000
+    "hargaMin": null
   },
   {
     "id": 97,
@@ -3157,7 +3687,7 @@
     "nama": "KRUING Balok/pesagen ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 6800000
+    "hargaMin": 75000
   },
   {
     "id": 96,
@@ -3167,13 +3697,13 @@
     "nama": "KRUING Papan ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 8800000
+    "hargaMin": 138000
   },
   {
     "id": 567,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kunci lemari",
     "satuan": "set",
     "deleted": 0,
@@ -3182,8 +3712,8 @@
   {
     "id": 563,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kunci tanam antik",
     "satuan": "bh",
     "deleted": 0,
@@ -3197,7 +3727,7 @@
     "nama": "KUNCI TANAM Kuda 1 X slag ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 95000
+    "hargaMin": null
   },
   {
     "id": 311,
@@ -3207,7 +3737,7 @@
     "nama": "KUNCI TANAM Kuda 2 X slag ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 125000
+    "hargaMin": null
   },
   {
     "id": 306,
@@ -3217,7 +3747,7 @@
     "nama": "KUNCI TANAM Union 1 X slag ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 125000
+    "hargaMin": null
   },
   {
     "id": 307,
@@ -3227,7 +3757,7 @@
     "nama": "KUNCI TANAM Union 2 X slag ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 200000
+    "hargaMin": null
   },
   {
     "id": 308,
@@ -3237,7 +3767,7 @@
     "nama": "KUNCI TANAM Yale 1 X slag ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 150000
+    "hargaMin": null
   },
   {
     "id": 309,
@@ -3247,13 +3777,13 @@
     "nama": "KUNCI TANAM Yale 2 X slag ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 170000
+    "hargaMin": null
   },
   {
     "id": 685,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kusen & Pintu PVC toilet",
     "satuan": "unit",
     "deleted": 0,
@@ -3262,8 +3792,8 @@
   {
     "id": 576,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Kwas",
     "satuan": "bh",
     "deleted": 0,
@@ -3272,8 +3802,8 @@
   {
     "id": 773,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "L Bow",
     "satuan": "bh",
     "deleted": 0,
@@ -3282,8 +3812,8 @@
   {
     "id": 719,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "Lampu TL 2 x 18 watt grille",
     "satuan": "bh",
     "deleted": 0,
@@ -3292,8 +3822,8 @@
   {
     "id": 720,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "Lampu TL 2 x 36 watt grille",
     "satuan": "bh",
     "deleted": 0,
@@ -3307,7 +3837,7 @@
     "nama": "LANAN Balok/pesagen ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 2200000
+    "hargaMin": null
   },
   {
     "id": 100,
@@ -3317,13 +3847,13 @@
     "nama": "LANAN Papan ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 2847200
+    "hargaMin": null
   },
   {
     "id": 495,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Lantai Kerja Tebal 10 cm",
     "satuan": "m3",
     "deleted": 0,
@@ -3332,8 +3862,8 @@
   {
     "id": 774,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Las Dop",
     "satuan": "bh",
     "deleted": 0,
@@ -3347,7 +3877,7 @@
     "nama": "LEM  KAYU ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 12500
+    "hargaMin": 12000
   },
   {
     "id": 211,
@@ -3357,15 +3887,55 @@
     "nama": "List Kayu Profil ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 4800
+    "hargaMin": null
   },
   {
     "id": 697,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "List profil gypsum 5 cm",
     "satuan": "m",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 785,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Lolos Screen 1 ukuran (0-5)",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 786,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Lolos Screen 2 ukuran (0-5)",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 787,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Lolos Screen 2 ukuran (5-9.5)",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 788,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Lolos Screen 2 ukuran (9.5-19.0)",
+    "satuan": "m3",
     "deleted": 0,
     "hargaMin": null
   },
@@ -3377,7 +3947,7 @@
     "nama": "LUBANG ANGIN (ROSTER) PC + PASIR 10 X 20 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 9000
+    "hargaMin": 12000
   },
   {
     "id": 151,
@@ -3387,7 +3957,7 @@
     "nama": "LUBANG ANGIN (ROSTER) PC + PASIR 15 X 25 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 20000
+    "hargaMin": null
   },
   {
     "id": 152,
@@ -3397,7 +3967,7 @@
     "nama": "LUBANG ANGIN (ROSTER) PC + PASIR 15 X 30 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 20000
+    "hargaMin": null
   },
   {
     "id": 148,
@@ -3407,7 +3977,7 @@
     "nama": "LUBANG ANGIN (ROSTER) PC + PASIR 20 X 20 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 15000
+    "hargaMin": 10000
   },
   {
     "id": 149,
@@ -3417,7 +3987,7 @@
     "nama": "LUBANG ANGIN (ROSTER) PC + PASIR 25 X 25 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 16500
+    "hargaMin": 11000
   },
   {
     "id": 150,
@@ -3427,17 +3997,27 @@
     "nama": "LUBANG ANGIN (ROSTER) PC + PASIR 30 X 30 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 22000
+    "hargaMin": 16000
+  },
+  {
+    "id": 842,
+    "kode": "M96",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "M96",
+    "satuan": "m2",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 397,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "MANDOR",
     "satuan": "OH",
     "deleted": 0,
-    "hargaMin": 130000
+    "hargaMin": null
   },
   {
     "id": 135,
@@ -3447,13 +4027,43 @@
     "nama": "MARMER MARMER ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 475000
+    "hargaMin": null
+  },
+  {
+    "id": 827,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Marmer ukuran 10x10 cm Tulisan graphir",
+    "satuan": "buah",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 829,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Marmer ukuran 12x12 cm Tulisan graphir",
+    "satuan": "buah",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 834,
+    "kode": "M09",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Material Pilihan",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 778,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "MCB",
     "satuan": "bh",
     "deleted": 0,
@@ -3462,8 +4072,8 @@
   {
     "id": 708,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "MCB 4 A",
     "satuan": "bh",
     "deleted": 0,
@@ -3472,8 +4082,8 @@
   {
     "id": 707,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "MCB 6 A",
     "satuan": "bh",
     "deleted": 0,
@@ -3483,7 +4093,7 @@
     "id": 425,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "MEKANIK ALAT BERAT",
     "satuan": "OH",
     "deleted": 0,
@@ -3492,8 +4102,8 @@
   {
     "id": 581,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Melamic",
     "satuan": "kg",
     "deleted": 0,
@@ -3502,8 +4112,8 @@
   {
     "id": 574,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Menie A",
     "satuan": "kg",
     "deleted": 0,
@@ -3512,8 +4122,8 @@
   {
     "id": 575,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Menie B",
     "satuan": "kg",
     "deleted": 0,
@@ -3527,7 +4137,7 @@
     "nama": "MERANTI Balok/pesagen ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 5400000
+    "hargaMin": null
   },
   {
     "id": 98,
@@ -3537,23 +4147,23 @@
     "nama": "MERANTI Papan ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 5700000
+    "hargaMin": null
   },
   {
     "id": 453,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Mesin  Las",
     "satuan": "jam",
     "deleted": 0,
-    "hargaMin": 180000
+    "hargaMin": null
   },
   {
     "id": 705,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Mesin Jet Pump Kapasitas 250 Watt",
     "satuan": "unit",
     "deleted": 0,
@@ -3567,13 +4177,13 @@
     "nama": "Minyak  Beton & bekisting ",
     "satuan": "ltr ",
     "deleted": 0,
-    "hargaMin": 9000
+    "hargaMin": 37500
   },
   {
     "id": 474,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Minyak Pelumas",
     "satuan": "ltr",
     "deleted": 0,
@@ -3582,8 +4192,8 @@
   {
     "id": 735,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
     "nama": "Mobile crane <=3 ton",
     "satuan": "hari",
     "deleted": 0,
@@ -3592,8 +4202,8 @@
   {
     "id": 776,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Mongkok",
     "satuan": "bh",
     "deleted": 0,
@@ -3602,8 +4212,8 @@
   {
     "id": 506,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Mortar Siap Pakai",
     "satuan": "kg",
     "deleted": 0,
@@ -3613,11 +4223,11 @@
     "id": 431,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Motor Grader",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 625000
+    "hargaMin": null
   },
   {
     "id": 121,
@@ -3627,7 +4237,7 @@
     "nama": "MOZAIK PORSELIN 10 X 20 cm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 72000
+    "hargaMin": null
   },
   {
     "id": 122,
@@ -3637,7 +4247,7 @@
     "nama": "MOZAIK PORSELIN 15 X 15 cm  ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 73000
+    "hargaMin": null
   },
   {
     "id": 123,
@@ -3647,7 +4257,7 @@
     "nama": "MOZAIK PORSELIN 20 X 20 cm  ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 74000
+    "hargaMin": null
   },
   {
     "id": 124,
@@ -3657,7 +4267,7 @@
     "nama": "MOZAIK PORSELIN 20 X 25 cm  ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 74000
+    "hargaMin": null
   },
   {
     "id": 337,
@@ -3667,7 +4277,7 @@
     "nama": "MUR BAUT (kuda-kuda) ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 13000
+    "hargaMin": null
   },
   {
     "id": 362,
@@ -3677,13 +4287,13 @@
     "nama": "Naco per Daun ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 40000
+    "hargaMin": null
   },
   {
     "id": 557,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Nok genteng aspal",
     "satuan": "bh",
     "deleted": 0,
@@ -3692,8 +4302,8 @@
   {
     "id": 558,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Nok genteng metal",
     "satuan": "bh",
     "deleted": 0,
@@ -3702,8 +4312,8 @@
   {
     "id": 553,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Nok paten 92 cm",
     "satuan": "lbr",
     "deleted": 0,
@@ -3712,8 +4322,8 @@
   {
     "id": 561,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Nok standar 40 x 18",
     "satuan": "bh",
     "deleted": 0,
@@ -3727,7 +4337,7 @@
     "nama": "NOK UNT ONDULINE & ONDUVILLA  Ukuran 50cm x 50 cm x 0,3mm  **)",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 115000
+    "hargaMin": 80000
   },
   {
     "id": 64,
@@ -3737,7 +4347,7 @@
     "nama": "Nokstel gelombang harflex-Patent Besar ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 27000
+    "hargaMin": null
   },
   {
     "id": 65,
@@ -3747,7 +4357,7 @@
     "nama": "Nokstel gelombang harflex-Plat besar   ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 50000
+    "hargaMin": null
   },
   {
     "id": 63,
@@ -3757,13 +4367,13 @@
     "nama": "Nokstel gelombang harflex-Stel Besar  ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 44000
+    "hargaMin": null
   },
   {
     "id": 770,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Oli",
     "satuan": "ltr",
     "deleted": 0,
@@ -3787,13 +4397,13 @@
     "nama": "ONDUVILLA  40cm x 106 cm x 0,3mm **)",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 95000
+    "hargaMin": 55000
   },
   {
     "id": 412,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "OPERATOR TERLATIH",
     "satuan": "OH",
     "deleted": 0,
@@ -3802,8 +4412,8 @@
   {
     "id": 716,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "Outlet telephone",
     "satuan": "bh",
     "deleted": 0,
@@ -3812,8 +4422,8 @@
   {
     "id": 715,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "Outlet TV",
     "satuan": "bh",
     "deleted": 0,
@@ -3823,11 +4433,11 @@
     "id": 437,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "P.Tire Roller 8 - 10 ton",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 500000
+    "hargaMin": null
   },
   {
     "id": 384,
@@ -3837,7 +4447,7 @@
     "nama": "PAGAR  BRC. Pagar BRC 120 A2 ",
     "satuan": "/lb ",
     "deleted": 0,
-    "hargaMin": 375000
+    "hargaMin": null
   },
   {
     "id": 383,
@@ -3847,7 +4457,7 @@
     "nama": "PAGAR  BRC. Pagar BRC 90 A2 ",
     "satuan": "/lb ",
     "deleted": 0,
-    "hargaMin": 310000
+    "hargaMin": null
   },
   {
     "id": 336,
@@ -3857,7 +4467,7 @@
     "nama": "PAKU - beton ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 25000
+    "hargaMin": 36000
   },
   {
     "id": 334,
@@ -3867,7 +4477,7 @@
     "nama": "PAKU - payung ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 20000
+    "hargaMin": 16000
   },
   {
     "id": 335,
@@ -3877,13 +4487,13 @@
     "nama": "PAKU - sekrup ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 7000
+    "hargaMin": 750
   },
   {
     "id": 541,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Paku 12 cm",
     "satuan": "bh",
     "deleted": 0,
@@ -3892,8 +4502,8 @@
   {
     "id": 560,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Paku hak panjang 15 cm",
     "satuan": "kg",
     "deleted": 0,
@@ -3902,8 +4512,8 @@
   {
     "id": 551,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Paku pancing 6 x 23",
     "satuan": "kg",
     "deleted": 0,
@@ -3912,8 +4522,8 @@
   {
     "id": 458,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN CETAK",
+    "jenis": "BAHAN CETAK",
     "nama": "Panel Beton Pracetak",
     "satuan": "lbr",
     "deleted": 0,
@@ -3922,8 +4532,8 @@
   {
     "id": 472,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Papan Cor",
     "satuan": "m3",
     "deleted": 0,
@@ -3932,8 +4542,8 @@
   {
     "id": 489,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Parquet",
     "satuan": "m2",
     "deleted": 0,
@@ -3947,7 +4557,7 @@
     "nama": "PARQUET JATI ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 260000
+    "hargaMin": null
   },
   {
     "id": 16,
@@ -3957,7 +4567,17 @@
     "nama": "PASIR Beton ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 340000
+    "hargaMin": null
+  },
+  {
+    "id": 782,
+    "kode": "M01c",
+    "kategori": "BAHAN DASAR",
+    "jenis": "PASIR",
+    "nama": "Pasir Halus",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 15,
@@ -3967,7 +4587,7 @@
     "nama": "PASIR Pasang ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 310000
+    "hargaMin": 179
   },
   {
     "id": 14,
@@ -3977,7 +4597,7 @@
     "nama": "PASIR Urug  ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 220000
+    "hargaMin": null
   },
   {
     "id": 358,
@@ -3987,13 +4607,13 @@
     "nama": "PAVING BLOCK BATACO BATACO ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 4800
+    "hargaMin": 3200
   },
   {
     "id": 545,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Paving Block Berwarna Tebal 6 Cm",
     "satuan": "m2",
     "deleted": 0,
@@ -4007,7 +4627,7 @@
     "nama": "PAVING BLOCK HOLLAND Abu-abu ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 85000
+    "hargaMin": 77500
   },
   {
     "id": 351,
@@ -4017,7 +4637,7 @@
     "nama": "PAVING BLOCK HOLLAND Merah/hitam ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 90000
+    "hargaMin": null
   },
   {
     "id": 359,
@@ -4027,7 +4647,7 @@
     "nama": "PAVING BLOCK KANSTEEN KANSTEEN ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 21500
+    "hargaMin": 16000
   },
   {
     "id": 348,
@@ -4037,7 +4657,7 @@
     "nama": "PAVING BLOCK SQUARE Abu-abu ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 85000
+    "hargaMin": null
   },
   {
     "id": 349,
@@ -4047,7 +4667,7 @@
     "nama": "PAVING BLOCK SQUARE Merah/hitam ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 90000
+    "hargaMin": null
   },
   {
     "id": 357,
@@ -4057,13 +4677,13 @@
     "nama": "PAVING BLOCK STANDARD GRASS BLOCK  ABU-ABU STANDARD GRASS BLOCK  ABU-ABU ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 7500
+    "hargaMin": 15000
   },
   {
     "id": 544,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Paving Block Tebal 6 cm",
     "satuan": "m2",
     "deleted": 0,
@@ -4072,8 +4692,8 @@
   {
     "id": 546,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Paving Block Tebal Berwarna 8 Cm",
     "satuan": "m2",
     "deleted": 0,
@@ -4087,7 +4707,7 @@
     "nama": "PAVING BLOCK TRAPEZ GRASS BLOCK Abu-abu ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 85000
+    "hargaMin": null
   },
   {
     "id": 354,
@@ -4097,7 +4717,7 @@
     "nama": "PAVING BLOCK U N I Abu-abu ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 85000
+    "hargaMin": null
   },
   {
     "id": 355,
@@ -4107,7 +4727,7 @@
     "nama": "PAVING BLOCK U N I Merah/hitam ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 90000
+    "hargaMin": null
   },
   {
     "id": 352,
@@ -4117,7 +4737,7 @@
     "nama": "PAVING BLOCK UNIDECOR Abu-abu ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 85000
+    "hargaMin": null
   },
   {
     "id": 353,
@@ -4127,24 +4747,44 @@
     "nama": "PAVING BLOCK UNIDECOR Merah/hitam ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 90000
+    "hargaMin": null
   },
   {
     "id": 410,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "PEKERJA",
     "satuan": "OH",
     "deleted": 0,
-    "hargaMin": 104400
+    "hargaMin": 75000
   },
   {
     "id": 703,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Pelampung otomatis",
+    "satuan": "bh",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 808,
+    "kode": "M35a",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Pelat Rambu (Eng. Grade)",
+    "satuan": "bh",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 809,
+    "kode": "M35b",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Pelat Rambu (High I. Grade)",
     "satuan": "bh",
     "deleted": 0,
     "hargaMin": null
@@ -4157,13 +4797,23 @@
     "nama": "Pelumas ",
     "satuan": "ltr ",
     "deleted": 0,
-    "hargaMin": 37000
+    "hargaMin": null
+  },
+  {
+    "id": 816,
+    "kode": "M43",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Pemantul Cahaya (Reflector)",
+    "satuan": "bh",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 424,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "PEMBANTU JURU UKUR",
     "satuan": "OH",
     "deleted": 0,
@@ -4173,7 +4823,7 @@
     "id": 413,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "PEMBANTU OPERATOR",
     "satuan": "OH",
     "deleted": 0,
@@ -4183,17 +4833,37 @@
     "id": 415,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "PEMBANTU SOPIR",
     "satuan": "OH",
     "deleted": 0,
     "hargaMin": null
   },
   {
+    "id": 822,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Pembesian",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 824,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Pen Kuningan",
+    "satuan": "buah",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
     "id": 498,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Pengelasan",
     "satuan": "cm",
     "deleted": 0,
@@ -4202,8 +4872,8 @@
   {
     "id": 491,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Penjaga jarak bekisting/spacer",
     "satuan": "bh",
     "deleted": 0,
@@ -4212,8 +4882,8 @@
   {
     "id": 504,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
     "nama": "Peralatan",
     "satuan": "%",
     "deleted": 0,
@@ -4222,8 +4892,8 @@
   {
     "id": 723,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
     "nama": "Peralatan potong  pipa T1/manual  (gergaji) /saw",
     "satuan": "hari",
     "deleted": 0,
@@ -4232,8 +4902,8 @@
   {
     "id": 724,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
     "nama": "Peralatan potong  pipa T2/mekanik /  cilinder saw",
     "satuan": "hari",
     "deleted": 0,
@@ -4242,8 +4912,8 @@
   {
     "id": 582,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Perlengkapan",
     "satuan": "Ls",
     "deleted": 0,
@@ -4252,8 +4922,8 @@
   {
     "id": 493,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Phenol film 12 mm",
     "satuan": "lbr",
     "deleted": 0,
@@ -4263,27 +4933,27 @@
     "id": 443,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Pick Up single cabin",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 40000
+    "hargaMin": null
   },
   {
     "id": 440,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Pile Driver / Hammer",
     "satuan": "jam",
     "deleted": 0,
-    "hargaMin": 150000
+    "hargaMin": null
   },
   {
     "id": 480,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Pintu alluminium",
     "satuan": "m",
     "deleted": 0,
@@ -4292,8 +4962,8 @@
   {
     "id": 475,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Pintu gulung besi",
     "satuan": "m2",
     "deleted": 0,
@@ -4307,13 +4977,13 @@
     "nama": "Pintu Lipat Besi ",
     "satuan": "m2",
     "deleted": 0,
-    "hargaMin": 400000
+    "hargaMin": null
   },
   {
     "id": 659,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 100 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4322,8 +4992,8 @@
   {
     "id": 672,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 1000  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4332,8 +5002,8 @@
   {
     "id": 673,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 1100  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4342,8 +5012,8 @@
   {
     "id": 674,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 1200  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4352,8 +5022,8 @@
   {
     "id": 660,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 125 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4362,8 +5032,8 @@
   {
     "id": 661,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 150 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4372,8 +5042,8 @@
   {
     "id": 662,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 200 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4382,8 +5052,8 @@
   {
     "id": 663,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 250 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4392,28 +5062,28 @@
   {
     "id": 664,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 300 mm",
     "satuan": "m",
     "deleted": 0,
     "hargaMin": null
   },
   {
-    "id": 665,
+    "id": 667,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 400 mm",
     "satuan": "m",
-    "deleted": 1,
+    "deleted": 0,
     "hargaMin": null
   },
   {
     "id": 666,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 450 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4422,8 +5092,8 @@
   {
     "id": 668,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 500 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4432,8 +5102,8 @@
   {
     "id": 669,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 600 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4442,8 +5112,8 @@
   {
     "id": 675,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 63 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4452,8 +5122,8 @@
   {
     "id": 670,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 800 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4462,8 +5132,8 @@
   {
     "id": 671,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA BAJA",
     "nama": "Pipa baja Ø 900 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4472,8 +5142,8 @@
   {
     "id": 644,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 100 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4482,8 +5152,8 @@
   {
     "id": 656,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 1000  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4492,8 +5162,8 @@
   {
     "id": 657,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 1100  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4502,8 +5172,8 @@
   {
     "id": 658,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 1200  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4512,8 +5182,8 @@
   {
     "id": 645,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 125 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4522,8 +5192,8 @@
   {
     "id": 646,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 150 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4532,8 +5202,8 @@
   {
     "id": 647,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 200 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4542,8 +5212,8 @@
   {
     "id": 648,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 250 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4552,8 +5222,8 @@
   {
     "id": 649,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 300 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4562,8 +5232,8 @@
   {
     "id": 650,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 400 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4572,8 +5242,8 @@
   {
     "id": 651,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 450 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4582,8 +5252,8 @@
   {
     "id": 652,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 500 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4592,8 +5262,8 @@
   {
     "id": 653,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 600 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4602,8 +5272,8 @@
   {
     "id": 654,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 800 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4612,8 +5282,8 @@
   {
     "id": 655,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA DCI",
     "nama": "Pipa DCI Ø 900 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4622,8 +5292,8 @@
   {
     "id": 630,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 100 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4632,8 +5302,8 @@
   {
     "id": 641,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 1000  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4642,8 +5312,8 @@
   {
     "id": 642,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 1100  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4652,8 +5322,8 @@
   {
     "id": 643,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 1200  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4662,8 +5332,8 @@
   {
     "id": 631,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 125 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4672,8 +5342,8 @@
   {
     "id": 632,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 150 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4682,8 +5352,8 @@
   {
     "id": 633,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 200 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4692,8 +5362,8 @@
   {
     "id": 725,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 250 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4702,8 +5372,8 @@
   {
     "id": 634,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 300 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4712,8 +5382,8 @@
   {
     "id": 635,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 400 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4722,8 +5392,8 @@
   {
     "id": 636,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 450 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4732,8 +5402,8 @@
   {
     "id": 637,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 500 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4742,28 +5412,28 @@
   {
     "id": 638,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 600 mm",
     "satuan": "m",
     "deleted": 0,
     "hargaMin": null
   },
   {
-    "id": 628,
+    "id": 629,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 63 mm",
-    "satuan": "1.000",
-    "deleted": 1,
+    "satuan": "m",
+    "deleted": 0,
     "hargaMin": null
   },
   {
     "id": 639,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 800 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4772,8 +5442,8 @@
   {
     "id": 640,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GIP",
     "nama": "Pipa GIP Ø 900 mm",
     "satuan": "m",
     "deleted": 0,
@@ -4782,8 +5452,8 @@
   {
     "id": 612,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 100  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4792,8 +5462,8 @@
   {
     "id": 625,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 1000  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4802,8 +5472,8 @@
   {
     "id": 626,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 1100  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4812,8 +5482,8 @@
   {
     "id": 627,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 1200  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4822,8 +5492,8 @@
   {
     "id": 613,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 125  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4832,8 +5502,8 @@
   {
     "id": 614,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 150  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4842,8 +5512,8 @@
   {
     "id": 615,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 200  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4852,8 +5522,8 @@
   {
     "id": 616,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 250  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4862,8 +5532,8 @@
   {
     "id": 618,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 300  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4872,8 +5542,8 @@
   {
     "id": 617,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 400  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4882,8 +5552,8 @@
   {
     "id": 619,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 450  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4892,8 +5562,8 @@
   {
     "id": 620,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 500  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4902,8 +5572,8 @@
   {
     "id": 621,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 600  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4912,8 +5582,8 @@
   {
     "id": 611,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 63  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4922,8 +5592,8 @@
   {
     "id": 622,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 800  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4932,8 +5602,8 @@
   {
     "id": 623,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA HDPE",
     "nama": "Pipa HDPE Ø 900  mm",
     "satuan": "m",
     "deleted": 0,
@@ -4942,8 +5612,8 @@
   {
     "id": 771,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Pipa listrik 5/8",
     "satuan": "btg",
     "deleted": 0,
@@ -4952,68 +5622,78 @@
   {
     "id": 590,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GALVANIS",
     "nama": "Pipa Medium  Galvanis 0,50\"",
     "satuan": "m",
     "deleted": 0,
-    "hargaMin": 155000
+    "hargaMin": null
   },
   {
     "id": 591,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GALVANIS",
     "nama": "Pipa Medium  Galvanis 0,75\"",
     "satuan": "m",
     "deleted": 0,
-    "hargaMin": 195000
+    "hargaMin": null
   },
   {
     "id": 592,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GALVANIS",
     "nama": "Pipa Medium  Galvanis 1\"",
     "satuan": "m",
     "deleted": 0,
-    "hargaMin": 305000
+    "hargaMin": null
   },
   {
     "id": 593,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GALVANIS",
     "nama": "Pipa Medium  Galvanis 1,50\"",
     "satuan": "m",
     "deleted": 0,
-    "hargaMin": 435100
+    "hargaMin": null
   },
   {
     "id": 594,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GALVANIS",
     "nama": "Pipa Medium  Galvanis 3\"",
     "satuan": "m",
     "deleted": 0,
-    "hargaMin": 970000
+    "hargaMin": null
   },
   {
     "id": 595,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA GALVANIS",
     "nama": "Pipa Medium  Galvanis 4\"",
     "satuan": "m",
     "deleted": 0,
-    "hargaMin": 1425000
+    "hargaMin": null
+  },
+  {
+    "id": 799,
+    "kode": "M25",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Pipa Porus",
+    "satuan": "m'",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 596,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA PVC",
     "nama": "Pipa PVC  2 1/2\"",
     "satuan": "m",
     "deleted": 0,
@@ -5022,8 +5702,8 @@
   {
     "id": 608,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA PVC",
     "nama": "Pipa PVC Ø 1000  mm",
     "satuan": "m",
     "deleted": 0,
@@ -5032,8 +5712,8 @@
   {
     "id": 609,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA PVC",
     "nama": "Pipa PVC Ø 1100  mm",
     "satuan": "m",
     "deleted": 0,
@@ -5042,8 +5722,8 @@
   {
     "id": 610,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA PVC",
     "nama": "Pipa PVC Ø 1200  mm",
     "satuan": "m",
     "deleted": 0,
@@ -5052,8 +5732,8 @@
   {
     "id": 600,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA PVC",
     "nama": "Pipa PVC Ø 150  mm",
     "satuan": "m",
     "deleted": 0,
@@ -5062,8 +5742,8 @@
   {
     "id": 601,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA PVC",
     "nama": "Pipa PVC Ø 300 mm",
     "satuan": "m",
     "deleted": 0,
@@ -5072,8 +5752,8 @@
   {
     "id": 602,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA PVC",
     "nama": "Pipa PVC Ø 400 mm",
     "satuan": "m",
     "deleted": 0,
@@ -5082,8 +5762,8 @@
   {
     "id": 603,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA PVC",
     "nama": "Pipa PVC Ø 450 mm",
     "satuan": "m",
     "deleted": 0,
@@ -5092,8 +5772,8 @@
   {
     "id": 604,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA PVC",
     "nama": "Pipa PVC Ø 500 mm",
     "satuan": "m",
     "deleted": 0,
@@ -5102,8 +5782,8 @@
   {
     "id": 605,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA PVC",
     "nama": "Pipa PVC Ø 600 mm",
     "satuan": "m",
     "deleted": 0,
@@ -5112,8 +5792,8 @@
   {
     "id": 606,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA PVC",
     "nama": "Pipa PVC Ø 800 mm",
     "satuan": "m",
     "deleted": 0,
@@ -5122,8 +5802,8 @@
   {
     "id": 607,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA PVC",
     "nama": "Pipa PVC Ø 900 mm",
     "satuan": "m",
     "deleted": 0,
@@ -5132,8 +5812,8 @@
   {
     "id": 597,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa tanah",
     "satuan": "bh",
     "deleted": 0,
@@ -5142,8 +5822,8 @@
   {
     "id": 598,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa tanah diameter 15 cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5152,8 +5832,8 @@
   {
     "id": 758,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa Ø 100 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -5162,8 +5842,8 @@
   {
     "id": 759,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa Ø 150 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -5172,8 +5852,8 @@
   {
     "id": 760,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa Ø 200 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -5182,8 +5862,8 @@
   {
     "id": 761,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa Ø 250 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -5192,8 +5872,8 @@
   {
     "id": 762,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa Ø 300 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -5202,8 +5882,8 @@
   {
     "id": 763,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa Ø 400 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -5212,8 +5892,8 @@
   {
     "id": 764,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa Ø 450 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -5222,8 +5902,8 @@
   {
     "id": 765,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa Ø 500 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -5232,8 +5912,8 @@
   {
     "id": 766,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa Ø 600 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -5242,8 +5922,8 @@
   {
     "id": 767,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa Ø 700 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -5252,8 +5932,8 @@
   {
     "id": 757,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa Ø 80 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -5262,8 +5942,8 @@
   {
     "id": 768,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "PIPA",
     "nama": "Pipa Ø 800 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -5272,8 +5952,8 @@
   {
     "id": 468,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Pipe Support",
     "satuan": "bh/hr",
     "deleted": 0,
@@ -5282,18 +5962,28 @@
   {
     "id": 555,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Plastic aerotor",
     "satuan": "bh",
     "deleted": 0,
     "hargaMin": null
   },
   {
+    "id": 798,
+    "kode": "M22",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Plastik Filter",
+    "satuan": "m2",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
     "id": 538,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "TEGEL PLINT",
     "nama": "Plint internal cove 5 x 5 x 20 cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5302,8 +5992,8 @@
   {
     "id": 536,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "TEGEL PLINT",
     "nama": "Plint Keramik 10 x 10 cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5312,8 +6002,8 @@
   {
     "id": 535,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "TEGEL PLINT",
     "nama": "Plint Keramik 10 x 20 cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5322,8 +6012,8 @@
   {
     "id": 689,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Plint Keramik 10 x 30 cm",
     "satuan": "lbr",
     "deleted": 0,
@@ -5332,8 +6022,8 @@
   {
     "id": 537,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "TEGEL PLINT",
     "nama": "Plint Keramik 5 x 20 cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5342,8 +6032,8 @@
   {
     "id": 527,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "UBIN GRANIT",
     "nama": "Plint ubin granit ukuran 10 cm x 30 cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5352,8 +6042,8 @@
   {
     "id": 526,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "UBIN GRANIT",
     "nama": "Plint ubin granit ukuran 10 x 40cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5362,8 +6052,8 @@
   {
     "id": 529,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "UBIN TERALUX",
     "nama": "Plint ubin teralux kerang ukuran 10cm x 30cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5372,8 +6062,8 @@
   {
     "id": 528,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "UBIN TERALUX",
     "nama": "Plint ubin teralux kerang ukuran 10cm x 40cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5382,8 +6072,8 @@
   {
     "id": 531,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "TEGEL PLINT",
     "nama": "Plint ubin teralux marmer ukuran 10cm x 30cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5392,8 +6082,8 @@
   {
     "id": 532,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "TEGEL PLINT",
     "nama": "Plint ubin teralux marmer ukuran 10cm x 40cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5402,8 +6092,8 @@
   {
     "id": 530,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "UBIN TERALUX",
     "nama": "plint ubin teralux marmer ukuran 10cm x 60cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5412,8 +6102,8 @@
   {
     "id": 524,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "UBIN TERASO",
     "nama": "Plint ubin teraso ukuran 10 x 30cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5422,8 +6112,8 @@
   {
     "id": 525,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "UBIN TERASO",
     "nama": "Plint ubin teraso ukuran 10 x 40cm",
     "satuan": "bh",
     "deleted": 0,
@@ -5437,7 +6127,7 @@
     "nama": "PLY WOOD Formika ukuran pintu ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 70000
+    "hargaMin": null
   },
   {
     "id": 227,
@@ -5447,7 +6137,7 @@
     "nama": "PLY WOOD Multipleks 120 X 240 x 12 mm  ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 157700
+    "hargaMin": 154000
   },
   {
     "id": 228,
@@ -5457,7 +6147,7 @@
     "nama": "PLY WOOD Multipleks 120 X 240 x 15 mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 210000
+    "hargaMin": 196000
   },
   {
     "id": 229,
@@ -5467,7 +6157,7 @@
     "nama": "PLY WOOD Multipleks 120 X 240 x 18 mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 215000
+    "hargaMin": 222500
   },
   {
     "id": 226,
@@ -5477,7 +6167,7 @@
     "nama": "PLY WOOD Multipleks 120 X 240 x 9 mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 110000
+    "hargaMin": 120000
   },
   {
     "id": 217,
@@ -5487,7 +6177,7 @@
     "nama": "PLY WOOD Teak Wood 120 X 240 x 3 mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 80000
+    "hargaMin": null
   },
   {
     "id": 220,
@@ -5497,7 +6187,7 @@
     "nama": "PLY WOOD Teak Wood 90 X 210 x 12 mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 135000
+    "hargaMin": null
   },
   {
     "id": 221,
@@ -5507,7 +6197,7 @@
     "nama": "PLY WOOD Teak Wood 90 X 210 x 15 mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 200000
+    "hargaMin": null
   },
   {
     "id": 222,
@@ -5517,7 +6207,7 @@
     "nama": "PLY WOOD Teak Wood 90 X 210 x 18 mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 295000
+    "hargaMin": null
   },
   {
     "id": 216,
@@ -5527,7 +6217,7 @@
     "nama": "PLY WOOD Teak Wood 90 X 210 x 3 mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 65000
+    "hargaMin": 117500
   },
   {
     "id": 218,
@@ -5537,7 +6227,7 @@
     "nama": "PLY WOOD Teak Wood 90 X 210 x 4 mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 65000
+    "hargaMin": null
   },
   {
     "id": 219,
@@ -5547,7 +6237,7 @@
     "nama": "PLY WOOD Teak Wood 90 X 210 x 9 mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 115000
+    "hargaMin": null
   },
   {
     "id": 223,
@@ -5557,7 +6247,7 @@
     "nama": "PLY WOOD Tripleks 120 X 240 x 3 mm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 55000
+    "hargaMin": 62000
   },
   {
     "id": 224,
@@ -5567,7 +6257,7 @@
     "nama": "PLY WOOD Tripleks 120 X 240 x 4 mm  ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 65000
+    "hargaMin": 73000
   },
   {
     "id": 225,
@@ -5577,13 +6267,23 @@
     "nama": "PLY WOOD Tripleks 120 X 240 x 6 mm  ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 75000
+    "hargaMin": 91000
+  },
+  {
+    "id": 843,
+    "kode": "M97",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Polietillin 125 Mikron",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 756,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Pompa  Submersible 3m3/h",
     "satuan": "hari",
     "deleted": 0,
@@ -5597,7 +6297,7 @@
     "nama": "POMPA AIR LISTRIK Dab 125 watt ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 400000
+    "hargaMin": null
   },
   {
     "id": 347,
@@ -5607,7 +6307,7 @@
     "nama": "POMPA AIR LISTRIK Dab 175 watt ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 425000
+    "hargaMin": null
   },
   {
     "id": 343,
@@ -5617,7 +6317,7 @@
     "nama": "POMPA AIR LISTRIK Fuji 250 watt ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 1450000
+    "hargaMin": null
   },
   {
     "id": 342,
@@ -5627,7 +6327,7 @@
     "nama": "POMPA AIR LISTRIK Sanyo 100 watt ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 975000
+    "hargaMin": 465000
   },
   {
     "id": 344,
@@ -5637,7 +6337,7 @@
     "nama": "POMPA AIR LISTRIK Shimizu 100 watt ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 470000
+    "hargaMin": 430000
   },
   {
     "id": 345,
@@ -5647,7 +6347,7 @@
     "nama": "POMPA AIR LISTRIK Shimizu 90 watt ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 350000
+    "hargaMin": null
   },
   {
     "id": 341,
@@ -5657,17 +6357,17 @@
     "nama": "POMPA AIR TANGAN Dragon buatan Indonesia ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 350000
+    "hargaMin": null
   },
   {
     "id": 21,
     "kode": "",
     "kategori": "BAHAN DASAR",
     "jenis": "PORTLAND CEMENT",
-    "nama": "PORTLAND CEMENT Merk I 40 kg ",
-    "satuan": "zak ",
+    "nama": "PORTLAND CEMENT Merk I 1 kg ",
+    "satuan": "kg",
     "deleted": 0,
-    "hargaMin": 46000
+    "hargaMin": 1113
   },
   {
     "id": 22,
@@ -5677,7 +6377,7 @@
     "nama": "PORTLAND CEMENT Merk I 50 kg ",
     "satuan": "zak ",
     "deleted": 0,
-    "hargaMin": 58300
+    "hargaMin": null
   },
   {
     "id": 23,
@@ -5687,7 +6387,7 @@
     "nama": "PORTLAND CEMENT Merk II 40 kg ",
     "satuan": "zak ",
     "deleted": 0,
-    "hargaMin": 45500
+    "hargaMin": 47500
   },
   {
     "id": 24,
@@ -5697,7 +6397,7 @@
     "nama": "PORTLAND CEMENT Merk II 50 kg ",
     "satuan": "zak ",
     "deleted": 0,
-    "hargaMin": 57000
+    "hargaMin": null
   },
   {
     "id": 25,
@@ -5707,7 +6407,7 @@
     "nama": "PORTLAND CEMENT Semen Putih  40 kg ",
     "satuan": "zak ",
     "deleted": 0,
-    "hargaMin": 85000
+    "hargaMin": 90000
   },
   {
     "id": 26,
@@ -5717,7 +6417,7 @@
     "nama": "PORTLAND CEMENT Semen Putih  50 kg ",
     "satuan": "zak ",
     "deleted": 0,
-    "hargaMin": 95000
+    "hargaMin": null
   },
   {
     "id": 27,
@@ -5727,7 +6427,7 @@
     "nama": "PORTLAND CEMENT Semen warna ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 12000
+    "hargaMin": 15500
   },
   {
     "id": 394,
@@ -5737,13 +6437,13 @@
     "nama": "Premium (Industri) ",
     "satuan": "ltr ",
     "deleted": 0,
-    "hargaMin": 7650
+    "hargaMin": null
   },
   {
     "id": 476,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Profil alluminium",
     "satuan": "m",
     "deleted": 0,
@@ -5752,8 +6452,8 @@
   {
     "id": 481,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Profil kaca",
     "satuan": "m",
     "deleted": 0,
@@ -5762,8 +6462,8 @@
   {
     "id": 548,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Ramset",
     "satuan": "bh",
     "deleted": 0,
@@ -5772,8 +6472,8 @@
   {
     "id": 680,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Rangka atap baja ringan",
     "satuan": "m2",
     "deleted": 0,
@@ -5782,8 +6482,8 @@
   {
     "id": 683,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Rangka jendela alumunium",
     "satuan": "m",
     "deleted": 0,
@@ -5792,8 +6492,8 @@
   {
     "id": 502,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Rangka metal hollow 40.40.2 mm",
     "satuan": "m",
     "deleted": 0,
@@ -5802,8 +6502,8 @@
   {
     "id": 684,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Rangka pintu alumunium",
     "satuan": "m",
     "deleted": 0,
@@ -5812,10 +6512,20 @@
   {
     "id": 698,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Rangka plafond metal furing",
     "satuan": "m2",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 810,
+    "kode": "M36",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Rel Pengaman",
+    "satuan": "m'",
     "deleted": 0,
     "hargaMin": null
   },
@@ -5827,7 +6537,7 @@
     "nama": "Rolling door Almunium ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 275000
+    "hargaMin": null
   },
   {
     "id": 363,
@@ -5837,13 +6547,13 @@
     "nama": "Rolling door Besi ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 325000
+    "hargaMin": null
   },
   {
     "id": 704,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Roof drain metal",
     "satuan": "bh",
     "deleted": 0,
@@ -5852,8 +6562,8 @@
   {
     "id": 549,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Rooflight 90 x 180",
     "satuan": "lbr",
     "deleted": 0,
@@ -5867,13 +6577,13 @@
     "nama": "Sabun ",
     "satuan": "kg",
     "deleted": 0,
-    "hargaMin": 12500
+    "hargaMin": null
   },
   {
     "id": 714,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "Saklar ganda",
     "satuan": "bh",
     "deleted": 0,
@@ -5882,8 +6592,8 @@
   {
     "id": 713,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "LAIN-LAIN",
     "nama": "Saklar tunggal",
     "satuan": "bh",
     "deleted": 0,
@@ -5892,8 +6602,8 @@
   {
     "id": 580,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Sanding",
     "satuan": "kg",
     "deleted": 0,
@@ -5907,13 +6617,13 @@
     "nama": "Saringan pasir ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 14460
+    "hargaMin": 17500
   },
   {
     "id": 469,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Scaffolding",
     "satuan": "Jam",
     "deleted": 0,
@@ -5922,8 +6632,8 @@
   {
     "id": 470,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Screening",
     "satuan": "kg",
     "deleted": 0,
@@ -5937,13 +6647,13 @@
     "nama": "Seal tape",
     "satuan": "bh",
     "deleted": 0,
-    "hargaMin": 3300
+    "hargaMin": 4500
   },
   {
     "id": 478,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Sealant",
     "satuan": "tube",
     "deleted": 0,
@@ -5952,8 +6662,8 @@
   {
     "id": 687,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Selinder",
     "satuan": "bh",
     "deleted": 0,
@@ -5962,8 +6672,8 @@
   {
     "id": 471,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Semen Grout",
     "satuan": "kg",
     "deleted": 0,
@@ -5977,7 +6687,7 @@
     "nama": "SENG GELOMBANG BJLS 0,18 panjang 180 cm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 43000
+    "hargaMin": null
   },
   {
     "id": 89,
@@ -5987,7 +6697,7 @@
     "nama": "SENG GELOMBANG BJLS 0,20 panjang 180 cm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 52000
+    "hargaMin": 57500
   },
   {
     "id": 90,
@@ -5997,7 +6707,7 @@
     "nama": "SENG GELOMBANG BJLS 0,30 panjang 180 cm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 59000
+    "hargaMin": 54500
   },
   {
     "id": 91,
@@ -6007,7 +6717,7 @@
     "nama": "SENG GELOMBANG BJLS 0,40 panjang 180 cm ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": 69000
+    "hargaMin": null
   },
   {
     "id": 84,
@@ -6017,7 +6727,7 @@
     "nama": "SENG PLAT BJLS 0,18 lebar 55 cm ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 22000
+    "hargaMin": 35000
   },
   {
     "id": 85,
@@ -6027,7 +6737,7 @@
     "nama": "SENG PLAT BJLS 0,20 lebar 55 cm ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 27000
+    "hargaMin": 19500
   },
   {
     "id": 86,
@@ -6037,7 +6747,7 @@
     "nama": "SENG PLAT BJLS 0,28 lebar 55 cm ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 26500
+    "hargaMin": null
   },
   {
     "id": 87,
@@ -6047,13 +6757,13 @@
     "nama": "SENG PLAT BJLS 0,30 lebar 55 cm ",
     "satuan": "m' ",
     "deleted": 0,
-    "hargaMin": 35000
+    "hargaMin": null
   },
   {
     "id": 690,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "SENG PLAT BJLS 0,30 lebar 90 cm",
     "satuan": "m",
     "deleted": 0,
@@ -6062,8 +6772,8 @@
   {
     "id": 496,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Sewa alat",
     "satuan": "Jam",
     "deleted": 0,
@@ -6072,8 +6782,8 @@
   {
     "id": 693,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Shower set",
     "satuan": "unit",
     "deleted": 0,
@@ -6082,8 +6792,8 @@
   {
     "id": 692,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Shower spray",
     "satuan": "unit",
     "deleted": 0,
@@ -6097,13 +6807,13 @@
     "nama": "SIRAP 100 lbr ",
     "satuan": "pak ",
     "deleted": 0,
-    "hargaMin": 200000
+    "hargaMin": null
   },
   {
     "id": 461,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "SIrtu",
     "satuan": "m3",
     "deleted": 0,
@@ -6117,7 +6827,7 @@
     "nama": "SKAKELAR In Bauw  Engkel ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 17500
+    "hargaMin": 1500
   },
   {
     "id": 289,
@@ -6127,7 +6837,7 @@
     "nama": "SKAKELAR In Bauw Seri ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 25000
+    "hargaMin": 1500
   },
   {
     "id": 288,
@@ -6137,7 +6847,7 @@
     "nama": "SKAKELAR Out Bauw Engkel ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 20000
+    "hargaMin": 13500
   },
   {
     "id": 287,
@@ -6147,13 +6857,13 @@
     "nama": "SKAKELAR Out Bauw Seri ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 25000
+    "hargaMin": 21000
   },
   {
     "id": 477,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Skrup fixer",
     "satuan": "bh",
     "deleted": 0,
@@ -6167,13 +6877,13 @@
     "nama": "Sliding Pintu  J4 ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 200000
+    "hargaMin": null
   },
   {
     "id": 688,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Slot tanam",
     "satuan": "bn",
     "deleted": 0,
@@ -6187,7 +6897,7 @@
     "nama": "Soda  api ",
     "satuan": "kg",
     "deleted": 0,
-    "hargaMin": 13000
+    "hargaMin": 23500
   },
   {
     "id": 212,
@@ -6197,7 +6907,7 @@
     "nama": "SOFT BOARD-uk:  4'X  8' ",
     "satuan": "lbr ",
     "deleted": 0,
-    "hargaMin": null
+    "hargaMin": 62500
   },
   {
     "id": 393,
@@ -6207,13 +6917,13 @@
     "nama": "Solar (Industri)",
     "satuan": "ltr ",
     "deleted": 0,
-    "hargaMin": 8200
+    "hargaMin": null
   },
   {
     "id": 414,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "SOPIR",
     "satuan": "OH",
     "deleted": 0,
@@ -6222,8 +6932,8 @@
   {
     "id": 564,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Spring knip",
     "satuan": "bh",
     "deleted": 0,
@@ -6233,11 +6943,11 @@
     "id": 450,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Stamper",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 40000
+    "hargaMin": null
   },
   {
     "id": 295,
@@ -6247,7 +6957,7 @@
     "nama": "STEKER Arde ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 32500
+    "hargaMin": 12500
   },
   {
     "id": 294,
@@ -6257,7 +6967,7 @@
     "nama": "STEKER Biasa ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 22000
+    "hargaMin": 6500
   },
   {
     "id": 296,
@@ -6267,7 +6977,7 @@
     "nama": "STEKER T Biasa ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 15500
+    "hargaMin": 6500
   },
   {
     "id": 297,
@@ -6277,17 +6987,17 @@
     "nama": "STEKER T dengan Arde ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 35000
+    "hargaMin": 12000
   },
   {
     "id": 454,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Stone Crusher",
     "satuan": "jam",
     "deleted": 0,
-    "hargaMin": 850000
+    "hargaMin": null
   },
   {
     "id": 304,
@@ -6297,7 +7007,7 @@
     "nama": "STOP KONTAK Arde IB ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 40000
+    "hargaMin": null
   },
   {
     "id": 303,
@@ -6307,7 +7017,7 @@
     "nama": "STOP KONTAK Arde Outbow hitam ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 7500
+    "hargaMin": 40000
   },
   {
     "id": 302,
@@ -6317,7 +7027,7 @@
     "nama": "STOP KONTAK Arde Outbow Putih ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 20000
+    "hargaMin": 55000
   },
   {
     "id": 305,
@@ -6327,13 +7037,13 @@
     "nama": "STOP KONTAK Arde Putar ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 50000
+    "hargaMin": null
   },
   {
     "id": 699,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Stop kran diameter 1",
     "satuan": "bh",
     "deleted": 0,
@@ -6342,8 +7052,8 @@
   {
     "id": 462,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Storox-100",
     "satuan": "kg",
     "deleted": 0,
@@ -6357,13 +7067,23 @@
     "nama": "Sunscreen Allumunim ",
     "satuan": "m2",
     "deleted": 0,
-    "hargaMin": 350000
+    "hargaMin": null
+  },
+  {
+    "id": 857,
+    "kode": "M67a",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Superplastisizer",
+    "satuan": "kg",
+    "deleted": 0,
+    "hargaMin": null
   },
   {
     "id": 772,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "T Dus",
     "satuan": "bh",
     "deleted": 0,
@@ -6377,17 +7097,7 @@
     "nama": "Tali Ijuk ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 37000
-  },
-  {
-    "id": 18,
-    "kode": "",
-    "kategori": "BAHAN DASAR",
-    "jenis": "TANAH",
-    "nama": "TANAH Liat ",
-    "satuan": "m3 ",
-    "deleted": 0,
-    "hargaMin": 120000
+    "hargaMin": 5000
   },
   {
     "id": 17,
@@ -6397,23 +7107,33 @@
     "nama": "TANAH Padas ",
     "satuan": "m3 ",
     "deleted": 0,
-    "hargaMin": 120000
+    "hargaMin": null
   },
   {
     "id": 677,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Tanah Urug",
     "satuan": "m3",
     "deleted": 0,
     "hargaMin": null
   },
   {
+    "id": 836,
+    "kode": "E17",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
+    "nama": "Tandem Roller",
+    "satuan": "Jam",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
     "id": 701,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Tangki air 1000 ltr",
     "satuan": "bh",
     "deleted": 0,
@@ -6422,8 +7142,8 @@
   {
     "id": 702,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Tangki air 500 ltr",
     "satuan": "bh",
     "deleted": 0,
@@ -6432,8 +7152,8 @@
   {
     "id": 572,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Teak Oil",
     "satuan": "ltr",
     "deleted": 0,
@@ -6442,8 +7162,8 @@
   {
     "id": 752,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 1000 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6452,8 +7172,8 @@
   {
     "id": 753,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 1100 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6462,8 +7182,8 @@
   {
     "id": 754,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 1200 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6472,8 +7192,8 @@
   {
     "id": 741,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 150 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6482,8 +7202,8 @@
   {
     "id": 742,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 200 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6492,8 +7212,8 @@
   {
     "id": 743,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 250 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6502,8 +7222,8 @@
   {
     "id": 744,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 300 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6512,8 +7232,8 @@
   {
     "id": 745,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 400 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6522,8 +7242,8 @@
   {
     "id": 746,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 450 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6532,8 +7252,8 @@
   {
     "id": 747,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 500 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6542,8 +7262,8 @@
   {
     "id": 748,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 600 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6552,8 +7272,8 @@
   {
     "id": 749,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 700 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6562,8 +7282,8 @@
   {
     "id": 750,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 800 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6572,8 +7292,8 @@
   {
     "id": 751,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN INSTALASI LISTRIK",
+    "jenis": "BAHAN INSTALASI LISTRIK",
     "nama": "Tee Ø 900 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -6607,7 +7327,7 @@
     "nama": "TEGEL PLINT PC abu-abu 15 x 20 ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 5100
+    "hargaMin": null
   },
   {
     "id": 115,
@@ -6617,7 +7337,7 @@
     "nama": "TEGEL PLINT PC warna 10 X 20 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 5200
+    "hargaMin": null
   },
   {
     "id": 521,
@@ -6632,8 +7352,8 @@
   {
     "id": 522,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "TEGEL PLINT",
     "nama": "TEGEL PLINT PC warna 10 X 40 cm ",
     "satuan": "m",
     "deleted": 0,
@@ -6647,7 +7367,7 @@
     "nama": "TEMBOK Cat Tembok ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 23000
+    "hargaMin": 26000
   },
   {
     "id": 249,
@@ -6657,7 +7377,7 @@
     "nama": "TEMBOK Catylac ",
     "satuan": "5 kg ",
     "deleted": 0,
-    "hargaMin": 135000
+    "hargaMin": 110000
   },
   {
     "id": 248,
@@ -6667,7 +7387,7 @@
     "nama": "TEMBOK Danabride ",
     "satuan": "5 kg ",
     "deleted": 0,
-    "hargaMin": 130000
+    "hargaMin": null
   },
   {
     "id": 243,
@@ -6677,7 +7397,7 @@
     "nama": "TEMBOK Kalkarium ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 4500
+    "hargaMin": null
   },
   {
     "id": 244,
@@ -6687,7 +7407,7 @@
     "nama": "TEMBOK Kapur sirih ",
     "satuan": "kg ",
     "deleted": 0,
-    "hargaMin": 4250
+    "hargaMin": 9500
   },
   {
     "id": 250,
@@ -6697,7 +7417,7 @@
     "nama": "TEMBOK Mowilex ",
     "satuan": "2,50 kg ",
     "deleted": 0,
-    "hargaMin": 285000
+    "hargaMin": 165000
   },
   {
     "id": 245,
@@ -6717,7 +7437,7 @@
     "nama": "TEMBOK Sintex ",
     "satuan": "5 kg ",
     "deleted": 0,
-    "hargaMin": 125000
+    "hargaMin": 88000
   },
   {
     "id": 328,
@@ -6727,7 +7447,7 @@
     "nama": "TEMPAT SABUN GANTUNG ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 45000
+    "hargaMin": 45500
   },
   {
     "id": 329,
@@ -6737,14 +7457,54 @@
     "nama": "TEMPAT SABUN TANAM ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 22500
+    "hargaMin": 35000
   },
   {
     "id": 533,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "LAIN-LAIN",
     "nama": "Teraso cor",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 823,
+    "kode": "M49",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Tiang Pancang Baja",
+    "satuan": "m'",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 825,
+    "kode": "M50",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Tiang Pancang Beton Pratekan",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 820,
+    "kode": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Timbunan Pasir",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 835,
+    "kode": "EI-241",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Timbunan Porus",
     "satuan": "m3",
     "deleted": 0,
     "hargaMin": null
@@ -6752,10 +7512,20 @@
   {
     "id": 599,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Tripot/Tackel & handle crane 2 T",
     "satuan": "hari",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 839,
+    "kode": "E49",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
+    "nama": "Truck Mixer",
+    "satuan": "Jam",
     "deleted": 0,
     "hargaMin": null
   },
@@ -6763,37 +7533,37 @@
     "id": 455,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Truck Trailler",
     "satuan": "trip ",
     "deleted": 0,
-    "hargaMin": 7250000
+    "hargaMin": null
   },
   {
     "id": 428,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Truk Bak Terbuka Engkel",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 125000
+    "hargaMin": null
   },
   {
     "id": 429,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Truk Tanki Air",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 280000
+    "hargaMin": null
   },
   {
     "id": 456,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "TENAGA KERJA",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG",
     "satuan": "OH",
     "deleted": 0,
@@ -6803,7 +7573,7 @@
     "id": 416,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG ALUMUNIUM ",
     "satuan": "OH",
     "deleted": 0,
@@ -6813,7 +7583,7 @@
     "id": 407,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG BAJA RINGAN",
     "satuan": "OH",
     "deleted": 0,
@@ -6823,37 +7593,37 @@
     "id": 399,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG BATU",
     "satuan": "OH",
     "deleted": 0,
-    "hargaMin": 125000
+    "hargaMin": null
   },
   {
     "id": 400,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG BESI",
     "satuan": "OH",
     "deleted": 0,
-    "hargaMin": 127000
+    "hargaMin": null
   },
   {
     "id": 402,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG CAT",
     "satuan": "OH",
     "deleted": 0,
-    "hargaMin": 125000
+    "hargaMin": null
   },
   {
     "id": 467,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Tukang Ereksi",
     "satuan": "OH",
     "deleted": 0,
@@ -6863,7 +7633,7 @@
     "id": 403,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG GALI",
     "satuan": "OH",
     "deleted": 0,
@@ -6873,17 +7643,17 @@
     "id": 401,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG KAYU",
     "satuan": "OH",
     "deleted": 0,
-    "hargaMin": 127000
+    "hargaMin": null
   },
   {
     "id": 417,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG KHUSUS ALUMINIUM",
     "satuan": "OH",
     "deleted": 0,
@@ -6893,7 +7663,7 @@
     "id": 406,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG LAS BIASA",
     "satuan": "OH",
     "deleted": 0,
@@ -6903,27 +7673,27 @@
     "id": 419,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG LAS KONSTRUKSI",
     "satuan": "OH",
     "deleted": 0,
     "hargaMin": null
   },
   {
-    "id": 422,
+    "id": 408,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG LISTRIK",
     "satuan": "OH",
     "deleted": 0,
-    "hargaMin": 125000
+    "hargaMin": null
   },
   {
     "id": 405,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG PENGANYAM BRONJONG",
     "satuan": "OH",
     "deleted": 0,
@@ -6933,7 +7703,7 @@
     "id": 404,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG PIPA",
     "satuan": "OH",
     "deleted": 0,
@@ -6943,7 +7713,7 @@
     "id": 409,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "TUKANG TEBAS",
     "satuan": "OH",
     "deleted": 0,
@@ -6952,8 +7722,8 @@
   {
     "id": 466,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Tukang Vibrator",
     "satuan": "OH",
     "deleted": 0,
@@ -6967,7 +7737,7 @@
     "nama": "TYPE RT 10 tinggi : 3,0 cm, tebal  : 0,45mm panjang 6 m",
     "satuan": "btg",
     "deleted": 0,
-    "hargaMin": 42000
+    "hargaMin": 117000
   },
   {
     "id": 165,
@@ -6977,7 +7747,7 @@
     "nama": "TYPE RT 12  tinggi : 3,5 cm, tebal  : 0,45mm panjang 6 m",
     "satuan": "btg",
     "deleted": 0,
-    "hargaMin": 48000
+    "hargaMin": null
   },
   {
     "id": 111,
@@ -6987,7 +7757,7 @@
     "nama": "UBIN (TEGEL BIASA) PC polos 20 X 20 cm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 34000
+    "hargaMin": null
   },
   {
     "id": 110,
@@ -6997,7 +7767,7 @@
     "nama": "UBIN (TEGEL BIASA) PC polos 30 X 30 cm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 35000
+    "hargaMin": null
   },
   {
     "id": 510,
@@ -7017,7 +7787,7 @@
     "nama": "UBIN (TEGEL BIASA) PC warna 20 X 20 cm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 39500
+    "hargaMin": null
   },
   {
     "id": 112,
@@ -7027,7 +7797,7 @@
     "nama": "UBIN (TEGEL BIASA) PC warna 30 X 30 cm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 40000
+    "hargaMin": null
   },
   {
     "id": 511,
@@ -7047,7 +7817,7 @@
     "nama": "UBIN (TEGEL BIASA) Teraso 20 X 20 cm ",
     "satuan": "m2 ",
     "deleted": 0,
-    "hargaMin": 52000
+    "hargaMin": null
   },
   {
     "id": 513,
@@ -7072,8 +7842,8 @@
   {
     "id": 534,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "LAIN-LAIN",
     "nama": "Ubin Keramik",
     "satuan": "bh",
     "deleted": 0,
@@ -7087,7 +7857,7 @@
     "nama": "UBIN PORSELIN Lokal 11 X 11 putih ",
     "satuan": "dos ",
     "deleted": 0,
-    "hargaMin": 42000
+    "hargaMin": null
   },
   {
     "id": 118,
@@ -7097,7 +7867,7 @@
     "nama": "UBIN PORSELIN Lokal 11 X 11 warna ",
     "satuan": "dos ",
     "deleted": 0,
-    "hargaMin": 45000
+    "hargaMin": null
   },
   {
     "id": 119,
@@ -7107,7 +7877,7 @@
     "nama": "UBIN PORSELIN Lokal 15 X 15 putih ",
     "satuan": "dos ",
     "deleted": 0,
-    "hargaMin": 45000
+    "hargaMin": null
   },
   {
     "id": 120,
@@ -7117,13 +7887,13 @@
     "nama": "UBIN PORSELIN Lokal 15 X 15 warna ",
     "satuan": "dos ",
     "deleted": 0,
-    "hargaMin": 46000
+    "hargaMin": null
   },
   {
     "id": 515,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "UBIN TERALUX",
     "nama": "Ubin teralux 30 X 30 cm ",
     "satuan": "bh",
     "deleted": 0,
@@ -7132,8 +7902,8 @@
   {
     "id": 518,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "UBIN TERALUX",
     "nama": "Ubin teralux marmer 30 X 30 cm ",
     "satuan": "bh",
     "deleted": 0,
@@ -7142,8 +7912,8 @@
   {
     "id": 514,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "UBIN TERALUX",
     "nama": "Ubin Teralux Marmer 40 X 40 cm ",
     "satuan": "bh",
     "deleted": 0,
@@ -7152,8 +7922,8 @@
   {
     "id": 516,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PENTUTUP DINDING/LANTAI",
+    "jenis": "UBIN TERALUX",
     "nama": "Ubin teralux marmer 60 X 60 cm ",
     "satuan": "bh",
     "deleted": 0,
@@ -7162,8 +7932,8 @@
   {
     "id": 488,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Underlayer",
     "satuan": "m2",
     "deleted": 0,
@@ -7172,18 +7942,28 @@
   {
     "id": 583,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Unioir",
     "satuan": "unit",
     "deleted": 0,
     "hargaMin": null
   },
   {
+    "id": 831,
+    "kode": "(EI-322)",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
+    "nama": "Urugan Pilihan",
+    "satuan": "m3",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
     "id": 738,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 1000 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7192,8 +7972,8 @@
   {
     "id": 739,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 1100 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7202,8 +7982,8 @@
   {
     "id": 740,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 1200 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7212,8 +7992,8 @@
   {
     "id": 726,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 150 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7222,8 +8002,8 @@
   {
     "id": 727,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 200 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7232,8 +8012,8 @@
   {
     "id": 728,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 250 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7242,8 +8022,8 @@
   {
     "id": 729,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 300 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7252,8 +8032,8 @@
   {
     "id": 730,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 400 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7262,8 +8042,8 @@
   {
     "id": 731,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 450 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7272,8 +8052,8 @@
   {
     "id": 732,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 500 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7282,8 +8062,8 @@
   {
     "id": 733,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 600 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7292,8 +8072,8 @@
   {
     "id": 734,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 700 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7302,8 +8082,8 @@
   {
     "id": 736,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 800 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7312,8 +8092,8 @@
   {
     "id": 737,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "BAHAN PIPA",
+    "jenis": "VALVE",
     "nama": "Valve Ø 900 mm",
     "satuan": "bh",
     "deleted": 0,
@@ -7322,8 +8102,8 @@
   {
     "id": 501,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Venetions Blinds atau Vertical Blinds (tirai)",
     "satuan": "m2",
     "deleted": 0,
@@ -7332,8 +8112,8 @@
   {
     "id": 573,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Vernis",
     "satuan": "ltr",
     "deleted": 0,
@@ -7343,11 +8123,11 @@
     "id": 439,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Vibrator Roller self 7 ton",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 500000
+    "hargaMin": null
   },
   {
     "id": 396,
@@ -7357,13 +8137,13 @@
     "nama": "Vynil  30x30 cm ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 6200
+    "hargaMin": null
   },
   {
     "id": 543,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Wallpaper",
     "satuan": "m",
     "deleted": 0,
@@ -7377,7 +8157,7 @@
     "nama": "WASTAFEL BAK CUCI ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 260000
+    "hargaMin": 170000
   },
   {
     "id": 324,
@@ -7387,7 +8167,7 @@
     "nama": "WASTAFEL GANTUNG BULAT ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 510000
+    "hargaMin": 455000
   },
   {
     "id": 325,
@@ -7397,7 +8177,7 @@
     "nama": "WASTAFEL GANTUNG SUDUT ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 650000
+    "hargaMin": null
   },
   {
     "id": 326,
@@ -7407,7 +8187,7 @@
     "nama": "WASTAFEL GANTUNG SUDUT KECIL ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 240000
+    "hargaMin": null
   },
   {
     "id": 323,
@@ -7417,7 +8197,7 @@
     "nama": "WASTAFEL MEJA OVAL ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 550000
+    "hargaMin": 1100000
   },
   {
     "id": 322,
@@ -7427,23 +8207,23 @@
     "nama": "WASTAFEL PEDESTAL  ",
     "satuan": "bh ",
     "deleted": 0,
-    "hargaMin": 950000
+    "hargaMin": 350000
   },
   {
     "id": 441,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Water Pump ",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 40000
+    "hargaMin": null
   },
   {
     "id": 589,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Waterdrain",
     "satuan": "bh",
     "deleted": 0,
@@ -7452,8 +8232,8 @@
   {
     "id": 463,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Waterstop Lebar 150 mm",
     "satuan": "m",
     "deleted": 0,
@@ -7462,8 +8242,8 @@
   {
     "id": 464,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Waterstop Lebar 200 mm",
     "satuan": "m",
     "deleted": 0,
@@ -7472,10 +8252,20 @@
   {
     "id": 465,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Waterstop Lebar 230-320 mm",
     "satuan": "m",
+    "deleted": 0,
+    "hargaMin": null
+  },
+  {
+    "id": 859,
+    "kode": "",
+    "kategori": "PERALATAN",
+    "jenis": "PERALATAN",
+    "nama": "Welding set",
+    "satuan": "Jam",
     "deleted": 0,
     "hargaMin": null
   },
@@ -7483,11 +8273,11 @@
     "id": 432,
     "kode": "",
     "kategori": "PERALATAN",
-    "jenis": "",
+    "jenis": "PERALATAN",
     "nama": "Wheel Loader",
     "satuan": "Jam",
     "deleted": 0,
-    "hargaMin": 270000
+    "hargaMin": null
   },
   {
     "id": 367,
@@ -7497,13 +8287,13 @@
     "nama": "WIDE  FLANGE  BEAM 150 X 75 X 5 X 7 X 12 ",
     "satuan": "btg ",
     "deleted": 0,
-    "hargaMin": 1475000
+    "hargaMin": null
   },
   {
     "id": 578,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Wood filler",
     "satuan": "kg",
     "deleted": 0,
@@ -7512,381 +8302,21 @@
   {
     "id": 579,
     "kode": "",
-    "kategori": "",
-    "jenis": "",
+    "kategori": "LAIN-LAIN",
+    "jenis": "LAIN-LAIN",
     "nama": "Woodstain",
     "satuan": "kg",
     "deleted": 0,
     "hargaMin": null
   },
   {
-    "id": 397,
-    "kode": "",
-    "kategori": "TENAGA KERJA",
-    "jenis": "",
-    "nama": "MANDOR",
-    "satuan": "OH",
-    "deleted": 0,
-    "hargaMin": 130000
-  },
-  {
     "id": 410,
     "kode": "",
     "kategori": "TENAGA KERJA",
-    "jenis": "",
+    "jenis": "TENAGA KERJA",
     "nama": "PEKERJA",
     "satuan": "OH",
     "deleted": 0,
-    "hargaMin": 104400
-  },
-  {
-    "id": 399,
-    "kode": "",
-    "kategori": "TENAGA KERJA",
-    "jenis": "",
-    "nama": "TUKANG BATU",
-    "satuan": "OH",
-    "deleted": 0,
-    "hargaMin": 125000
-  },
-  {
-    "id": 400,
-    "kode": "",
-    "kategori": "TENAGA KERJA",
-    "jenis": "",
-    "nama": "TUKANG BESI",
-    "satuan": "OH",
-    "deleted": 0,
-    "hargaMin": 127000
-  },
-  {
-    "id": 402,
-    "kode": "",
-    "kategori": "TENAGA KERJA",
-    "jenis": "",
-    "nama": "TUKANG CAT",
-    "satuan": "OH",
-    "deleted": 0,
-    "hargaMin": 125000
-  },
-  {
-    "id": 401,
-    "kode": "",
-    "kategori": "TENAGA KERJA",
-    "jenis": "",
-    "nama": "TUKANG KAYU",
-    "satuan": "OH",
-    "deleted": 0,
-    "hargaMin": 127000
-  },
-  {
-    "id": 422,
-    "kode": "",
-    "kategori": "TENAGA KERJA",
-    "jenis": "",
-    "nama": "TUKANG LISTRIK",
-    "satuan": "OH",
-    "deleted": 0,
-    "hargaMin": 125000
-  },
-  {
-    "id": 444,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "A M P",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 5500000
-  },
-  {
-    "id": 452,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Alat Pengecat Marka ",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 300000
-  },
-  {
-    "id": 445,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Asphalt  Finisher",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 340000
-  },
-  {
-    "id": 442,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Asphalt  Sprayer",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 135000
-  },
-  {
-    "id": 438,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Baby Roller ",
-    "satuan": "jam",
-    "deleted": 0,
-    "hargaMin": 40000
-  },
-  {
-    "id": 436,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Baby Roller / Pedestrian",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 110000
-  },
-  {
-    "id": 430,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Bulldozer 100 - 150 hp",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 675000
-  },
-  {
-    "id": 447,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Compressor",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 310000
-  },
-  {
-    "id": 446,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Concrete  Vibrator",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 55000
-  },
-  {
-    "id": 449,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Concrete Cutter",
-    "satuan": "jam",
-    "deleted": 0,
-    "hargaMin": 37500
-  },
-  {
-    "id": 448,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Concrete Mixer 0,125m3",
-    "satuan": "Jam",
-    "deleted": 0,
     "hargaMin": 75000
-  },
-  {
-    "id": 434,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Crane 35 ton",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 550000
-  },
-  {
-    "id": 426,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Dump Truck 3 ton",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 85000
-  },
-  {
-    "id": 427,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Dump Truck 9 ton",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 110000
-  },
-  {
-    "id": 433,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Excavator",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 650000
-  },
-  {
-    "id": 435,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Flat Bed Truck",
-    "satuan": "jam",
-    "deleted": 0,
-    "hargaMin": 430000
-  },
-  {
-    "id": 451,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Genset 5-25kva+bbm",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 180000
-  },
-  {
-    "id": 453,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Mesin  Las",
-    "satuan": "jam",
-    "deleted": 0,
-    "hargaMin": 180000
-  },
-  {
-    "id": 431,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Motor Grader",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 625000
-  },
-  {
-    "id": 437,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "P.Tire Roller 8 - 10 ton",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 500000
-  },
-  {
-    "id": 443,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Pick Up single cabin",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 40000
-  },
-  {
-    "id": 440,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Pile Driver / Hammer",
-    "satuan": "jam",
-    "deleted": 0,
-    "hargaMin": 150000
-  },
-  {
-    "id": 450,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Stamper",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 40000
-  },
-  {
-    "id": 454,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Stone Crusher",
-    "satuan": "jam",
-    "deleted": 0,
-    "hargaMin": 850000
-  },
-  {
-    "id": 455,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Truck Trailler",
-    "satuan": "trip ",
-    "deleted": 0,
-    "hargaMin": 7250000
-  },
-  {
-    "id": 428,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Truk Bak Terbuka Engkel",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 125000
-  },
-  {
-    "id": 429,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Truk Tanki Air",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 280000
-  },
-  {
-    "id": 439,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Vibrator Roller self 7 ton",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 500000
-  },
-  {
-    "id": 441,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Water Pump ",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 40000
-  },
-  {
-    "id": 432,
-    "kode": "",
-    "kategori": "PERALATAN",
-    "jenis": "",
-    "nama": "Wheel Loader",
-    "satuan": "Jam",
-    "deleted": 0,
-    "hargaMin": 270000
   }
 ]

@@ -20,6 +20,8 @@
     <link href="/stylesheets/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Plugin This Page --> 
+    <link href="/plugins/slick/slick.css" rel="stylesheet">
+    <link href="/plugins/slick/slick-theme.css" rel="stylesheet">
     <!-- End Plugins This Page -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -50,7 +52,7 @@
             <div class="row">
                 <div class="col-md-12 col-lg-12 p-l-0 p-r-0">
                     <div style="width: 100%;background-color: ;position: relative;">
-                        <video autoplay loop id="video-background" muted >
+                        <!-- <video autoplay loop id="video-background" muted >
                             
                             <source src="/video/video_jakon_2.mp4" type="video/mp4">
 
@@ -71,8 +73,24 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        
+                        </section> -->
+                        <div class="banner">
+                            <div>
+                                <img src="/images/template/SIJAKONS 2-01.jpg" alt="" style="width: 100%;">
+                            </div>
+
+                            <div>
+                                <img src="/images/template/SIJAKONS 2-02.jpg" alt="" style="width: 100%;">
+                            </div>
+
+                            <div>
+                                <img src="/images/template/SIJAKONS 2-03.jpg" alt="" style="width: 100%;">
+                            </div>
+
+                            <div>
+                                <img src="/images/template/SIJAKONS 2-04.jpg" alt="" style="width: 100%;">
+                            </div>
+                        </div>
                         
                     </div>
                 </div>
@@ -389,8 +407,17 @@
     <script src="/javascripts/template/jquery.min.js"></script>
     <script src="/javascripts/template/bootstrap.bundle.min.js"></script>
     <!-- Plugins This Page -->
+    <script src="/plugins/slick/slick.min.js"></script> 
     <!-- End Plugins This Page -->
     <script type="text/javascript">
+    $('.banner').slick({
+          dots: false,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          slidesToShow: 1,
+          adaptiveHeight: true
+        });
     $(function() {
       $('#menu-beranda').addClass('custom');
     });

@@ -16,18 +16,17 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="panel">
         <div class="panel-content">
-          <form role="form" action="/manajemen_master/detail_pekerjaan/submit_insert" method="POST" enctype="multipart/form-data">
+          <form role="form" id="kirim" action="/manajemen_master/detail_pekerjaan/submit_insert" method="POST" enctype="multipart/form-data">
             <div class="row">
               <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">
                 <div class="form-group">
                   <label>Kabupaten</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <select class="form-control" name="id_kab" id="id_kab" data-search="true">
+                      <select class="form-control" name="id_kab" id="id_kab" data-search="true" required>
                         <option value="-">-- Pilih --</option>
                        
-                        <% for(var i=0; i<kabupaten.length; i++){ %> 
-                          
+                          <% for(var i=0; i<kabupaten.length; i++){ %> 
                           <option value="<%= kabupaten[i]['id_kab']%>"><%= kabupaten[i]['kab']%></option>
                           <% }%>
                       </select>
@@ -39,7 +38,7 @@
                   <label>Sumber</label>
                   <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                      <select class="form-control" name="id_toko" id="id_toko" data-search="true">
+                      <select class="form-control" name="id_toko" id="id_toko" data-search="true" required>
                       
                      
                       </select>
@@ -85,7 +84,7 @@
                   </div>
                   <div class="panel-content">
                     <p>Silahkan Import excel untuk menginput harga sumber dari kabupaten yang anda pilih</p>
-                    <input type="file" class="form-control" name="file_ssh" id="">
+                    <input type="file" class="form-control" name="file_ssh" id="" accept=".xls,.xlsx" required>
                     <button type="submit" class="btn btn-primary btn-embossed" style="margin-top: 15px;">Import Excel</button>
                   </div>
                 </div>
@@ -147,4 +146,8 @@
       window.open('/manajemen_master/detail_pekerjaan/export_excel/'+$('#id_kab').val()+"/"+$('#id_toko').val())
    }
  })
+
+//  $('#kirim').submit(function(){
+//    alert('Berhasil')
+//  })
 </script>

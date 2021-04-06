@@ -234,7 +234,7 @@
             
                             <tr>
                                 <td style="text-align: center;">E</td>
-                                <td style="text-align: left;" colspan="3">Overhead + profit (Contoh 10%)</td>
+                                <td style="text-align: left;" colspan="3">Overhead + profit (10%)</td>
                                 <td colspan="2" style="text-align: center;">10 % x D</td>
                                 <td id="total_profit" style="text-align: right;">&nbsp;</td>
                             </tr>
@@ -376,7 +376,10 @@
         }
     });
 let total_bahan =0;
+
     bahan.forEach(e => {
+        
+        if(e.harga==null) e.harga=0
       $( "#bahan" ).after(` <tr id='${e.id}'>
           <td style="text-align: center;"></td>
           <td style="text-align: left;">${e.nama} </td>
@@ -392,6 +395,7 @@ let total_bahan =0;
 
     let total_tenaga = 0
     tenaga.forEach(e => {
+        if(e.harga==null) e.harga=0
       $( "#tenaga" ).after(` <tr id='${e.id}'>
           <td style="text-align: center;"></td>
           <td style="text-align: left;">${e.nama} </td>
@@ -406,6 +410,7 @@ let total_bahan =0;
 
     let total_peralatan = 0;
     peralatan.forEach(e => {
+        if(e.harga==null) e.harga=0
       $( "#peralatan" ).after(` <tr id='${e.id}'>
           <td style="text-align: center;"></td>
           <td style="text-align: left;">${e.nama} </td>

@@ -192,6 +192,7 @@ function numberWithCommas(x) {
 
       $('#data').on('click', '.hargamin', function(e) {
           // console.log($(this).attr('id_standar_harga'));
+          $(this).popover('destroy');
           if($(this).length>1){
             $(this).popover('hide');
           }

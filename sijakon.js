@@ -203,7 +203,7 @@ app.get('/list_ssh', cek_login, function (req, res) {
 });
 
 app.get('/list_toko/:id_kab', cek_login, function (req, res) {
-  connection.query("select * from master_toko where id_kab="+req.params.id_kab, function(err, kabupaten, fields) {
+  connection.query("select * from master_toko where deleted=0 and id_kab="+req.params.id_kab, function(err, kabupaten, fields) {
     res.json(kabupaten)
     
   })

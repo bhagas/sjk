@@ -286,7 +286,7 @@ router.get('/pekerjaan/detail/:id', cek_login, function(req, res) {
 
 router.get('/pekerjaan/detail_json/:id/:id_kab', function(req, res) {
   // "SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" group by a.nama"
-    connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(c.harga) as harga from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' and c.harga>0 group by a.id", function(err, data_detail_pekerjaan, fields) {
+    connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(CASE WHEN c.harga > 0 THEN c.harga END) as harga from detail_pekerjaan a left join standar_harga b on a.id_standar_harga = b.id  join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' where a.id_pekerjaan =  '"+req.params.id+"'  group by a.id", function(err, data_detail_pekerjaan, fields) {
       // console.log("SELECT a.*, b.nama, b.satuan, b.kode from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id and c.id_kab = '"+req.params.id_kab+"'") 
       res.json(data_detail_pekerjaan)
         }) 
@@ -579,9 +579,10 @@ router.post('/detail_pekerjaan/submit_insert', cek_login,  function(req, res){
 
                       sql_enak('standar_harga_kab').insert(hasil)
                       .then(async data=>{
-                        let t = await del(['./public/excel/*.xlsx'])
+                        let t = await del(['./public/excel/'+namafile])
                         console.log(t, 'aaa')  
                          res.redirect('/list_ssh')
+                         
                       })
                       .catch(err=>{
                         console.log(err, 'err')
@@ -697,17 +698,19 @@ router.get('/detail_pekerjaan/export_excel/:id_kab/:id_toko', cek_login, async f
           // console.log(rows)
           rows.forEach(function(item){
             (!item.harga)?item.harga=0:item.harga;
+            bahan_dasar.push({"ID": item.id, "KATEGORI BAHAN": item.kategori,"JENIS BAHAN": item.jenis,"NAMA BAHAN": item.nama,"SATUAN": item.satuan, "HARGA": item.harga, "KETERANGAN":''})
+         
             // id kategori	KATEGORI BAHAN	id jenis	JENIS BAHAN	id nama	NAMA BAHAN	SATUAN	HARGA	KETERANGAN
-            if(item.kategori=='TENAGA KERJA'){
+            // if(item.kategori=='TENAGA KERJA'){
 
-              upah.push({"ID": item.id, "KATEGORI BAHAN": item.kategori,"JENIS BAHAN": item.jenis,"NAMA BAHAN": item.nama,"SATUAN": item.satuan, "HARGA": item.harga, "KETERANGAN":''})
-            }else if(item.kategori=='PERALATAN'){
-              peralatan.push({"ID": item.id, "KATEGORI BAHAN": item.kategori,"JENIS BAHAN": item.jenis,"NAMA BAHAN": item.nama,"SATUAN": item.satuan, "HARGA": item.harga, "KETERANGAN":''})
+            //   upah.push({"ID": item.id, "KATEGORI BAHAN": item.kategori,"JENIS BAHAN": item.jenis,"NAMA BAHAN": item.nama,"SATUAN": item.satuan, "HARGA": item.harga, "KETERANGAN":''})
+            // }else if(item.kategori=='PERALATAN'){
+            //   peralatan.push({"ID": item.id, "KATEGORI BAHAN": item.kategori,"JENIS BAHAN": item.jenis,"NAMA BAHAN": item.nama,"SATUAN": item.satuan, "HARGA": item.harga, "KETERANGAN":''})
             
-            }else{
-              bahan_dasar.push({"ID": item.id, "KATEGORI BAHAN": item.kategori,"JENIS BAHAN": item.jenis,"NAMA BAHAN": item.nama,"SATUAN": item.satuan, "HARGA": item.harga, "KETERANGAN":''})
+            // }else{
+            //   bahan_dasar.push({"ID": item.id, "KATEGORI BAHAN": item.kategori,"JENIS BAHAN": item.jenis,"NAMA BAHAN": item.nama,"SATUAN": item.satuan, "HARGA": item.harga, "KETERANGAN":''})
             
-            }
+            // }
           })
           done = true;
       })
@@ -737,8 +740,8 @@ router.get('/detail_pekerjaan/export_excel/:id_kab/:id_toko', cek_login, async f
       XLSX.utils.sheet_add_aoa(worksheet, [["NAMA TOKO : "+toko[0].nama_toko]], {origin: "A6"});
       XLSX.utils.sheet_add_aoa(worksheet, [["ALAMAT : "+toko[0].alamat]], {origin: "A7"});
       XLSX.utils.sheet_add_json(worksheet, bahan_dasar, {header:["ID","KATEGORI BAHAN","JENIS BAHAN","NAMA BAHAN","SATUAN","HARGA","KETERANGAN"], origin: "A8"});
-      XLSX.utils.sheet_add_json(worksheet, peralatan, {skipHeader:true, origin: "A"+(8+bahan_dasar.length)});
-      XLSX.utils.sheet_add_json(worksheet, upah, {skipHeader:true, origin: "A"+(8+bahan_dasar.length+peralatan.length)});
+      // XLSX.utils.sheet_add_json(worksheet, peralatan, {skipHeader:true, origin: "A"+(8+bahan_dasar.length)});
+      // XLSX.utils.sheet_add_json(worksheet, upah, {skipHeader:true, origin: "A"+(8+bahan_dasar.length+peralatan.length)});
 
       var wbbuf = XLSX.write(workbook, {
         type: 'base64'
