@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Informasi Harga Satuan Pekerjaan Konstruksi Provinsi Jawa Tengah, MAS PETRUK, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN">
+    <meta name="author" content="Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah | Balai Jasa Konstruksi Provinsi Jawa Tengah">
     <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
-    <title></title>
+    <title>MAS PETRUK | INFORMASI HARGA SATUAN PEKERJAAN KONSTRUKSI PROVINSI JAWA TENGAH</title>
 
     <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/template/css/style.css" rel="stylesheet">
@@ -26,7 +26,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
-    
     </style>
 </head>
 
@@ -44,129 +43,61 @@
             </div>
 
             <div class="row" style="margin-top: 30px;">
-                <div class="col-md-12 col-lg-12">
-                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link active" id="bahan-2-tab" data-toggle="tab" href="#bahan-2" role="tab" aria-controls="bahan-2" aria-selected="true" style="font-weight: bold;">BADAN USAHA JASA PELAKSANA KONSTRUKSI</a>
-                        </li>
+                <div class="col-md-9 col-lg-9">
+                    <div id="chartContainer" style="height: 1754px; width: 100%;"></div>
+                </div>
 
-                        <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="upah-2-tab" data-toggle="tab" href="#upah-2" role="tab" aria-controls="upah-2" aria-selected="false" style="font-weight: bold;">BADAN USAHA JASA PERENCANA / PENGAWAS KONSTRUKSI / KONSULTAN</a>
-                        </li>
-                    </ul>
+                <div class="col-md-3 col-lg-3">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Kabupaten/Kota</th>
+                                <th>Jumlah</th>
+                            </tr>
+                        </thead>
 
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="bahan-2" role="tabpanel" aria-labelledby="bahan-2-tab">
-                            <div class="row" style="margin-top: 15px;">
-                                <div class="col-md-9 col-lg-9">
-                                    <div id="chartContainer" style="height: 500px; width: 100%;"></div>
-                                </div>
-                
-                                <div class="col-md-3 col-lg-3">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Kabupaten/Kota</th>
-                                                <th>Jumlah</th>
-                                            </tr>
-                                        </thead>
-                
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="#" class="btn-detail"> Kabupaten Cilacap</a></td>
-                                                <td>100</td>
-                                            </tr>
-                
-                                            <tr>
-                                                <td><a href="#"> Kabupaten Banyumas</a></td>
-                                                <td>200</td>
-                                            </tr>
-                
-                                            <tr>
-                                                <td><a href="#"> Kabupaten Jepara</a></td>
-                                                <td>300</td>
-                                            </tr>
-                
-                                            <tr>
-                                                <td><a href="#"> dst.....</a></td>
-                                                <td>dst .....</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            
+                        <tbody>
+                            <% for(let i =0; i<pelaksana.length; i++){%>
+                            <tr>
+                                <td><a href="#" class="btn-detail" onclick="ambilJumlah('<%=pelaksana[i].id_kab%>')"><%= pelaksana[i].label%></a></td>
+                                <td><%= pelaksana[i].y + perencana[i].y%></td>
+                            </tr>
+                           <%}%> 
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-                            <div id="detail" style="padding: 60px 0;">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-12">
-                                    <h2 class="m-t-0 m-b-0 text-center"><strong>DATA BADAN USAHA PELAKSANA JASA KONSTRUKSI KABUPATEN/KOTA ........</strong></h2>
-                                </div>
+            <div id="detail" style="padding: 60px 0;">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h2 class="m-t-0 m-b-0 text-center"><strong>DATA BADAN USAHA KABUPATEN/KOTA ........</strong></h2>
+                    </div>
+                </div>
+    
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                              <h3><strong>JASA PELAKSANA</strong></h3>
                             </div>
-                
-                            <div class="row" style="margin-top: 30px;">
-                                <div class="col-md-12 col-lg-12">
-                                    <div id="chartContainer2" style="height: 500px; width: 100%;"></div>
-                                </div>
-                            </div>
+                            <div class="card-body">
+                                <div id="jasa_pelaksana" style="height: 500px; width: 100%;"></div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="upah-2" role="tabpanel" aria-labelledby="upah-2-tab">
-                            <div class="row" style="margin-top: 15px;">
-                                <div class="col-md-9 col-lg-9">
-                                    <div id="chartContainer3" style="height: 500px; width: 100%;"></div>
-                                </div>
-                
-                                <div class="col-md-3 col-lg-3">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Kabupaten/Kota</th>
-                                                <th>Jumlah</th>
-                                            </tr>
-                                        </thead>
-                
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="#" class="btn-detail2"> Kabupaten Cilacap</a></td>
-                                                <td>100</td>
-                                            </tr>
-                
-                                            <tr>
-                                                <td><a href="#"> Kabupaten Banyumas</a></td>
-                                                <td>200</td>
-                                            </tr>
-                
-                                            <tr>
-                                                <td><a href="#"> Kabupaten Jepara</a></td>
-                                                <td>300</td>
-                                            </tr>
-                
-                                            <tr>
-                                                <td><a href="#"> dst.....</a></td>
-                                                <td>dst .....</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            
+                    </div>
 
-                            <div id="detail2" style="padding: 60px 0;">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-12">
-                                    <h2 class="m-t-0 m-b-0 text-center"><strong>DATA >BADAN USAHA JASA PERENCANA / PENGAWAS KONSTRUKSI / KONSULTAN KABUPATEN/KOTA ........</strong></h2>
-                                </div>
+                    <div class="col-md-12 col-lg-12" style="margin-top:15px">
+                        <div class="card">
+                            <div class="card-header">
+                              <h3><strong>JASA PERENCANA</strong></h3>
                             </div>
-                
-                            <div class="row" style="margin-top: 30px;">
-                                <div class="col-md-12 col-lg-12">
-                                    <div id="chartContainer4" style="height: 500px; width: 100%;"></div>
-                                </div>
-                            </div>
+                            <div class="card-body">
+                                <div id="jasa_perencana" style="height: 500px; width: 100%;"></div>
                             </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -185,6 +116,13 @@
        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <!-- End Plugins This Page -->
     <script type="text/javascript">
+
+
+
+
+    $(function() {
+      $('#menu-badan-usaha').addClass('custom');
+    });
       $('.datane').DataTable({
           order:false,
       });
@@ -193,96 +131,41 @@
         animationEnabled: true,
         axisX: {
             interval:1,
+            labelFontSize: 14,
 	    },
+        
+        axisY: {
+            // interval:1,
+            labelFontSize: 14,
+	    },
+
+        toolTip: {
+		    shared: true
+        },
+
+        legend:{
+            fontSize: 14,
+        },
+
         data: [{
-            type: "column",
-            name: "Proven Oil Reserves (bn)",
-            dataPoints:[
-            { label: "Kab. Banyumas", y: 266.21 },
-                { label: "Kab. Cilacap", y: 302.25 },
-                { label: "Kab. Jepara", y: 157.20 },
-                { label: "kab. Wonogiri", y: 148.77 },
-                { label: "Kab. Pemalang", y: 101.50 },
-                { label: "Kab. Pekalongan", y: 97.8 },
-                { label: "Kab. Batang", y: 266.21 },
-                { label: "Kab. Blora", y: 302.25 },
-                { label: "Kab. Boyolali", y: 157.20 },
-                { label: "Kota Salatiga", y: 148.77 },
-                { label: "Kota Semarang", y: 101.50 },
-                { label: "Kota Tegal", y: 97.8 }
-            ]
+            type: "bar",
+            name: "Jasa Pelaksana Konstruksi",
+            showInLegend: true,
+
+            dataPoints: <%- JSON.stringify(pelaksana) %>
+        },
+        {
+            type: "bar",
+            name: "Jasa Perencana Konstruksi",
+            showInLegend: true,
+
+            dataPoints:<%- JSON.stringify(perencana) %>
         }]
     });
     chart.render();
 
 
-    var chart2 = new CanvasJS.Chart("chartContainer2", {
-        animationEnabled: true,
-        axisX: {
-            interval:1,
-	    },
-        data: [{
-            type: "column",
-            name: "Proven Oil Reserves (bn)",
-            dataPoints:[
-                { label: "Bangunan Gedung", y: 266.21 },
-                { label: "Bangunan Sipil", y: 302.25 },
-                { label: "Instalasi Mekanikal Elektrikal", y: 157.20 },
-                { label: "Jasa Pelaksana Lainnya", y: 148.77 },
-                { label: "dst.........", y: 101.50 }
-            ]
-        }]
-    });
-    chart2.render();
-
-    var chart3 = new CanvasJS.Chart("chartContainer3", {
-        animationEnabled: true,
-        width: 825,
-        axisX: {
-            interval:1,
-	    },
-        data: [{
-            type: "column",
-            name: "Proven Oil Reserves (bn)",
-            dataPoints:[
-            { label: "Kab. Banyumas", y: 266.21 },
-                { label: "Kab. Cilacap", y: 302.25 },
-                { label: "Kab. Jepara", y: 157.20 },
-                { label: "kab. Wonogiri", y: 148.77 },
-                { label: "Kab. Pemalang", y: 101.50 },
-                { label: "Kab. Pekalongan", y: 97.8 },
-                { label: "Kab. Batang", y: 266.21 },
-                { label: "Kab. Blora", y: 302.25 },
-                { label: "Kab. Boyolali", y: 157.20 },
-                { label: "Kota Salatiga", y: 148.77 },
-                { label: "Kota Semarang", y: 101.50 },
-                { label: "Kota Tegal", y: 97.8 }
-            ]
-        }]
-    });
-    chart3.render();
-
-
-    var chart4 = new CanvasJS.Chart("chartContainer4", {
-        animationEnabled: true,
-        width:1140,
-        axisX: {
-            interval:1,
-	    },
-        data: [{
-            type: "column",
-            name: "Proven Oil Reserves (bn)",
-            dataPoints:[
-                { label: "Perencana Arsitektur", y: 266.21 },
-                { label: "Perencana Rekayasa", y: 302.25 },
-                { label: "Pengawas Arsitektur", y: 157.20 },
-                { label: "Pengawas Rekayasa", y: 148.77 },
-                { label: "dst.........", y: 101.50 }
-            ]
-        }]
-    });
-    chart4.render();
-    
+    // chart3.render();
 
     $('#detail').hide();
     $('#detail2').hide();
@@ -300,6 +183,80 @@
             scrollTop: $("#detail2").offset().top
             }, 1000);
     });
+
+    function ambilJumlah(id_kab){
+      let data_pelaksana=[]
+    var chart2 = new CanvasJS.Chart("jasa_pelaksana", {
+        animationEnabled: true,
+        axisX: {
+            interval:1,
+            labelFontSize: 14,
+	    },
+        
+        axisY: {
+            // interval:1,
+            labelFontSize: 14,
+	    },
+
+        toolTip: {
+		    shared: true
+        },
+        data: [{
+            type: "column",
+            name: "Pelaksana",
+            dataPoints:data_pelaksana
+        }]
+    });
+    // chart2.render();
+let data_perencana =[]
+    var chart3 = new CanvasJS.Chart("jasa_perencana", {
+        animationEnabled: true,
+
+        axisX: {
+            interval:1,
+            labelFontSize: 14,
+	    },
+        
+        axisY: {
+            // interval:1,
+            labelFontSize: 14,
+	    },
+
+        toolTip: {
+		    shared: true
+        },
+        data: [{
+            type: "column",
+            name: "Proven Oil Reserves (bn)",
+            dataPoints:data_perencana
+        }]
+    });
+        $.getJSON( "/info_jakon/jumlah_badan_usaha/"+id_kab ,function( data ) {
+          
+           
+            data_pelaksana.push({label: 'Gedung', y:Number(data.pelaksana[0].gedung)});
+            data_pelaksana.push({label: 'Keterampilan', y:Number(data.pelaksana[0].keterampilan)});
+            data_pelaksana.push({label: 'Mekanikal', y:Number(data.pelaksana[0].mekanikal)});
+            data_pelaksana.push({label: 'Sipil', y:Number(data.pelaksana[0].sipil)});
+            data_pelaksana.push({label: 'Spesialis', y:Number(data.pelaksana[0].spesialis)});
+            data_pelaksana.push({label: 'Lainnya', y:Number(data.pelaksana[0].lainnya)});
+            // console.log(data_pelaksana);
+            // console.log(data_pelaksana);
+            chart2.render()
+            // data_pelaksana=[]
+
+            data_perencana.push({label: 'Arsitektur', y:Number(data.perencana[0].arsitektur)});
+            data_perencana.push({label: 'Rekayasa', y:Number(data.perencana[0].rekayasa)});
+            data_perencana.push({label: 'Penataan Ruang', y:Number(data.perencana[0].penataan_ruang)});
+            data_perencana.push({label: 'Spesialis', y:Number(data.perencana[0].sipil)});
+            data_perencana.push({label: 'Pengawas Arsitektur', y:Number(data.perencana[0].p_arsitektur)});
+            data_perencana.push({label: 'Pengawas Rekayasa', y:Number(data.perencana[0].p_rekayasa)});
+            data_perencana.push({label: 'Pengawas Penataan Ruang', y:Number(data.perencana[0].p_penataan_ruang)});
+
+            chart3.render()
+            // data_perencana=[]
+        })
+    }
     </script>
 </body>
 </html>

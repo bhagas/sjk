@@ -1,0 +1,95 @@
+<div id="all" style="display: none">
+<table border="1" cellpadding="5" cellspacing="0" style="width:100%;border-collapse: collapse;">
+	<thead>
+		<tr>
+			<th rowspan="3" style="vertical-align: bottom;text-align: center;">NO.</th>
+			<th rowspan="3" style="vertical-align: bottom;text-align: center;">KODE&nbsp;</th>
+			<th rowspan="3" style="vertical-align: bottom;text-align: center;width: 400px;">URAIAN PEKERJAAN</th>
+			<th rowspan="3" style="vertical-align: bottom;text-align: center;">SAT</th>
+			<% for(var i=0; i<data.length; i++){ %>
+	
+				<th style="text-align: center;"><%= data[i].kab%></th>
+				<%}%>
+	
+		</tr>
+		<tr>
+			<% for(var i=0; i<data.length; i++){ %>
+	
+				<th style="text-align: center;">HARGA SATUAN PEKERJAAN</th>
+				<%}%>
+			
+		</tr>
+		<tr>
+			<% for(var i=0; i<data.length; i++){ %>
+	
+				<th style="text-align: center;">(Rp)</th>
+				<%}%>
+
+		</tr>
+		
+    </thead>
+    <tbody>
+        <!-- // -->
+		<%
+		let kode="";
+		let jenis="";
+		let a =0;
+		%>
+		<% for(let i=0; i< data[0].ahsp.length;i++){
+			a++;
+			if(jenis!=data[0].ahsp[i].jenis_pekerjaan){
+				a=1
+
+				var res = data[0].ahsp[i].kode.split(".");
+			%>
+        <tr>
+			<td style="font-weight: bold;text-align: center;"></td>
+			<% if(res.length>3){%>
+			<td style="font-weight: bold;text-align: center;"><%= res[0]+'.'+res[1]+'.'+res[2]+'.'+res[3]%></td>
+			<%}else{%>
+				<td style="font-weight: bold;text-align: center;"><%= res[0]+'.'+res[1]+'.'+res[2]%></td>
+			
+				<%}%>
+			<td colspan="8" style="font-weight: bold;"><%=data[0].ahsp[i].jenis_pekerjaan%></td>
+		</tr>
+		<%
+		kode=data[0].ahsp[i].kode;
+		jenis=data[0].ahsp[i].jenis_pekerjaan;
+	}%>
+		<tr>
+			<td style="text-align: center;"><%=a%></td>
+			<td style="text-align: center;"><%=data[0].ahsp[i].kode%></td>
+			<td><%=data[0].ahsp[i].nama_pekerjaan%></td>
+			<td style="text-align: center;"><%=data[0].ahsp[i].satuan%></td>
+			<% for(var ii=0; ii<data.length; ii++){
+				if(data[ii].ahsp[i]){
+				%>
+				
+				<td style="text-align: right;"><%= (data[ii].ahsp[i].total_keseluruhan)?parseInt(data[ii].ahsp[i].total_keseluruhan):0%></td>
+				<%}else{%>
+					<td style="text-align: center;"></td>
+					<%}}%>
+		</tr>
+		<%}%>
+		
+	</tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+
+
+
+    //getting data from our table
+    var data_type = 'data:application/vnd.ms-excel';
+    var table_div = document.getElementById('all');
+    var table_html = table_div.outerHTML.replace(/ /g, '%20');
+
+    var a = document.createElement('a');
+    a.href = data_type + ', ' + table_html;
+    a.download = 'Cipta Karya_' + Math.floor((Math.random() * 9999999) + 1000000) + '.xls';
+    a.click();
+    setTimeout("window.close();", 5000);
+    // window.close();
+    // location.href('/manajemen_paket_pekerjaan')
+</script>

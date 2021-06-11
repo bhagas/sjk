@@ -10,10 +10,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah, SIJAKONS, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN,">
+    <meta name="description" content="Informasi Harga Satuan Pekerjaan Konstruksi Provinsi Jawa Tengah, MAS PETRUK, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN">
     <meta name="author" content="Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah | Balai Jasa Konstruksi Provinsi Jawa Tengah">
     <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
-    <title>SIJAKONS | Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah</title>
+    <title>MAS PETRUK | INFORMASI HARGA SATUAN PEKERJAAN KONSTRUKSI PROVINSI JAWA TENGAH</title>
 
     <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/template/css/style.css" rel="stylesheet">
@@ -75,12 +75,18 @@
                             </div>
                         </section> -->
                         <div class="banner">
-                            <div>
-                                <img src="/images/template/SIJAKONS 2-01.jpg" alt="" style="width: 100%;">
-                            </div>
+                            <% for(var i=0; i<banner.length; i++){ %>
+                                
+                                <div>
+                                    <img src="/foto/<%= banner[i].file1%>" alt="" style="width: 100%;">
+                                </div>
 
-                            <div>
-                                <img src="/images/template/SIJAKONS 2-02.jpg" alt="" style="width: 100%;">
+                            <% } %>
+
+                            
+
+                            <!-- <div>
+                                <img src="/images/template/SIJAKONS 2-02_new.jpg" alt="" style="width: 100%;">
                             </div>
 
                             <div>
@@ -89,7 +95,7 @@
 
                             <div>
                                 <img src="/images/template/SIJAKONS 2-04.jpg" alt="" style="width: 100%;">
-                            </div>
+                            </div> -->
                         </div>
                         
                     </div>
@@ -104,9 +110,9 @@
                         <div style="width:100%;height: 100px;display: flex;justify-content: flex-start;align-items: center;">
                             <img src="/images/template/logo-prov-jateng.png" alt="" style="height: 70px;">
                             <div style="display: flex;flex-direction: column;height: 70px;justify-content: center;align-items: flex-start;">
-                                <h4 class="m-l-15 mt-0 mb-0" style="color: #fff;"><strong>SIJAKONS</strong></h4>
-                                <h6 class="m-l-15 mt-0 mb-0" style="color: #fff;">SISTEM INFORMASI JASA KONSTRUKSI</h6>
-                                <h6 class="m-l-15 mt-0 m-b-0" style="color: #fff;">PROVINSI JAWA TENGAH</h6>
+                                <h4 class="m-l-15 mt-0 mb-0" style="color: #fff;"><strong>MAS PETRUK</strong></h4>
+                                <h6 class="m-l-15 mt-0 mb-0" style="color: #fff;font-size: 14px;">INFORMASI HARGA SATUAN PEKERJAAN KONSTRUKSI</h6>
+                                <h6 class="m-l-15 mt-0 m-b-0" style="color: #fff;font-size: 14px;">PROVINSI JAWA TENGAH</h6>
                             </div>
                         </div>
                     </div>
@@ -116,19 +122,22 @@
                             <a href="/" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;" id="menu-beranda">BERANDA</a>
                             <a href="/berita" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;" id="menu-berita">BERITA</a>
                             <div class="dropdown">
-                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;">
+                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;padding-left:0;padding-right:0;">
                                     HARGA SATUAN
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="z-index: 10000;">
                                   <a class="dropdown-item" href="/harga_satuan/hsd" id="menu-hsd">HARGA SATUAN DASAR (HSD)</a>
-                                  <a class="dropdown-item" href="/harga_satuan/hspk" id="menu-hspk">HARGA SATUAN PEKERJAAN (HSP) KONSTRUKSI</a>
+                                  <a class="dropdown-item" href="/harga_satuan/hspk" id="menu-hspk">HARGA SATUAN PEKERJAAN (HSP) KONSTRUKSI CIPTAKARYA</a>
+                                    <a class="dropdown-item" href="/harga_satuan/hspk_binamarga" id="menu-hspk">HARGA SATUAN PEKERJAAN (HSP) KONSTRUKSI BINAMARGA</a>
+                                    <a class="dropdown-item" href="/harga_satuan/hspk_psda" id="menu-hspk">HARGA SATUAN PEKERJAAN (HSP) KONSTRUKSI PSDA</a>
+                                    <a class="dropdown-item" href="/harga_satuan/hspk_umum" id="menu-hspk">HARGA SATUAN PEKERJAAN (HSP) KONSTRUKSI UMUM</a>
                                   <a class="dropdown-item" href="/harga_satuan/hsgbn" id="menu-hsbgn">HARGA STANDAR BANGUNAN GEDUNG NEGARA (HSBGN)</a>
                                 </div>
                             </div>
                             <!-- <a href="/#simulasi" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;">ANALISA</a> -->
                             <a href="/peraturan" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;" id="menu-peraturan">PERATURAN</a>
                             <div class="dropdown">
-                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;">
+                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration: none;font-size: 16px;font-weight: bold;color: #fff;padding-left:0;padding-right:0;">
                                     INFORMASI JAKONS
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="z-index: 10000;">
@@ -190,7 +199,7 @@
 
                     <div class="row" style="margin-top: 15px;">
                         <div class="col-md-12 col-lg-12">
-                            <h5>Yaitu harga komponen dari mata pembayaran dalam satuan tertentu, misalnya bahan (m, m2, m3, kg, ton, zak, dan sebagainya), peralatan (unit, jam, hari, dan sebagainya), dan upah tenaga kerja (jam, hari, bulan, dan sebagainya)</h5>
+                            <h5>Harga bahan bangunan yang tercantum merupakan hasil uji petik (sampling) harga di pasaran bebas oleh Tim Penyusun pada beberapa sumber (depo, quory, distributor, toko terpilih) yang digunakan sebagai acuan dalam proses pengiolahan data. <strong>Harga satuan bahan bangunan yang tercantum tidak mengikat hanya sebagai ancar-ancar dalam menyusun perencanaan, pelaksanaan konstruksi oleh pada pemanfaat baik dilingkungan Pemerintah, dunia usaha juga masyarakat jasa konstruksi.</strong></h5>
                         </div>
                     </div>
                     
@@ -223,8 +232,12 @@
 
                     <div class="row" style="margin-top: 15px;">
                         <div class="col-md-12 col-lg-12">
-                            <h5 class="text-right">
+                            <!-- <h5 class="text-right">
                                 Yaitu biaya yang dihitung dalam suatu analisis harga satuan suatu pekerjaan konstruksi, yang terdiri atas biaya langsung (tenaga kerja, bahan, dan alat), dan biaya tidak langsung (biaya umum atau overhead, dan keuntungan) sebagai mata pembayaran suatu jenis pekerjaan tertentu, belum termasuk Pajak Pertambahan Nilai (PPN)
+                            </h5> -->
+
+                            <h5 class="text-right">
+                                harga yang dibayarkan untuk menyelesaikan satu jenis pekerjaan konstruksi berdasarkan PERMEN No. 28/PRT/M/2016. <strong>Harga satuan bahan bangunan yang tercantum tidak mengikat hanya sebagai ancar-ancar dalam menyusun perencanaan, pelaksanaan konstruksi oleh pada pemanfaat baik dilingkungan Pemerintah, dunia usaha juga masyarakat jasa konstruksi.</strong>
                             </h5>
                         </div>
                     </div>
@@ -411,12 +424,12 @@
     <!-- End Plugins This Page -->
     <script type="text/javascript">
     $('.banner').slick({
-          dots: false,
+          dots: true,
           infinite: true,
           autoplay: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 1000,
           slidesToShow: 1,
-          adaptiveHeight: true
+          adaptiveHeight: true,
         });
     $(function() {
       $('#menu-beranda').addClass('custom');

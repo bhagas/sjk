@@ -1,0 +1,58 @@
+<div id="all" style="display: none">
+<table border="1" cellpadding="5" cellspacing="0" style="width:100%;border-collapse: collapse;">
+	<thead>
+		<tr>
+			<th rowspan="2">No. Mata<br/>Pembayaran</th>
+			<th rowspan="2">Uraian</th>
+			<th rowspan="2">Satuan</th>
+			<th colspan="35">Harga Satuan Pekerjaan<br/>(Rupiah)</th>
+		</tr>
+		<tr>
+			<% for(var i=0; i<data.length; i++){ %>
+			<th><%= data[i].kab%></th>
+			<%}%>
+		</tr>
+		
+    </thead>
+    <tbody>
+        <!-- // -->
+		<% for(var i=0; i<data[0].hsd.length; i++){ %>
+			<tr>
+				<td style="text-align: center;"><%= data[0].hsd[i].kode%></td>
+				<td style="text-align: left;"><%= data[0].hsd[i].nama%></td>
+				<td style="text-align: center;"><%= data[0].hsd[i].satuan%></td>
+				<% for(var ii=0; ii<data.length; ii++){
+					if(data[ii].hsd[i]){
+					%>
+					
+					<td style="text-align: right;"><%= (data[ii].hsd[i].hargaMin)?parseInt(data[ii].hsd[i].hargaMin):0%></td>
+					<%}else{%>
+						<td style="text-align: right;"></td>
+						<%}}%>
+			</tr>
+			
+		<%}%>
+
+		
+	</tbody>
+</table>
+</div>
+
+
+<script type="text/javascript">
+
+
+
+    //getting data from our table
+    var data_type = 'data:application/vnd.ms-excel';
+    var table_div = document.getElementById('all');
+    var table_html = table_div.outerHTML.replace(/ /g, '%20');
+
+    var a = document.createElement('a');
+    a.href = data_type + ', ' + table_html;
+    a.download = 'Bina Marga_' + Math.floor((Math.random() * 9999999) + 1000000) + '.xls';
+    a.click();
+    setTimeout("window.close();", 5000);
+    // window.close();
+    // location.href('/manajemen_paket_pekerjaan')
+</script>

@@ -288,7 +288,11 @@ router.get('/pekerjaan/detail_json/:id/:id_kab', function(req, res) {
   // "SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" group by a.nama"
     connection.query("SELECT a.*, b.nama, b.satuan, b.kode, MIN(CASE WHEN c.harga > 0 THEN c.harga END) as harga from detail_pekerjaan a left join standar_harga b on a.id_standar_harga = b.id  join standar_harga_kab c on a.id_standar_harga = c.id_standar_harga and c.id_kab = '"+req.params.id_kab+"' where a.id_pekerjaan =  '"+req.params.id+"'  group by a.id", function(err, data_detail_pekerjaan, fields) {
       // console.log("SELECT a.*, b.nama, b.satuan, b.kode from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id and c.id_kab = '"+req.params.id_kab+"'") 
-      res.json(data_detail_pekerjaan)
+      connection.query("select * from master_pekerjaan where id="+req.params.id, function(err, rows, fields) {
+        // console.log("SELECT a.*, b.nama, b.satuan, b.kode from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id and c.id_kab = '"+req.params.id_kab+"'") 
+        res.json({data: data_detail_pekerjaan, detail: rows})
+          }) 
+     
         }) 
 });
 
@@ -311,24 +315,33 @@ router.get('/pekerjaan/list/:id_kab', function(req, res) {
 
 });
 
-router.get('/pekerjaan/list_arsip/:id_kab', function(req, res) {
-  let done = false;
-  let data=[]
+router.get('/pekerjaan/list_arsip/:bidang/:id_kab', function(req, res) {
+ 
+
   connection.query("SELECT a.* from arsip a where a.id_kab="+req.params.id_kab+" ORDER BY a.tahun DESC, a.triwulan DESC limit 1", function(err, data_detail_pekerjaan, fields) {
+    let data=[]
     // console.log("SELECT a.*, b.nama, b.satuan, b.kode from detail_pekerjaan a join standar_harga b on a.id_standar_harga = b.id and a.id_pekerjaan =  '"+req.params.id+"' join standar_harga_kab c on a.id_standar_harga = c.id and c.id_kab = '"+req.params.id_kab+"'") 
   // console.log(data_detail_pekerjaan)
     if(data_detail_pekerjaan.length>0){
     let hspk = fs.readFileSync(`./public/arsip/HSPK-${data_detail_pekerjaan[0].id_kab}-${data_detail_pekerjaan[0].tahun}-${data_detail_pekerjaan[0].triwulan}.json`);
-    data = JSON.parse(hspk);
-   }
-      done = true;
-    }) 
-    deasync.loopWhile(function(){return !done;});
-
-   
+    let t = JSON.parse(hspk);
+    for(let i =0; i<t.length; i++){
+      //  console.log((t[i].bidang==req.params.bidang));
+      if(t[i].bidang==req.params.bidang){
+        data.push(t[i]);
+      }
+    }
+  
+  //  console.log(data);
     res.json({data})
+   }
+    
+    }) 
+
+
 
 });
+
 
 router.get('/pekerjaan/detail_satuan/:id/:id_kab', function(req, res) {
   let done = false;
@@ -353,9 +366,13 @@ router.get('/pekerjaan/detail_satuan/:id/:id_kab', function(req, res) {
 
 router.get('/pekerjaan/list_json/:id_kab', function(req, res) {
   let done= false;
-  let result =[]
+  let result =[];
+  let t ='';
+  if(req.query.depan){
+    t += ' HAVING MIN( b.harga ) >0'
+  }
   if(req.params.id_kab!='-'){
-    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" and b.harga >0 where a.deleted=0 group by a.nama", function(err, data, fields) {
+    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" and b.harga >0 where a.deleted=0 group by a.id"+t, function(err, data, fields) {
       // console.log(data_detail_pekerjaan)
       
       result = data;
@@ -385,6 +402,64 @@ router.get('/pekerjaan/list_json/:id_kab', function(req, res) {
         res.json({data: result})
 });
 
+router.get('/pekerjaan/list_json_pertoko/:id_kab', function(req, res) {
+  let done= false;
+  let toko =[]
+  let kab =[]
+  let min =[]
+  if(req.params.id_kab!='-'){
+
+    done=false
+    connection.query("select * from kabupaten where id_kab = "+req.params.id_kab, function(err, data, fields) {
+      // console.log(data_detail_pekerjaan)
+      
+      kab = data;
+      done = true;
+      
+      })   
+      require('deasync').loopWhile(function(){return !done;});
+
+    done=false
+    connection.query("select * from master_toko where deleted=0 and id_kab = "+req.params.id_kab, function(err, data, fields) {
+      // console.log(data_detail_pekerjaan)
+      
+      toko = data;
+      done = true;
+      
+      })   
+      require('deasync').loopWhile(function(){return !done;});
+
+
+      for(let i =0; i < toko.length; i++){
+          done = false;
+          connection.query("SELECT a.nama, a.satuan, b.harga from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" and b.id_toko = "+toko[i].id+" where a.deleted=0 group by a.id order by a.id ASC", function(err, data, fields) {
+            // console.log(data_detail_pekerjaan)
+            
+            toko[i].daftar = data;
+            done = true;
+            
+            })   
+            require('deasync').loopWhile(function(){return !done;});
+      }
+
+
+     
+      done = false;
+      connection.query("SELECT a.nama, a.satuan, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga and b.id_kab = "+req.params.id_kab+" and b.harga>0 where a.deleted=0 group by a.id order by a.id ASC", function(err, data, fields) {
+        // console.log(data_detail_pekerjaan)
+        
+        min = data;
+        done = true;
+        
+        })   
+        require('deasync').loopWhile(function(){return !done;});
+  }
+  
+        // res.json({kab, toko, min})
+
+        res.render('content-backoffice/manajemen_master_pekerjaan/perbandingan_harga', {kab, toko, min});
+});
+
 router.get('/pekerjaan/detail_toko/:id_standar_harga/:id_kab', function(req, res) {
   let done= false;
   let result =[]
@@ -409,8 +484,12 @@ router.get('/pekerjaan/detail_toko/:id_standar_harga/:id_kab', function(req, res
 });
 
 router.get('/pekerjaan/list_json_upah/:id_kab', function(req, res) {
+  let t ='';
+  if(req.query.depan){
+    t += ' HAVING MIN( b.harga ) >0'
+  }
   if(req.params.id_kab!="-"){
-    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='TENAGA KERJA' and b.harga>0 and a.deleted=0 group by a.nama", function(err, data, fields) {
+    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='TENAGA KERJA' and b.harga>0 and a.deleted=0 group by a.id"+t, function(err, data, fields) {
       // console.log(data_detail_pekerjaan)
       res.json( {data});
       
@@ -422,8 +501,12 @@ router.get('/pekerjaan/list_json_upah/:id_kab', function(req, res) {
 });
 
 router.get('/pekerjaan/list_json_peralatan/:id_kab', function(req, res) {
+  let t ='';
+  if(req.query.depan){
+    t += ' HAVING MIN( b.harga ) >0'
+  }
   if(req.params.id_kab!="-"){
-    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='PERALATAN' and b.harga>0 and a.deleted=0 group by a.nama", function(err, data, fields) {
+    connection.query("SELECT a.*, MIN(b.harga) as hargaMin from standar_harga a left join standar_harga_kab b on a.id = b.id_standar_harga  and b.id_kab = "+req.params.id_kab+" where a.kategori='PERALATAN' and b.harga>0 and a.deleted=0 group by a.id"+t, function(err, data, fields) {
       // console.log(data_detail_pekerjaan)
       res.json( {data});
       
@@ -548,12 +631,12 @@ router.post('/detail_pekerjaan/submit_insert', cek_login,  function(req, res){
                     sourceFile :'./public/excel/'+namafile,
                     header     :   {rows:8},
                     columnToKey:{A:'id_standar_harga',F:'harga'},
-                    sheets :['Harga Dasar']
+                    sheets :['Sheet1']
                     
                 });
                 // console.log(result)
 
-                var hasil = result['Harga Dasar'].map(function(el) {
+                var hasil = result['Sheet1'].map(function(el) {
                     var o = Object.assign({}, el);
                     o.id_kab = req.body.id_kab;
                     o.id_toko = req.body.id_toko;
@@ -634,9 +717,9 @@ for(let i =1; i < columnA.length;i++){
 
 
 
-   XLSX.writeFileAsync( './public/excel/temp.xlsx',workbook, function(err){
-    // res.json(ambil_excel(req.params.id_kab))
-   });
+  //  XLSX.writeFileAsync( './public/excel/temp.xlsx',workbook, function(err){
+  //   // res.json(ambil_excel(req.params.id_kab))
+  //  });
 
 
 
@@ -692,7 +775,7 @@ router.get('/detail_pekerjaan/export_excel/:id_kab/:id_toko', cek_login, async f
       // var lainnya = []
       var peralatan = []
       var upah = []
-      var ws_name = "Harga Dasar";
+      var ws_name = "Sheet1";
       var done = false;
       connection.query(`SELECT  b.id, b.kategori, b.jenis, b.nama, b.satuan, a.harga FROM standar_harga_kab a right join standar_harga b on a.id_standar_harga = b.id and a.id_kab = ${req.params.id_kab} and a.id_toko  = ${req.params.id_toko} where b.deleted=0`, function(err, rows, fields) {
           // console.log(rows)

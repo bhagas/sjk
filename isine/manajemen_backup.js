@@ -72,6 +72,37 @@ router.get('/list_json/:id_kab', cek_login, function(req, res) {
     res.json({data})
   })
 });
+router.get('/arsip_hspk_kab/:tahun/:triwulan', cek_login, async function(req, res){
+  let data=  await sql_enak.select(sql_enak.raw(` a.*, b.kab from arsip a join kabupaten b on a.id_kab = b.id_kab WHERE tahun=${req.params.tahun} and triwulan=${req.params.triwulan}`));
+
+  for(let i =0; i < data.length; i++){
+      let hspk = fs.readFileSync(`./public/arsip/HSPK-${data[i].id_kab}-${req.params.tahun}-${req.params.triwulan}.json`);
+      hspk = JSON.parse(hspk);
+      hspk.forEach(function(v){ delete v.list });
+      data[i].ahsp = hspk
+      
+    }  
+
+  // res.json(data)
+  res.render('content-backoffice/manajemen_backup/excel_hspk', {data});
+
+})
+
+router.get('/arsip_hsd_kab/:tahun/:triwulan', cek_login, async function(req, res){
+  let data=  await sql_enak.select(sql_enak.raw(` a.*, b.kab from arsip a join kabupaten b on a.id_kab = b.id_kab WHERE tahun=${req.params.tahun} and triwulan=${req.params.triwulan}`));
+
+  for(let i =0; i < data.length; i++){
+      let hspk = fs.readFileSync(`./public/arsip/HSD-${data[i].id_kab}-${req.params.tahun}-${req.params.triwulan}.json`);
+      hspk = JSON.parse(hspk);
+      // hspk.forEach(function(v){ delete v.list });
+      data[i].hsd = hspk
+      
+    }  
+
+  // res.json(data)
+  res.render('content-backoffice/manajemen_backup/excel_hsd', {data});
+
+})
 
 router.get('/arsip/:id_kab/:tahun/:triwulan', cek_login, async function(req, res){
   //hsd
@@ -96,7 +127,7 @@ router.get('/arsip/:id_kab/:tahun/:triwulan', cek_login, async function(req, res
 
     //hspk
      data=[]
-     data =  await sql_enak.raw("SELECT a.* from master_pekerjaan a where a.deleted=0");
+     data =  await sql_enak.raw("SELECT a.* from master_pekerjaan a where a.deleted=0 order by CONVERT(SUBSTRING_INDEX(a.kode, '.', 1),UNSIGNED)  ASC");
     
       data = data[0];
       // console.log(data[0])
@@ -186,6 +217,17 @@ router.get('/download/:id_kab/:tahun/:triwulan', cek_login, function(req, res) {
   hsd = JSON.parse(hsd);
   connection.query("select * from kabupaten where id_kab="+req.params.id_kab, function(err, kabupaten, fields) {
     res.render('content-backoffice/notifikasi/buku_jakon',{hspk, hsd, kabupaten});   
+  })
+ 
+});
+
+router.get('/download2/:id_kab/:tahun/:triwulan', cek_login, function(req, res) {
+  let hspk = fs.readFileSync(`./public/arsip/HSPK-${req.params.id_kab}-${req.params.tahun}-${req.params.triwulan}.json`);
+  hspk = JSON.parse(hspk);
+  let hsd = fs.readFileSync(`./public/arsip/HSD-${req.params.id_kab}-${req.params.tahun}-${req.params.triwulan}.json`);
+  hsd = JSON.parse(hsd);
+  connection.query("select * from kabupaten where id_kab="+req.params.id_kab, function(err, kabupaten, fields) {
+    res.render('content-backoffice/notifikasi/buku_jakon_2',{hspk, hsd, kabupaten});   
   })
  
 });

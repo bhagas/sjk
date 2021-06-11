@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah, SIJAKONS, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN,">
+    <meta name="description" content="Informasi Harga Satuan Pekerjaan Konstruksi Provinsi Jawa Tengah, MAS PETRUK, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN">
     <meta name="author" content="Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah | Balai Jasa Konstruksi Provinsi Jawa Tengah">
     <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
-    <title>SIJAKONS | Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah</title>
+    <title>MAS PETRUK | INFORMASI HARGA SATUAN PEKERJAAN KONSTRUKSI PROVINSI JAWA TENGAH</title>
 
     <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/template/css/style.css" rel="stylesheet">
@@ -53,13 +53,24 @@
                         <li class="nav-item" role="presentation">
                           <a class="nav-link" id="upah-tab" data-toggle="tab" href="#upah" role="tab" aria-controls="upah" aria-selected="false" style="font-weight: bold;">PELATIHAN TENAGA KERJA </a>
                         </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="perpus-tab" data-toggle="tab" href="#perpus" role="tab" aria-controls="perpus" aria-selected="false" style="font-weight: bold;">PERPUSTAKAAN </a>
+                          </li>
                     </ul>
 
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="bahan" role="tabpanel" aria-labelledby="bahan-tab">
-                            <div class="row" style="margin-top: 30px;">
+                            <div class="row" >
                                 <div class="col-md-12 col-lg-12">
-                                    <iframe src="/document/materi info jakon.pdf" style="width: 100%;height: 500px;"></iframe>
+                                    <% for(var i=0; i<tupoksi.length; i++){ %>
+                                        <h4 style="margin-top: 30px;"><strong><%= tupoksi[i].judul%></strong></h4>
+                                        <hr>
+
+                                        <iframe src="/foto/<%= tupoksi[i].file1%>" style="width: 100%;height: 500px;"></iframe>
+                                    <%}%>
+
+                                    
                                 </div>
                             </div>
                         </div>
@@ -71,10 +82,10 @@
                                             <tr>
                                                 <th>No.</th>
                                                 <th>Nama</th>
-                                                <th>Alamat</th>
-                                                <th>No. Telepon</th>
-                                                <th>Email</th>
-                                                <th>Pendidikan Terakhir</th>
+                                                <th>Klasifikasi</th>
+                                                <th>Kualifikasi</th>
+                                                <th>No. Registrasi SKA</th>
+                                                <th>Asosiasi</th>
                                             </tr>
                                         </thead>
 
@@ -83,13 +94,48 @@
                                                 <tr>
                                                   <td><%= i+1%></td>
                                                   <td><%= data[i].nama%></td>
-                                                  <td><%= data[i].alamat%></td>
-                                                  <td><%= data[i].tlpn%></td>
-                                                  <td><%= data[i].email%></td>
-                                                  <td><%= data[i].pendidikan_terakhir%></td>
+                                                  <td><%= data[i].klasifikasi%></td>
+                                                  <td><%= data[i].kualifikasi%></td>
+                                                  <td><%= data[i].no_reg%></td>
+                                                  <td><%= data[i].asosiasi%></td>
                                                   
                                                 </tr>
                                             <%}%>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="perpus" role="tabpanel" aria-labelledby="perpus-tab">
+                            <div class="row" style="margin-top: 30px;">
+                                <div class="col-md-12 col-lg-12">
+                                    <table class="table table-bordered datane">
+                                        <thead>
+                                            <tr>
+                                                <th>No.</th>
+                                                <th>Judul</th>
+                                                <th>Pengarang</th>
+                                                <th>Penerbit</th>
+                                                <th>Tahun Terbit</th>
+                                                <th>Jumlah</th>
+                                                <th style="width: 100px;">Lokasi/Rak</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <% for(var i=0; i<buku.length; i++){ %>
+                                            <tr>
+                                                <td><%= i+1%></td>
+                                                <td><%= buku[i].judul%></td>
+                                                <td><%= buku[i].pengarang%></td>
+                                                <td><%= buku[i].penerbit%></td>
+                                                <td><%= buku[i].tahun_terbit%></td>
+                                                <td><%= buku[i].jumlah%></td>
+                                                <td><%= buku[i].lokasi_rak%></td>
+                                            </tr>
+                                            <%}%>
+
                                         </tbody>
                                     </table>
                                 </div>

@@ -98,7 +98,12 @@ router.get('/profil_pembinaan', function(req, res) {
 
 router.get('/profil_balai', function(req, res) {
   connection.query("SELECT * from tenaga_kerja_balai where deleted=0", function(err, rows, fields) {
-  res.render('content/info_profil_balai', {data:rows}); 
+  connection.query("SELECT * from buku_perpus", function(err, data_buku, fields) {
+    connection.query("SELECT * from tupoksi where deleted=0", function(err, data_tupoksi, fields) {
+
+  res.render('content/info_profil_balai', {data:rows, buku : data_buku, tupoksi : data_tupoksi}); 
+});
+});
 });
 });
 

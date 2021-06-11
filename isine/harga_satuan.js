@@ -73,6 +73,26 @@ router.get('/hspk', function(req, res) {
 
 });
 
+router.get('/hspk_binamarga', function(req, res) {
+  connection.query("select * from kabupaten", function(err, kabupaten, fields) {
+      res.render('content/hspk_binamarga', {kabupaten});
+      
+    
+  })
+
+});
+
+
+router.get('/hspk_psda', function(req, res) {
+  res.render('content/hspk_psda');
+
+});
+
+router.get('/hspk_umum', function(req, res) {
+  res.render('content/hspk_umum');
+
+});
+
 router.get('/hsgbn', function(req, res) {
   connection.query("select * from kabupaten", function(err, kabupaten, fields) {
     connection.query("select a.*, b.kab from hsbgn a join kabupaten b on a.id_kab=b.id_kab where a.deleted =0", function(err, data, fields) {

@@ -23,6 +23,7 @@
           <div class="row">
             <div class="col-md-12 col-lg-12">
               <a class="btn btn-primary btn-embossed" href="/manajemen_master/detail_pekerjaan/import" role="button"><i class="fa fa-plus" aria-hidden="true"></i>Import/Export Data</a>
+              <a class="btn btn-primary btn-embossed" href="#" role="button" id="perbandinganHarga"><i class="fa" aria-hidden="true"></i>TABEL PERBANDINGAN HARGA</a>
             </div>
           </div>
 
@@ -88,6 +89,14 @@
 <% include ../../template-backoffice/footer.ejs %>
 
 <script type="text/javascript">
+$('#perbandinganHarga').click(function(){
+  if($('#id_kab').val()!="-"){
+
+    window.open("/manajemen_master/pekerjaan/list_json_pertoko/"+$('#id_kab').val());
+  }else{
+    alert('Pilih Kabupaten/Kota Terlebih dahulu')
+  }
+})
 function numberWithCommas(x) {
 		  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 		}
@@ -113,7 +122,11 @@ function numberWithCommas(x) {
       "processing": true,
            "ajax": "/manajemen_master/pekerjaan/list_json/"+$('#id_kab').val(),
            "columns": [
-               { "data": null},
+           {"data": null, render: function (data, type, row, meta) {
+            //  console.log(meta);
+                    return meta.row + meta.settings._iDisplayStart + 1;
+                }
+            },
               //  { "data": "jenis"},
                { "data": "nama"},
                { "data": "satuan"},
@@ -148,7 +161,7 @@ function numberWithCommas(x) {
       
       //    }
       // },
-         "deferRender": true,
+        //  "deferRender": true,
          // "ordering": false,
         //  "columnDefs": [
         //      { "width": "3%" },
@@ -160,11 +173,11 @@ function numberWithCommas(x) {
     
         //      { "width": "20%" }
         //   ],
-         "fnRowCallback": function( row, data, iDisplayIndex ) {
-                   var index = iDisplayIndex +1;
-                   $('td:eq(0)',row).html(index);
-                   return row;
-         },
+        //  "fnRowCallback": function( row, data, iDisplayIndex ) {
+        //            var index = iDisplayIndex +1;
+        //            $('td:eq(0)',row).html(index);
+        //            return row;
+        //  },
     //   "columnDefs": [
     //       { "width": "100px", "targets": 14}
     //   ],

@@ -177,10 +177,12 @@ app.get('/' , function (req, res) {
     connection.query("select * from master_pekerjaan", function(err, pekerjaan, fields) {
       connection.query("select * from berita where deleted=0 ORDER BY id DESC LIMIT 3", function(err, data_berita, fields) {
         connection.query("select * from pengumuman where deleted=0", function(err, data_pengumuman, fields) {
-          res.render('content/index', {kabupaten, pekerjaan, berita: data_berita, pengumuman: data_pengumuman });
+          connection.query("select * from banner where deleted=0 ORDER BY id DESC", function(err, data_banner, fields) {
+          res.render('content/index', {kabupaten, pekerjaan, berita: data_berita, pengumuman: data_pengumuman, banner:data_banner });
       
     })
   })
+})
   })
     
   })

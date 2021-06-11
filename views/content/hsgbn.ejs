@@ -10,10 +10,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah, SIJAKONS, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN,">
+    <meta name="description" content="Informasi Harga Satuan Pekerjaan Konstruksi Provinsi Jawa Tengah, MAS PETRUK, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN">
     <meta name="author" content="Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah | Balai Jasa Konstruksi Provinsi Jawa Tengah">
     <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
-    <title>SIJAKONS | Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah</title>
+    <title>MAS PETRUK | INFORMASI HARGA SATUAN PEKERJAAN KONSTRUKSI PROVINSI JAWA TENGAH</title>
 
     <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/template/css/style.css" rel="stylesheet">
@@ -31,6 +31,11 @@
     <![endif]-->
     <style type="text/css">
     
+.table-striped tbody tr:nth-of-type(odd){
+	background-color: #007bff;
+    color: #fff;
+}
+
     </style>
 </head>
 
@@ -40,14 +45,17 @@
 
 
     <section style="padding: 90px 0;">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 col-lg-12">
                     <h2 class="m-t-0 m-b-0 text-center"><strong>HARGA SATUAN BANGUNAN GEDUNG NEGARA (HSBGN)</strong></h2>
                 </div>
             </div>
             
-            <div class="row" style="margin-top: 30px;">
+            <div class="row" >
+                <div class="col-md-12 col-lg-12">
+                    <p style="text-align:center">Berdasarkan Peraturan Gubernur Provinsi Jawa Tengah</p>
+                </div>
                 <!-- <div class="col-md-12 col-lg-12">
                     <div class="alert alert-primary" role="alert">
                         <select class="form-control" name="id_kab" id="id_kab" data-search="true">
@@ -59,10 +67,11 @@
                         </select>
                     </div>
                 </div> -->
-                <div class="col-md-12 col-lg-12">
-                    <table class="table table-bordered table-responsive">
+                <div class="col-md-12 col-lg-12" style="margin-top: 30px;">
+                    <table class="table table-bordered table-responsive table-striped" style="width: 100%;">
                         <thead>
                             <tr>
+                                <th rowspan="2" style="text-align: center;">No.</th>
                                 <th rowspan="2" style="text-align: center;">Kabupaten</th>
                                
                                 <th colspan="2" style="text-align: center;">Gedung Negara (Bertingkat)</th>
@@ -111,6 +120,7 @@
                             </tr> -->
                             <% for(var i=0; i<data.length; i++){ %>
                                 <tr>
+                                    <td><%= i+1%>.</td>
                                   <td><%= data[i].kab%></td>
                                   <td><%= numberWithCommas(data[i].gn_tingkat_sederhana)%></td>
                                   <td><%= numberWithCommas(data[i].gn_tingkat_tdk_sederhana)%></td>
@@ -130,6 +140,35 @@
                                 <%}%>
                         </tbody>
                     </table>
+                </div>
+
+                <div class="col-md-12 col-lg-12">
+                    <div class="col-md-12 col-lg-12">
+                        <h6><strong>Keterangan :</strong></h6>
+                        <table class="table table-borderless table-sm">
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Harga tertinggi per m² bangunan gedung dimaksud merupakan Biaya Konstruksi Fisik per m². Tidak termasuk biaya perencanaan, pengawasan dan administrasi proyek.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Harga satuan tertinggi tersebut telah memperhitungkan aspek kemudahan jangkauan pelayanan transportasi dan sebaran wilayah dari tiap kabupaten/kota</td>
+                                </tr>
+
+                                <tr>
+                                    <td>3.</td>
+                                    <td>Untuk wilayah Kecamatan Kepulauan Karimunjawa, diberlakukan harga khusus dengan koefisien pengkali sebesar 1,22 dari harga berlaku di Kabupaten Jepara.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4.</td>
+                                    <td>Untuk wilayah Pulau Nusakambangan, diberlakukan harga khusus dengan koefisien pengkali sebesar 1,18 dari harga berlaku di Kabupaten Cilacap.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

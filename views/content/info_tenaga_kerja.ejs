@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah, SIJAKONS, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN,">
+    <meta name="description" content="Informasi Harga Satuan Pekerjaan Konstruksi Provinsi Jawa Tengah, MAS PETRUK, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN">
     <meta name="author" content="Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah | Balai Jasa Konstruksi Provinsi Jawa Tengah">
     <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
-    <title>SIJAKONS | Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah</title>
+    <title>MAS PETRUK | INFORMASI HARGA SATUAN PEKERJAAN KONSTRUKSI PROVINSI JAWA TENGAH</title>
 
     <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/template/css/style.css" rel="stylesheet">
@@ -44,51 +44,9 @@
             </div>
 
             <div class="row" style="margin-top: 30px;">
-                <div class="col-md-8 col-lg-8">
-                    <div id="chartContainer" style="height: 800px; width: 100%;"></div>
+                <div class="col-md-12 col-lg-12">
+                    <img src="/images/template/tenaga_kerja.jpeg" alt="" style="width: 100%;">
                 </div>
-
-                <div class="col-md-4 col-lg-4">
-                    <table class="table table-bordered datane">
-                        <thead>
-                            <tr>
-                                <th rowspan="2">Kabupaten/Kota</th>
-                                <th colspan="2">Jumlah Tenaga Kerja</th>
-                            </tr>
-
-                            <tr>
-                                <th>SKA</th>
-                                <th>SKT</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <% for(var i=0; i<data_tenaga_kerja.length; i++){ %>
-                            <tr>
-                                <td><%= data_tenaga_kerja[i].kab%></td>
-                                <td><%= data_tenaga_kerja[i].ska%></td>
-                                <td><%= data_tenaga_kerja[i].skt%></td>
-                            </tr>
-                            <%}%>
-
-                            <!-- <tr>
-                                <td><a href="#"> Kabupaten Banyumas</a></td>
-                                <td>200</td>
-                            </tr>
-
-                            <tr>
-                                <td><a href="#"> Kabupaten Jepara</a></td>
-                                <td>300</td>
-                            </tr>
-
-                            <tr>
-                                <td><a href="#"> dst.....</a></td>
-                                <td>dst .....</td>
-                            </tr> -->
-                        </tbody>
-                    </table>
-                </div>
-
             </div>
         </div>
     </section>

@@ -10,10 +10,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah, SIJAKONS, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN,">
+    <meta name="description" content="Informasi Harga Satuan Pekerjaan Konstruksi Provinsi Jawa Tengah, MAS PETRUK, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN">
     <meta name="author" content="Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah | Balai Jasa Konstruksi Provinsi Jawa Tengah">
     <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
-    <title>SIJAKONS | Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah</title>
+    <title>MAS PETRUK | INFORMASI HARGA SATUAN PEKERJAAN KONSTRUKSI PROVINSI JAWA TENGAH</title>
 
     <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/template/css/style.css" rel="stylesheet">
@@ -205,6 +205,13 @@
                                           </div>
                                     </div>
                                 </div>
+
+                                <div class="row" style="margin-top: 15px;">
+                                    <div class="col-md-12 col-lg-12">
+                                        <h6><strong>Catatan :</strong></h6>
+                                        <h6 style="text-align: justify;"><strong>Harga satuan bahan bangunan yang tercantum tidak mengikat hanya sebagai ancar-ancar dalam menyusun perencanaan, pelaksanaan konstruksi oleh pada pemanfaat baik dilingkungan Pemerintah, dunia usaha juga masyarakat jasa konstruksi.</strong></h6>
+                                    </div>
+                                </div>
                             </div>
                             </div>
                         </div>
@@ -259,7 +266,11 @@
       "processing": true,
            "ajax": "/manajemen_master/pekerjaan/list_json/"+$('#id_kab').val(),
            "columns": [
-               { "data": null},
+           {"data": null, render: function (data, type, row, meta) {
+            //    console.log(meta);
+                    return meta.row + meta.settings._iDisplayStart + 1;
+                }
+            },
                { "data": "jenis"},
                { "data": "nama"},
             //    { "data": ""},
@@ -278,7 +289,7 @@
          // Use empty value in the "Office" column
          // as an indication that grouping with COLSPAN is needed
         //  this.rowsgroup.update()
-         console.log(data)
+        //  console.log(data)
         //  if(data[1] === ''){
         //     // Add COLSPAN attribute
         //     $('td:eq(0)', row).attr('colspan', 5);
@@ -291,7 +302,7 @@
       
         //  }
       },
-         "deferRender": true,
+        //  "deferRender": true,
          // "ordering": false,
         //  "columnDefs": [
         //      { "width": "3%" },
@@ -303,11 +314,11 @@
     
         //      { "width": "20%" }
         //   ],
-         "fnRowCallback": function( row, data, iDisplayIndex ) {
-                   var index = iDisplayIndex +1;
-                   $('td:eq(0)',row).html(index);
-                   return row;
-         },
+        //  "fnRowCallback": function( row, data, iDisplayIndex ) {
+        //            var index = iDisplayIndex +1;
+        //            $('td:eq(0)',row).html(index);
+        //            return row;
+        //  },
     //   "columnDefs": [
     //       { "width": "100px", "targets": 14}
     //   ],
@@ -410,8 +421,10 @@
       "processing": true,
            "ajax": "/manajemen_master/pekerjaan/list_json_peralatan/"+$('#id_kab').val(),
            "columns": [
-               { "data": null},
-             
+           {"data": "id", render: function (data, type, row, meta) {
+                    return meta.row + meta.settings._iDisplayStart + 1;
+                }
+            },
                { "data": "nama"},
                { "data": "satuan"},
             //    { "data": "harga"},
@@ -438,7 +451,7 @@
       
         //  }
       },
-         "deferRender": true,
+        //  "deferRender": true,
          // "ordering": false,
         //  "columnDefs": [
         //      { "width": "3%" },
@@ -450,11 +463,11 @@
     
         //      { "width": "20%" }
         //   ],
-         "fnRowCallback": function( row, data, iDisplayIndex ) {
-                   var index = iDisplayIndex +1;
-                   $('td:eq(0)',row).html(index);
-                   return row;
-         },
+        //  "fnRowCallback": function( row, data, iDisplayIndex ) {
+        //            var index = iDisplayIndex +1;
+        //            $('td:eq(0)',row).html(index);
+        //            return row;
+        //  },
     //   "columnDefs": [
     //       { "width": "100px", "targets": 14}
     //   ],
@@ -467,9 +480,9 @@
 
     $('#id_kab').change(function(){
    
-   t.ajax.url( `/manajemen_master/pekerjaan/list_json/${$('#id_kab').val()}` ).load();
-   x.ajax.url( `/manajemen_master/pekerjaan/list_json_upah/${$('#id_kab').val()}` ).load();
-   z.ajax.url( `/manajemen_master/pekerjaan/list_json_peralatan/${$('#id_kab').val()}` ).load();
+   t.ajax.url( `/manajemen_master/pekerjaan/list_json/${$('#id_kab').val()}?depan=true` ).load();
+   x.ajax.url( `/manajemen_master/pekerjaan/list_json_upah/${$('#id_kab').val()}?depan=true` ).load();
+   z.ajax.url( `/manajemen_master/pekerjaan/list_json_peralatan/${$('#id_kab').val()}?depan=true` ).load();
  })
   });
 

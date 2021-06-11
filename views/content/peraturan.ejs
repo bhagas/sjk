@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah, SIJAKONS, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN,">
+    <meta name="description" content="Informasi Harga Satuan Pekerjaan Konstruksi Provinsi Jawa Tengah, MAS PETRUK, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN">
     <meta name="author" content="Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah | Balai Jasa Konstruksi Provinsi Jawa Tengah">
     <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
-    <title>SIJAKONS | Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah</title>
+    <title>MAS PETRUK | INFORMASI HARGA SATUAN PEKERJAAN KONSTRUKSI PROVINSI JAWA TENGAH</title>
 
     <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/template/css/style.css" rel="stylesheet">
@@ -61,6 +61,10 @@
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="lain-tab" data-toggle="tab" href="#lain" role="tab" aria-controls="lain" aria-selected="false" style="font-weight: bold;">Peraturan Lainnya</a>
                           </li>
+
+                          <!-- <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="literatur-tab" data-toggle="tab" href="#literatur" role="tab" aria-controls="literatur" aria-selected="false" style="font-weight: bold;">Literatur</a>
+                          </li> -->
                     </ul>
 
                     <div class="tab-content" id="myTabContent">
@@ -147,7 +151,7 @@
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" id="lain" role="tabpanel" aria-labelledby="alat-tab">
+                        <div class="tab-pane fade" id="lain" role="tabpanel" aria-labelledby="lain-tab">
                             <div class="row" style="margin-top: 15px;">
                                 <div class="col-md-12 col-lg-12">
                                     <table class="table table-bordered table-striped datane">
@@ -174,6 +178,34 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- <div class="tab-pane fade" id="literatur" role="tabpanel" aria-labelledby="literatur-tab">
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-md-12 col-lg-12">
+                                    <table class="table table-bordered table-striped datane">
+                                        <thead style="background-color: #007bff;color: #fff;">
+                                            <tr>
+                                                <th style="width: 15px;">No</th>
+                                                <th>Judul</th>
+                                                <th style="width: 100px;">Option</th>
+                                            </tr>
+                                        </thead>
+                
+                                        <tbody>
+                                            <% for(var i=0; i<literatur.length; i++){ %>
+                                            <tr>
+                                                <td><%= i+1%></td>
+                                                <td><%= lain[i].judul%></td>
+                                                <td><a href="/foto/<%= lain[i].file1%>" class="btn btn-primary">Download</a></td>
+                                            </tr>
+                                            <%}%>
+                
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> -->
                       </div>
                 </div>
             </div>

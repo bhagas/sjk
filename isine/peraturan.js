@@ -62,7 +62,9 @@ router.get('/', function(req, res) {
     connection.query("SELECT * from peraturan where deleted=0 and kategori='PP'", function(err, data_pp, fields) {
       connection.query("SELECT * from peraturan where deleted=0 and kategori='Permen'", function(err, data_permen, fields) {
         connection.query("SELECT * from peraturan where deleted=0 and kategori='Peraturan Lainnya'", function(err, data_lain, fields) {
-  res.render('content/peraturan', {undang:data_undang, pp:data_pp, permen:data_permen, lain:data_lain}); 
+          connection.query("SELECT * from peraturan where deleted=0 and kategori='Literatur Lainnya'", function(err, data_literatur, fields) {
+  res.render('content/peraturan', {undang:data_undang, pp:data_pp, permen:data_permen, lain:data_lain, literatur:data_literatur }); 
+});
 });
 });
 });

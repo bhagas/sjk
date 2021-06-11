@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah, SIJAKONS, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN,">
+    <meta name="description" content="Informasi Harga Satuan Pekerjaan Konstruksi Provinsi Jawa Tengah, MAS PETRUK, Jasa Konstruksi Provinsi Jawa Tengah, Jasa Konstruksi, Provinsi Jawa Tengah, HSD, HSPK, HSBGN">
     <meta name="author" content="Dinas PU Bina Marga dan Cipta Karya Provinsi Jawa Tengah | Balai Jasa Konstruksi Provinsi Jawa Tengah">
     <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
-    <title>SIJAKONS | Sistem Informasi Jasa Konstruksi Provinsi Jawa Tengah</title>
+    <title>MAS PETRUK | INFORMASI HARGA SATUAN PEKERJAAN KONSTRUKSI PROVINSI JAWA TENGAH</title>
 
     <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/template/css/style.css" rel="stylesheet">
@@ -26,7 +26,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
-    
     </style>
 </head>
 
@@ -44,61 +43,8 @@
             </div>
 
             <div class="row" style="margin-top: 30px;">
-                <div class="col-md-9 col-lg-9">
-                    <div id="chartContainer" style="height: 500px; width: 100%;"></div>
-                </div>
-
-                <div class="col-md-3 col-lg-3">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Kabupaten/Kota</th>
-                                <th>Jumlah</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <% for(let i =0; i<pelaksana.length; i++){%>
-                            <tr>
-                                <td><a href="#" class="btn-detail" onclick="ambilJumlah('<%=pelaksana[i].id_kab%>')"><%= pelaksana[i].label%></a></td>
-                                <td><%= pelaksana[i].y + perencana[i].y%></td>
-                            </tr>
-                           <%}%> 
-                           
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div id="detail" style="padding: 60px 0;">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <h2 class="m-t-0 m-b-0 text-center"><strong>DATA BADAN USAHA KABUPATEN/KOTA ........</strong></h2>
-                    </div>
-                </div>
-    
-                <div class="row" style="margin-top: 30px;">
-                    <div class="col-md-12 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                              <h3><strong>JASA PELAKSANA</strong></h3>
-                            </div>
-                            <div class="card-body">
-                                <div id="jasa_pelaksana" style="height: 500px; width: 100%;"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-lg-12" style="margin-top:15px">
-                        <div class="card">
-                            <div class="card-header">
-                              <h3><strong>JASA PERENCANA</strong></h3>
-                            </div>
-                            <div class="card-body">
-                                <div id="jasa_perencana" style="height: 500px; width: 100%;"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-12 col-lg-12">
+                    <img src="/images/template/perusahaan.jpeg" alt="" style="width: 100%;">
                 </div>
             </div>
         </div>

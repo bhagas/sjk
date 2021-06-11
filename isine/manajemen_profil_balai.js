@@ -114,5 +114,101 @@ router.get('/tenaga_kerja/delete/:id', cek_login, function(req, res) {
 });
 
 
+router.get('/perpustakaan', cek_login, function(req, res) {
+  
+  res.render('content-backoffice/manajemen_perpustakaan/list'); 
 
+});
+
+router.get('/perpustakaan/insert', cek_login, function(req, res) {
+  res.render('content-backoffice/manajemen_perpustakaan/insert'); 
+});
+
+router.get('/perpustakaan/edit/:id', cek_login, function(req, res) {
+  
+  res.render('content-backoffice/manajemen_perpustakaan/edit'); 
+
+});
+
+
+
+
+router.get('/tupoksi', cek_login, function(req, res) {
+  connection.query("SELECT * from tupoksi where deleted=0", function(err, rows, fields) {
+  res.render('content-backoffice/manajemen_tupoksi/list',{data:rows}); 
+});
+});
+
+router.get('/tupoksi/insert', cek_login, function(req, res) {
+  res.render('content-backoffice/manajemen_tupoksi/insert'); 
+});
+
+router.get('/tupoksi/edit/:id', cek_login, function(req, res) {
+  connection.query("SELECT * from tupoksi where id='"+req.params.id+"'", function(err, rows, fields) {
+  res.render('content-backoffice/manajemen_tupoksi/edit',{data:rows}); 
+});
+});
+
+router.post('/tupoksi/submit_insert', cek_login,  function(req, res){
+  var post = {}
+ post = req.body;
+
+if(req.files){
+
+  if(req.files.file1){
+   req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
+     
+   }))
+}
+  post.file1= req.files.file1.name
+}
+
+    
+
+  
+    console.log(post)
+   sql_enak.insert(post).into("tupoksi").then(function (id) {
+  console.log(id);
+})
+.finally(function() {
+  //sql_enak.destroy();
+  res.redirect('/manajemen_profil_balai/tupoksi'); 
+});
+});
+
+router.post('/tupoksi/submit_edit', cek_login, function(req, res){
+  var post = {}
+ post = req.body;
+ if(req.files){
+
+  if(req.files.file1){
+   req.files.file1.mv('./public/foto/'+req.files.file1.name,(async err=>{
+     
+   }))
+}
+  post.file1= req.files.file1.name
+}
+    console.log(post)
+   sql_enak("tupoksi").where("id", req.body.id)
+  .update(post).then(function (count) {
+ console.log(count);
+})
+.finally(function() {
+  //sql_enak.destroy();
+  res.redirect('/manajemen_profil_balai/tupoksi'); 
+});
+});
+
+
+router.get('/tupoksi/delete/:id', cek_login, function(req, res) {
+  
+  // senjata
+  // console.log(req.params.id)
+  connection.query("update tupoksi SET deleted=1 WHERE id='"+req.params.id+"' ", function(err, rows, fields) {
+  //  if (err) throw err;
+    numRows = rows.affectedRows;
+  })
+
+  res.redirect('/manajemen_profil_balai/tupoksi');
+});
 module.exports = router;
